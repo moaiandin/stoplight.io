@@ -3,6 +3,7 @@ path: /blog/the-fundamentals-of-http-api-unit-testing-2c55cd0c7634
 tags:
   - blog
   - blog-testing
+  - blog-featured
 relatedTags:
   - blog
 publishedDate: 2018-07-02T17:21:16.261Z

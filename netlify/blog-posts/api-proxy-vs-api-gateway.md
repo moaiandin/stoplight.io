@@ -4,6 +4,7 @@ tags:
   - blog-industry
   - blog-general
   - blog
+  - blog-featured
 relatedTags:
   - blog-industry
   - blog-general

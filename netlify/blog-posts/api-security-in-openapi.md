@@ -3,6 +3,7 @@ path: /blog/api-security-in-openapi-b105ae725a08
 tags:
   - blog-design
   - blog
+  - blog-featured
 relatedTags:
   - blog-design
 publishedDate: 2018-08-16T18:27:33.860Z

@@ -3,6 +3,7 @@ path: /blog/raml-vs-yaml
 tags:
   - blog
   - blog-design
+  - blog-featured
 relatedTags:
   - blog-design
 publishedDate: 2019-03-21T17:08:25.117Z

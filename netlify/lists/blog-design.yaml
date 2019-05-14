@@ -5,6 +5,8 @@ color: purple
 tabs:
   - href: /blog
     title: Latest
+  - href: /blog/featured
+    title: Featured
   - href: /blog/general
     title: General
   - href: /blog/api-design

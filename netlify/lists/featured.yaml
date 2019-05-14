@@ -1,6 +1,6 @@
-path: /blog/changelog
-tag: blog-changelog
-title: Changelog
+path: /blog/featured
+tag: blog-featured
+title: Featured
 color: purple
 tabs:
   - href: /blog
@@ -12,17 +12,20 @@ tabs:
   - href: /blog/api-design
     title: API Design
   - href: /blog/api-documentation
-    title: API Documentation
+    title: 'API Documentation '
   - href: /blog/api-testing
     title: API Testing
   - href: /blog/changelog
     title: Changelog
 actionBar:
+  buttons: []
   enabled: true
 meta:
-  title: Changelog | Stoplight API Corner
+  favicon: /images/mark_light_bg.png
+  robots: 'index, follow'
+  title: Featured | Stoplight API Corner
   twitter:
-    title: Changelog | Stoplight API Corner
+    title: Featured | Stoplight API Corner
     username: '@stoplightio'
 pagination:
   enabled: true

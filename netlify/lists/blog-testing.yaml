@@ -3,6 +3,8 @@ tag: blog-testing
 title: API Testing
 color: purple
 tabs:
+  - href: /blog/featured
+    title: Featured
   - href: /blog
     title: Latest
   - href: /blog/general

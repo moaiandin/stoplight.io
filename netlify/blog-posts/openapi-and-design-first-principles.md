@@ -3,6 +3,7 @@ path: /blog/openapi-and-design-first-principles-96e7c4b2aec1
 tags:
   - blog-design
   - blog
+  - blog-featured
 relatedTags:
   - blog-design
 publishedDate: 2018-06-21T19:34:32.353Z

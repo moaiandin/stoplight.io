@@ -1,11 +1,7 @@
 ---
 path: /blog/qualities-of-great-apis
-tags:
-  - blog
-  - blog-design
-  - blog-general
-relatedTags:
-  - blog-design
+tags: []
+relatedTags: []
 publishedDate: 2019-05-14T20:46:10.485Z
 author: Robert Wallach
 title: Qualities of Great APIs
@@ -24,7 +20,7 @@ actionBar:
 meta:
   description: Strategies for battle hardening your API development process
   favicon: /images/mark_light_bg.png
-  robots: 'index, follow'
+  robots: 'noindex, nofollow'
   title: Qualities of Great APIs | Stoplight API Corner
   image: /images/tabea-damm-579138-unsplash-1-.jpg
   twitter:

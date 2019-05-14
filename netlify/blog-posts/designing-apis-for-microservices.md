@@ -3,6 +3,7 @@ path: /blog/designing-apis-for-microservices
 tags:
   - blog
   - blog-design
+  - blog-featured
 relatedTags:
   - blog-design
 publishedDate: 2019-02-07T18:09:11.347Z

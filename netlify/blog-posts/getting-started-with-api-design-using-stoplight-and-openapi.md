@@ -3,6 +3,7 @@ path: /blog/getting-started-with-api-design-using-stoplight-and-openapi-90fc8f37
 tags:
   - blog-design
   - blog
+  - blog-featured
 relatedTags:
   - blog-design
 publishedDate: 2018-08-02T18:47:13.396Z

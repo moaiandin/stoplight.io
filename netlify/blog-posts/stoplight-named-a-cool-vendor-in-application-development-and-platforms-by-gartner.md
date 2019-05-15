@@ -42,11 +42,9 @@ meta:
     image: /images/gartner_cv_2019_rgb.png
     username: '@stoplightio'
 ---
-<p class="text-xs">Photo by Nicolas Tissot on Unsplash</p>
+Photo by Nicolas Tissot on Unsplash
 
-
-
-**AUSTIN, TX - May 16, 2019**  - _Stoplight_, the leader in API Design Management solutions powering the next wave of modern microservice and IoT application architectures, has been named in _Gartner’s_ “**Cool Vendor in Application Development and Platforms**” 2019 report.
+**AUSTIN, TX - May 16, 2019**  - _Stoplight_, the leader in API Design Management solutions powering the next wave of modern microservice and IoT application architectures, has been named in [_Gartner’s_ “**Cool Vendor in Application Development and Platforms**” 2019 report](https://stoplight.io/gartner-cool-vendor).
 
 > As companies look to develop their microservices, forward thinking development teams are starting by taking a collaborative “API Design First” approach. Stoplight’s API Design Management Platform is the only solution that allows teams to visually create API designs leveraging the OpenAPI and JSON Schema standards and managing those API designs at scale across the organization.” says Stoplight CEO, Marc MacLeod. 
 

@@ -18,7 +18,12 @@ tabs:
   - href: /blog/changelog
     title: Changelog
 actionBar:
-  buttons: []
+  buttons:
+    - href: 'https://stoplight.io/demo/'
+      outlined: true
+      title: Request a Demo
+    - href: 'https://next.stoplight.io/'
+      title: Create a Free Account
   enabled: true
 meta:
   favicon: /images/mark_light_bg.png

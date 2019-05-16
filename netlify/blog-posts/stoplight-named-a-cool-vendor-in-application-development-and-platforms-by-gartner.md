@@ -1,7 +1,10 @@
 ---
 path: /blog/gartner-cool-vendor
-tags: []
-relatedTags: []
+tags:
+  - blog
+  - blog-general
+relatedTags:
+  - blog-general
 publishedDate: 2019-05-16T20:37:09.224Z
 author: Robert Wallach
 title: >-
@@ -29,7 +32,7 @@ meta:
     named in Gartner’s “Cool Vendor in Application Development and Platforms”
     2019 report.
   favicon: /images/mark_light_bg.png
-  robots: 'noindex, nofollow'
+  robots: 'index, follow'
   title: Stoplight Named a Cool Vendor by Gartner | Stoplight API Corner
   image: /images/gartner_cv_2019_rgb.png
   twitter:

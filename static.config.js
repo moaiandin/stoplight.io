@@ -57,10 +57,7 @@ const getFile = (srcPath, extension = '.yaml', options) => {
 
   const path = slugify(data.path || data.title || nodePath.basename(srcPath, 'yaml'));
 
-  // Don't convert settings files
-  if (!/settings\.yaml/.test(srcPath)) {
-    data = convertMarkdownToHTML(data);
-  }
+  data = convertMarkdownToHTML(data);
 
   return {
     ...data,

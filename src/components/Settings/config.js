@@ -15,6 +15,29 @@ export default {
       file: 'netlify/settings.yaml',
       fields: [
         {
+          label: 'Banners',
+          name: 'banners',
+          widget: 'list',
+          fields: [
+            {
+              hint: 'When should the banner start showing?',
+              name: 'starts',
+              widget: 'datetime',
+              format: 'x',
+            },
+            {
+              hint: 'When should the banner stop showing?',
+              name: 'ends',
+              widget: 'datetime',
+              format: 'x',
+            },
+            {
+              name: 'markdown',
+              widget: 'markdown',
+            },
+          ],
+        },
+        {
           label: 'Stoplight Info',
           name: 'info',
           widget: 'object',

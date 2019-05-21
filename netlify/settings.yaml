@@ -1,3 +1,9 @@
+banners:
+  - ends: '1559444414197'
+    markdown: >-
+      **Stoplight named Gartner Cool Vendor!** <u class='ml-3'>[Read the full
+      announcement](https://stoplight.io/gartner-cool-vendor/)</u>
+    starts: 1558463654467
 info:
   address:
     addressLocality: Austin

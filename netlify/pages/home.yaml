@@ -47,7 +47,7 @@ collage:
     - alt: EA
       src: /images/ea.png
     - alt: Arkea
-      src: /images/logo_arkea_transparent.png
+      src: /images/arkea-logo-transparent-2x.png
     - alt: Chargify
       src: /images/chargify-new-logo.png
     - alt: Deutsche Bank
@@ -58,8 +58,6 @@ collage:
       src: /images/logo-sendgrid.png
     - alt: Shopgate
       src: /images/shopgate.png
-    - alt: Spotify
-      src: /images/spotify.png
     - alt: TiVo
       src: /images/tivo.png
     - alt: Zendesk

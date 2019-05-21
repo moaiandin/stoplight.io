@@ -49,9 +49,6 @@ team:
   - image: /images/chris-miaskowski-headshot.jpg
     name: Chris Miaskowski
     role: Software Engineer
-  - image: /images/tommy-morgan-headshot.jpg
-    name: Tommy Morgan
-    role: Software Engineer
   - image: /images/team/vazha-omanashvili.png
     name: Vazha Omanashvili
     role: Software Engineer

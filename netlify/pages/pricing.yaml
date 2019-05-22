@@ -46,7 +46,7 @@ plans:
     price: Contact Us
     title: Enterprise
 docPlans:
-  buttonText: Create Your First Documentation Hub
+  buttonText: Create Your Free Documentation Hub
   buttonUrl: 'https://next.stoplight.io/join'
   description: >-
     Combine OpenAPI with Markdown to create robust documentation for internal

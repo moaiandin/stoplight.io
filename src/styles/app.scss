@@ -1146,3 +1146,8 @@ pre.line-numbers > code {
 .ease-in {
   transition: all 0.25s ease-in;
 }
+
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+}

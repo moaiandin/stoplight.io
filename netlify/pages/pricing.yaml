@@ -10,7 +10,7 @@ plans:
   - button:
       color: green
       href: 'https://next.stoplight.io'
-      title: Sign Up
+      title: Start Free Trial
     description: For open source and individual use.
     features:
       - Unlimited public projects
@@ -19,7 +19,7 @@ plans:
   - button:
       color: green
       href: 'https://next.stoplight.io'
-      title: Sign Up
+      title: Start Free Trial
     description: For small teams and startups.
     features:
       - Up to 10 users

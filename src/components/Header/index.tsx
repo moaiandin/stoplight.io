@@ -75,6 +75,7 @@ export class Header extends React.Component<IHeader, IHeaderState> {
   public render() {
     const { header, meta, color, banners } = this.props;
     const { unpinned, showBanner } = this.state;
+    const headerItems = (header && header.items) || [];
 
     let banner;
     if (showBanner && banners && banners.length) {
@@ -120,9 +121,9 @@ export class Header extends React.Component<IHeader, IHeaderState> {
                   Stoplight
                 </Link>
 
-                <Desktop items={header && header.items} unpinned={unpinned} />
+                <Desktop items={headerItems} unpinned={unpinned} />
 
-                <Mobile items={header && header.items} />
+                <Mobile items={headerItems} />
               </nav>
             </div>
 

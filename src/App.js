@@ -10,7 +10,13 @@ import 'src/styles/app.css';
 import 'src/styles/app.scss';
 
 const AppContent = () => {
-  return [<Header key="1" />, <Routes key="2" />, <Footer key="3" />];
+  return [
+    <Header key="1" />,
+    <div className="relative">
+      <Routes key="2" />
+    </div>,
+    <Footer key="3" />,
+  ];
 };
 
 class App extends React.Component {

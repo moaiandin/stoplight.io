@@ -129,6 +129,8 @@ header:
         - arrow-right
       isButton: true
       title: Sign In
+      altTitle: Sign Up FREE
+      altBg: green
 actionBar:
   buttons:
     - color: purple

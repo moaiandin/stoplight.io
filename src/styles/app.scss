@@ -1137,24 +1137,12 @@ pre.line-numbers > code {
   content: none;
 }
 
-// Special sticky header signup button
-.sign-in-link {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  // Sign In/Up are not same width
-  min-width: 112px;
-  transition: background-color 0.25s ease-in;
-}
-
-header.unpinned {
-  .alternate--signup {
-    background-color: #38c172;
-  }
-}
-
 .Banner {
   a {
     color: white;
   }
+}
+
+.ease-in {
+  transition: all 0.25s ease-in;
 }

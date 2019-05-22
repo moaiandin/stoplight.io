@@ -19,8 +19,10 @@ export interface IHeaderLink {
 }
 
 export interface IHeaderItem {
-  title: string;
   href: string;
+  title: string;
+  altTitle?: string;
+  altBg?: string;
   isButton?: boolean;
   hideMobile?: boolean;
   className?: string;
@@ -71,38 +73,14 @@ export class Header extends React.Component<IHeader, IHeaderState> {
   }
 
   public render() {
-    const { header, meta, color } = this.props;
+    const { header, meta, color, banners } = this.props;
     const { unpinned, showBanner } = this.state;
-    const bgClassName = unpinned ? `bg-${color || 'black'}` : '';
-
-    let headerItems = (header && header.items) || [];
-    if (headerItems && headerItems.length) {
-      if (unpinned) {
-        headerItems = headerItems.slice();
-      }
-
-      // Sign In / Sign Up is impure as it breaks configuration -> rendering flow
-      // Keeping it small
-      for (let i = 0; i < headerItems.length; i++) {
-        const item = headerItems[i];
-        if (item.title === 'Sign In') {
-          item.className = 'sign-in-link';
-          if (unpinned) {
-            headerItems[i] = {
-              ...item,
-              title: 'Sign Up',
-              className: `${item.className || ''} alternate--signup`,
-            };
-          }
-          break;
-        }
-      }
-    }
+    const headerItems = (header && header.items) || [];
 
     let banner;
-    if (showBanner && this.props.banners && this.props.banners.length) {
+    if (showBanner && banners && banners.length) {
       const time = new Date().getTime();
-      banner = this.props.banners.find(b => {
+      banner = banners.find(b => {
         if (!b || !b.markdown) return;
 
         return new Date(Number(b.starts)).getTime() <= time && new Date(Number(b.ends)).getTime() >= time;
@@ -122,7 +100,7 @@ export class Header extends React.Component<IHeader, IHeaderState> {
                 <div className="h-16 flex flex-no-wrap items-center px-4">
                   <div className="flex-1 text-center" dangerouslySetInnerHTML={{ __html: banner.markdown }} />
                   <div
-                    className="cursor-pointer flex hover:bg-lighten-100 items-center justify-center justify-end p-2 rounded"
+                    className="cursor-pointer flex hover:bg-lighten-100 items-center justify-center justify-end p-2 rounded text-lighten-300 hover:text-white"
                     onClick={() => this.setState({ showBanner: false })}
                   >
                     <FontAwesomeIcon icon="times" />
@@ -133,9 +111,8 @@ export class Header extends React.Component<IHeader, IHeaderState> {
 
           <header
             key="header"
-            className={cn(bgClassName, 'z-50 sticky pin-t pin-l pin-r', {
-              unpinned,
-              'shadow-sm': unpinned,
+            className={cn('z-50 sticky pin-t pin-l pin-r', {
+              [`shadow-sm bg-${color || 'black'}`]: unpinned,
             })}
           >
             <div className="container relative">
@@ -144,7 +121,7 @@ export class Header extends React.Component<IHeader, IHeaderState> {
                   Stoplight
                 </Link>
 
-                <Desktop items={headerItems} />
+                <Desktop items={headerItems} unpinned={unpinned} />
 
                 <Mobile items={headerItems} />
               </nav>

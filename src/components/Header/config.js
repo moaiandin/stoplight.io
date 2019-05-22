@@ -1,3 +1,5 @@
+import { colors } from 'src/utils';
+
 export default {
   name: 'header',
   label: 'Header',
@@ -95,6 +97,22 @@ export default {
               required: false,
             },
           ],
+        },
+        {
+          name: 'altTitle',
+          label: 'Alternate Title',
+          widget: 'string',
+          hint: 'Title shown after scrolling the page. (Example: Sign In -> Sign Up FREE)',
+          required: false,
+        },
+        {
+          name: 'altBg',
+          label: 'Alternate Background Color',
+          hint: 'Background color shown after scrolling the page. (Only valid for buttons)',
+          widget: 'select',
+          options: colors,
+          default: 'green',
+          required: false,
         },
       ],
     },

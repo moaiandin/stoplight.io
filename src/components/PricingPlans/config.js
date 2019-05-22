@@ -2,7 +2,7 @@ import button from 'src/components/Button/config';
 
 export default {
   label: 'Pricing Plans',
-  name: 'pricingPlans',
+  name: 'plans',
   widget: 'list',
   fields: [
     {

@@ -61,7 +61,7 @@ const HeaderButton: React.FunctionComponent<IHeaderItem> = ({ title, href, icon,
       to={href}
       className={cn(
         'text-lg font-semibold py-2 px-4 ml-6 flex items-center border rounded text-white hover:text-white border-lighten-300 hover:border-lighten-500 bg-lighten-50 whitespace-no-wrap',
-        className || ''
+        className
       )}
     >
       {title} {icon && <FontAwesomeIcon icon={icon} className="ml-3" />}
@@ -69,31 +69,42 @@ const HeaderButton: React.FunctionComponent<IHeaderItem> = ({ title, href, icon,
   );
 };
 
-export const Desktop: React.FunctionComponent<{ items: IHeaderItem[] }> = ({ items }) => {
+export const Desktop: React.FunctionComponent<{ items: IHeaderItem[]; unpinned: boolean }> = ({ items, unpinned }) => {
+  if (!items || !items.length) return null;
+
   return (
     <div className="sm:hidden flex flex-1 justify-end items-center text-lg">
-      {items &&
-        items.length > 0 &&
-        items.map((item, index) => {
-          if (item.links && item.links.length) {
-            return <HeaderDropdown key={index} {...item} />;
-          }
-          if (item.isButton) {
-            return <HeaderButton key={index} {...item} />;
-          }
+      {items.map((item, index) => {
+        const { title: _title, href, icon, links, altTitle, altBg, isButton } = item;
+
+        const title = unpinned ? altTitle || _title : _title;
+
+        if (links && links.length) {
+          return <HeaderDropdown key={index} {...item} />;
+        }
+
+        if (isButton) {
           return (
-            <Link
+            <HeaderButton
               key={index}
-              to={item.href}
-              className={cn(
-                'text-white hover:opacity-85 hover:text-white py-2 px-4 mx-2 font-semibold',
-                item.className || ''
-              )}
-            >
-              {item.title}
-            </Link>
+              title={title}
+              href={href}
+              icon={icon}
+              className={unpinned && altBg ? `bg-${altBg} ease-in` : ''}
+            />
           );
-        })}
+        }
+
+        return (
+          <Link
+            key={index}
+            to={href}
+            className="text-white hover:opacity-85 hover:text-white py-2 px-4 mx-2 font-semibold"
+          >
+            {title}
+          </Link>
+        );
+      })}
     </div>
   );
 };

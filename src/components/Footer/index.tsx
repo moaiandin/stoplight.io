@@ -36,7 +36,7 @@ export const Footer: React.FunctionComponent<{ footer: IFooter }> = ({ footer })
   const { columns, social, legal } = footer;
 
   return (
-    <footer className="bg-black py-12 border-t-4 border-lighten-300">
+    <footer className="bg-black py-12 border-t-4 border-lighten-300 z-5 relative">
       <nav className="container mx-auto flex flex-col items-center">
         <div className="py-4">
           <Link to="/">

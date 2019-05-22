@@ -9,7 +9,7 @@ hero:
 plans:
   - button:
       color: green
-      href: 'https://next.stoplight.io'
+      href: 'https://next.stoplight.io/join'
       title: Start Free Trial
     description: For open source and individual use.
     features:
@@ -18,7 +18,7 @@ plans:
     title: Personal
   - button:
       color: green
-      href: 'https://next.stoplight.io'
+      href: 'https://next.stoplight.io/join'
       title: Start Free Trial
     description: For small teams and startups.
     features:

@@ -73,13 +73,13 @@ export class Header extends React.Component<IHeader, IHeaderState> {
   }
 
   public render() {
-    const { header, meta, color } = this.props;
+    const { header, meta, color, banners } = this.props;
     const { unpinned, showBanner } = this.state;
 
     let banner;
-    if (showBanner && this.props.banners && this.props.banners.length) {
+    if (showBanner && banners && banners.length) {
       const time = new Date().getTime();
-      banner = this.props.banners.find(b => {
+      banner = banners.find(b => {
         if (!b || !b.markdown) return;
 
         return new Date(Number(b.starts)).getTime() <= time && new Date(Number(b.ends)).getTime() >= time;
@@ -120,9 +120,9 @@ export class Header extends React.Component<IHeader, IHeaderState> {
                   Stoplight
                 </Link>
 
-                <Desktop items={header.items} unpinned={unpinned} />
+                <Desktop items={header && header.items} unpinned={unpinned} />
 
-                <Mobile items={header.items} />
+                <Mobile items={header && header.items} />
               </nav>
             </div>
 

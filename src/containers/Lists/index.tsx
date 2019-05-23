@@ -13,6 +13,7 @@ import { ITab } from 'src/components/Tabs';
 export interface IListItem {
   title: string;
   subtitle: string;
+  listSubtitle: string;
   image: string;
   href: string;
   author: IHeroAuthor;
@@ -36,6 +37,7 @@ export interface IList {
 export const ListItem: React.FunctionComponent<IListItem> = ({
   title,
   subtitle,
+  listSubtitle,
   image,
   href,
   author,
@@ -62,7 +64,7 @@ export const ListItem: React.FunctionComponent<IListItem> = ({
           <div className="flex-1 mb-2 flex flex-col relative overflow-hidden">
             <div className="text-3xl font-bold mb-4">{title}</div>
 
-            {subtitle && <p className="leading-loose">{subtitle}</p>}
+            {(listSubtitle || subtitle) && <p className="leading-loose">{listSubtitle || subtitle}</p>}
           </div>
 
           <div className="flex items-end">

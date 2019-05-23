@@ -115,6 +115,7 @@ const filterPages = (allPages, filter) => {
       title: page.title,
       color: page.color,
       subtitle: page.subtitle,
+      listSubtitle: page.listSubtitle,
       image: page.image,
       href: page.path,
       tags: page.tags, // used to show which tag matches the search

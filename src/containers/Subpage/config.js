@@ -64,6 +64,13 @@ export const SubpageConfig = {
       required: false,
     },
     {
+      label: 'Short Description',
+      hint: 'A short description of this page that will only be displayed on list item cards and "Related Articles"',
+      name: 'listSubtitle',
+      widget: 'string',
+      required: false,
+    },
+    {
       label: 'Image',
       name: 'image',
       widget: 'file',

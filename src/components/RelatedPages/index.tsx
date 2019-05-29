@@ -10,6 +10,7 @@ export interface IRelatedPage {
   href: string;
   title?: string;
   subtitle?: string;
+  listSubtitle?: string;
   image?: string;
   color?: string;
   publishedDate?: string;
@@ -21,6 +22,7 @@ export const ArticleCard: React.FunctionComponent<IRelatedPage> = ({
   href,
   title,
   subtitle,
+  listSubtitle,
   image,
   color = 'black',
   publishedDate,
@@ -39,7 +41,7 @@ export const ArticleCard: React.FunctionComponent<IRelatedPage> = ({
         <div className="flex flex-col flex-1 p-4 ">
           <h3 className="mb-2">{title}</h3>
 
-          <p className="flex-1 mb-4">{subtitle}</p>
+          <p className="flex-1 mb-4">{listSubtitle || subtitle}</p>
 
           <div className="flex text-sm text-grey-darker">
             {publishedDate && <p>{publishedDate}</p>}

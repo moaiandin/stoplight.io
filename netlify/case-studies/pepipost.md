@@ -1,20 +1,25 @@
 ---
 path: /case-studies/pepipost
-tags: ['case-study']
-relatedTags: ['case-study']
+tags:
+  - case-study
+relatedTags:
+  - case-study
 publishedDate: 'Dec 19, 2018'
 title: Pepipost
 subtitle: >-
   Pepipost is a transactional messaging platform that provides powerful email
   APIs for developers.
+listSubtitle: >-
+  Pepipost wanted a tool that would assist them in the development and
+  maintenance of a number of existing and upcoming APIs with corresponding
+  documentation.
 image: /images/pepipost_logo.png
 color: blue
 sidebar:
   info:
     description: >-
-      **Industry**: Information Services & Technology <br/>
-      **Location**: Dublin, Ireland <br/>
-      **Employees**: 11-50
+      **Industry**: Information Services & Technology <br/> **Location**:
+      Dublin, Ireland <br/> **Employees**: 11-50
   quotes:
     - author: Dibya Sahoo
       quote: >-

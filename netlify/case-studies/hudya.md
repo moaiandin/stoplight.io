@@ -10,11 +10,9 @@ subtitle: >-
   Hudya is a digital platform that is redefining and simplifying how traditional
   utilities and services can be purchased and managed.
 listSubtitle: >-
-  Hudya ideally wanted to have all of their API service built and managed in a
-  single centralized platform. They were experiencing issues managing a large
-  amount of specifications for their services and the corresponding
-  documentation and they worried that merging all these files down the road
-  would be painful and unsustainable.
+  Huday was experiencing issues managing a large amount of specifications for
+  their services and the corresponding documentation and they worried that
+  merging all these files down the road would be painful and unsustainable.
 image: /images/logo_hudya.png
 color: blue
 sidebar:

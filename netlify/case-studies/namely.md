@@ -1,25 +1,30 @@
 ---
 path: /case-studies/namely
-tags: ['case-study']
-relatedTags: ['case-study']
+tags:
+  - case-study
+relatedTags:
+  - case-study
 publishedDate: 'Dec 20, 2018'
 title: Namely
 subtitle: >-
   Namely is an All-In-One HR Platform that strives to provide HR professionals
   with the technology, data, and support they need to help employees thrive.
+listSubtitle: >-
+  Namely’s chief objective was to adopt API Design First principles. As they
+  brainstormed the application of their new principle they stumbled upon the
+  importance of having reliable, up to date, documentation.
 image: /images/logo_namely_transparent.png
 color: blue
 sidebar:
   info:
     description: >-
-      **Industry**: HR Software <br />
-      **Location**: New York <br />
+      **Industry**: HR Software <br /> **Location**: New York <br />
       **Employees**: 250-500
   quotes:
     - author: Katie Corcos
       quote: >-
-        The UI was the best we had seen among all of the contenders thus far when
-        it came to the user experience, design, and customization.
+        The UI was the best we had seen among all of the contenders thus far
+        when it came to the user experience, design, and customization.
       role: Technologist
 actionBar:
   enabled: true

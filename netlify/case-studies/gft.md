@@ -1,28 +1,33 @@
 ---
 path: /case-studies/gft
-tags: ['case-study']
-relatedTags: ['case-study']
+tags:
+  - case-study
+relatedTags:
+  - case-study
 publishedDate: 'Dec 22, 2018'
 title: GFT Technology
 subtitle: >-
   GFT Technology is a leading IT solutions supplier with a focus on the
   financial sector.
+listSubtitle: >-
+  GFT Technology was looking for an API Design tool that promoted and allowed
+  for collaboration between technical and non-technical staff. 
 image: /images/gft_group_logo.jpg
 color: blue
 sidebar:
   info:
     description: >-
-      **Industry**: Big Data, IT, & Financial Services<br/>
-      **Location**: Germany<br/>
-      **Employees**: 5000-10000
+      **Industry**: Big Data, IT, & Financial Services<br/> **Location**:
+      Germany<br/> **Employees**: 5000-10000
   quotes:
     - author: Carlos Lozano
       quote: >-
         Stoplight allows even the most non-technical team members to take a shot
         at defining an API using Stoplight’s visual editor — it reduces the
         learning curve to a minimum, people get to grips with the basics of API
-        specification development in a matter of hours — not weeks. Also, it makes
-        documenting an API and providing a testing harness for it a breeze.
+        specification development in a matter of hours — not weeks. Also, it
+        makes documenting an API and providing a testing harness for it a
+        breeze.
       role: Senior Enterprise Architect
 actionBar:
   enabled: true

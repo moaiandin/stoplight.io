@@ -1,28 +1,34 @@
 ---
 path: /case-studies/bodev
-tags: ['case-study']
-relatedTags: ['case-study']
+tags:
+  - case-study
+relatedTags:
+  - case-study
 publishedDate: 'Dec 23, 2018'
 title: Bo Development
 subtitle: >-
   Bo Development Offices provides enterprise solutions for the automotive,
   telecom, media industries in the private and public sector.
+listSubtitle: >-
+  Bodev was looking for an API Design and Documentation tool that allowed them
+  to create internal API documentation geared towards developers with an
+  integrated method for creating technical documentation for clients. Most of
+  the existing products only solved one of the two problems in depth.
 image: /images/bodev_logo.png
 color: blue
 sidebar:
   info:
     description: >-
-      **Industry**: IT Consulting<br/>
-      **Location**: Turkey<br/>
-      **Employees**: Startup
+      **Industry**: IT Consulting<br/> **Location**: Turkey<br/> **Employees**:
+      Startup
   quotes:
     - author: Can Berkol
       quote: >-
         Stoplight is the best of both worlds. Yes, we can create a beautiful API
         documentation, and yes, we can create a beautiful generic technical
-        documentation that requires actual sentences, screenshots, files and more.
-        We can prepare and publish both documentation in one place and easily
-        deliver documentation to the clients and third party developers.
+        documentation that requires actual sentences, screenshots, files and
+        more. We can prepare and publish both documentation in one place and
+        easily deliver documentation to the clients and third party developers.
       role: Executive Manager
 actionBar:
   enabled: true

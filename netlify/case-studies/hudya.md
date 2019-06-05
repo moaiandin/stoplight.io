@@ -1,19 +1,24 @@
 ---
 path: /case-studies/hudya
-tags: ['case-study']
-relatedTags: ['case-study']
+tags:
+  - case-study
+relatedTags:
+  - case-study
 publishedDate: 'Dec 21, 2018'
 title: Hudya
 subtitle: >-
-  Hudya is a digital platform that is redefining and simplifying how
-  traditional utilities and services can be purchased and managed.
+  Hudya is a digital platform that is redefining and simplifying how traditional
+  utilities and services can be purchased and managed.
+listSubtitle: >-
+  Huday was experiencing issues managing a large amount of specifications for
+  their services and the corresponding documentation and they worried that
+  merging all these files down the road would be painful and unsustainable.
 image: /images/logo_hudya.png
 color: blue
 sidebar:
   info:
     description: >-
-      **Industry**: FinTech & InsurTech <br/>
-      **Location**: Norway <br/>
+      **Industry**: FinTech & InsurTech <br/> **Location**: Norway <br/>
       **Employees**: Startup
   quotes:
     - author: Evin Callahan

@@ -10,6 +10,11 @@ subtitle: >-
   Arkéa is a prominent leader in banking and insurance in Europe. The Arkéa
   Group includes Arkéa Crédit Mutuel Bretagne, Southwest Credit Mutuel, Crédit
   Mutuel Massif Central, and 20 specialized subsidiaries
+listSubtitle: >-
+  Arkéa has been involved in open banking for several years by providing white
+  label banking services and saw PSD2 as an opportunity to extend their open
+  banking features. To further their open banking offerings, they needed to
+  deploy 10-15 additional APIs to accelerate the digitization of their bank.
 image: /images/arkea-logo-transparent-2x.png
 color: orange
 tabs: []

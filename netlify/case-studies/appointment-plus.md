@@ -1,27 +1,33 @@
 ---
 path: /case-studies/appointmentplus
-tags: ['case-study']
-relatedTags: ['case-study']
+tags:
+  - case-study
+relatedTags:
+  - case-study
 publishedDate: 'Jan 23, 2019'
 title: AppointmentPlus
 subtitle: >-
-  AppointmentPlus provides a scheduling platform that streamlines and
-  automates the scheduling process.
+  AppointmentPlus provides a scheduling platform that streamlines and automates
+  the scheduling process.
+listSubtitle: >-
+  AppointmentPlus was managing multiple APIs built by different teams, at
+  different times, with different strategies and intents. Some of their APIs
+  were documented as PDFs, not documented at all, or were documented using a
+  custom solution.
 image: /images/logo_appointmentplus_transparent.png
 color: blue
 sidebar:
   info:
     description: >-
-      **Industry**: Scheduling Software<br/>
-      **Location**: Arizona<br/>
+      **Industry**: Scheduling Software<br/> **Location**: Arizona<br/>
       **Employees**: 50-100
   quotes:
     - author: Josh Flyer
       quote: >-
         We really enjoy the modeling feature, helping us define our API before
-        even writing code. Also, the way the modeling feature inherits models from
-        other Projects. Documentation integrates with OAS files, both partials or
-        the entire schema, which is rad.
+        even writing code. Also, the way the modeling feature inherits models
+        from other Projects. Documentation integrates with OAS files, both
+        partials or the entire schema, which is rad.
       role: Lead Developer
 actionBar:
   enabled: true

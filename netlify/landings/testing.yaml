@@ -27,7 +27,7 @@ featureSection:
     accelerate test generations and reduce duplication. Whether you are writing
     test for just one API call or a scenario of API calls working together in a
     real-life use case, Stoplight Testing gives you the flexibility to make your
-    tests fit you workflow by supporting command line and CI/CD pipeline
+    tests fit your workflow by supporting command line and CI/CD pipeline
     integrations. Contract Testing your API against your OpenAPI Specification
     (formerly known as Swagger) or JSON Schema is possible with our simple
     visual Test Editor.

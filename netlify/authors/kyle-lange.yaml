@@ -1,0 +1,21 @@
+path: /blog/author/kyle-lange
+tag: author
+title: Kyle Lange
+subtitle: >-
+  Kyle Lange is a trainer and project manager obsessed with people-friendly
+  systems of development and workflow in the world of tech.  His education
+  background means his greatest joy is in growing other people's skills and
+  finding ways to help them grow as individuals and teams.
+pageName: Contributing Writer
+image: /images/kyle-lange-headshot.jpeg
+color: black
+tabs:
+  - {}
+actionBar:
+  buttons:
+    - color: purple
+  enabled: false
+meta:
+  robots: 'index, follow'
+  twitter: {}
+pagination: {}

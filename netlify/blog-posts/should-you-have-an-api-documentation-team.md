@@ -8,6 +8,10 @@ relatedTags:
 publishedDate: 2019-06-06T23:25:44.474Z
 author: Kyle Lange
 title: Should You Have an API Documentation Team?
+subtitle: >-
+  Developers building APIs have to consider a lot more than the technical needs
+  of the project
+image: /images/documentation-team.jpg
 color: black
 tabs:
   - {}

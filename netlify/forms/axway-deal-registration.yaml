@@ -32,22 +32,36 @@ leftContent:
     * ## [Tonia Roberts Email](tonia@stoplight.io)
 collage:
   cta:
-    color: black
-    href: 'https://next.stoplight.io'
-  images:
-    - src: ''
+    color: green
+    href: /case-studies
+    name: Read the Case Studies
+  images: []
 testimonials:
   cta:
     color: black
     href: 'https://next.stoplight.io'
-  testimonials: []
+  title: 'Here are what some enterprise architects are saying:'
+  testimonials:
+    - author: '- Software Architect'
+      quote: >-
+        We decided to go for Stoplight because we are convinced that the API
+        must be held by the business people (product owners). Before, they were
+        used to designing processes or UI screens. Now, the screens are made by
+        UX experts or by fintechs using our APIs. So, the product owners have to
+        design the API, it's an important change, not all of them are ready.
+        This is why a graphical tools is a good opportunity, perhaps the only
+        one, to involve them in the design of API.
+    - author: '- Enterprise Architect'
+      quote: >-
+        Stoplight addresses the needs of API Development holistically with a
+        strong emphasis on visual modelling and collaboration. It covers API
+        Prototyping, Mocking, Specification, Shared Schemas, Documentation,
+        Testing and Developer Portal generation - all customisable.
   actionBar:
-    buttons:
-      - color: purple
+    buttons: []
     enabled: false
 actionBar:
-  buttons:
-    - color: purple
+  buttons: []
   enabled: false
 tags: []
 relatedTags: []

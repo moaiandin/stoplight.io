@@ -1,0 +1,49 @@
+path: /axway-deal-registration
+title: Axway Deal Registration
+titleImage: /images/axway-logo-2016.png
+subtitle: Thank you for partnering with Stoplight.
+color: blue
+hubspot:
+  formId: dc28e0a6-fe9c-4d7e-b6f6-966365a27577
+  portalId: '4892910'
+leftContent:
+  description: >-
+    Thank you for partnering with Stoplight. Tell us more about your deal and we
+    can help with extended POC trial accounts, pricing and workshops. 
+
+
+
+
+    Resources you might find helpful - 
+
+
+    * [Case Study
+      ](https://stoplight.io/case-studies/arkea/)
+    * [Webinar Recording
+      ](https://stoplight.io/webinars/api-design-with-stoplight/)
+    * [Tonia Roberts Email](tonia@stoplight.io)
+collage:
+  cta:
+    color: black
+    href: 'https://next.stoplight.io'
+  images:
+    - src: ''
+testimonials:
+  cta:
+    color: black
+    href: 'https://next.stoplight.io'
+  testimonials: []
+  actionBar:
+    buttons:
+      - color: purple
+    enabled: false
+actionBar:
+  buttons:
+    - color: purple
+  enabled: false
+tags: []
+relatedTags: []
+meta:
+  favicon: /images/mark_light_bg.png
+  robots: 'noindex, nofollow'
+  twitter: {}

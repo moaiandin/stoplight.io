@@ -46,21 +46,21 @@ This feature enables Power Shell as a code example for Request maker.
 
 ## Enhancements 💪
 
-* \[Scenarios] Updated the Scenarios Step Editor to prefix the selected operation with the default {$$.env.host} variable.
-* \[Modeling] Updated the behavior of generating examples from the schema to use the JSON example if available before defaulting to lorem ipsum.
-* \[Hubs] Updated the behavior of endpoint sorting for hubs that will allow the user to force the endpoints to be sorted alphabetically. This can be accomplished by adding a property to the x-stoplight object in an OAS document of “sortEndpoints” and it is set to true or false.
+* \[Scenarios] Updated the Scenarios Step Editor to prefix the selected operation with the default {$$.env.host} variable
+* \[Modeling] Updated the behavior of generating examples from the schema to use the JSON example if available before defaulting to lorem ipsum
+* \[Hubs] Updated the behavior of endpoint sorting for Hubs that will allow the user to force the endpoints to be sorted alphabetically. This can be accomplished by adding a property to the x-stoplight object in an OpenAPI document of “sortEndpoints” and it is set to true or false
 
 ![Sorting Example](/images/sorting-example.gif)
 
-* \[Hubs] Added a configuration option for disabling the Pubs in-memory docs cache. When this configuration option is enabled, the in-memory cache will be bypassed and each request should result in a reload from disk of that hub file. This configuration option is needed for users that are deployed in a High Availability (multiple servers with a load balancer) environment.
-* \[Prism] Allow users to disable SSL certificate verification when proxying requests. Users can now add a CLI flag (--skip-verify, etc) that disables TLS verification when Prism proxies requests to an upstream URL.
+* \[Hubs] Added a configuration option for disabling the Pubs in-memory docs cache. When this configuration option is enabled, the in-memory cache will be bypassed and each request should result in a reload from disk of that hub file. This configuration option is needed for users that are deployed in a High Availability (multiple servers with a load balancer) environment
+* \[Prism] Allow users to disable SSL certificate verification when proxying requests. Users can now add a CLI flag (--skip-verify, etc) that disables TLS verification when Prism proxies requests to an upstream URL
 
 ## Fixes 🔧
 
-* \[Modleing] Removed the ability to set a description on a ref.
-* \[Request Maker] Updated Request Maker to enforce protocol scheme if set globally in the specification.
-* \[Modeling] Updated designer to remove validate error messages when those errors are corrected.
-* \[Modeling] Non-unique operations IDs will now display as an error, not a warning.
+* \[Modleing] Removed the ability to set a description on a ref
+* \[Request Maker] Updated Request Maker to enforce protocol scheme if set globally in the specification
+* \[Modeling] Updated designer to remove validate error messages when those errors are corrected
+* \[Modeling] Non-unique operations IDs will now display as an error, not a warning
 * \[Hubs] Enabled variable templating inside titles for Hubs
 * \[Modeling] Addressed issue to allow copy-and-paste from our request/response objects
-* \[Modeling] We were displaying the description for a model twice in the read view, we’ve corrected this to display only once.
+* \[Modeling] We were displaying the description for a model twice in the read view, we’ve corrected this to display only once

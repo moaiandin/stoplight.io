@@ -8,6 +8,7 @@ relatedTags:
 publishedDate: 2019-06-12T17:32:51.693Z
 author: Robert Wallach
 title: Stoplight v4.10 Release
+subtitle: 'LDAP SSO Support, Powershell Code Generation, Enhancements & Fixes'
 image: /images/changelog-stock.jpg
 color: black
 tabs: []

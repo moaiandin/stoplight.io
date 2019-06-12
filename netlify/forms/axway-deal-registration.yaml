@@ -8,18 +8,18 @@ hubspot:
   portalId: '4892910'
 leftContent:
   description: >-
-    ## Thank you for partnering with Stoplight! 
+    ## Thank you for partnering with Stoplight!
 
 
 
 
     ## Tell us more about your deal and we can help with extended POC trial
-    accounts, pricing, and workshops. 
+    accounts, pricing, and workshops.
 
 
 
 
-    ## Resources you might find helpful - 
+    ## Resources you might find helpful -
 
 
     * ## [Case Study](https://stoplight.io/case-studies/arkea/)
@@ -29,7 +29,7 @@ leftContent:
     Recording](https://stoplight.io/webinars/api-design-with-stoplight/)
 
 
-    * ## [Tonia Roberts Email](tonia@stoplight.io)
+    * ## [Tonia Roberts Email](mailto:tonia@stoplight.io)
 collage:
   cta:
     color: green

@@ -1,0 +1,71 @@
+path: /partner-deal-registration
+title: Partner Deal Registration
+titleImage: ''
+subtitle: Thank you for partnering with Stoplight.
+color: blue
+hubspot:
+  formId: dc28e0a6-fe9c-4d7e-b6f6-966365a27577
+  portalId: '4892910'
+leftContent:
+  description: >-
+    ## Thank you for partnering with Stoplight!
+
+
+
+
+    ## Tell us more about your deal and we can help with extended POC trial
+    accounts, pricing, and workshops.
+
+
+
+
+    ## Resources you might find helpful -
+
+
+    * ## [Case Study](https://stoplight.io/case-studies/arkea/)
+
+
+    * ## [Webinar
+    Recording](https://stoplight.io/webinars/api-design-with-stoplight/)
+
+
+    * ## [Tonia Roberts Email](mailto:tonia@stoplight.io)
+collage:
+  cta:
+    color: green
+    href: /case-studies
+    name: Read the Case Studies
+  images: []
+testimonials:
+  cta:
+    color: black
+    href: 'https://next.stoplight.io'
+  title: 'Here are what some enterprise architects are saying:'
+  testimonials:
+    - author: '- Software Architect'
+      quote: >-
+        We decided to go for Stoplight because we are convinced that the API
+        must be held by the business people (product owners). Before, they were
+        used to designing processes or UI screens. Now, the screens are made by
+        UX experts or by fintechs using our APIs. So, the product owners have to
+        design the API, it's an important change, not all of them are ready.
+        This is why a graphical tools is a good opportunity, perhaps the only
+        one, to involve them in the design of API.
+    - author: '- Enterprise Architect'
+      quote: >-
+        Stoplight addresses the needs of API Development holistically with a
+        strong emphasis on visual modelling and collaboration. It covers API
+        Prototyping, Mocking, Specification, Shared Schemas, Documentation,
+        Testing and Developer Portal generation - all customisable.
+  actionBar:
+    buttons: []
+    enabled: false
+actionBar:
+  buttons: []
+  enabled: false
+tags: []
+relatedTags: []
+meta:
+  favicon: /images/mark_light_bg.png
+  robots: 'noindex, nofollow'
+  twitter: {}

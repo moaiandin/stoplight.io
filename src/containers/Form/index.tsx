@@ -6,7 +6,6 @@ import { ActionBar, IActionBar } from 'src/components/ActionBar';
 import { Container } from 'src/components/Container';
 import { Hero } from 'src/components/Hero';
 import { HubSpotForm, IHubSpotForm } from 'src/components/HubSpotForm';
-import { Image } from 'src/components/Image';
 import { IRelatedPage, RelatedPages } from 'src/components/RelatedPages';
 import { Collage, ICollage } from 'src/sections/Collage';
 import { ITestimonials, Testimonials } from 'src/sections/Testimonials';
@@ -74,7 +73,7 @@ export const Form: React.FunctionComponent<IForm> = ({
               className="p-8 sticky"
               portalId={hubspot.portalId}
               formId={hubspot.formId}
-              style={{ width: hasLeftContent ? 350 : 450, top: 100 }}
+              style={{ width: hasLeftContent ? 450 : 500, top: 100 }}
             />
           </div>
         )}

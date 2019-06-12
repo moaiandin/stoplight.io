@@ -52,12 +52,11 @@ This feature enables Power Shell as a code example for Request maker.
 
 ![Sorting Example](/images/sorting-example.gif)
 
-* \[Hubs] Added a configuration option for disabling the Pubs in-memory docs cache. When this configuration option is enabled, the in-memory cache will be bypassed and each request should result in a reload from disk of that hub file. This configuration option is needed for users that are deployed in a High Availability (multiple servers with a load balancer) environment
 * \[Prism] Allow users to disable SSL certificate verification when proxying requests. Users can now add a CLI flag (--skip-verify, etc) that disables TLS verification when Prism proxies requests to an upstream URL
 
 ## Fixes 🔧
 
-* \[Modleing] Removed the ability to set a description on a ref
+* \[Modeling] Removed the ability to set a description on a ref
 * \[Request Maker] Updated Request Maker to enforce protocol scheme if set globally in the specification
 * \[Modeling] Updated designer to remove validate error messages when those errors are corrected
 * \[Modeling] Non-unique operations IDs will now display as an error, not a warning

@@ -1,0 +1,28 @@
+path: /video
+tag: video
+title: Stoplight Webinars
+subtitle: Watch & Learn
+color: black
+tabs:
+  - href: /video
+    title: Webinars
+  - href: /video/subscribe
+    title: Subscribe
+actionBar:
+  buttons:
+    - color: purple
+      href: /video/subscribe
+      outlined: true
+      title: Subscribe
+  enabled: true
+  text: Subscribe to Stoplight Webinars
+meta:
+  description: Watch & Learn
+  favicon: /images/mark_light_bg.png
+  robots: 'index, follow'
+  title: Webinars | Stoplight
+  twitter:
+    description: Watch & Learn
+    title: Webinars | Stoplight
+pagination:
+  enabled: true

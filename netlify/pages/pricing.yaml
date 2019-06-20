@@ -4,7 +4,7 @@ hero:
   skew: '-7deg'
   subtitle: >-
     All plans include the entire Stoplight platform: API Modeling, Testing,
-    Mocking, and Documentation
+    Mocking, and Basic Documentation
   title: 'Simple, Flexible Pricing'
 plans:
   - button:
@@ -26,7 +26,8 @@ plans:
       - Collaboration and discussions
       - Access and role management
       - Unlimited private projects
-    price: $24
+      - Discounted annual billing available
+    price: $29
     title: Team
     unit: / user / month
   - button:
@@ -45,6 +46,7 @@ plans:
       - Dedicated support
     price: Contact Us
     title: Enterprise
+  - {}
 docPlans:
   buttonText: Create Your Free Documentation Hub
   buttonUrl: 'https://next.stoplight.io/join'

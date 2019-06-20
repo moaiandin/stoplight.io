@@ -1,5 +1,5 @@
 ---
-path: /video
+path: /video/api-design-part-1
 tags:
   - video
 relatedTags:

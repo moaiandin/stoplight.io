@@ -15,8 +15,7 @@ testimonials:
   cta:
     color: black
     href: 'https://next.stoplight.io'
-  testimonials:
-    - {}
+  testimonials: []
   actionBar:
     buttons:
       - color: purple

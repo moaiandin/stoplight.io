@@ -2,7 +2,9 @@ path: /video/subscribe
 title: Subscribe to Stoplight Webinars
 subtitle: Watch & Learn
 color: purple
-hubspot: {}
+hubspot:
+  formId: 132b647a-f85f-4bc0-bb0a-a019e30ba90e
+  portalId: '4892910'
 leftContent: {}
 collage:
   cta:

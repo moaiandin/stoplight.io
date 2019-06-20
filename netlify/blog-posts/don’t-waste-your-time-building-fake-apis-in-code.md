@@ -21,8 +21,16 @@ actionBar:
     - color: purple
   enabled: false
 meta:
+  description: 'Compare OpenAPI mock servers to writing Java, PHP, and C#'
+  favicon: /images/mark_light_bg.png
   robots: 'index, follow'
-  twitter: {}
+  title: Don’t Waste Your Time Building Fake APIs in Code | Stoplight API Corner
+  image: /images/countdown-clock.jpg
+  twitter:
+    description: 'Compare OpenAPI mock servers to writing Java, PHP, and C#'
+    title: Don’t Waste Your Time Building Fake APIs in Code | Stoplight API Corner
+    image: /images/countdown-clock.jpg
+    username: '@stoplightio'
 ---
 There are many good reasons to create a fake API, but writing code to generate them is probably just wasting your time. With the industry moving toward the OpenAPI format to describe APIs, it makes more sense to generate your mock APIs from these descriptions instead.
 
@@ -33,7 +41,7 @@ But first, here are a few brief reasons mocking saves you time and keeps your wo
 1. **A Mock API is Flexible.**
    Whether you work on the front-end or the back-end or your API is internal or external, you can set a mock API to return the data you want. Responses can be static or flexible.  It should return all the same data types, arrays and object you would expect of a real API.  Your mock data can be dynamic, randomly generated, and can even allow for different results based on input.\
    \
-   They are also customizable to be locally run on your computer (for moments when you might need low latency), for your whole team to use publically, and/or to keep your mock servers updated for the next cycle of improvement to your project.
+   They are also customizable to be locally run on your computer (for moments when you might need low latency), for your whole team to use publicly, and/or to keep your mock servers updated for the next cycle of improvement to your project.
 2. **It gives you feedback sooner.**\
    The quicker you can get feedback on a project, the less your team builds out features that felt good in the abstract but turn out to be ineffective.  With a mock API, you can gather feedback from devs as they use it.  For example, if your front-end developers have built out the framework, but are waiting for a back-end team to complete the API for production, a mock API can let front-end devs utilize something that has the same parameters as your under-construction API .\
    \
@@ -107,7 +115,7 @@ $app->get('/tickets', function (Request $request, Response $response) {
 
 This example is less complex than the Java example, but still requires lots of code and, perhaps, more importantly, restricts your testing and experimentation to a set foundation of code.  What happens when the architecture idea for your production API changes or grows to include more features?  Your fake API may no longer be foundationally current enough to test for these new changes and features.
 
-## Build a Fake API in C
+## Build a Fake API in C#
 
 Perhaps you’re sensing the pattern here. There’s a lot of boilerplate code that you may not use in your production API. In C#, the setup is as follows: 
 
@@ -145,12 +153,12 @@ But you want to make endpoints available as soon as possible. They let you simul
 
 There will always be edge cases where writing your own code for a fake API will be an effective practice.  For one, it is a great way for junior developers to learn fundamental skills in a low-risk platform.  But when a light and fast CI/CD loop is required, or your team has decided on an [API-first approach](https://stoplight.io/api-design-guide/basics/) for development, generating a mock API server will likely be your preference.
 
-As it is always helpful to see a ground-up example of how these ideas all fit together, let’s build a quick mock API using [Prism API server](https://github.com/stoplightio/prism).  
-
-Prism is an open source command line utility. To use it to make your mock API, first you will create an OpenAPI document.  Using this industry standard, you can declare parameters on endpoints, methods, and what data to support.
+Once you have an OpenAPI document, you can generate a quick mock API using [Prism API server](https://github.com/stoplightio/prism). Prism is an open source command line utility. Using the OpenAPI industry standard, you can declare parameters on endpoints, methods, and what data to support.
 
 ![](/images/dynamic-mocking.png)
 
 With that information, you can connect to Spotlight’s [hosted servers](https://stoplight.io/mocking/) and your mock API is ready for you to use over and over.  You can now easily change the endpoints, methods, and data without having to write fake code and Prism will give you all the mock data you need to test and validate your API architecture.
 
-You can even share the mock server with your front end team, so they can use it to progress on their side of the build. Your team will move faster and you can focus on writing the code that will make it to production.
+You can [set up a mock API server](https://docs.stoplight.io/mocking/setup-mock-server) to run locally, or have it automatically hosted. Hosting makes it easy to share the mock server with your front-end team, so they can use it to progress on their side of the build.
+
+Your team will move faster and you can focus on writing the code that will make it to production.

@@ -95,7 +95,7 @@ header:
           subtitle: Create mock API servers
           title: API Mocking Guide
           titleColor: grey-darkest
-        - href: /webinars/api-design-with-stoplight/
+        - href: /video
           icon:
             - fas
             - video

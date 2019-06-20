@@ -2,7 +2,7 @@ path: /video
 tag: video
 title: Stoplight Webinars
 subtitle: Watch & Learn
-color: black
+color: purple
 tabs:
   - href: /video
     title: Webinars

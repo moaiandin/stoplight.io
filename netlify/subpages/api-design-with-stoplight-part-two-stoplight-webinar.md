@@ -7,7 +7,7 @@ relatedTags:
 publishedDate: 2019-06-20T18:13:46.002Z
 title: API Design with Stoplight Part Two | Stoplight Webinar
 subtitle: 'Mocking & Testing '
-image: /images/api-design-webinar-part-2.png
+image: /images/api-design-part-two-webinar.png
 color: blue
 tabs:
   - {}

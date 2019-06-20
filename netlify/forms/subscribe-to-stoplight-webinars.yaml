@@ -1,0 +1,37 @@
+path: /video/subscribe
+title: Subscribe to Stoplight Webinars
+subtitle: Watch & Learn
+color: purple
+hubspot: {}
+leftContent: {}
+collage:
+  cta:
+    color: black
+    href: 'https://next.stoplight.io'
+  images: []
+testimonials:
+  cta:
+    color: black
+    href: 'https://next.stoplight.io'
+  testimonials:
+    - {}
+  actionBar:
+    buttons:
+      - color: purple
+    enabled: false
+actionBar:
+  buttons: []
+  enabled: false
+tags: []
+relatedTags: []
+meta:
+  description: Watch & Learn
+  favicon: /images/mark_light_bg.png
+  image: /images/aaa_blog_example.png
+  robots: 'index, follow'
+  title: Subscribe | Stoplight Webinars
+  twitter:
+    description: Watch & Learn
+    image: /images/aaa_blog_example.png
+    title: Subscribe | Stoplight Webinars
+    username: '@stoplightio'

@@ -5,7 +5,7 @@ tags:
 relatedTags:
   - video
 publishedDate: 2019-05-02T18:22:35.798Z
-title: 'Webinar: Design your API using Stoplight'
+title: API Design with Stoplight | Stoplight Webinar
 subtitle: >-
   Stoplight promotes a design-first approach. Developing good design-first
   practices will minimize future cost, speed up your time to market, and lead to

@@ -30,4 +30,4 @@ meta:
 ---
 <style>.markdown-body { max-width: 100% !important; } </style>
 
-<iframe width="100%" height="678" src="https://www.youtube.com/embed/CBZUpDXpC7U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="100%" height="678" src="https://www.youtube.com/embed/Y8gQydMgxY4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

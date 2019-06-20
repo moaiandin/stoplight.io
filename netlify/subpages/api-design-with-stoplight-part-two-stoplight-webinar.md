@@ -6,7 +6,7 @@ relatedTags:
   - video
 publishedDate: 2019-06-20T18:13:46.002Z
 title: API Design with Stoplight Part Two | Stoplight Webinar
-subtitle: 'Mocking & Testing '
+subtitle: 'API Management, Documentation, Mocking, & Testing '
 image: /images/api-design-part-two-webinar.png
 color: blue
 tabs:
@@ -17,13 +17,13 @@ actionBar:
     - color: purple
   enabled: false
 meta:
-  description: 'Mocking & Testing '
+  description: 'API Management, Documentation, Mocking, & Testing '
   favicon: /images/mark_light_bg.png
   robots: 'index, follow'
   title: API Design with Stoplight Part Two | Stoplight Webinar
   image: /images/aaa_blog_example.png
   twitter:
-    description: Mocking & Testing
+    description: 'API Management, Documentation, Mocking, & Testing '
     title: API Design with Stoplight Part Two | Stoplight Webinar
     image: /images/aaa_blog_example.png
     username: '@stoplightio'

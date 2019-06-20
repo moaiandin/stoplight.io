@@ -10,6 +10,7 @@ subtitle: >-
   Stoplight promotes a design-first approach. Developing good design-first
   practices will minimize future cost, speed up your time to market, and lead to
   more consistent, higher quality APIs.
+image: /images/api-design-webinar.png
 color: green
 tabs: []
 sidebar:

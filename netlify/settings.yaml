@@ -95,7 +95,7 @@ header:
           subtitle: Create mock API servers
           title: API Mocking Guide
           titleColor: grey-darkest
-        - href: /webinars/api-design-with-stoplight/
+        - href: /video
           icon:
             - fas
             - video
@@ -195,13 +195,13 @@ footer:
         - fab
         - github
 meta:
-  description: The Complete API Toolkit for Teams and Enterprise | Stoplight
+  description: API Design Management for Teams and Enterprise | Stoplight
   favicon: /favicons/favicon.ico
   image: /images/home-hero.png
   robots: 'index, follow'
   title: Stoplight
   twitter:
-    description: The Complete API Toolkit for Teams and Enterprise | Stoplight
+    description: API Design Management for Teams and Enterprise | Stoplight
     image: /images/home-hero.png
     title: Stoplight
     username: '@stoplightio'

@@ -46,7 +46,6 @@ plans:
       - Dedicated support
     price: Contact Us
     title: Enterprise
-  - {}
 docPlans:
   buttonText: Create Your Free Documentation Hub
   buttonUrl: 'https://next.stoplight.io/join'

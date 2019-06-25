@@ -1,0 +1,79 @@
+path: /prism
+title: Open Source Mock Server
+color: purple-darker
+relatedTags:
+  - blog-mocking
+hero:
+  subtitle: Build APIs and accelerate API development with instant mock servers
+  title: Write the spec. Prism will do the rest.
+featureSection:
+  actionBar:
+    buttons:
+      - href: 'https://github.com/stoplightio/prism'
+        title: Try Prism now
+    enabled: true
+    text: 'Want to mock your API?'
+
+  title: Work with your API before you even start to code it
+  description: >-
+    Prism is an open-source mock server which can mimic your API's behavior just as if you were
+    using a real one. Works with OpenAPI v2/v3
+  features:
+    - description: >-
+        The waterfall model does not work for APIs. Learning at the very end what your
+        potential consumers think about your software can be source of huge problems.
+        With Prism you can move the feedback stage at the design phase of your product by
+        being able to provide a real server to use and play with.
+      image: /images/mocking_instant.png
+      shortName: Quick iterations
+      title: Quickly iterate on your API
+      titleURL: /mocking/server
+
+    - description: >-
+        Mocking the returned data is important — but static examples can bias the way you write
+        the code and test the API. Prism can generate dynamic examples based on the provided schema,
+        so that you get valid, but still different data at every call. Figure out the edge cases
+        while designing the API.
+      image: /images/mocking_virtualization.png
+      shortName: Intelligent example generation
+      title: Static and Dynamic Examples
+
+    - description: >-
+        Prism validates the data you feed it with and all the data it returns. If you have a
+        wrong example in the specification, Prism will let you know; if you request is not compliant with the rules
+        of your API specification, Prism will return an error message. It will never yell to you, we promise.
+      image: /images/mocking_request_validation.png
+      shortName: Validation
+      title: Input and Output validation
+
+    - description: >-
+        In case you're wondering why Prism has responded a request in such way, you can see
+        the logs that will show you the entire negotiation process, so you can modify the spec
+        or your code quickly.
+      image: /images/prism_logging.png
+      shortName: Logging
+      title: Extensive logging
+
+    - description: >-
+        In case your specification does not provide a response for a request, Prism will intelligently create
+        one and notice you.
+      image: /images/mocking_customization.png
+      shortName: Response defaults
+      title: Excellent defaults
+meta:
+  description: >-
+    Mocking your API with Stoplight is your API design’s perfect companion.
+    Powered by Prism, the instant mock server routes incoming requests to
+    example responses or dynamically generates examples on the fly based on your
+    OpenAPI Specification (formerly known as Swagger).
+  favicon: /images/mark_light_bg.png
+  title: REST API mocking service and server by Prism | Stoplight
+  twitter:
+    description: >-
+      Mocking your API with Stoplight is your API design’s perfect companion.
+      Powered by Prism, the instant mock server routes incoming requests to
+      example responses or dynamically generates examples on the fly based on
+      your OpenAPI Specification (formerly known as Swagger).
+    image: /images/mocking_instant.png
+    title: REST API mocking service and server by Prism | Stoplight
+    username: '@stoplightio'

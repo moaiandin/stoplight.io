@@ -5,14 +5,14 @@ relatedTags:
   - blog-mocking
 hero:
   subtitle: Build APIs and accelerate API development with instant mock servers
-  title: Write the spec. Prism will do the rest.
+  title: Free, Realistic, HTTP Mocking for API Descriptions
 featureSection:
   actionBar:
     buttons:
       - href: 'https://github.com/stoplightio/prism'
-        title: Try Prism now
+        title: Get Started
     enabled: true
-    text: 'Want to mock your API?'
+    text: Want to create a mock API?
 
   title: Work with your API before you even start to code it
   description: >-
@@ -47,7 +47,7 @@ featureSection:
       title: Input and Output validation
 
     - description: >-
-        In case you're wondering why Prism has responded a request in such way, you can see
+        In case you're wondering why Prism has responded to a request in such way, you can see
         the logs that will show you the entire negotiation process, so you can modify the spec
         or your code quickly.
       image: /images/prism_logging.png

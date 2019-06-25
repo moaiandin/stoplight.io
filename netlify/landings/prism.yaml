@@ -12,7 +12,7 @@ featureSection:
       - href: 'https://github.com/stoplightio/prism'
         title: Get Started
     enabled: true
-    text: Want to create a mock API?
+    text: Do you want to mock your API in a second or two?
 
   title: Work with your API before you even start to code it
   description: >-
@@ -27,7 +27,6 @@ featureSection:
       image: /images/mocking_instant.png
       shortName: Quick iterations
       title: Quickly iterate on your API
-      titleURL: /mocking/server
 
     - description: >-
         Mocking the returned data is important — but static examples can bias the way you write

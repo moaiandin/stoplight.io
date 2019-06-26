@@ -1,0 +1,52 @@
+path: /enterprise-contact/
+title: Stoplight Enterprise
+subtitle: API Design Management at Scale
+color: black
+hubspot:
+  formId: beb48bbb-e884-4fdd-a47a-1a8d98d8f795
+  portalId: '4892910'
+leftContent:
+  description: ''
+collage:
+  cta:
+    color: purple
+    href: ''
+    name: ''
+  images:
+    - alt: EA
+      src: /images/ea.png
+    - alt: Arkea
+      src: /images/logo_arkea_transparent.png
+    - alt: Chargify
+      src: /images/chargify-new-logo.png
+    - alt: Deutsche Bank
+      src: /images/deutsche_bank.png
+    - alt: Sendgrid
+      src: /images/logo-sendgrid.png
+    - alt: Shopgate
+      src: /images/shopgate.png
+    - alt: Zendesk
+      src: /images/logo_zendesk.png
+  title: >-
+    Thousands of Companies Use Stoplight To Streamline Their API & Microservices
+    Workflow
+testimonials:
+  cta:
+    color: black
+    href: 'https://next.stoplight.io'
+  testimonials: []
+  actionBar:
+    buttons:
+      - color: purple
+    enabled: false
+actionBar:
+  buttons:
+    - color: purple
+  enabled: false
+tags:
+  - {}
+relatedTags:
+  - {}
+meta:
+  robots: 'index, follow'
+  twitter: {}

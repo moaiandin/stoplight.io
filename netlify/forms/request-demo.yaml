@@ -1,46 +1,41 @@
 path: /demo
-color: black
+title: Request a Demo
 subtitle: >-
   Stoplight on average shows a 36% gain in engineering time and increases
   quality 30%.
-title: Request a demo
+color: black
 hubspot:
   formId: 7ae2bb42-67a6-4ee3-9ac5-ff21d87812ea
   portalId: '4892910'
-meta:
-  favicon: /images/mark_light_bg.png
-  title: Get a demo of our API Toolkit | Stoplight
-  description: Want to see how we could help your company and organization with our API Toolkit? Click here to request a demo and find out what we can do for you.
-  twitter:
-    title: Get a demo of our API Toolkit | Stoplight
 collage:
-  title: 'Thousands of companies use Stoplight to streamline
-their API & Microservices workflow'
   cta:
-    name: Read the Case Studies
-    href: /case-studies
     color: green
+    href: /case-studies
+    name: Read the Case Studies
   images:
-    - src: /images/ea.png
-      alt: EA
-    - src: /images/logo_arkea_transparent.png
-      alt: Arkea
-    - src: /images/chargify-new-logo.png
-      alt: Chargify
-    - src: /images/deutsche_bank.png
-      alt: Deutsche Bank
-    - src: /images/customers/quicken.png
-      alt: quicken
-    - src: /images/logo-sendgrid.png
-      alt: Sendgrid
-    - src: /images/shopgate.png
-      alt: Shopgate
-    - src: /images/spotify.png
-      alt: Spotify
-    - src: /images/tivo.png
-      alt: TiVo
-    - src: /images/logo_zendesk.png
-      alt: Zendesk
+    - alt: EA
+      src: /images/ea.png
+    - alt: Arkea
+      src: /images/logo_arkea_transparent.png
+    - alt: Chargify
+      src: /images/chargify-new-logo.png
+    - alt: Deutsche Bank
+      src: /images/deutsche_bank.png
+    - alt: quicken
+      src: /images/customers/quicken.png
+    - alt: Sendgrid
+      src: /images/logo-sendgrid.png
+    - alt: Shopgate
+      src: /images/shopgate.png
+    - alt: Spotify
+      src: /images/spotify.png
+    - alt: TiVo
+      src: /images/tivo.png
+    - alt: Zendesk
+      src: /images/logo_zendesk.png
+  title: >-
+    Thousands of companies use Stoplight to streamline their API & Microservices
+    workflow
 testimonials:
   testimonials:
     - author: Kin Lane
@@ -59,9 +54,9 @@ testimonials:
     - author: John Vajda
       image: /images/testimonials/john_vajda.jpeg
       quote: >-
-        Stoplight has been a serious game changer for JumpCloud’s API development!
-        We love all the rich design, documentation and testing features, which has
-        enabled us to design awesome APIs for our customers.
+        Stoplight has been a serious game changer for JumpCloud’s API
+        development! We love all the rich design, documentation and testing
+        features, which has enabled us to design awesome APIs for our customers.
       role: 'Product Manager, JumpCloud'
     - author: Gil Barbara
       image: /images/testimonials/gil.jpeg
@@ -69,3 +64,11 @@ testimonials:
         Stoplight provides a centralized, testable and reliable source for our
         APIs.
       role: 'Frontend Engineer, AMARO'
+meta:
+  description: >-
+    Want to see how we could help your company and organization with our API
+    Toolkit? Click here to request a demo and find out what we can do for you.
+  favicon: /images/mark_light_bg.png
+  title: Get a demo of our API Toolkit | Stoplight
+  twitter:
+    title: Get a demo of our API Toolkit | Stoplight

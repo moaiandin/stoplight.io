@@ -1,6 +1,6 @@
 ---
 path: >-
-  /blog/writing-documentation-when-you-arent-a-technical-writer-part-two-59997587cc2a
+  /blog/writing-documentation-when-you-arent-a-technical-writer-part-two-59997587cc2a/
 tags:
   - blog-documentation
   - blog
@@ -9,7 +9,9 @@ relatedTags:
 publishedDate: 2018-08-23T18:15:22.669Z
 author: Taylor Barnett
 title: Writing Documentation When You Aren't A Technical Writer — Part Two
-subtitle: 'Avoiding oversimplification, writing good error messages, and having better word choice'
+subtitle: >-
+  Avoiding oversimplification, writing good error messages, and having better
+  word choice
 image: /images/writing-docs-part-two.jpeg
 color: blue
 disqus:
@@ -21,14 +23,22 @@ actionBar:
 meta:
   canonical: >-
     /blog/writing-documentation-when-you-arent-a-technical-writer-part-two-59997587cc2a
+  description: >-
+    Avoiding oversimplification, writing good error messages, and having better
+    word choice
   favicon: /images/mark_light_bg.png
   robots: 'index, follow'
-  title: Writing Documentation When You Aren't A Technical Writer — Part Two | Stoplight API Corner
-  description: 'Avoiding oversimplification, writing good error messages, and having better word choice'
+  title: >-
+    Writing Documentation When You Aren't A Technical Writer — Part Two |
+    Stoplight API Corner
   image: /images/writing-docs-part-two.jpeg
   twitter:
-    title: Writing Documentation When You Aren't A Technical Writer — Part Two | Stoplight API Corner
-    description: 'Avoiding oversimplification, writing good error messages, and having better word choice'
+    description: >-
+      Avoiding oversimplification, writing good error messages, and having
+      better word choice
+    title: >-
+      Writing Documentation When You Aren't A Technical Writer — Part Two |
+      Stoplight API Corner
     image: /images/writing-docs-part-two.jpeg
     username: '@stoplightio'
 ---

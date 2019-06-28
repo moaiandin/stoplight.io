@@ -9,7 +9,6 @@ https://stoplightio.netlify.com/* https://stoplight.io/:splat 301!
 /twitter https://twitter.com/stoplightio
 
 # Internal redirects
-/prism /mocking/
 /platform/prism /mocking/
 /platform/design /design/
 /platform/docs /documentation/

@@ -1,10 +1,10 @@
 path: /prism
-title: Open Source Mock Server
+title: Prism - The Free Open Source HTTP Mock Server
 color: purple-darker
 relatedTags:
   - blog-mocking
 hero:
-  subtitle: Build APIs and accelerate API development with instant mock servers
+  subtitle: Accelerate API development with realistic mock servers powered by API descriptions
   title: Free, Realistic, HTTP Mocking for API Descriptions
 featureSection:
   actionBar:

@@ -1,27 +1,33 @@
 path: /spectral
-title: Open Source API Description Linter
+title: Spectral - Open Source API Description Linter | Stoplight
 color: purple-darker
 relatedTags:
   - blog-mocking
 hero:
   subtitle: Improve the quality of your API by improving the quality of your API descriptions
-  title: Open Source API Description Linter
+  title: Spectral, an Open Source API Description Linter
+  cta:
+    color: muted-light
+    href: 'https://github.com/stoplightio/spectral/'
+    name: Get Started with Spectral Now   
 featureSection:
   actionBar:
     buttons:
       - href: 'https://github.com/stoplightio/spectral'
         title: Get Started
     enabled: true
-    text: Do you want to get feedback om your API descriptions right now?
+    text: Do you want to get feedback on your API descriptions right now?
 
   title: Your API descriptions deserve better than "Technically Correct"
   description: >-
-    Spectral is an open-source OpenAPI-linter, which can tell you not just if
-    your API descriptions are valid, but if they are any good. Use our baked in
-    OpenAPI v2/v3 rulesets, or write your own!
+    Spectral is an open source OpenAPI-linter, which can tell you not just if
+    your API descriptions are valid, but if they are any good. Use our baked-in
+    OpenAPI Specification v2/v3 rulesets (formerly known as Swagger specification), 
+    or write your own!
+  
   features:
     - description: >-
-        API description formats like OpenAPI are permissive and vague in many
+        API description formats like the OpenAPI Specification are permissive and vague in many
         ways. Beginner API designers can struggle to know what to do, and
         experienced API designers can easily forget. Valid description documents
         can be created that are not very useful. They might look broken in
@@ -36,14 +42,14 @@ featureSection:
     - description: >-
         Ask 100 API designers what makes a good API design and you'll get 101
         answers, but all most developers really want is consistency. Using a
-        style guide, the API description bike-shedding can for all your teams.
+        style guide, can reduce decision making and improve consistency for all your teams.
         You can use the default style guides, or write one to match your
-        organizations style guide. Provide custom rulesets as a URL so your
+        organization's style guide. Provide custom rulesets as a URL so your
         whole team can put it in their config file or CLI script, and share
         ruleset updates automatically.
       image: /images/mocking_virtualization.png
-      shortName: Stop Bikeshedding
-      title: Anti-Bikeshedding
+      shortName: Reduce Decision Making
+      title: Reduce Decision Making and Promote Consistent API Descriptions
 
     - description: >-
        Spectral can be downloaded as a CLI binary for macOS, Linux or Windows, or
@@ -51,30 +57,30 @@ featureSection:
        into your existing tooling, run it in Continuous Integration, use it in
        any workflow you like.
       image: /images/mocking_request_validation.png
-      shortName: CLI & JS
-      title: CLI & JS
+      shortName: CLI & JavaScript
+      title: CLI & JavaScript
 
-    - description: >-
-        Want to create and edit API descriptions with a visual editor instead of
-        scratching YAML into a cave wall with a rock? Use Stoplight Studio, and
-        let Spectral give you feedback in real-time. 
-      image: /images/mocking_request_validation.png
-      shortName: Stoplight Studio Integration
-      title: Stoplight Studio Integration
+    # - description: >-
+    #     Want to create and edit API descriptions with a visual editor instead of
+    #     scratching YAML into a cave wall with a rock? Use Stoplight Studio, and
+    #     let Spectral give you feedback in real-time. 
+    #   image: /images/mocking_request_validation.png
+    #   shortName: Stoplight Studio Integration
+    #   title: Stoplight Studio Integration
 
   
 meta:
   description: >-
     Spectral is an open-source OpenAPI-linter, which can tell you not just if
-    your API descriptions are valid, but if they are any good. Use our baked in rulesets for
-    OpenAPI v2/v3 (formerly known as Swagger), or write your own!
+    your API descriptions are valid, but if they are any good. Use our baked-in rulesets for
+    OpenAPI Specification v2/v3 (formerly known as Swagger specification), or write your own!
   favicon: /images/mark_light_bg.png
   title: Spectral - Open Source API Description Linter | Stoplight
   twitter:
     description: >-
       Spectral is an open-source OpenAPI-linter, which can tell you not just if
-      your API descriptions are valid, but if they are any good. Use our baked in rulesets for
-      OpenAPI v2/v3 (formerly known as Swagger), or write your own!
+      your API descriptions are valid, but if they are any good. Use our baked-in rulesets for
+      OpenAPI Specification v2/v3 (formerly known as Swagger specification), or write your own!
     image: /images/mocking_instant.png
     title: Spectral - Open Source API Description Linter | Stoplight
     username: '@stoplightio'

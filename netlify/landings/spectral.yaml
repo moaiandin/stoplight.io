@@ -9,7 +9,7 @@ hero:
   cta:
     color: muted-light
     href: 'https://github.com/stoplightio/spectral/'
-    name: Get Started with Spectral Now   
+    name: View it on GitHub   
 featureSection:
   actionBar:
     buttons:

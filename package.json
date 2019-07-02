@@ -9,7 +9,7 @@
     "url": "https://github.com/stoplightio/stoplight.io.git"
   },
   "engines": {
-    "node": ">= 8"
+    "node": ">=8 <11"
   },
   "scripts": {
     "start": "react-static start",

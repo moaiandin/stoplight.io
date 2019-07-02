@@ -28,6 +28,9 @@ team:
   - image: /images/faust_headshot.png
     name: Scott Faust
     role: Growth & Ops
+  - image: /images/ash-edmonds-636863-unsplash.jpg
+    name: 'Justin Forte '
+    role: Product Growth Manager
   - image: /images/hilton_headshot.png
     name: William Hilton
     role: Software Engineer
@@ -66,6 +69,9 @@ team:
     role: Director of Engineering
   - image: /images/jakub-rozek-headshot.jpg
     name: Jakub Rozek
+    role: Software Engineer
+  - image: /images/sarah-spear.jpeg
+    name: Sarah Spear
     role: Software Engineer
   - image: /images/phil-sturgeon-headshot2.png
     name: Phil Sturgeon

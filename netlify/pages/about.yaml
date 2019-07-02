@@ -10,6 +10,9 @@ hero:
     status quo is our culture
   title: About Us
 team:
+  - image: /images/andoni-alanis-cue.jpeg
+    name: Andoni Alanis-Cue
+    role: Account Executive
   - image: /images/bachi-collin-1-.jpg
     name: Collin Bachi
     role: Devops Engineer

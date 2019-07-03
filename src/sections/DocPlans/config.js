@@ -37,13 +37,6 @@ export default {
           label: 'Plans',
           name: 'plans',
           widget: 'list',
-          field: [
-            {
-              label: 'Title',
-              name: 'title',
-              widget: 'string',
-            },
-          ],
         },
       ],
     },
@@ -61,6 +54,12 @@ export default {
           label: 'Price',
           name: 'price',
           widget: 'string',
+        },
+        {
+          label: 'Link',
+          name: 'link',
+          widget: 'string',
+          required: false,
         },
         {
           label: '# of Domains',

@@ -134,7 +134,7 @@ docPlans:
     - domains: 'Unlimited Domains'
       price: Contact Us
       title: Enterprise
-      link: '/contact-us'
+      link: '/enterprise-contact/'
   title: Documentation Add-On
 meta:
   description: >-

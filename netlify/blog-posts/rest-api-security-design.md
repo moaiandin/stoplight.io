@@ -5,7 +5,7 @@ tags:
   - blog-design
 relatedTags:
   - blog-design
-publishedDate: 2019-07-04T01:22:37.093Z
+publishedDate: 2019-07-03T01:22:37.093Z
 author: Chris Wood
 title: REST API Security Design
 subtitle: Implementing design-time security definitions using OpenAPI

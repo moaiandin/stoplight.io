@@ -18,39 +18,39 @@ featureSection:
     enabled: true
     text: Do you want to mock your API in minutes? 
 
-  title: Work with your API before you even start to code it
+  title: Work with your API before you write any code
   description: >-
-    Prism is an open source mock server that can mimic your API's behavior just as if you were
-    using a real one. Built-in support for OpenAPI v2/v3. 
+    Prism is an open source mock server that can mimic your API's behavior as if you already
+    built it. Servers are generated from your OpenAPI v2/v3 documents.
   features:
     - description: >-
         The waterfall model does not work well for building APIs. Learning at the very end what your
         potential consumers think about your software can be source of huge problems.
         With Prism you can move the feedback stage to the design phase of your API by
-        being able to provide a real server to use and play with.
+        providing a real server to use and play with.
       image: /images/mocking_instant.png
       shortName: Quick Iterations
       title: Quickly iterate on your API
 
     - description: >-
-        Mocking the returned data is important - but static examples can bias the way you write
-        the code and test the API. Prism can generate dynamic random examples based on the provided API description,
-        so that you get valid examples to test the API with. 
+        Static examples in mock APIs can bias the way you write the code and test the API.
+        Prism can generate dynamic random examples based on your API description,
+        so the examples are always valid.
       image: /images/mocking_virtualization.png
-      shortName: Static and Dynamic Examples
-      title: Produces static and dynamic Examples
+      shortName: Dynamic Examples
+      title: Generate dynamic examples
 
     - description: >-
-        Prism validates the data you feed it with and all the data it returns. If you have a
-        wrong example in the specification, Prism will let you know; if you request is not compliant with the rules
+        Prism validates both request and response data. If you have an
+        invalid example in the specification, Prism will let you know; if your request is not compliant with the rules
         of your API specification, Prism will return an error message. It will never yell to you, we promise.
       image: /images/mocking_request_validation.png
       shortName: Validation
-      title: Input and output validation
+      title: Validate input and output
 
     - description: >-
-        In case you're wondering why Prism has responded to a request in such way, you can see
-        the logs that will show you the entire negotiation process, so you can modify the spec
+        In case you're wondering why Prism has responded to a request in such way, 
+        the logs show you the entire negotiation process, so you can modify the spec
         or your code quickly.
       image: /images/prism_logging.png
       shortName: Logging

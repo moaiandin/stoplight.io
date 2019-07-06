@@ -10,6 +10,8 @@ import { Collage, ICollage } from 'src/sections/Collage';
 import { FeatureSection, IFeatureSection } from 'src/sections/FeatureSection';
 import { IImageCallout, ImageCallout } from 'src/sections/ImageCallout';
 import { slugify } from 'src/utils/text';
+import { MonacoComponent } from 'src/components/Monaco';
+import NoSSR from 'react-no-ssr';
 
 export interface ILanding {
   color: string;
@@ -44,6 +46,8 @@ export const Landing: React.FunctionComponent<ILanding> = ({
       <Hero bgColor={color} buttons={buttons} {...hero} />
 
       <Collage className="md:px-0 py-6 md:py-6" noPadding {...collage} />
+
+      <NoSSR><MonacoComponent /></NoSSR>
 
       <ImageCallout {...imageCallout} />
 

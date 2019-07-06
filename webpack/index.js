@@ -4,6 +4,10 @@ import cssLoader from './cssLoader';
 import tsLoader from './tsLoader';
 import sassLoader from './sassLoader';
 
+import CopyPlugin from 'copy-webpack-plugin';
+console.log(CopyPlugin)
+import EnvironmentPlugin from 'webpack/lib/EnvironmentPlugin';
+
 export default (config, { stage, defaultLoaders }) => {
   config.module.rules = [
     {
@@ -17,11 +21,17 @@ export default (config, { stage, defaultLoaders }) => {
     src: nodePath.resolve(__dirname, '..', 'src'),
   };
 
-  if (stage !== 'node') {
-    config.plugins[config.plugins.length - 1].mangle = {
-      safari10: true,
-    };
-  }
+  console.log(nodePath.join(__dirname, 'node_modules', '@stoplight', 'monaco', 'monaco-editor', 'monaco-workers'));
+  config.plugins.push(new CopyPlugin([
+    {
+      from: nodePath.join(__dirname, '..', 'node_modules', '@stoplight', 'monaco', 'monaco-editor', 'monaco-workers'),
+      to: 'workers/monaco',
+    },
+  ]));
+
+  config.plugins.push(new EnvironmentPlugin({
+    MONACO_WORKERS_ROOT: 'workers/monaco',
+  }));
 
   return config;
 };

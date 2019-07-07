@@ -21,6 +21,7 @@ export interface ILanding {
   featureSection: IFeatureSection;
   hubspot: IHubSpotForm & { title?: string; description?: string };
   relatedPages?: IRelatedPage[];
+  hasSandbox?: boolean;
 }
 
 export const Landing: React.FunctionComponent<ILanding> = ({
@@ -31,6 +32,7 @@ export const Landing: React.FunctionComponent<ILanding> = ({
   featureSection,
   hubspot,
   relatedPages,
+  hasSandbox
 }) => {
   let buttons: IHeroButton[] = [];
   if (featureSection && featureSection.features && featureSection.features.length) {
@@ -47,7 +49,7 @@ export const Landing: React.FunctionComponent<ILanding> = ({
 
       <Collage className="md:px-0 py-6 md:py-6" noPadding {...collage} />
 
-      <NoSSR><MonacoComponent /></NoSSR>
+      {hasSandbox && <NoSSR><MonacoComponent /></NoSSR>}
 
       <ImageCallout {...imageCallout} />
 

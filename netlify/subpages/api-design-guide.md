@@ -7,7 +7,7 @@ relatedTags:
   - api-design
 publishedDate: 2019-02-06T03:07:38.734Z
 author: ''
-title: API Design Guide
+title: Basic API Design Guide
 subtitle: Learn all there is about API Design through our comprehensive guide
 color: blue
 tabs:
@@ -20,10 +20,12 @@ tabs:
 actionBar:
   enabled: false
 meta:
+  description: >-
+    Learn all there is to know about our API designs through our comprehensive
+    guides, including the basics, API tooling, and OpenAPI Specification.
   favicon: /images/mark_light_bg.png
   robots: 'index, follow'
-  title: API Design Guide | Basics
-  description: Learn all there is to know about our API designs through our comprehensive guides, including the basics, API tooling, and OpenAPI Specification.
+  title: API Design Guide | Basic API Design Best Practices
   twitter:
     title: API Design Guide | Basics
     image: /images/mark_light_bg.png

@@ -22,12 +22,14 @@ actionBar:
   buttons: []
   enabled: false
 meta:
+  description: >-
+    Want to learn the basics of creating comprehensive API documentation? Learn
+    the basics right here to find out everything you need to know.
   favicon: /images/mark_light_bg.png
   robots: 'index, follow'
-  title: API Documentation Guide | Basics
-  description: Want to learn the basics of creating comprehensive API documentation? Learn the basics right here to find out everything you need to know.
+  title: API Documentation Guide | Simple API Documentation & Tutorials
   twitter:
-    title: API Documentation Guide | Basics
+    title: API Documentation Guide | Simple API Documentation & Tutorials
     username: '@stoplightio'
 ---
 ## Create Comprehensive API Documentation

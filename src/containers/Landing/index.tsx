@@ -1,17 +1,18 @@
 import * as React from 'react';
 import { withRouteData } from 'react-static';
 
+import NoSSR from 'react-no-ssr';
 import { Hero, IHero } from 'src/components/Hero';
 import { IHeroButton } from 'src/components/Hero/HeroButton';
 import { HubSpotForm, IHubSpotForm } from 'src/components/HubSpotForm';
+import { MonacoComponent } from 'src/components/Monaco';
 import { IRelatedPage, RelatedPages } from 'src/components/RelatedPages';
 import { Section } from 'src/components/Section';
+import { SpectralComponent } from 'src/components/Spectral';
 import { Collage, ICollage } from 'src/sections/Collage';
 import { FeatureSection, IFeatureSection } from 'src/sections/FeatureSection';
 import { IImageCallout, ImageCallout } from 'src/sections/ImageCallout';
 import { slugify } from 'src/utils/text';
-import { MonacoComponent } from 'src/components/Monaco';
-import NoSSR from 'react-no-ssr';
 
 export interface ILanding {
   color: string;
@@ -32,7 +33,7 @@ export const Landing: React.FunctionComponent<ILanding> = ({
   featureSection,
   hubspot,
   relatedPages,
-  hasSandbox
+  hasSandbox,
 }) => {
   let buttons: IHeroButton[] = [];
   if (featureSection && featureSection.features && featureSection.features.length) {
@@ -49,7 +50,18 @@ export const Landing: React.FunctionComponent<ILanding> = ({
 
       <Collage className="md:px-0 py-6 md:py-6" noPadding {...collage} />
 
-      {hasSandbox && <NoSSR><MonacoComponent /></NoSSR>}
+      {hasSandbox && (
+        <NoSSR>
+          <div className="container flex flex-wrap">
+            <div className="w-1/2 sm:w-full pr-12 mt-12">
+              <MonacoComponent />
+            </div>
+            <div className="w-1/2 sm:w-full pl-12 mt-12">
+              <SpectralComponent />
+            </div>
+          </div>
+        </NoSSR>
+      )}
 
       <ImageCallout {...imageCallout} />
 

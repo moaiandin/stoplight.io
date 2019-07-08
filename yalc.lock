@@ -1,0 +1,10 @@
+{
+  "version": "v1",
+  "packages": {
+    "@stoplight/spectral": {
+      "signature": "beaf7d062b71ee6bd02465a26d5236bb",
+      "file": true,
+      "replaced": "^3.1.0"
+    }
+  }
+}

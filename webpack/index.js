@@ -5,7 +5,6 @@ import tsLoader from './tsLoader';
 import sassLoader from './sassLoader';
 
 import CopyPlugin from 'copy-webpack-plugin';
-console.log(CopyPlugin)
 import EnvironmentPlugin from 'webpack/lib/EnvironmentPlugin';
 
 export default (config, { stage, defaultLoaders }) => {
@@ -19,19 +18,24 @@ export default (config, { stage, defaultLoaders }) => {
 
   config.resolve.alias = {
     src: nodePath.resolve(__dirname, '..', 'src'),
+    'decimal.js': nodePath.resolve(process.cwd(), 'node_modules/decimal.js/decimal.js'),
   };
 
   console.log(nodePath.join(__dirname, 'node_modules', '@stoplight', 'monaco', 'monaco-editor', 'monaco-workers'));
-  config.plugins.push(new CopyPlugin([
-    {
-      from: nodePath.join(__dirname, '..', 'node_modules', '@stoplight', 'monaco', 'monaco-editor', 'monaco-workers'),
-      to: 'workers/monaco',
-    },
-  ]));
+  config.plugins.push(
+    new CopyPlugin([
+      {
+        from: nodePath.join(__dirname, '..', 'node_modules', '@stoplight', 'monaco', 'monaco-editor', 'monaco-workers'),
+        to: 'workers/monaco',
+      },
+    ])
+  );
 
-  config.plugins.push(new EnvironmentPlugin({
-    MONACO_WORKERS_ROOT: 'workers/monaco',
-  }));
+  config.plugins.push(
+    new EnvironmentPlugin({
+      MONACO_WORKERS_ROOT: 'workers/monaco',
+    })
+  );
 
   return config;
 };

@@ -622,7 +622,7 @@ export default {
 
     fs.writeFileSync(`${process.cwd()}/dist/robots.txt`, robots);
 
-    await processImages();
+    // await processImages();
   },
 
   // bundleAnalyzer: true,

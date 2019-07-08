@@ -1,5 +1,6 @@
 ---
 path: /documentation/generator
+publishedDate: 2019-07-08T20:35:30.631Z
 title: API Documentation Generator
 subtitle: Generate API Documentation Instantly
 color: green

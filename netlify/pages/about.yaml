@@ -28,9 +28,6 @@ team:
   - image: /images/faust_headshot.png
     name: Scott Faust
     role: Growth & Ops
-  - image: /images/ash-edmonds-636863-unsplash.jpg
-    name: 'Justin Forte '
-    role: Product Growth Manager
   - image: /images/hilton_headshot.png
     name: William Hilton
     role: Software Engineer

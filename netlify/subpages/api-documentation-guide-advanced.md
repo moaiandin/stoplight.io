@@ -7,7 +7,7 @@ relatedTags:
   - api-documentation
 publishedDate: 2019-02-11T17:59:22.696Z
 author: ''
-title: API Documentation Guide | Advanced
+title: Advanced API Documentation Guide
 subtitle: 'A deep dive into API Documentation '
 color: green
 tabs:
@@ -22,12 +22,14 @@ actionBar:
     - color: purple
   enabled: false
 meta:
+  description: >-
+    Want to know about some of the more technical and advanced aspects of API
+    Documentation? Find out some of the more in-depth aspects with Stoplight.
   favicon: /images/mark_light_bg.png
   robots: 'index, follow'
-  title: API Documentation Guide | Advanced
-  description: Want to know about some of the more technical and advanced aspects of API Documentation? Find out some of the more in-depth aspects with Stoplight.
+  title: 'API Documentation Guide | Advanced API & Mock Data Generator '
   twitter:
-    title: API Documentation Guide | Advanced
+    title: 'API Documentation Guide | Advanced API & Mock Data Generator '
     username: '@stoplightio'
 ---
 ## Should I Build My Own API Documentation?

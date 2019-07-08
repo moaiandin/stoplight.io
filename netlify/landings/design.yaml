@@ -19,17 +19,19 @@ featureSection:
     enabled: true
     text: Ready to Model and Design?
   description: >-
-    Start designing your API in minutes. Use the [OpenAPI Specification](/api-design-guide/oas-spec/) (formerly
-    known as Swagger) with Stoplight’s visual editor to [design consistent and
-    standardized REST APIs](/design/web/) for your organization. Without writing
-    any code, model complex APIs faster than ever while simultaneously getting
-    feedback on your prototypes with our [hosted mock servers](/mocking/).
+    Start designing your API in minutes. Use the [OpenAPI
+    Specification](/api-design-guide/oas-spec/) (formerly known as Swagger) with
+    Stoplight’s visual editor to [design consistent and standardized REST
+    APIs](/design/web/) for your organization. Without writing any code, model
+    complex APIs faster than ever while simultaneously getting feedback on your
+    prototypes with our [hosted mock servers](/mocking/).
   features:
     - description: >-
-        Get started quickly with [API design-first principles](/api-design-guide/basics/). Import an existing
-        API or start from scratch with a new API, zero coding required. The
-        Visual Editor reduces time to get started on your API design by
-        providing an intuitive UI.
+        Get started quickly with [API design-first
+        principles](/api-design-guide/basics/). Import an existing API or start
+        from scratch with a new API, zero coding required. The Visual Editor
+        reduces time to get started on your API design by providing an intuitive
+        UI.
       image: /images/design_quick_start.png
       shortName: Design First
       title: Quick to Start
@@ -71,11 +73,11 @@ meta:
     allows you to prototype and share your API within minutes
   favicon: /images/mark_light_bg.png
   image: /images/design_feature_3.png
-  title: REST API design and planning tool | Stoplight
+  title: REST API Design & Planning Tool | Standard REST API Modeling Tool
   twitter:
     description: >-
       Build first-class APIs with a collaborative, powerful, visual editor that
       allows you to prototype and share your API within minutes
     image: /images/design_feature_3.png
-    title: Design | Stoplight
+    title: REST API Design & Planning Tool | Standard REST API Modeling Tool
     username: '@stoplightio'

@@ -27,7 +27,7 @@ meta:
   robots: 'index, follow'
   title: API Design Guide | Basic API Design Best Practices
   twitter:
-    title: API Design Guide | Basics
+    title: API Design Guide | Basic API Design Best Practices
     image: /images/mark_light_bg.png
     username: '@stoplightio'
 ---

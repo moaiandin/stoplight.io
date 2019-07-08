@@ -10,6 +10,9 @@ hero:
     status quo is our culture
   title: About Us
 team:
+  - image: /images/andoni-alanis-cue.jpeg
+    name: Andoni Alanis-Cue
+    role: Account Executive
   - image: /images/bachi-collin-1-.jpg
     name: Collin Bachi
     role: Devops Engineer
@@ -63,6 +66,9 @@ team:
     role: Director of Engineering
   - image: /images/jakub-rozek-headshot.jpg
     name: Jakub Rozek
+    role: Software Engineer
+  - image: /images/sarah-spear.jpeg
+    name: Sarah Spear
     role: Software Engineer
   - image: /images/phil-sturgeon-headshot2.png
     name: Phil Sturgeon

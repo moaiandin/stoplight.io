@@ -16,8 +16,26 @@ export const MonacoComponent = () => {
 
   return (
     <div className="h-128">
-      <button onClick={resetValue}>Reset Value</button>
-      <MonacoCodeEditor store={store} options={{ minimap: { enabled: false } }} />
+      <button
+        onClick={resetValue}
+        className="text-white bg-purple-lighter shadow-md rounded mb-4 p-2 font-semibold hover:cursor-pointer"
+      >
+        Reset Value
+      </button>
+      <MonacoCodeEditor
+        store={store}
+        options={{
+          minimap: {
+            enabled: false,
+          },
+          highlightActiveIndentGuide: false,
+          overviewRulerBorder: false,
+          renderLineHighlight: 'none',
+          automaticLayout: true,
+          wordWrap: 'bounded',
+          glyphMargin: true,
+        }}
+      />
     </div>
   );
 };

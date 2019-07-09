@@ -51,11 +51,11 @@ const fakeOutput = [
     severity: 1,
     range: {
       start: {
-        line: 0,
+        line: 2,
         character: 0,
       },
       end: {
-        line: 5,
+        line: 2,
         character: 46,
       },
     },
@@ -67,11 +67,11 @@ const fakeOutput = [
     severity: 1,
     range: {
       start: {
-        line: 0,
+        line: 42,
         character: 0,
       },
       end: {
-        line: 5,
+        line: 42,
         character: 46,
       },
     },
@@ -83,11 +83,11 @@ const fakeOutput = [
     severity: 0,
     range: {
       start: {
-        line: 0,
+        line: 107,
         character: 0,
       },
       end: {
-        line: 5,
+        line: 107,
         character: 46,
       },
     },
@@ -99,11 +99,11 @@ const fakeOutput = [
     severity: 1,
     range: {
       start: {
-        line: 0,
+        line: 261,
         character: 0,
       },
       end: {
-        line: 5,
+        line: 261,
         character: 46,
       },
     },
@@ -134,25 +134,24 @@ export const SpectralComponent = () => {
 
   return (
     <div>
-      {fakeOutput.map((el, i) => (
-        <div className="fakeData">
-          Error {i + 1}
-          <ul>
-            <li>
-              Code:
-              {` ${el.code}`}
-            </li>
-            <li>
-              Severity:
-              {` ${el.severity}`}
-            </li>
-            <li>
-              Range:
-              {` Line ${el.range.start.line}, characters ${el.range.start.character} through ${el.range.end.character}`}
-            </li>
-          </ul>
-        </div>
-      ))}
+      <table>
+        <thead>
+          <tr>
+            <th>Type</th>
+            <th>Line</th>
+            <th>Message</th>
+          </tr>
+        </thead>
+        <tbody>
+          {fakeOutput.map(el => (
+            <tr>
+              <td>TBD</td>
+              <td>{el.range.start.line}</td>
+              <td>{el.message}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
     </div>
   );
 };

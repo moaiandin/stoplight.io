@@ -52,8 +52,8 @@ export const Landing: React.FunctionComponent<ILanding> = ({
 
       {hasSandbox && (
         <NoSSR>
-          <div className="container flex flex-wrap">
-            <div className="w-1/2 sm:w-full pr-12 mt-12">
+          <div className="container relative flex flex-wrap md-hidden bg-white shadow-md rounded-lg -mt-16">
+            <div className="w-1/2 sm:w-full pb-24 pl-2 mt-6">
               <MonacoComponent />
             </div>
             <div className="w-1/2 sm:w-full pl-12 mt-12">

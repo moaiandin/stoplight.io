@@ -1,13 +1,16 @@
 import { monaco, MonacoCodeEditor, MonacoCodeStore } from '@stoplight/monaco';
 import * as React from 'react';
-import * as TodoAPI from './references/todos.oas2.json';
+import TodoAPI from './references/todos.oas2.json';
 import OpenAPI2Schema from './schemas/openapi/2.0.json';
 import OpenAPI3Schema from './schemas/openapi/3.0.json';
+
+// TODO: Update this to be a better default value
+const defaultValue = JSON.stringify(TodoAPI, null, 2);
 
 const store = new MonacoCodeStore({
   id: 'a',
   path: 'file:///todos.oas2.json',
-  value: JSON.stringify(TodoAPI, null, 4), // TODO: Update this to be a better default value
+  value: defaultValue,
 });
 
 monaco.languages.json.jsonDefaults.setDiagnosticsOptions({
@@ -43,7 +46,12 @@ monaco.languages.json.jsonDefaults.setDiagnosticsOptions({
 });
 
 export const MonacoComponent = ({ setValue }) => {
-  const resetValue = React.useCallback(() => store.setValue(''), []);
+  const resetValue = React.useCallback(
+    () => {
+      store.setValue(defaultValue);
+    },
+    [store]
+  );
 
   React.useEffect(
     () => {

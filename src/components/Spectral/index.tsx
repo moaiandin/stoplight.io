@@ -30,8 +30,8 @@ export const SpectralComponent = ({ value }) => {
           </tr>
         </thead>
         <tbody>
-          {results.map(result => (
-            <tr>
+          {results.map((result, index) => (
+            <tr key={index}>
               <td>{DiagnosticSeverity[result.severity]}</td>
               <td>{result.range.start.line}</td>
               <td>{result.message}</td>

@@ -8,7 +8,7 @@ export const Sandbox = () => {
 
   return (
     <NoSSR>
-      <div className="container relative flex flex-wrap md-hidden bg-white shadow-md rounded-lg -mt-16">
+      <div className="container relative flex flex-wrap md-hidden bg-white shadow-md rounded-lg -mt-16 z-10">
         <div className="w-1/2 sm:w-full pb-24 pl-2 mt-6">
           <MonacoComponent setValue={setValue} />
         </div>

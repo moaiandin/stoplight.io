@@ -5,7 +5,7 @@ import NoSSR from 'react-no-ssr';
 import { Hero, IHero } from 'src/components/Hero';
 import { IHeroButton } from 'src/components/Hero/HeroButton';
 import { HubSpotForm, IHubSpotForm } from 'src/components/HubSpotForm';
-import { MonacoComponent } from 'src/components/Monaco';
+// import { MonacoComponent } from 'src/components/Monaco';
 import { IRelatedPage, RelatedPages } from 'src/components/RelatedPages';
 import { Section } from 'src/components/Section';
 import { SpectralComponent } from 'src/components/Spectral';
@@ -54,7 +54,7 @@ export const Landing: React.FunctionComponent<ILanding> = ({
         <NoSSR>
           <div className="container flex flex-wrap">
             <div className="w-1/2 sm:w-full pr-12 mt-12">
-              <MonacoComponent />
+              {/*<MonacoComponent />*/}
             </div>
             <div className="w-1/2 sm:w-full pl-12 mt-12">
               <SpectralComponent />

@@ -19,6 +19,8 @@
     "format": "prettier --single-quote --trailing-comma es5 --print-width 100 --write \"src/**/*.js\""
   },
   "resolutions": {
+    "ansi-styles": "4.x.x",
+    "ajv": "^6.7",
     "react": ">=16.8",
     "react-dom": ">=16.8"
   },
@@ -30,6 +32,7 @@
     "@fortawesome/react-fontawesome": "0.1.x",
     "@stoplight/monaco": "^4.2.1",
     "@stoplight/spectral": "file:.yalc/@stoplight/spectral",
+    "@stoplight/types": "^9.1.2",
     "classnames": "2.2.x",
     "disqus-react": "^1.0.5",
     "lodash.get": "^4.4.2",

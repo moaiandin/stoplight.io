@@ -5,7 +5,7 @@ import NoSSR from 'react-no-ssr';
 import { Hero, IHero } from 'src/components/Hero';
 import { IHeroButton } from 'src/components/Hero/HeroButton';
 import { HubSpotForm, IHubSpotForm } from 'src/components/HubSpotForm';
-import { MonacoComponent } from 'src/components/Monaco';
+// import { MonacoComponent } from 'src/components/Monaco';
 import { IRelatedPage, RelatedPages } from 'src/components/RelatedPages';
 import { Section } from 'src/components/Section';
 import { SpectralComponent } from 'src/components/Spectral';
@@ -53,9 +53,7 @@ export const Landing: React.FunctionComponent<ILanding> = ({
       {hasSandbox && (
         <NoSSR>
           <div className="container relative flex flex-wrap md-hidden bg-white shadow-md rounded-lg -mt-16">
-            <div className="w-1/2 sm:w-full pb-24 pl-2 mt-6">
-              <MonacoComponent />
-            </div>
+            <div className="w-1/2 sm:w-full pb-24 pl-2 mt-6">{/* <MonacoComponent /> */}</div>
             <div className="w-1/2 sm:w-full pl-12 mt-12">
               <SpectralComponent />
             </div>

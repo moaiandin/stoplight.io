@@ -907,7 +907,7 @@
     typedoc "0.13.x"
 
 "@stoplight/spectral@file:.yalc/@stoplight/spectral":
-  version "4.0.0-beta2-4cd7a59e"
+  version "0.0.0-28096122"
   dependencies:
     "@oclif/command" "^1.0"
     "@oclif/config" "^1.12"
@@ -915,8 +915,8 @@
     "@stoplight/json" "^2.2.2"
     "@stoplight/json-ref-resolver" "^2.0.2"
     "@stoplight/path" "^1.0.1"
-    "@stoplight/types" "^9.0.2"
-    "@stoplight/yaml" "^2.5"
+    "@stoplight/types" "^9.1.2"
+    "@stoplight/yaml" "^2.6.0"
     ajv "^6.7"
     ajv-oai "^1.1.1"
     better-ajv-errors stoplightio/better-ajv-errors#4dbb2d633af8dad1ebfeef5b742acbf48f80b327
@@ -933,7 +933,7 @@
   resolved "https://registry.yarnpkg.com/@stoplight/types/-/types-9.0.2.tgz#1978287d2cfbcb176d00300fa158d5a1daf63c00"
   integrity sha512-fMVOgl0TSWA9VvsdGyTA26qp2AQ/g4jgSHm3BeFbGIBRGaVKU8JoUNV/tH+a7uxuPIzXzcE1BQa9fENOCKF2BQ==
 
-"@stoplight/types@^9.0.2":
+"@stoplight/types@^9.0.2", "@stoplight/types@^9.1.2":
   version "9.1.2"
   resolved "https://registry.yarnpkg.com/@stoplight/types/-/types-9.1.2.tgz#0b2ed2032ae901491543b9dd19309ff3a0acf12a"
   integrity sha512-eNeWwTZ1E47mrprEdgtOutovVKxYTbm8k/B7Lh4JAusGoiHbMmzVT+IDdayBpOCzq+qKLzuP0z3IZo74IXaaEg==
@@ -972,12 +972,22 @@
     webpackbar "3.2.x"
     worker-loader "2.0.x"
 
-"@stoplight/yaml@2.x.x", "@stoplight/yaml@^2.5":
+"@stoplight/yaml@2.x.x":
   version "2.5.1"
   resolved "https://registry.yarnpkg.com/@stoplight/yaml/-/yaml-2.5.1.tgz#7044f7ea11ca89f562c0bf3d9ca0f6527a1e8068"
   integrity sha512-gIcnhtDdT8XrlmcipiTeJsxApncu1xzdoAkwxryTAUdkGGK1O5Bn6ACnNqdOCQXn+gDbhzYgacGTnSGSb8jcNQ==
   dependencies:
     "@stoplight/types" "^9.0.2"
+    lodash "^4.17.5"
+    yaml-ast-parser "~0.0.43"
+
+"@stoplight/yaml@^2.6.0":
+  version "2.6.1"
+  resolved "https://registry.yarnpkg.com/@stoplight/yaml/-/yaml-2.6.1.tgz#b3b254304c9763c175ae239396a3efeecea5e5dd"
+  integrity sha512-+r5P1r51JWnre9JqxgZe1mwRsEnJxq68owKHs4WCjPMu8w11zy1lJ8em3U8R1j3x8+4//RQACFqMnpwKZNn3hQ==
+  dependencies:
+    "@stoplight/types" "^9.1.2"
+    "@types/js-yaml" "3.12.1"
     lodash "^4.17.5"
     yaml-ast-parser "~0.0.43"
 
@@ -1036,6 +1046,11 @@
   version "23.3.10"
   resolved "https://registry.npmjs.org/@types/jest/-/jest-23.3.10.tgz#4897974cc317bf99d4fe6af1efa15957fa9c94de"
   integrity sha512-DC8xTuW/6TYgvEg3HEXS7cu9OijFqprVDXXiOcdOKZCU/5PJNLZU37VVvmZHdtMiGOa8wAA/We+JzbdxFzQTRQ==
+
+"@types/js-yaml@3.12.1":
+  version "3.12.1"
+  resolved "https://registry.yarnpkg.com/@types/js-yaml/-/js-yaml-3.12.1.tgz#5c6f4a1eabca84792fbd916f0cb40847f123c656"
+  integrity sha512-SGGAhXLHDx+PK4YLNcNGa6goPf9XRWQNAUUbffkwVGGXIxmDKWyGGL4inzq2sPmExu431Ekb9aEMn9BkPqEYFA==
 
 "@types/json-schema@^7.0.3":
   version "7.0.3"
@@ -1597,17 +1612,12 @@ ansi-regex@^4.1.0:
   resolved "https://registry.yarnpkg.com/ansi-regex/-/ansi-regex-4.1.0.tgz#8b9f8f08cf1acb843756a839ca8c7e3168c51997"
   integrity sha512-1apePfXM1UOSqw0o9IiFAovVz9M5S1Dg+4TrDwfMewQ6p/rmMueb7tWZjQ1rx4Loy1ArBggoqGpfqqdI4rondg==
 
-ansi-styles@^2.2.1:
-  version "2.2.1"
-  resolved "https://registry.npmjs.org/ansi-styles/-/ansi-styles-2.2.1.tgz#b432dd3358b634cf75e1e4664368240533c1ddbe"
-  integrity sha1-tDLdM1i2NM914eRmQ2gkBTPB3b4=
-
-ansi-styles@^3.2.0, ansi-styles@^3.2.1:
-  version "3.2.1"
-  resolved "https://registry.npmjs.org/ansi-styles/-/ansi-styles-3.2.1.tgz#41fbb20243e50b12be0f04b8dedbf07520ce841d"
-  integrity sha512-VT0ZI6kZRdTh8YyJw3SMbYm/u+NqfsAxEpWO0Pf9sq8/e94WxxOpPKx9FR1FlyCtOVDNOQ+8ntlqFxiRc+r5qA==
+ansi-styles@4.x.x, ansi-styles@^2.2.1, ansi-styles@^3.2.0, ansi-styles@^3.2.1:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/ansi-styles/-/ansi-styles-4.0.0.tgz#f6b84e8fc97ea7add7a53b7530ef28f3fde0e048"
+  integrity sha512-8zjUtFJ3db/QoPXuuEMloS2AUf79/yeyttJ7Abr3hteopJu9HK8vsgGviGUMq+zyA6cZZO6gAyZoMTF6TgaEjA==
   dependencies:
-    color-convert "^1.9.0"
+    color-convert "^2.0.0"
 
 ansicolors@~0.3.2:
   version "0.3.2"
@@ -4165,21 +4175,28 @@ collection-visit@^1.0.0:
     map-visit "^1.0.0"
     object-visit "^1.0.0"
 
-color-convert@^1.3.0, color-convert@^1.9.0, color-convert@^1.9.1:
+color-convert@^1.3.0, color-convert@^1.9.1:
   version "1.9.3"
   resolved "https://registry.npmjs.org/color-convert/-/color-convert-1.9.3.tgz#bb71850690e1f136567de629d2d5471deda4c1e8"
   integrity sha512-QfAUtd+vFdAtFQcC8CCyYt1fYWxSqAiK2cSD6zDB8N3cpsEBAvRxp9zOGg6G/SHHJYAT88/az/IuDGALsNVbGg==
   dependencies:
     color-name "1.1.3"
 
+color-convert@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/color-convert/-/color-convert-2.0.0.tgz#9851ac61cc0d3898a8a3088650d5bf447bf69d97"
+  integrity sha512-hzTicsCJIHdxih9+2aLR1tNGZX5qSJGRHDPVwSY26tVrEf55XNajLOBWz2UuWSIergszA09/bqnOiHyqx9fxQg==
+  dependencies:
+    color-name "~1.1.4"
+
 color-name@1.1.3:
   version "1.1.3"
   resolved "https://registry.npmjs.org/color-name/-/color-name-1.1.3.tgz#a7d0558bd89c42f795dd42328f740831ca53bc25"
   integrity sha1-p9BVi9icQveV3UIyj3QIMcpTvCU=
 
-color-name@^1.0.0:
+color-name@^1.0.0, color-name@~1.1.4:
   version "1.1.4"
-  resolved "https://registry.npmjs.org/color-name/-/color-name-1.1.4.tgz#c2a09a87acbde69543de6f63fa3995c826c536a2"
+  resolved "https://registry.yarnpkg.com/color-name/-/color-name-1.1.4.tgz#c2a09a87acbde69543de6f63fa3995c826c536a2"
   integrity sha512-dOy+3AuW3a2wNbZHIuMZpTcgjGuLU/uBL/ubcZF9OXbDo8ff4O8yVp5Bf0efS8uEoYo5q4Fx7dY9OgQGXgAsQA==
 
 color-string@^0.3.0:

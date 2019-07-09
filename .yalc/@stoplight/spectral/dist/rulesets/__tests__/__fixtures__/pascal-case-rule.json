@@ -1,0 +1,12 @@
+{
+  "rules": {
+    "PascalCase": {
+      "severity": 0,
+      "given": "$",
+      "message": "bar",
+      "then": {
+        "function": "truthy"
+      }
+    }
+  }
+}

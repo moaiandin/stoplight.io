@@ -38,5 +38,9 @@ export default (config, { stage, defaultLoaders }) => {
     })
   );
 
+  config.node = {
+    fs: 'empty',
+  };
+
   return config;
 };

@@ -1,17 +1,8 @@
-const { Spectral } = require('@stoplight/spectral');
-import * as React from 'react';
-// import { oas3Functions, rules as OAS3rules } from '@stoplight/spectral/dist/rulesets/oas3';
-// for YAML
-// const { parseWithPointers } = require("@stoplight/yaml");
+// import { IDiagnostic } from '@stoplight/types';
 
-// Uncomment to use parseWithPointers (remember to comment the next instance of myOAS)
-// const myOAS = parseWithPointers(`
-// responses:
-//   '200':
-//     description: ''
-//     schema:
-//       $ref: '#/definitions/error-response'
-// `)
+const { Spectral } = require('@stoplight/spectral');
+import { oas3Functions, rules as OAS3rules } from '@stoplight/spectral/dist/rulesets/oas3';
+import * as React from 'react';
 
 // an OASv3 document
 const myOAS = {
@@ -113,24 +104,19 @@ const fakeOutput = [
 // create a new instance of spectral with all of the baked in rulesets
 
 export const SpectralComponent = () => {
-  // if (typeof window !== 'undefined') {
-  //   const spectral = new Spectral();
-  //   console.log(spectral);
-  // }
+  // const results = [];
+  if (typeof window !== 'undefined') {
+    const spectral = new Spectral();
 
-  // spectral.addFunctions(oas3Functions());
-  // OAS3rules()
-  //   .then(rules => spectral.addRules(rules))
-  //   .then(() => {
-  //     spectral.addRules({
-  //       // .. extend with your own custom rules
-  //     });
-
-  //     // run!
-  //     spectral.run(myOAS).then(results => {
-  //       console.log(JSON.stringify(results, null, 4));
-  //     });
-  // });
+    spectral.addFunctions(oas3Functions());
+    OAS3rules()
+      .then(rules => spectral.addRules(rules))
+      .then(() => spectral.run(myOAS))
+      .then(results => {
+        console.log(results);
+        // do whatever you need with this
+      });
+  }
 
   return (
     <div>

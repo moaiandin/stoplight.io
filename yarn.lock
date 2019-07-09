@@ -907,7 +907,7 @@
     typedoc "0.13.x"
 
 "@stoplight/spectral@file:.yalc/@stoplight/spectral":
-  version "4.0.0-beta2-4cd7a59e"
+  version "0.0.0-28096122"
   dependencies:
     "@oclif/command" "^1.0"
     "@oclif/config" "^1.12"
@@ -915,8 +915,8 @@
     "@stoplight/json" "^2.2.2"
     "@stoplight/json-ref-resolver" "^2.0.2"
     "@stoplight/path" "^1.0.1"
-    "@stoplight/types" "^9.0.2"
-    "@stoplight/yaml" "^2.5"
+    "@stoplight/types" "^9.1.2"
+    "@stoplight/yaml" "^2.6.0"
     ajv "^6.7"
     ajv-oai "^1.1.1"
     better-ajv-errors stoplightio/better-ajv-errors#4dbb2d633af8dad1ebfeef5b742acbf48f80b327
@@ -933,7 +933,7 @@
   resolved "https://registry.yarnpkg.com/@stoplight/types/-/types-9.0.2.tgz#1978287d2cfbcb176d00300fa158d5a1daf63c00"
   integrity sha512-fMVOgl0TSWA9VvsdGyTA26qp2AQ/g4jgSHm3BeFbGIBRGaVKU8JoUNV/tH+a7uxuPIzXzcE1BQa9fENOCKF2BQ==
 
-"@stoplight/types@^9.0.2":
+"@stoplight/types@^9.0.2", "@stoplight/types@^9.1.2":
   version "9.1.2"
   resolved "https://registry.yarnpkg.com/@stoplight/types/-/types-9.1.2.tgz#0b2ed2032ae901491543b9dd19309ff3a0acf12a"
   integrity sha512-eNeWwTZ1E47mrprEdgtOutovVKxYTbm8k/B7Lh4JAusGoiHbMmzVT+IDdayBpOCzq+qKLzuP0z3IZo74IXaaEg==
@@ -972,12 +972,22 @@
     webpackbar "3.2.x"
     worker-loader "2.0.x"
 
-"@stoplight/yaml@2.x.x", "@stoplight/yaml@^2.5":
+"@stoplight/yaml@2.x.x":
   version "2.5.1"
   resolved "https://registry.yarnpkg.com/@stoplight/yaml/-/yaml-2.5.1.tgz#7044f7ea11ca89f562c0bf3d9ca0f6527a1e8068"
   integrity sha512-gIcnhtDdT8XrlmcipiTeJsxApncu1xzdoAkwxryTAUdkGGK1O5Bn6ACnNqdOCQXn+gDbhzYgacGTnSGSb8jcNQ==
   dependencies:
     "@stoplight/types" "^9.0.2"
+    lodash "^4.17.5"
+    yaml-ast-parser "~0.0.43"
+
+"@stoplight/yaml@^2.6.0":
+  version "2.6.1"
+  resolved "https://registry.yarnpkg.com/@stoplight/yaml/-/yaml-2.6.1.tgz#b3b254304c9763c175ae239396a3efeecea5e5dd"
+  integrity sha512-+r5P1r51JWnre9JqxgZe1mwRsEnJxq68owKHs4WCjPMu8w11zy1lJ8em3U8R1j3x8+4//RQACFqMnpwKZNn3hQ==
+  dependencies:
+    "@stoplight/types" "^9.1.2"
+    "@types/js-yaml" "3.12.1"
     lodash "^4.17.5"
     yaml-ast-parser "~0.0.43"
 
@@ -1036,6 +1046,11 @@
   version "23.3.10"
   resolved "https://registry.npmjs.org/@types/jest/-/jest-23.3.10.tgz#4897974cc317bf99d4fe6af1efa15957fa9c94de"
   integrity sha512-DC8xTuW/6TYgvEg3HEXS7cu9OijFqprVDXXiOcdOKZCU/5PJNLZU37VVvmZHdtMiGOa8wAA/We+JzbdxFzQTRQ==
+
+"@types/js-yaml@3.12.1":
+  version "3.12.1"
+  resolved "https://registry.yarnpkg.com/@types/js-yaml/-/js-yaml-3.12.1.tgz#5c6f4a1eabca84792fbd916f0cb40847f123c656"
+  integrity sha512-SGGAhXLHDx+PK4YLNcNGa6goPf9XRWQNAUUbffkwVGGXIxmDKWyGGL4inzq2sPmExu431Ekb9aEMn9BkPqEYFA==
 
 "@types/json-schema@^7.0.3":
   version "7.0.3"

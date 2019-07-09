@@ -1,4 +1,4 @@
-// const { Spectral } = require('@stoplight/spectral');
+const { Spectral } = require('@stoplight/spectral');
 import * as React from 'react';
 // import { oas3Functions, rules as OAS3rules } from '@stoplight/spectral/dist/rulesets/oas3';
 // for YAML

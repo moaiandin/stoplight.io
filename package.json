@@ -22,7 +22,8 @@
     "ansi-styles": "4.x.x",
     "ajv": "^6.7",
     "react": ">=16.8",
-    "react-dom": ">=16.8"
+    "react-dom": ">=16.8",
+    "react-hot-loader": ">=4.12.5"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "1.2.x",
@@ -72,7 +73,7 @@
     "postcss-flexbugs-fixes": "4.1.x",
     "postcss-loader": "3.0.x",
     "prettier": "1.15.x",
-    "react-hot-loader": "^4.3.12",
+    "react-hot-loader": "^4.12.5",
     "sass-loader": "7.1.x",
     "serve": "10.1.x",
     "sharp": "0.22.x",

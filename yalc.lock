@@ -2,7 +2,7 @@
   "version": "v1",
   "packages": {
     "@stoplight/spectral": {
-      "signature": "08b5a52d0ed07d881be84a3b9a619dfc",
+      "signature": "d675ff1382ce42a89de981718a2261be",
       "file": true,
       "replaced": "^3.1.0"
     }

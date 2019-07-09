@@ -1,6 +1,6 @@
 {
   "name": "@stoplight/spectral",
-  "version": "0.0.0-08b5a52d",
+  "version": "0.0.0-d675ff13",
   "description": "A flexible object linter with out of the box support for OpenAPI v2 and v3.",
   "keywords": [
     "json linter",
@@ -35,14 +35,16 @@
   "files": [
     "bin/*",
     "dist/*",
-    "oclif.manifest.json"
+    "oclif.manifest.json",
+    "rulesets/*"
   ],
   "engines": {
     "node": ">=8.3.0"
   },
   "scripts": {
+    "prebuild": "copyfiles -u 1 \"src/rulesets/oas*/*.json\" dist && copyfiles -u 1 \"src/rulesets/oas*/*.json\" ./",
     "build": "tsc -p ./tsconfig.build.json",
-    "postbuild": "copyfiles -u 1 \"src/rulesets/**/*.json\" dist && oclif-dev manifest",
+    "postbuild": "oclif-dev manifest",
     "build.binary": "pkg . --targets linux,macos --out-path ./binaries",
     "commit": "git-cz",
     "lint": "tslint 'src/**/*.ts'",

@@ -32,7 +32,7 @@
     "@fortawesome/free-solid-svg-icons": "5.5.x",
     "@fortawesome/react-fontawesome": "0.1.x",
     "@stoplight/monaco": "^4.2.1",
-    "@stoplight/spectral": "file:.yalc/@stoplight/spectral",
+    "@stoplight/spectral": "4.0.0-beta.10",
     "@stoplight/types": "^9.1.2",
     "classnames": "2.2.x",
     "disqus-react": "^1.0.5",

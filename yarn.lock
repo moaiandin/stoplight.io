@@ -906,8 +906,10 @@
     tslint-config-stoplight "1.2.x"
     typedoc "0.13.x"
 
-"@stoplight/spectral@file:.yalc/@stoplight/spectral":
-  version "0.0.0-d675ff13"
+"@stoplight/spectral@4.0.0-beta.10":
+  version "4.0.0-beta.10"
+  resolved "https://registry.yarnpkg.com/@stoplight/spectral/-/spectral-4.0.0-beta.10.tgz#3f730439761ab05a7e0ccb51d4db8eae87b65537"
+  integrity sha512-iiB/AN/rpmPH4eO+IpRcJ3ukQkXGu38YsZNI797ZTWSCTcmSANRhG5wJw8uU3LDllphPZeUZ0L+iD6tn46mKAw==
   dependencies:
     "@oclif/command" "^1.0"
     "@oclif/config" "^1.12"

@@ -27,7 +27,6 @@ export default (config, { stage, defaultLoaders }) => {
 
   config.resolve.alias = {
     src: nodePath.resolve(__dirname, '..', 'src'),
-    '@stoplight/path': require.resolve('@stoplight/path'),
     'decimal.js': nodePath.resolve(process.cwd(), 'node_modules/decimal.js/decimal.js'),
   };
 

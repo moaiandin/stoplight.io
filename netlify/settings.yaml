@@ -1,8 +1,12 @@
 banners:
   - ends: '1564714800000'
     markdown: >-
-      **Stoplight named Gartner Cool Vendor!** <u class='ml-3'>[Read the full
-      report](https://stoplight.io/gartner-cool-vendor/?hsCtaTracking=0590be9f-2900-4c27-aebf-57deda9ef459%7C744f9933-0b30-4d59-a17b-c5ab03102537)</u>
+      **Introducing <u>**[**Spectral**](https://stoplight.io/spectral/)**</u>,
+      an open source API description linter with built-in OpenAPI support.**
+
+
+      <u class='ml-3'>[Register for a webinar with Phil
+      Sturgeon!](https://zoom.us/webinar/register/WN_9rokGnkiRN6t8kSOmuUpwQ)</u>
     starts: 1558463654467
 info:
   address:
@@ -80,7 +84,7 @@ header:
             - terminal
           subtitle: Open source API description linter
           title: Spectral
-          titleColor: purple          
+          titleColor: purple
         - href: /api-design-guide/basics/
           icon:
             - fas

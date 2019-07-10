@@ -5,7 +5,7 @@ relatedTags:
   - blog-mocking
 hero:
   subtitle: Build APIs and accelerate API development with instant mock servers
-  title: OpenAPI Powered Mock Servers
+  title: Mock REST API Server
 featureSection:
   actionBar:
     buttons:

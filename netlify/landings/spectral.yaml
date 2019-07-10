@@ -1,7 +1,7 @@
 path: /spectral
 title: Spectral - Open Source API Description Linter | Stoplight
 color: purple-darker
-hasSandbox: false
+hasSandbox: true
 relatedTags:
   - blog-design
 hero:

@@ -44,7 +44,7 @@ Some of these updates include:
 - More friendly errors and warnings
 - More options for documents and rules
 
-We’re excited for you to [try](https://github.com/stoplightio/spectral) them out!
+We’re excited for you to [try](https://stoplight.io/spectral) them out!
 
 ## Use the CLI with multiple, custom rulesets
 
@@ -75,7 +75,7 @@ You can also now run multiple rulesets like this:
 spectral lint foo.yaml --ruleset=path/to/company-ruleset.yaml --ruleset=http://example.com/common-ruleset.yaml
 ```
 
-You can read more on how to write your rules in YAML [here](https://github.com/stoplightio/spectral/blob/master/docs/rulesets.md). 
+You can read more on how to write your rules in YAML [on the documentation page](https://github.com/stoplightio/spectral/blob/master/docs/rulesets.md). 
 
 ## New syntax for rulesets, including overriding rules and extending rulesets
 

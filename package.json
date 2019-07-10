@@ -49,8 +49,8 @@
     "tailwindcss": "0.7.x"
   },
   "devDependencies": {
-    "@stoplight/types": "^9.1.2",
     "@stoplight/scripts": "^4.0.0",
+    "@stoplight/types": "^9.1.2",
     "@stoplight/webpack": "^2.4.0",
     "@types/classnames": "^2.2.6",
     "@types/node": "^10.12.8",
@@ -78,6 +78,7 @@
     "serve": "10.1.x",
     "sharp": "0.22.x",
     "style-loader": "0.23.x",
+    "terser-webpack-plugin-legacy": "^1.2.3",
     "ts-loader": "5.3.x",
     "typescript": "3.1.x",
     "webpack": "^3.9.6"

@@ -45,10 +45,8 @@ featureSection:
         Ask 100 API designers what makes a good API design and you'll get 101
         answers, but all most developers really want is consistency. Using a
         style guide, can reduce decision making and improve consistency for all your teams.
-        <br><br>You can use the default style guides, or write one to match your
-        organization's style guide. Provide custom rulesets as a URL so your
-        whole team can put it in their config file or CLI script, and share
-        ruleset updates automatically.
+        <br><br>You can use the default style guides, extend it, or write one to match your
+        organization's style guide. 
       image: /images/errors_and_warnings.png
       shortName: Increase Consistency
       title: Reduce decision-making and promote consistent API descriptions

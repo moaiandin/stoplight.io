@@ -1,5 +1,5 @@
 ---
-path: /spectral-v4
+path: /blog/spectral-v4
 tags:
   - blog
   - blog-featured
@@ -45,6 +45,8 @@ Some of these updates include:
 - More options for documents and rules
 
 We’re excited for you to [try](https://stoplight.io/spectral) them out!
+
+Also, we will be doing a webinar on July 15th at 10:00 AM CT, if you'd like to learn more about the project. Sign up for the webinar [here](https://zoom.us/webinar/register/WN_9rokGnkiRN6t8kSOmuUpwQ).
 
 ## Use the CLI with multiple, custom rulesets
 

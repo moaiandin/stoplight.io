@@ -7,6 +7,7 @@ import babelLoader from './babelLoader';
 
 import CopyPlugin from 'copy-webpack-plugin';
 import EnvironmentPlugin from 'webpack/lib/EnvironmentPlugin';
+import TerserPlugin from 'terser-webpack-plugin-legacy';
 
 export default (config, { stage, defaultLoaders }) => {
   config.module.rules = [
@@ -38,6 +39,12 @@ export default (config, { stage, defaultLoaders }) => {
       },
     ])
   );
+
+  const uglifyJsPluginIndex = config.plugins.findIndex(plugin => plugin.constructor.name === 'UglifyJsPlugin');
+  if (uglifyJsPluginIndex !== -1) {
+    // to be removed after upgrading to 4
+    config.plugins.splice(uglifyJsPluginIndex, 1, new TerserPlugin());
+  }
 
   config.plugins.push(
     new EnvironmentPlugin({

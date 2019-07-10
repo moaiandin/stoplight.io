@@ -15,6 +15,7 @@ export interface IDocPlan {
   title: string;
   price: string;
   domains: string;
+  link?: string;
 }
 
 export interface IDocPlans {
@@ -54,9 +55,13 @@ export const DocPlans: React.FunctionComponent<IDocPlans> = ({
                   plans.length > 0 &&
                   plans.map((plan, index) => (
                     <th key={index}>
-                      <p className="text-accent font-bold">{plan.title}</p>
-                      <p className="font-bold mt-2 text-lg">{plan.price}</p>
-                      {plan.domains && <p className="mt-2">{plan.domains} Domain</p>}
+                      <div className="flex flex-col">
+                        <p className="text-accent font-bold">{plan.title}</p>
+                        <Link className="flex-1 font-bold mt-2 text-lg" to={plan.link}>
+                          {plan.price}
+                        </Link>
+                        <p className="mt-2">{plan.domains}</p>
+                      </div>
                     </th>
                   ))}
               </tr>

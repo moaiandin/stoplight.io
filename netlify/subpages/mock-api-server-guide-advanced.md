@@ -8,7 +8,7 @@ relatedTags:
   - mocking
   - blog-testing
 publishedDate: 2019-03-14T17:05:26.209Z
-title: Mock API Server Guide | Advanced
+title: Advanced Mock API Server Guide & Generator
 subtitle: Learn how to generate dummy API data and stage a mock API server
 color: black
 tabs:
@@ -21,9 +21,12 @@ actionBar:
     - color: purple
   enabled: false
 meta:
-  title: Dummy API data generation & REST API Mocking Guide
-  description: Want to learn how to generate dummy API data and Mocking your REST API? Check out our advance guide right here to find out everything you need to know.
+  description: >-
+    Want to learn how to generate dummy API data and Mocking your REST API?
+    Check out our advance guide right here to find out everything you need to
+    know.
   robots: 'index, follow'
+  title: Dummy API data generation & REST API Mocking Guide
   twitter: {}
 ---
 ## Generate Mock Data Definition

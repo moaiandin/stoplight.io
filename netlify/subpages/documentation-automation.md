@@ -1,34 +1,36 @@
 ---
 path: /documentation/automation
-tags: ['']
-relatedTags: ['']
+tags:
+  - ''
+relatedTags:
+  - ''
 publishedDate: 'Jan 23, 2019'
-subtitle: Automate your API Documentation Workflow
 title: Automatic API Documentation
+subtitle: Automate your API Documentation Workflow
 color: green
 tabs:
-  - title: API Documentation
-    href: /documentation
-  - title: Beautiful API Documentation
-    href: /documentation/beautiful
-  - title: API Testing
-    href: /testing
-  - title: Enterprise API Testing
-    href: /testing/enterprise
-  - title: Stoplight Blog
-    href: /blog
+  - href: /documentation
+    title: API Documentation
+  - href: /documentation/beautiful
+    title: Beautiful API Documentation
+  - href: /testing
+    title: API Testing
+  - href: /testing/enterprise
+    title: Enterprise API Testing
+  - href: /blog
+    title: Stoplight Blog
 actionBar:
   enabled: true
 meta:
   description: >-
     Autogenerate your API documentation easily and within a matter of minutes
     using our Stoplight Docs software and instantly publish to the web
-  title: Automate Your API Documentation | Stoplight
+  title: Automate Your API Documentation | REST API Automation
   twitter:
     description: >-
       Autogenerate your API documentation easily and within a matter of minutes
       using our Stoplight Docs software and instantly publish to the web
-    title: Automate Your API Documentation | Stoplight
+    title: Automate Your API Documentation | REST API Automation
     username: '@stoplightio'
 ---
 

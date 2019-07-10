@@ -1,19 +1,20 @@
 ---
 path: /documentation/generator
-color: green
-subtitle: Generate API Documentation Instantly
+publishedDate: 2019-07-08T20:35:30.631Z
 title: API Documentation Generator
+subtitle: Generate API Documentation Instantly
+color: green
 tabs:
-  - title: API Documentation
-    href: /documentation
-  - title: Beautiful API Documentation
-    href: /documentation/beautiful
-  - title: API Documentation Automation
-    href: /documentation/automation
-  - title: Enteprise API Documentation
-    href: /documentation/enterprise
-  - title: Stoplight Blog
-    href: /blog
+  - href: /documentation
+    title: API Documentation
+  - href: /documentation/beautiful
+    title: Beautiful API Documentation
+  - href: /documentation/automation
+    title: API Documentation Automation
+  - href: /documentation/enterprise
+    title: Enteprise API Documentation
+  - href: /blog
+    title: Stoplight Blog
 actionBar:
   enabled: true
 meta:
@@ -21,13 +22,13 @@ meta:
     Our unique documentation tool allows you to easily generate API
     documentation directly from your API specification for immediate online
     publication
-  title: Instant API Documentation Generator | Stoplight
+  title: Instant API Documentation Generator | Generate API Documentation
   twitter:
     description: >-
       Our unique documentation tool allows you to easily generate API
       documentation directly from your API specification for immediate online
       publication
-    title: Instant API Documentation Generator | Stoplight
+    title: Instant API Documentation Generator | Generate API Documentation
     username: '@stoplightio'
 ---
 

@@ -2,9 +2,10 @@ import { DiagnosticSeverity, Dictionary, IDiagnostic } from '@stoplight/types';
 const { Spectral } = require('@stoplight/spectral');
 import { IconProp } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { monaco, MonacoCodeStore } from '@stoplight/monaco';
-import { oas3Functions, rules as OAS3rules } from '@stoplight/spectral/dist/rulesets/oas3';
+import { MonacoCodeStore } from '@stoplight/monaco';
+import { oas3Functions } from '@stoplight/spectral/dist/rulesets/oas3';
 import * as React from 'react';
+import { readRulesFromRulesets } from '@stoplight/spectral/dist/rulesets';
 
 const spectral = new Spectral();
 spectral.addFunctions(oas3Functions());
@@ -40,7 +41,7 @@ export const SpectralComponent: React.FunctionComponent<{
     () => {
       if (value) {
         setIsValidating(true);
-        OAS3rules()
+        readRulesFromRulesets('spectral:oas3')
           .then(rules => spectral.addRules(rules))
           .then(() => spectral.run(value))
           .then((res: IDiagnostic[]) => {

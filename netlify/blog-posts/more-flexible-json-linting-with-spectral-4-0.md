@@ -1,9 +1,11 @@
 ---
 path: /spectral-v4
 tags:
-  - {}
+  - blog
+  - blog-featured
+  - blog-design
 relatedTags:
-  - {}
+  - blog-design
 publishedDate: 2019-07-11T00:19:11.840Z
 author: Taylor Barnett
 title: More Flexible JSON Linting with Spectral 4.0
@@ -18,10 +20,21 @@ disqus:
 actionBar:
   buttons:
     - color: purple
+      href: 'https://github.com/stoplightio/spectral'
+      outlined: false
+      title: Get Started with Spectral
   enabled: true
+  text: Do you want feedback on your API descriptions right now?
 meta:
+  description: Ruleset improvements and more CLI focus provide a better experience
   robots: 'index, follow'
-  twitter: {}
+  title: More Flexible JSON Linting with Spectral 4.0 | Stoplight API Corner
+  image: /images/dennis-brekke-z0tb7rr4xx4-unsplash.jpg
+  twitter:
+    description: Ruleset improvements and more CLI focus provide a better experience
+    title: More Flexible JSON Linting with Spectral 4.0 | Stoplight API Corner
+    image: /images/dennis-brekke-z0tb7rr4xx4-unsplash.jpg
+    username: '@stoplightio'
 ---
 Since last March after our [release](https://stoplight.io/blog/introducing-spectral/) of Spectral, we have heard some amazing feedback from the community. There was one resonating topic, and that was around customization for each of your unique use cases. We listened closely and thanks to your feedback, we have released a brand new update that we would love to share with you.
 

@@ -49,7 +49,7 @@ featureSection:
         organization's style guide. Provide custom rulesets as a URL so your
         whole team can put it in their config file or CLI script, and share
         ruleset updates automatically.
-      image: /images/mocking_virtualization.png
+      image: /images/errors_and_warnings.png
       shortName: Increase Consistency
       title: Reduce decision-making and promote consistent API descriptions
 
@@ -58,7 +58,7 @@ featureSection:
         installed as a NPM/Yarn package with a CLI and a JavaScript API. Bake it
         into your existing tooling, run it in Continuous Integration, use it in
         any workflow you like.
-      image: /images/mocking_request_validation.png
+      image: /images/spectral_cli.png
       shortName: CLI & JavaScript
       title: Use CLI and JavaScript interfaces
 

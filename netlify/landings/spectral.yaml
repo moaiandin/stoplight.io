@@ -34,7 +34,7 @@ featureSection:
         experienced API designers can easily forget. It's easy to create valid description
         documents that are not very useful. These documents might look broken in
         documentation tools, or not provide enough validation keywords to be
-        useful for contract testing. Spectral will point people towards the useful
+        useful for contract testing. <br><br>Spectral will point people towards the useful
         stuff, making docs, mocks, and contract tests more useful than ever, which
         in turn makes the APIs better.
       image: /images/ruleset_yaml.png
@@ -45,7 +45,7 @@ featureSection:
         Ask 100 API designers what makes a good API design and you'll get 101
         answers, but all most developers really want is consistency. Using a
         style guide, can reduce decision making and improve consistency for all your teams.
-        You can use the default style guides, or write one to match your
+        <br><br>You can use the default style guides, or write one to match your
         organization's style guide. Provide custom rulesets as a URL so your
         whole team can put it in their config file or CLI script, and share
         ruleset updates automatically.
@@ -55,7 +55,7 @@ featureSection:
 
     - description: >-
         Spectral can be downloaded as a CLI binary for macOS, Linux or Windows, or
-        installed as a NPM/Yarn package with a CLI and a JavaScript API. Bake it
+        installed as a npm/Yarn package with a CLI and a JavaScript API. Bake it
         into your existing tooling, run it in Continuous Integration, use it in
         any workflow you like.
       image: /images/spectral_cli.png

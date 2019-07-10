@@ -18,13 +18,13 @@ featureSection:
       - href: 'https://github.com/stoplightio/spectral'
         title: Get Started
     enabled: true
-    text: Do you want to get feedback on your API descriptions right now?
+    text: Do you want feedback on your API descriptions right now?
 
   title: Your API descriptions deserve better than "Technically Correct"
   description: >-
     Spectral is an open source OpenAPI-linter, which can tell you not just if
     your API descriptions are valid, but if they are any good. Use our baked-in
-    OpenAPI Specification v2/v3 rulesets (formerly known as Swagger specification),
+    rulesets for OpenAPI Specification v2/v3 (formerly known as Swagger specification),
     or write your own!
 
   features:
@@ -39,7 +39,7 @@ featureSection:
         in turn makes the APIs better.
       image: /images/mocking_instant.png
       shortName: Improve API Quality
-      title: Improve the Quality of API Descriptions and the APIs they describe
+      title: Improve the quality of your APIs and descriptions
 
     - description: >-
         Ask 100 API designers what makes a good API design and you'll get 101
@@ -51,7 +51,7 @@ featureSection:
         ruleset updates automatically.
       image: /images/mocking_virtualization.png
       shortName: Increase Consistency
-      title: Reduce Decision Making and Promote Consistent API Descriptions
+      title: Reduce decision-making and promote consistent API descriptions
 
     - description: >-
         Spectral can be downloaded as a CLI binary for macOS, Linux or Windows, or
@@ -60,7 +60,7 @@ featureSection:
         any workflow you like.
       image: /images/mocking_request_validation.png
       shortName: CLI & JavaScript
-      title: CLI & JavaScript
+      title: Use CLI and JavaScript interfaces
 
     # - description: >-
     #     Want to create and edit API descriptions with a visual editor instead of

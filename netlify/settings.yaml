@@ -74,6 +74,13 @@ header:
           subtitle: Stay up to date on Stoplight
           title: Blog
           titleColor: orange
+        - href: /spectral
+          icon:
+            - fas
+            - terminal
+          subtitle: Open source API description linter
+          title: Spectral
+          titleColor: purple          
         - href: /api-design-guide/basics/
           icon:
             - fas

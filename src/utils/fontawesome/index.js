@@ -24,6 +24,7 @@ import { faQuoteRight } from '@fortawesome/free-solid-svg-icons/faQuoteRight';
 import { faExclamationCircle } from '@fortawesome/free-solid-svg-icons/faExclamationCircle';
 import { faExclamationTriangle } from '@fortawesome/free-solid-svg-icons/faExclamationTriangle';
 import { faInfoCircle } from '@fortawesome/free-solid-svg-icons/faInfoCircle';
+import { faTerminal } from '@fortawesome/free-solid-svg-icons/faTerminal';
 
 import { faTwitter } from '@fortawesome/free-brands-svg-icons/faTwitter';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons/faLinkedin';
@@ -54,6 +55,7 @@ export const init = () => {
   library.add(faExclamationCircle);
   library.add(faExclamationTriangle);
   library.add(faInfoCircle);
+  library.add(faTerminal);
 
   library.add(faTwitter);
   library.add(faLinkedin);

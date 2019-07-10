@@ -178,7 +178,7 @@ There’s a few breaking changes you might want to take note of if you have been
 
 First, `oas2/index.ts#rules()` is now async. We’ve updated examples in the documentation accordingly. 
 
-Second, configuration files were briefly available in 3.x. These have been removed in 4.x. We definitely see the need to have config files (possibly in 5.x), but we want to work on a better approach. You can see some of the discussion around what it might look like in the future here if you are interested or have an opinion to share.
+Second, configuration files were briefly available in 3.x. These have been removed in 4.x. We definitely see the need to have more configuration (possibly in 5.x), but we want to work on a better approach. You can see some of the discussion around what it might look like in the future here if you are interested or have an opinion to share.
 
 Third, we have removed the `--max-results` flag. Most users wanted to see all errors and warnings, not just a few, so it wasn’t that useful.  
 

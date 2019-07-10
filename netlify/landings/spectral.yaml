@@ -1,7 +1,7 @@
 path: /spectral
 title: Spectral - Open Source API Description Linter | Stoplight
 color: purple-darker
-hasSandbox: true
+hasSandbox: false
 relatedTags:
   - blog-design
 hero:
@@ -37,7 +37,7 @@ featureSection:
         useful for contract testing. Spectral will point people towards the useful
         stuff, making docs, mocks, and contract tests more useful than ever, which
         in turn makes the APIs better.
-      image: /images/mocking_instant.png
+      image: /images/ruleset_yaml.png
       shortName: Improve API Quality
       title: Improve the quality of your APIs and descriptions
 

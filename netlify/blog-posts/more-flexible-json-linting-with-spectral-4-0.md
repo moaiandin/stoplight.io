@@ -1,9 +1,11 @@
 ---
 path: /spectral-v4
 tags:
-  - {}
+  - blog
+  - blog-featured
+  - blog-design
 relatedTags:
-  - {}
+  - blog-design
 publishedDate: 2019-07-11T00:19:11.840Z
 author: Taylor Barnett
 title: More Flexible JSON Linting with Spectral 4.0
@@ -18,10 +20,21 @@ disqus:
 actionBar:
   buttons:
     - color: purple
+      href: 'https://github.com/stoplightio/spectral'
+      outlined: false
+      title: Get Started with Spectral
   enabled: true
+  text: Do you want feedback on your API descriptions right now?
 meta:
+  description: Ruleset improvements and more CLI focus provide a better experience
   robots: 'index, follow'
-  twitter: {}
+  title: More Flexible JSON Linting with Spectral 4.0 | Stoplight API Corner
+  image: /images/dennis-brekke-z0tb7rr4xx4-unsplash.jpg
+  twitter:
+    description: Ruleset improvements and more CLI focus provide a better experience
+    title: More Flexible JSON Linting with Spectral 4.0 | Stoplight API Corner
+    image: /images/dennis-brekke-z0tb7rr4xx4-unsplash.jpg
+    username: '@stoplightio'
 ---
 Since last March after our [release](https://stoplight.io/blog/introducing-spectral/) of Spectral, we have heard some amazing feedback from the community. There was one resonating topic, and that was around customization for each of your unique use cases. We listened closely and thanks to your feedback, we have released a brand new update that we would love to share with you.
 
@@ -31,13 +44,13 @@ Some of these updates include:
 - More friendly errors and warnings
 - More options for documents and rules
 
-We’re excited for you to [try](https://github.com/stoplightio/spectral) them out!
+We’re excited for you to [try](https://stoplight.io/spectral) them out!
 
 ## Use the CLI with multiple, custom rulesets
 
 We found that most Spectral users would prefer to lint their documents from the command line, so we’ve added the ability to run Spectral with custom rulesets from the CLI. 
 
-Rulesets are now a first class concept. In earlier versions, customizing Spectral with your own rules and functions used to require a very hands-on TypeScript approach. In our latest release, have now introduced YAML rulesets which allow you to do the same thing without needing to know TypeScript.
+Rulesets are now a first class concept. In earlier versions, customizing Spectral with your own rules and functions used to require a very hands-on TypeScript approach. In our latest release, we have now introduced YAML rulesets which allow you to do the same thing without needing to know TypeScript.
 
 ```yaml
 rules:
@@ -62,7 +75,7 @@ You can also now run multiple rulesets like this:
 spectral lint foo.yaml --ruleset=path/to/company-ruleset.yaml --ruleset=http://example.com/common-ruleset.yaml
 ```
 
-You can read more on how to write your rules in YAML [here](https://github.com/stoplightio/spectral/blob/master/docs/rulesets.md). 
+You can read more on how to write your rules in YAML [on the documentation page](https://github.com/stoplightio/spectral/blob/master/docs/rulesets.md). 
 
 ## New syntax for rulesets, including overriding rules and extending rulesets
 
@@ -165,7 +178,7 @@ There’s a few breaking changes you might want to take note of if you have been
 
 First, `oas2/index.ts#rules()` is now async. We’ve updated examples in the documentation accordingly. 
 
-Second, configuration files were briefly available in 3.x. These have been removed in 4.x. We definitely see the need to have config files (possibly in 5.x), but we want to work on a better approach. You can see some of the discussion around what it might look like in the future here if you are interested or have an opinion to share.
+Second, configuration files were briefly available in 3.x. These have been removed in 4.x. We definitely see the need to have more configuration (possibly in 5.x), but we want to work on a better approach. You can see some of the discussion around what it might look like in the future here if you are interested or have an opinion to share.
 
 Third, we have removed the `--max-results` flag. Most users wanted to see all errors and warnings, not just a few, so it wasn’t that useful.  
 
@@ -177,4 +190,4 @@ Lastly, we have removed the obsolete `summary` property in rules. You should now
 
 We wanted to give shouts to people who have submitted pull requests to the Spectral repo [TJ Miller](https://github.com/sixlive), [Arnaud Lauret](https://github.com/arno-di-loreto), [Lorna Jane Mitchell](https://github.com/lornajane), and [Sreenivas Alapati](https://github.com/cg-cnu).
 
-Also, improvements to Spectral wouldn’t have been possible without feedback from [nulltoken](https://github.com/nulltoken), [Michael McDermott](https://github.com/michaeljmcd), [Sander van Beek](https://github.com/Lakitna), [Carlos Bautista](https://github.com/cbautista1002), [Cristiano Betta](https://github.com/cbetta), [Andrzej](https://github.com/jerzyn), [PeiSong](https://github.com/naivefun), and [Anastasia Popova](https://github.com/AnastasiaTW)
+Also, improvements to Spectral wouldn’t have been possible without feedback from [nulltoken](https://github.com/nulltoken), [Michael McDermott](https://github.com/michaeljmcd), [Sander van Beek](https://github.com/Lakitna), [Carlos Bautista](https://github.com/cbautista1002), [Cristiano Betta](https://github.com/cbetta), [Andrzej](https://github.com/jerzyn), [PeiSong](https://github.com/naivefun), and [Anastasia Popova](https://github.com/AnastasiaTW).

@@ -1,0 +1,85 @@
+path: /spectral
+title: Spectral - Open Source API Description Linter | Stoplight
+color: purple-darker
+hasSandbox: true
+relatedTags:
+  - blog-design
+hero:
+  subtitle: Improve the quality of your API by improving the quality of your API descriptions
+  title: Spectral, an Open Source API Description Linter
+  cta:
+    color: indigo
+    href: 'https://github.com/stoplightio/spectral/'
+    name: View it on GitHub
+    icon: ['fab', 'github']
+featureSection:
+  actionBar:
+    buttons:
+      - href: 'https://github.com/stoplightio/spectral'
+        title: Get Started
+    enabled: true
+    text: Do you want feedback on your API descriptions right now?
+
+  title: Your API descriptions deserve better than "Technically Correct"
+  description: >-
+    Spectral is an open source OpenAPI-linter, which can tell you not just if
+    your API descriptions are valid, but if they are any good. Use our baked-in
+    rulesets for OpenAPI Specification v2/v3 (formerly known as Swagger specification),
+    or write your own!
+
+  features:
+    - description: >-
+        API description formats like the OpenAPI Specification are permissive and vague in many
+        ways. Beginner API designers can struggle to know what to do, and
+        experienced API designers can easily forget. It's easy to create valid description
+        documents that are not very useful. These documents might look broken in
+        documentation tools, or not provide enough validation keywords to be
+        useful for contract testing. <br><br>Spectral will point people towards the useful
+        stuff, making docs, mocks, and contract tests more useful than ever, which
+        in turn makes the APIs better.
+      image: /images/ruleset_yaml.png
+      shortName: Improve API Quality
+      title: Improve the quality of your APIs and descriptions
+
+    - description: >-
+        Ask 100 API designers what makes a good API design and you'll get 101
+        answers, but all most developers really want is consistency. Using a
+        style guide, can reduce decision making and improve consistency for all your teams.
+        <br><br>You can use the default style guides, extend it, or write one to match your
+        organization's style guide. 
+      image: /images/errors_and_warnings.png
+      shortName: Increase Consistency
+      title: Reduce decision-making and promote consistent API descriptions
+
+    - description: >-
+        Spectral can be downloaded as a CLI binary for macOS, Linux or Windows, or
+        installed as a npm/Yarn package with a CLI and a JavaScript API. Bake it
+        into your existing tooling, run it in Continuous Integration, use it in
+        any workflow you like.
+      image: /images/spectral_cli.png
+      shortName: CLI & JavaScript
+      title: Use CLI and JavaScript interfaces
+
+    # - description: >-
+    #     Want to create and edit API descriptions with a visual editor instead of
+    #     scratching YAML into a cave wall with a rock? Use Stoplight Studio, and
+    #     let Spectral give you feedback in real-time.
+    #   image: /images/mocking_request_validation.png
+    #   shortName: Stoplight Studio Integration
+    #   title: Stoplight Studio Integration
+
+meta:
+  description: >-
+    Spectral is an open-source OpenAPI-linter, which can tell you not just if
+    your API descriptions are valid, but if they are any good. Use our baked-in rulesets for
+    OpenAPI Specification v2/v3 (formerly known as Swagger specification), or write your own!
+  favicon: /images/mark_light_bg.png
+  title: Spectral - Open Source API Description Linter | Stoplight
+  twitter:
+    description: >-
+      Spectral is an open-source OpenAPI-linter, which can tell you not just if
+      your API descriptions are valid, but if they are any good. Use our baked-in rulesets for
+      OpenAPI Specification v2/v3 (formerly known as Swagger specification), or write your own!
+    image: /images/mocking_instant.png
+    title: Spectral - Open Source API Description Linter | Stoplight
+    username: '@stoplightio'

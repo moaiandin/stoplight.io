@@ -1,4 +1,5 @@
 import * as React from 'react';
+import NoSSR from 'react-no-ssr';
 import { withRouteData } from 'react-static';
 
 import { Hero, IHero } from 'src/components/Hero';
@@ -10,6 +11,7 @@ import { Collage, ICollage } from 'src/sections/Collage';
 import { FeatureSection, IFeatureSection } from 'src/sections/FeatureSection';
 import { IImageCallout, ImageCallout } from 'src/sections/ImageCallout';
 import { slugify } from 'src/utils/text';
+import { Sandbox } from '../../components/Sandbox';
 
 export interface ILanding {
   color: string;
@@ -46,6 +48,13 @@ export const Landing: React.FunctionComponent<ILanding> = ({
       <Hero bgColor={color} buttons={buttons} {...hero} containerClassName={hasSandbox ? 'pb-16' : ''} />
 
       <Collage className="md:px-0 py-6 md:py-6" noPadding {...collage} />
+
+      {hasSandbox &&
+        Sandbox && (
+          <NoSSR>
+            <Sandbox className="-mt-16" />
+          </NoSSR>
+        )}
 
       <ImageCallout {...imageCallout} />
 

@@ -10,6 +10,7 @@ import { faCheckCircle } from '@fortawesome/free-solid-svg-icons/faCheckCircle';
 import { faRss } from '@fortawesome/free-solid-svg-icons/faRss';
 import { faUsers } from '@fortawesome/free-solid-svg-icons/faUsers';
 import { faComments } from '@fortawesome/free-solid-svg-icons/faComments';
+import { faComment } from '@fortawesome/free-solid-svg-icons/faComment';
 import { faGraduationCap } from '@fortawesome/free-solid-svg-icons/faGraduationCap';
 import { faSuitcase } from '@fortawesome/free-solid-svg-icons/faSuitcase';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons/faArrowRight';
@@ -20,6 +21,10 @@ import { faBolt } from '@fortawesome/free-solid-svg-icons/faBolt';
 import { faVideo } from '@fortawesome/free-solid-svg-icons/faVideo';
 import { faQuoteLeft } from '@fortawesome/free-solid-svg-icons/faQuoteLeft';
 import { faQuoteRight } from '@fortawesome/free-solid-svg-icons/faQuoteRight';
+import { faExclamationCircle } from '@fortawesome/free-solid-svg-icons/faExclamationCircle';
+import { faExclamationTriangle } from '@fortawesome/free-solid-svg-icons/faExclamationTriangle';
+import { faInfoCircle } from '@fortawesome/free-solid-svg-icons/faInfoCircle';
+import { faTerminal } from '@fortawesome/free-solid-svg-icons/faTerminal';
 
 import { faTwitter } from '@fortawesome/free-brands-svg-icons/faTwitter';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons/faLinkedin';
@@ -36,6 +41,7 @@ export const init = () => {
   library.add(faRss);
   library.add(faUsers);
   library.add(faComments);
+  library.add(faComment);
   library.add(faGraduationCap);
   library.add(faSuitcase);
   library.add(faArrowRight);
@@ -46,6 +52,10 @@ export const init = () => {
   library.add(faVideo);
   library.add(faQuoteLeft);
   library.add(faQuoteRight);
+  library.add(faExclamationCircle);
+  library.add(faExclamationTriangle);
+  library.add(faInfoCircle);
+  library.add(faTerminal);
 
   library.add(faTwitter);
   library.add(faLinkedin);

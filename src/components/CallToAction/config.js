@@ -26,5 +26,12 @@ export default {
       default: 'https://next.stoplight.io',
       hint: 'Default: https://next.stoplight.io',
     },
+    {
+      name: 'icon',
+      label: 'Icon',
+      widget: 'fontawesome-solid',
+      type: 'array',
+      required: false,
+    },
   ],
 };

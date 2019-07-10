@@ -433,7 +433,8 @@ export default {
         routes.push({
           path: landing.path,
           noindex: true,
-          component: 'src/containers/Landing',
+          // TODO (CL): This is a hack until I figure out SSR for the spectral landing
+          component: /spectral/.test(landing.path) ? 'src/containers/Spectral' : 'src/containers/Landing',
           getData: () => ({
             ...landing,
             relatedPages: getRelatedPages(landing, allPages),

@@ -50,7 +50,7 @@ We’re excited for you to [try](https://stoplight.io/spectral) them out!
 
 We found that most Spectral users would prefer to lint their documents from the command line, so we’ve added the ability to run Spectral with custom rulesets from the CLI. 
 
-Rulesets are now a first class concept. In earlier versions, customizing Spectral with your own rules and functions used to require a very hands-on TypeScript approach. In our latest release, have now introduced YAML rulesets which allow you to do the same thing without needing to know TypeScript.
+Rulesets are now a first class concept. In earlier versions, customizing Spectral with your own rules and functions used to require a very hands-on TypeScript approach. In our latest release, we have now introduced YAML rulesets which allow you to do the same thing without needing to know TypeScript.
 
 ```yaml
 rules:

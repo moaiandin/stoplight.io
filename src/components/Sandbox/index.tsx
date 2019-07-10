@@ -9,10 +9,11 @@ export const Sandbox = () => {
   return (
     <NoSSR>
       <div className="container relative flex flex-wrap md-hidden bg-white shadow-md rounded-lg -mt-16 z-10">
-        <div className="w-1/2 sm:w-full pb-24 pl-2 mt-6">
+        <div className="w-1/2 sm:w-full pb-24 pl-2 pr-4 mt-6">
           <MonacoComponent setValue={setValue} />
         </div>
-        <div className="w-1/2 sm:w-full pl-12 mt-12">
+        <div className="bg-black pl-px sm:hidden"> </div>
+        <div className="w-1/2 sm:w-full px-12 -ml-px mt-12 overflow-auto h-128">
           <SpectralComponent value={value} />
         </div>
       </div>

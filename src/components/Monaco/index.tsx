@@ -1,6 +1,7 @@
 import { monaco, MonacoCodeEditor, MonacoCodeStore } from '@stoplight/monaco';
 import * as React from 'react';
 import TodoAPI from './references/todos.oas2.json';
+// import YamlData from './references/default';
 import OpenAPI2Schema from './schemas/openapi/2.0.json';
 import OpenAPI3Schema from './schemas/openapi/3.0.json';
 
@@ -65,7 +66,7 @@ export const MonacoComponent = ({ setValue }) => {
       <div className="text-right">
         <button
           onClick={resetValue}
-          className="text-white bg-purple-lighter shadow-md rounded mb-4 p-2 font-semibold hover:cursor-pointer"
+          className="z-50 text-white bg-purple-lighter shadow-md rounded mb-4 p-2 font-semibold hover:cursor-pointer"
         >
           Reset Value
         </button>

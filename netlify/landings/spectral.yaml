@@ -3,7 +3,7 @@ title: Spectral - Open Source API Description Linter | Stoplight
 color: purple-darker
 hasSandbox: true
 relatedTags:
-  - blog-mocking
+  - blog-design
 hero:
   subtitle: Improve the quality of your API by improving the quality of your API descriptions
   title: Spectral, an Open Source API Description Linter

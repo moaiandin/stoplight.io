@@ -1,5 +1,5 @@
 ---
-path: /spectral-v4
+path: /blog/spectral-v4
 tags:
   - blog
   - blog-featured

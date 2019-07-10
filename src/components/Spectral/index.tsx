@@ -1,64 +1,119 @@
-import { DiagnosticSeverity, IDiagnostic } from '@stoplight/types';
+import { DiagnosticSeverity, Dictionary, IDiagnostic } from '@stoplight/types';
 const { Spectral } = require('@stoplight/spectral');
-import { faExclamationCircle, faExclamationTriangle } from '@fortawesome/free-solid-svg-icons';
+import { IconProp } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { monaco, MonacoCodeStore } from '@stoplight/monaco';
 import { oas3Functions, rules as OAS3rules } from '@stoplight/spectral/dist/rulesets/oas3';
 import * as React from 'react';
 
 const spectral = new Spectral();
 spectral.addFunctions(oas3Functions());
 
-const iconToSeverityMap = {
+const severityIcons: Dictionary<{ icon: IconProp; color: string }> = {
   Error: {
-    icon: faExclamationCircle,
-    color: 'red-dark',
-    textColor: 'text-red-dark',
+    icon: 'exclamation-circle',
+    color: 'red',
   },
   Warning: {
-    icon: faExclamationTriangle,
-    color: 'yellow-dark',
-    textColor: 'text-yellow-dark',
+    icon: 'exclamation-triangle',
+    color: 'orange',
+  },
+  Info: {
+    icon: 'info-circle',
+    color: 'blue',
+  },
+  Hint: {
+    icon: 'comment',
+    color: 'green',
   },
 };
 
-export const SpectralComponent = ({ value }) => {
+export const SpectralComponent: React.FunctionComponent<{
+  className?: string;
+  value?: string;
+  monacoStore?: MonacoCodeStore;
+}> = ({ className, value, monacoStore }) => {
   const [results, setResults] = React.useState<IDiagnostic[]>([]);
+  const [isValidating, setIsValidating] = React.useState(false);
 
   React.useEffect(
     () => {
-      OAS3rules()
-        .then(rules => spectral.addRules(rules))
-        .then(() => spectral.run(value))
-        .then(setResults);
+      if (value) {
+        setIsValidating(true);
+        OAS3rules()
+          .then(rules => spectral.addRules(rules))
+          .then(() => spectral.run(value))
+          .then((res: IDiagnostic[]) => {
+            res.sort((a, b) => (a.range.start.line > b.range.start.line ? -1 : 1));
+            res.sort((a, b) => (a.severity > b.severity ? 1 : -1));
+
+            setResults(res);
+            setIsValidating(false);
+          })
+          .catch(() => setIsValidating(false));
+      } else {
+        setResults([]);
+      }
     },
     [value] // Whenever value changes, run the oas3rules function
   );
 
+  let fallbackText = 'Add an OpenAPI v2 or v3 document to see the Spectral results.';
+  if (value) {
+    if (isValidating) {
+      fallbackText = 'Validating...';
+    } else {
+      fallbackText = 'Congratulations, there are no errors or warnings in this document!';
+    }
+  }
+
   return (
-    <div>
-      <table>
-        <thead>
-          <tr className="font-semibold text-left">
-            <th>Type</th>
-            <th className="pl-4">Line</th>
-            <th className="pl-4">Message</th>
-          </tr>
-        </thead>
-        <tbody>
-          {results.map((result, index) => {
-            const { icon, color, textColor } = iconToSeverityMap[DiagnosticSeverity[result.severity]];
-            return (
-              <tr className={textColor} key={index}>
-                <td className="text-xs uppercase font-semibold pt-6">
-                  <FontAwesomeIcon icon={icon} color={color} size={'lg'} />
-                </td>
-                <td className="pl-4 pt-6">{result.range.start.line}</td>
-                <td className="pl-4 pt-6">{result.message}</td>
-              </tr>
-            );
-          })}
-        </tbody>
-      </table>
+    <div className={className}>
+      <div className="flex items-center text-grey-dark h-10 px-1">
+        <div className="w-10 text-center">Type</div>
+        <div className="ml-4 w-10 text-center">Line</div>
+        <div className="ml-4 flex-1">Message</div>
+      </div>
+
+      {results.length > 0 ? (
+        results.map((result, index) => {
+          const { icon, color } = severityIcons[DiagnosticSeverity[result.severity]];
+
+          return (
+            <div
+              key={index}
+              className="flex items-center cursor-pointer hover:bg-grey-light px-1"
+              onClick={() => {
+                if (!monacoStore || !monacoStore.editor) return;
+
+                monacoStore.editor.focus();
+
+                monacoStore.editor.setPosition({
+                  column: result.range.start.character + 1,
+                  lineNumber: result.range.start.line + 1,
+                });
+
+                monacoStore.editor.revealRangeAtTop({
+                  startLineNumber: Math.max(result.range.start.line - 1, 1),
+                  startColumn: result.range.start.character + 1,
+                  endLineNumber: result.range.end.line + 1,
+                  endColumn: result.range.end.character + 1,
+                });
+              }}
+            >
+              <div className="py-1 w-10 text-center" title={DiagnosticSeverity[result.severity]}>
+                <FontAwesomeIcon icon={icon} color={color} />
+              </div>
+              <div className="py-1 ml-4 w-10 text-center">{result.range.start.line}</div>
+              <div className="py-1 ml-4 flex-1 truncate" title={result.message}>
+                {result.message}
+              </div>
+            </div>
+          );
+        })
+      ) : (
+        <div className="flex font-semibold h-12 items-center">{fallbackText}</div>
+      )}
     </div>
   );
 };

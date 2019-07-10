@@ -1,20 +1,27 @@
+import { MonacoCodeStore } from '@stoplight/monaco';
+import cn from 'classnames';
 import * as React from 'react';
 import NoSSR from 'react-no-ssr';
 import { MonacoComponent } from 'src/components/Monaco';
 import { SpectralComponent } from 'src/components/Spectral';
 
-export const Sandbox = () => {
+export const Sandbox = ({ className }) => {
   const [value, setValue] = React.useState('');
+  const [monacoStore, setMonacoStore] = React.useState<MonacoCodeStore | undefined>(undefined);
 
   return (
     <NoSSR>
-      <div className="container relative flex flex-wrap md-hidden bg-white shadow-md rounded-lg -mt-16 z-10">
-        <div className="w-1/2 sm:w-full pb-24 pl-2 pr-4 mt-6">
-          <MonacoComponent setValue={setValue} />
-        </div>
-        <div className="bg-black pl-px sm:hidden"> </div>
-        <div className="w-1/2 sm:w-full px-12 -ml-px mt-12 overflow-auto h-128">
-          <SpectralComponent value={value} />
+      <div className={cn('container relative z-10 sm:hidden', className)}>
+        <div className="flex flex-wrap bg-white shadow-md rounded-lg" style={{ height: 600 }}>
+          <MonacoComponent className="flex-1 w-1/2" setValue={setValue} setMonacoStore={setMonacoStore} />
+
+          <div className="bg-darken-100 w-px" />
+
+          <SpectralComponent
+            className="flex-1 w-1/2 overflow-y-auto overflow-x-hidden m-3"
+            value={value}
+            monacoStore={monacoStore}
+          />
         </div>
       </div>
     </NoSSR>

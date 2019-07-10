@@ -1,17 +1,15 @@
 import { monaco, MonacoCodeEditor, MonacoCodeStore } from '@stoplight/monaco';
+import cn from 'classnames';
 import * as React from 'react';
-import TodoAPI from './references/todos.oas2.json';
-// import YamlData from './references/default';
+
+import PetstoreOpenAPI from './references/petstore/openapi';
 import OpenAPI2Schema from './schemas/openapi/2.0.json';
 import OpenAPI3Schema from './schemas/openapi/3.0.json';
 
-// TODO: Update this to be a better default value
-const defaultValue = JSON.stringify(TodoAPI, null, 2);
-
 const store = new MonacoCodeStore({
   id: 'a',
-  path: 'file:///todos.oas2.json',
-  value: defaultValue,
+  path: 'file:///openapi.yaml?oas3',
+  value: PetstoreOpenAPI,
 });
 
 monaco.languages.json.jsonDefaults.setDiagnosticsOptions({
@@ -46,13 +44,18 @@ monaco.languages.json.jsonDefaults.setDiagnosticsOptions({
   ],
 });
 
-export const MonacoComponent = ({ setValue }) => {
+export const MonacoComponent = ({ className, setValue, setMonacoStore }) => {
   const resetValue = React.useCallback(
     () => {
-      store.setValue(defaultValue);
+      store.setValue(PetstoreOpenAPI);
     },
     [store]
   );
+
+  React.useEffect(() => {
+    setValue(PetstoreOpenAPI);
+    setMonacoStore(store);
+  }, []);
 
   React.useEffect(
     () => {
@@ -62,30 +65,34 @@ export const MonacoComponent = ({ setValue }) => {
   );
 
   return (
-    <div className="h-128">
-      <div className="text-right">
-        <button
+    <div className={cn(className, 'flex flex-col')}>
+      <div className="flex items-center my-3 mx-6">
+        <div className="flex-1 text-grey-dark">OpenAPI v2 or v3 Document</div>
+
+        <div
+          className={`Button rounded shadow-md flex select-none font-bold border-transparent text-white bg-grey hover:bg-grey-dark cursor-pointer`}
           onClick={resetValue}
-          className="z-50 text-white bg-purple-lighter shadow-md rounded mb-4 p-2 font-semibold hover:cursor-pointer"
         >
-          Reset Value
-        </button>
+          <div className="flex items-center px-4 py-1">Reset</div>
+        </div>
       </div>
 
-      <MonacoCodeEditor
-        store={store}
-        options={{
-          minimap: {
-            enabled: false,
-          },
-          highlightActiveIndentGuide: false,
-          overviewRulerBorder: false,
-          renderLineHighlight: 'none',
-          automaticLayout: true,
-          wordWrap: 'bounded',
-          glyphMargin: true,
-        }}
-      />
+      <div className="flex-1">
+        <MonacoCodeEditor
+          store={store}
+          options={{
+            minimap: {
+              enabled: false,
+            },
+            highlightActiveIndentGuide: false,
+            overviewRulerBorder: false,
+            renderLineHighlight: 'none',
+            automaticLayout: true,
+            wordWrap: 'bounded',
+            glyphMargin: true,
+          }}
+        />
+      </div>
     </div>
   );
 };

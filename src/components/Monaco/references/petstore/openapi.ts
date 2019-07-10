@@ -1,5 +1,4 @@
-export default `
-openapi: '3.0.0'
+export default `openapi: '3.0.0'
 info:
   version: 1.0.0
   title: Swagger Petstore
@@ -108,4 +107,4 @@ components:
           format: int32
         message:
           type: string
-  `;
+`;

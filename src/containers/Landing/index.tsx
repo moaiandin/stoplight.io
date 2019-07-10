@@ -44,11 +44,11 @@ export const Landing: React.FunctionComponent<ILanding> = ({
 
   return (
     <React.Fragment>
-      <Hero bgColor={color} buttons={buttons} {...hero} />
+      <Hero bgColor={color} buttons={buttons} {...hero} containerClassName={hasSandbox ? 'pb-16' : ''} />
 
       <Collage className="md:px-0 py-6 md:py-6" noPadding {...collage} />
 
-      {hasSandbox && <Sandbox />}
+      {hasSandbox && <Sandbox className="-mt-16" />}
 
       <ImageCallout {...imageCallout} />
 

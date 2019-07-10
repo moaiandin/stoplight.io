@@ -11,7 +11,14 @@ import EnvironmentPlugin from 'webpack/lib/EnvironmentPlugin';
 export default (config, { stage, defaultLoaders }) => {
   config.module.rules = [
     {
-      oneOf: [babelLoader(stage), tsLoader(stage), defaultLoaders.jsLoader, sassLoader(stage), cssLoader(stage), defaultLoaders.fileLoader],
+      oneOf: [
+        babelLoader(stage),
+        tsLoader(stage),
+        defaultLoaders.jsLoader,
+        sassLoader(stage),
+        cssLoader(stage),
+        defaultLoaders.fileLoader,
+      ],
     },
   ];
 
@@ -34,7 +41,7 @@ export default (config, { stage, defaultLoaders }) => {
 
   config.plugins.push(
     new EnvironmentPlugin({
-      MONACO_WORKERS_ROOT: 'workers/monaco',
+      MONACO_WORKERS_ROOT: '/workers/monaco',
     })
   );
 

@@ -33,7 +33,6 @@
     "@fortawesome/react-fontawesome": "0.1.x",
     "@stoplight/monaco": "^4.2.1",
     "@stoplight/spectral": "4.0.0-beta.10",
-    "@stoplight/types": "^9.1.2",
     "classnames": "2.2.x",
     "disqus-react": "^1.0.5",
     "lodash.get": "^4.4.2",
@@ -50,6 +49,7 @@
     "tailwindcss": "0.7.x"
   },
   "devDependencies": {
+    "@stoplight/types": "^9.1.2",
     "@stoplight/scripts": "^4.0.0",
     "@stoplight/webpack": "^2.4.0",
     "@types/classnames": "^2.2.6",

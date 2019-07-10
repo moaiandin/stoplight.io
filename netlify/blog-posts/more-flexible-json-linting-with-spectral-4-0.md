@@ -46,6 +46,8 @@ Some of these updates include:
 
 We’re excited for you to [try](https://stoplight.io/spectral) them out!
 
+Also, we will be doing a webinar on July 15th at 10:00 AM CT, if you'd like to learn more about the project. Sign up for the webinar [here](https://zoom.us/webinar/register/WN_9rokGnkiRN6t8kSOmuUpwQ).
+
 ## Use the CLI with multiple, custom rulesets
 
 We found that most Spectral users would prefer to lint their documents from the command line, so we’ve added the ability to run Spectral with custom rulesets from the CLI. 

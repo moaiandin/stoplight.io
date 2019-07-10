@@ -29,6 +29,7 @@ hero:
         style: solid
       subtitle: 'Parallelize development with one click mock servers, powered by Prism'
       title: Mocking
+    
   cta:
     href: 'https://next.stoplight.io/'
     name: Get Started Now

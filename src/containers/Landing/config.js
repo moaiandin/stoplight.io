@@ -51,6 +51,12 @@ export default {
       required: false,
       field: { label: 'tag', name: 'tag', widget: 'string', required: false },
     },
+    {
+      name: 'hasSandbox',
+      widget: 'boolean',
+      required: false,
+      hidden: true,
+    },
     hero,
     collage,
     imageCallout,

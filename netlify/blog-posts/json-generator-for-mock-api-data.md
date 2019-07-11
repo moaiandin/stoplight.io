@@ -21,12 +21,13 @@ actionBar:
   enabled: false
 meta:
   description: Create random JSON and host it on a mock server
+  favicon: /images/mark_light_bg.png
   robots: 'index, follow'
-  title: JSON Generator for Mock API Data | Stoplight API Corner
+  title: 'Mock API Data Generator | Dummy JSON Data Generator For Mock API '
   image: /images/mock-car.jpg
   twitter:
     description: Create random JSON and host it on a mock server
-    title: JSON Generator for Mock API Data | Stoplight API Corner
+    title: 'Mock API Data Generator | Dummy JSON Data Generator For Mock API '
     image: /images/mock-car.jpg
 ---
 With so many APIs using JSON responses, it’s become the common format to express data. It’s has a simple syntax, is human-readable, and can be efficiently parsed in modern languages. Typically, JSON is generated from existing data structures and databases. Yet, when sharing examples, mocking APIs, or building documentation, you may find yourself creating a lot of JSON by hand. That’s when you’ll wish you could generate the data automatically.

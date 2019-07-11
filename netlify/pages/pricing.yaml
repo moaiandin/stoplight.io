@@ -56,70 +56,85 @@ docPlans:
   features:
     - plans:
         - Basic
-        - Essential
         - Standard
         - Pro
+        - Enterprise
       title: 'OpenAPI, Markdown, Request Maker'
     - plans:
         - Basic
-        - Essential
         - Standard
         - Pro
+        - Enterprise
       title: Unlimited Visits
     - plans:
         - Basic
-        - Essential
         - Standard
         - Pro
+        - Enterprise
       title: Publish to docs.stoplight.io
     - plans:
-        - Essential
         - Standard
         - Pro
+        - Enterprise
       title: Publish to your domain
     - plans:
-        - Essential
         - Standard
         - Pro
+        - Enterprise
+      title: Unlimited endpoints and versions
+    - plans:
+        - Standard
+        - Pro
+        - Enterprise
       title: Theming
     - plans:
-        - Essential
         - Standard
         - Pro
+        - Enterprise
       title: Build history & instant rollbacks
     - plans:
-        - Standard
         - Pro
+        - Enterprise
       title: Custom CSS
     - plans:
-        - Standard
         - Pro
-      title: White label
-    - plans:
-        - Standard
-        - Pro
-      title: Basic auth & Auth0 integrations
+        - Enterprise
+      title: White labeling
     - plans:
         - Pro
+        - Enterprise
+      title: Basic login & Auth0 integrations
+    - plans:
+        - Enterprise
+      title: Custom JavaScript
+    - plans:
+        - Enterprise
+      title: Custom Invoicing
+    - plans:
+        - Enterprise
       title: Download static HTML/CSS
     - plans:
-        - Pro
+        - Enterprise
+      title: Embedded iFrame on any website
+    - plans:
+        - Enterprise
       title: SAML single sign-on
     - plans:
-        - Pro
+        - Enterprise
       title: HTTP request OAuth token manager
   plans:
     - price: Free
       title: Basic
-    - domains: '1'
-      price: $69 / mo
-      title: Essential
-    - domains: '10'
-      price: $159 / mo
+    - domains: '1 Domain'
+      price: $149 / mo
       title: Standard
-    - domains: Unlimited
-      price: $349 / mo
+    - domains: '5 Domains'
+      price: $399 / mo
       title: Pro
+    - domains: 'Unlimited Domains'
+      price: Contact Us
+      title: Enterprise
+      link: '/enterprise-contact/'
   title: Documentation Add-On
 meta:
   description: >-

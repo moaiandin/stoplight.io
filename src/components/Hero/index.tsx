@@ -127,7 +127,7 @@ export const Hero: React.FunctionComponent<IHero> = ({
         >
           <div className="flex">
             <div
-              className={cn('flex-1 mb-24', titleClassName, {
+              className={cn('flex-1 mb-20', titleClassName, {
                 'mx-auto': !aligned || aligned === 'center',
                 'ml-auto w-2/3 md:w-full': aligned === 'right',
                 'mr-auto w-2/3 md:w-full': aligned === 'left',
@@ -178,7 +178,7 @@ export const Hero: React.FunctionComponent<IHero> = ({
 
           {cta && (
             <CallToAction
-              className={cn('pb-24 md:pb-4', {
+              className={cn('pb-16 md:pb-4', {
                 'mx-auto': aligned === 'center',
                 'ml-auto': aligned === 'right',
                 'mr-auto': aligned === 'left',
@@ -188,7 +188,7 @@ export const Hero: React.FunctionComponent<IHero> = ({
           )}
 
           {!cards.length && heroButtons.length ? (
-            <div className="flex flex-wrap mx-auto pb-24 md:pt-16">
+            <div className="flex flex-wrap mx-auto pb-16 md:pt-16">
               {heroButtons.map((button, i) => (
                 <HeroButton key={i} color={bgColor} {...button} />
               ))}

@@ -9,22 +9,18 @@ import Footer from 'src/components/Footer';
 import 'src/styles/app.css';
 import 'src/styles/app.scss';
 
-const AppContent = () => {
-  return [
-    <Header key="1" />,
-    <div className="relative">
-      <Routes key="2" />
-    </div>,
-    <Footer key="3" />,
-  ];
-};
-
 class App extends React.Component {
   render() {
     return (
       <Router>
         <Analytics>
-          <AppContent />
+          <Header />
+
+          <div className="relative">
+            <Routes />
+          </div>
+
+          <Footer />
         </Analytics>
       </Router>
     );

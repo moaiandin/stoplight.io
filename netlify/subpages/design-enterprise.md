@@ -1,35 +1,37 @@
 ---
 path: /design/enterprise
-tags: ['']
-relatedTags: ['']
-color: blue
+tags:
+  - ''
+relatedTags:
+  - ''
+title: API Design Tooling For Enterprise Level
 subtitle: >-
-  Build enterprise ready APIs with a collaborative, powerful, visual editor
-  that allows you to prototype and share your API within minutes
-title: API Design Tooling for Enterprises
+  Build enterprise ready APIs with a collaborative, powerful, visual editor that
+  allows you to prototype and share your API within minutes
+color: blue
+tabs:
+  - href: /design
+    title: API Design
+  - href: /design/enterprise
+    title: Enterprise API Design
+  - href: /design/free
+    title: Free API Design Tool
+  - href: /design/prototype
+    title: API Prototype Tool
+  - href: /design/web
+    title: Web API Design Tool
 actionBar:
   enabled: true
-tabs:
-  - title: API Design
-    href: /design
-  - title: Enterprise API Design
-    href: /design/enterprise
-  - title: Free API Design Tool
-    href: /design/free
-  - title: API Prototype Tool
-    href: /design/prototype
-  - title: Web API Design Tool
-    href: /design/web
 meta:
   description: >-
     Build enterprise-ready APIs for your organization within minutes using our
     collaborative, powerful, visual editor
-  title: Enterprise-ready software for API design
+  title: Enterprise API Architect & Design Software | Enterprise API Design
   twitter:
     description: >-
       Build enterprise-ready APIs for your organization within minutes using our
       collaborative, powerful, visual editor
-    title: Enterprise-ready software for API design
+    title: Enterprise API Architect & Design Software | Enterprise API Design
     username: '@stoplightio'
 ---
 

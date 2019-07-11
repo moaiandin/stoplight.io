@@ -133,6 +133,7 @@ export class Header extends React.Component<IHeader, IHeaderState> {
               disableInlineStyles={true}
               onUnpin={this.onUnpin}
               onUnfix={this.onUnfix}
+              children={[]}
             />
           </header>
         </div>

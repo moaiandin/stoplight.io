@@ -3,9 +3,9 @@ const { Spectral } = require('@stoplight/spectral');
 import { IconProp } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { MonacoCodeStore } from '@stoplight/monaco';
+import { readRulesFromRulesets } from '@stoplight/spectral/dist/rulesets';
 import { oas3Functions } from '@stoplight/spectral/dist/rulesets/oas3';
 import * as React from 'react';
-import { readRulesFromRulesets } from '@stoplight/spectral/dist/rulesets';
 
 const spectral = new Spectral();
 spectral.addFunctions(oas3Functions());
@@ -29,6 +29,16 @@ const severityIcons: Dictionary<{ icon: IconProp; color: string }> = {
   },
 };
 
+const getSpecFromValue = function(value: string) {
+  if (/"swagger":/.test(value) || /swagger:/.test(value)) {
+    console.log(`"swagger": present `, /"swagger":/.test(value), `swagger: present `, /swagger:/.test(value));
+    return 'oas2';
+  } else {
+    console.log(`"swagger": present `, /"swagger":/.test(value), `swagger: present `, /swagger:/.test(value));
+    return 'oas3';
+  }
+};
+
 export const SpectralComponent: React.FunctionComponent<{
   className?: string;
   value?: string;
@@ -41,7 +51,7 @@ export const SpectralComponent: React.FunctionComponent<{
     () => {
       if (value) {
         setIsValidating(true);
-        readRulesFromRulesets('spectral:oas3')
+        readRulesFromRulesets(`spectral:${getSpecFromValue(value)}`)
           .then(rules => spectral.addRules(rules))
           .then(() => spectral.run(value))
           .then((res: IDiagnostic[]) => {

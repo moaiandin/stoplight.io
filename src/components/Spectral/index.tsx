@@ -3,9 +3,9 @@ const { Spectral } = require('@stoplight/spectral');
 import { IconProp } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { MonacoCodeStore } from '@stoplight/monaco';
+import { readRulesFromRulesets } from '@stoplight/spectral/dist/rulesets';
 import { oas3Functions } from '@stoplight/spectral/dist/rulesets/oas3';
 import * as React from 'react';
-import { readRulesFromRulesets } from '@stoplight/spectral/dist/rulesets';
 
 const spectral = new Spectral();
 spectral.addFunctions(oas3Functions());
@@ -106,7 +106,7 @@ export const SpectralComponent: React.FunctionComponent<{
                 <FontAwesomeIcon icon={icon} color={color} />
               </div>
               <div className="py-1 ml-4 w-10 text-center">{result.range.start.line}</div>
-              <div className="py-1 ml-4 flex-1 truncate" title={result.message}>
+              <div className="py-1 ml-4 flex-1" title={result.message}>
                 {result.message}
               </div>
             </div>

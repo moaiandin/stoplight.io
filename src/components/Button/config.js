@@ -1,4 +1,4 @@
-import { colors } from 'src/utils';
+import { colors } from 'src/utils/netlify';
 
 export default {
   name: 'button',

@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Link as StaticLink } from 'react-static';
+import { Link as StaticLink } from 'react-router-dom';
 
 export interface ILink {
   to?: string;
@@ -19,7 +19,13 @@ export const Link: React.FunctionComponent<ILink> = ({ to, children, disabled, .
   } else if (typeof href === 'string') {
     href = href.trim(); // Make sure there aren't any trailing white spaces
 
-    if (href.startsWith('#')) {
+    if (/^http/.test(href)) {
+      return (
+        <a {...props} href={href} target="_blank" rel="noopener noreferrer">
+          {children}
+        </a>
+      );
+    } else if (href.startsWith('#')) {
       return (
         <a {...props} href={href}>
           {children}

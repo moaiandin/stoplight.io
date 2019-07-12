@@ -1,5 +1,5 @@
 import React from 'react';
-import { withRouter } from 'react-static';
+import { withRouter } from 'react-router-dom';
 
 class Analytics extends React.Component {
   componentDidMount() {

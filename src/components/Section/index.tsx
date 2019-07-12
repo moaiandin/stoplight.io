@@ -1,7 +1,7 @@
 import cn from 'classnames';
 import * as React from 'react';
 
-import { slugify } from 'src/utils/text';
+import { slugify } from 'src/utils/slugify';
 
 export interface ISection {
   id?: string;

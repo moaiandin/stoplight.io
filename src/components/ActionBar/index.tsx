@@ -1,6 +1,6 @@
 import cn from 'classnames';
 import * as React from 'react';
-import { SiteData } from 'react-static';
+import { withSiteData } from 'react-static';
 
 import { Button, IButton } from 'src/components/Button';
 import { Container } from '../Container';
@@ -12,7 +12,9 @@ export interface IActionBar {
   className: string;
 }
 
-export const ActionBarComponent: React.FunctionComponent<IActionBar> = ({ enabled, text, buttons, className }) => {
+export const ActionBar: React.FunctionComponent<IActionBar> = withSiteData(props => {
+  const { enabled, text, buttons, className } = props;
+
   if (!enabled) {
     return null;
   }
@@ -22,7 +24,7 @@ export const ActionBarComponent: React.FunctionComponent<IActionBar> = ({ enable
       <div
         className={cn(
           className,
-          'p-12 flex sm:flex-col sm:justify-center sm:items-between flex-wrap items-center shadow rounded'
+          'p-12 flex sm:flex-col sm:justify-center sm:items-between flex-wrap items-center shadow rounded',
         )}
       >
         {text && <div className="flex-1 font-bold text-grey-darker">{text}</div>}
@@ -37,14 +39,4 @@ export const ActionBarComponent: React.FunctionComponent<IActionBar> = ({ enable
       </div>
     </Container>
   );
-};
-
-export const ActionBar = props => {
-  return (
-    <SiteData
-      render={({ actionBar }) => {
-        return <ActionBarComponent {...Object.assign({}, actionBar, props)} />;
-      }}
-    />
-  );
-};
+});

@@ -4,11 +4,9 @@ import { IconProp } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { MonacoCodeStore } from '@stoplight/monaco';
 import { readRulesFromRulesets } from '@stoplight/spectral/dist/rulesets';
+import { oas2Functions } from '@stoplight/spectral/dist/rulesets/oas2';
 import { oas3Functions } from '@stoplight/spectral/dist/rulesets/oas3';
 import * as React from 'react';
-
-const spectral = new Spectral();
-spectral.addFunctions(oas3Functions());
 
 const severityIcons: Dictionary<{ icon: IconProp; color: string }> = {
   Error: {
@@ -29,15 +27,24 @@ const severityIcons: Dictionary<{ icon: IconProp; color: string }> = {
   },
 };
 
-const getSpecFromValue = function(value: string) {
-  if (/"swagger":/.test(value) || /swagger:/.test(value)) {
-    console.log(`"swagger": present `, /"swagger":/.test(value), `swagger: present `, /swagger:/.test(value));
-    return 'oas2';
-  } else {
-    console.log(`"swagger": present `, /"swagger":/.test(value), `swagger: present `, /swagger:/.test(value));
-    return 'oas3';
-  }
+const oasFunctions = {
+  oas2: oas2Functions,
+  oas3: oas3Functions,
 };
+
+function getSpecFromValue(value: string) {
+  return /"swagger":/.test(value) || /swagger:/.test(value) ? 'oas2' : 'oas3';
+}
+
+function runSpectral(value: string) {
+  const spec = getSpecFromValue(value);
+  const spectral = new Spectral();
+  spectral.addFunctions(oasFunctions[spec]());
+
+  return readRulesFromRulesets(`spectral:${spec}`)
+    .then(rules => spectral.addRules(rules))
+    .then(() => spectral.run(value));
+}
 
 export const SpectralComponent: React.FunctionComponent<{
   className?: string;
@@ -51,9 +58,8 @@ export const SpectralComponent: React.FunctionComponent<{
     () => {
       if (value) {
         setIsValidating(true);
-        readRulesFromRulesets(`spectral:${getSpecFromValue(value)}`)
-          .then(rules => spectral.addRules(rules))
-          .then(() => spectral.run(value))
+
+        runSpectral(value)
           .then((res: IDiagnostic[]) => {
             res.sort((a, b) => (a.range.start.line > b.range.start.line ? -1 : 1));
             res.sort((a, b) => (a.severity > b.severity ? 1 : -1));
@@ -66,7 +72,7 @@ export const SpectralComponent: React.FunctionComponent<{
         setResults([]);
       }
     },
-    [value] // Whenever value changes, run the oas3rules function
+    [value],
   );
 
   let fallbackText = 'Add an OpenAPI v2 or v3 document to see the Spectral results.';

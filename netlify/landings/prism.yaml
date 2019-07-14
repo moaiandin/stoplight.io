@@ -14,14 +14,14 @@ featureSection:
   actionBar:
     buttons:
       - href: 'https://github.com/stoplightio/prism'
-        title: Get Started
+        title: Get Started with Prism
     enabled: true
     text: Do you want to mock your API in minutes? 
 
   title: Work with your API before you write any code
   description: >-
     Prism is an open source mock server that can mimic your API's behavior as if you already
-    built it. Servers are generated from your OpenAPI v2/v3 documents.
+    built it. Servers are generated from your OpenAPI v2/v3 (formerly known as Swagger) documents.
   features:
     - description: >-
         The waterfall model does not work well for building APIs. Learning at the very end what your

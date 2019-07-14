@@ -92,6 +92,13 @@ header:
           subtitle: Learn API Design Best Practices
           title: API Design Guide
           titleColor: yellow
+        - href: /prism
+          icon:
+            - fas
+            - server
+          subtitle: Open source HTTP Mock Server
+          title: Prism
+          titleColor: blue           
         - href: /api-documentation-guide/basics/
           icon:
             - fas
@@ -105,7 +112,7 @@ header:
             - bolt
           subtitle: Create mock API servers
           title: API Mocking Guide
-          titleColor: grey-darkest
+          titleColor: orange
         - href: /video
           icon:
             - fas

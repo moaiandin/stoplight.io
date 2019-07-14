@@ -85,19 +85,19 @@ header:
           subtitle: Open source API description linter
           title: Spectral
           titleColor: purple
-        - href: /api-design-guide/basics/
-          icon:
-            - fas
-            - book-open
-          subtitle: Learn API Design Best Practices
-          title: API Design Guide
-          titleColor: yellow
         - href: /prism
           icon:
             - fas
             - server
           subtitle: Open source HTTP Mock Server
           title: Prism
+          titleColor: yellow          
+        - href: /api-design-guide/basics/
+          icon:
+            - fas
+            - book-open
+          subtitle: Learn API Design Best Practices
+          title: API Design Guide
           titleColor: blue           
         - href: /api-documentation-guide/basics/
           icon:

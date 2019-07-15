@@ -5,7 +5,7 @@ relatedTags:
   - blog-mocking
 hero:
   subtitle: Accelerate API development with realistic mock servers powered by API descriptions
-  title: Prism, an Open Source HTTP Mock Server for API Descriptions
+  title: Prism, an Open Source HTTP Mock Server
   cta:
     color: muted-light
     href: 'https://github.com/stoplightio/prism/'

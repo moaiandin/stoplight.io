@@ -1,4 +1,4 @@
-import { colors } from 'src/utils';
+import { colors } from 'src/utils/netlify';
 
 export default {
   name: 'cta',
@@ -29,8 +29,7 @@ export default {
     {
       name: 'icon',
       label: 'Icon',
-      widget: 'fontawesome-solid',
-      type: 'array',
+      widget: 'string',
       required: false,
     },
   ],

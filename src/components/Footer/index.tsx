@@ -1,7 +1,7 @@
+import { IconProp } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import * as React from 'react';
 import { withSiteData } from 'react-static';
-
 import { Image } from 'src/components/Image';
 import { Link } from 'src/components/Link';
 
@@ -18,7 +18,7 @@ interface IFooterColumn {
 
 interface IFooterSocial {
   href: string;
-  icon: string;
+  icon: IconProp;
 }
 
 interface IFooterLegal {
@@ -87,7 +87,7 @@ export const Footer: React.FunctionComponent<{ footer: IFooter }> = ({ footer })
                   elems.unshift(
                     <span key={`${index}-sep`} className="mx-2">
                       |
-                    </span>
+                    </span>,
                   );
                 }
 

@@ -28,12 +28,9 @@ export class Mobile extends React.Component<IMobileHeader, IMobileHeaderState> {
 
     return (
       <div className="hidden sm:flex flex-1 justify-end">
-        <FontAwesomeIcon
-          icon={['fas', 'bars']}
-          className="cursor-pointer ml-3 text-white"
-          size="2x"
-          onClick={() => this.setState({ showMenu: true })}
-        />
+        <span onClick={() => this.setState({ showMenu: true })}>
+          <FontAwesomeIcon icon={['fas', 'bars']} className="cursor-pointer ml-3 text-white" size="2x" />
+        </span>
 
         {showMenu && (
           <Portal>
@@ -41,12 +38,9 @@ export class Mobile extends React.Component<IMobileHeader, IMobileHeaderState> {
               <div className="relative m-4 pt-6 bg-white rounded" onClick={() => this.setState({ showMenu: false })}>
                 <div className="px-6">
                   <div className="absolute pin-t pin-r p-4 flex items-center">
-                    <FontAwesomeIcon
-                      icon={['fas', 'times']}
-                      className="cursor-pointer text-grey"
-                      size="lg"
-                      onClick={() => this.setState({ showMenu: false })}
-                    />
+                    <span onClick={() => this.setState({ showMenu: false })}>
+                      <FontAwesomeIcon icon={['fas', 'times']} className="cursor-pointer text-grey" size="lg" />
+                    </span>
                   </div>
 
                   {main && (

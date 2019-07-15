@@ -2,15 +2,9 @@ import { monaco, MonacoCodeEditor, MonacoCodeStore } from '@stoplight/monaco';
 import cn from 'classnames';
 import * as React from 'react';
 
-import PetstoreOpenAPI from './references/petstore/openapi';
-import OpenAPI2Schema from './schemas/openapi/2.0.json';
-import OpenAPI3Schema from './schemas/openapi/3.0.json';
-
-const store = new MonacoCodeStore({
-  id: 'a',
-  path: 'file:///openapi.yaml?oas3',
-  value: PetstoreOpenAPI,
-});
+import { getInfoFromValue } from '../../utils/getInfoFromValue';
+import OpenAPI2Schema from '../../utils/schemas/openapi/2.0.json';
+import OpenAPI3Schema from '../../utils/schemas/openapi/3.0.json';
 
 monaco.languages.json.jsonDefaults.setDiagnosticsOptions({
   validate: false,
@@ -44,24 +38,50 @@ monaco.languages.json.jsonDefaults.setDiagnosticsOptions({
   ],
 });
 
-export const MonacoComponent = ({ className, setValue, setMonacoStore }) => {
-  const resetValue = React.useCallback(
-    () => {
-      store.setValue(PetstoreOpenAPI);
-    },
-    [store]
-  );
+const stores: any = {
+  oas2: {
+    json: undefined,
+    yaml: undefined,
+  },
+  oas3: {
+    json: undefined,
+    yaml: undefined,
+  },
+};
 
-  React.useEffect(() => {
-    setValue(PetstoreOpenAPI);
-    setMonacoStore(store);
-  }, []);
+function useMonacoStore(value: string): MonacoCodeStore {
+  const { spec, lang } = getInfoFromValue(value);
+
+  return React.useMemo(
+    () => {
+      if (stores[spec][lang]) {
+        stores[spec][lang].setValue(value);
+      } else {
+        stores[spec][lang] = new MonacoCodeStore({
+          id: `${spec}/${lang}`,
+          path: `file:///openapi.${lang}?${spec}`,
+          value,
+        });
+      }
+
+      return stores[spec][lang];
+    },
+    [spec],
+  );
+}
+
+export const MonacoComponent = ({ className, value, originalValue, setValue, setMonacoStore }) => {
+  const store = useMonacoStore(value);
+
+  const resetValue = React.useCallback(() => store.setValue(originalValue), [store]);
+
+  React.useEffect(() => setMonacoStore(store), [store]);
 
   React.useEffect(
     () => {
       store.onDidUpdateValue(setValue);
     },
-    [setValue]
+    [store, setValue],
   );
 
   return (
@@ -90,6 +110,16 @@ export const MonacoComponent = ({ className, setValue, setMonacoStore }) => {
             automaticLayout: true,
             wordWrap: 'bounded',
             glyphMargin: true,
+            scrollBeyondLastLine: false,
+            lineNumbersMinChars: 4,
+            copyWithSyntaxHighlighting: false,
+            colorDecorators: false,
+            roundedSelection: false,
+            scrollbar: {
+              useShadows: false,
+              horizontalScrollbarSize: 7,
+              verticalScrollbarSize: 7,
+            },
           }}
         />
       </div>

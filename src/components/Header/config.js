@@ -1,4 +1,4 @@
-import { colors } from 'src/utils';
+import { colors } from 'src/utils/netlify';
 
 export default {
   name: 'header',
@@ -42,8 +42,7 @@ export default {
         {
           name: 'icon',
           label: 'Icon (button only)',
-          widget: 'fontawesome-solid',
-          type: 'array',
+          widget: 'string',
           required: false,
         },
         {
@@ -92,8 +91,7 @@ export default {
             {
               name: 'icon',
               label: 'Icon',
-              widget: 'fontawesome-solid',
-              type: 'array',
+              widget: 'string',
               required: false,
             },
           ],

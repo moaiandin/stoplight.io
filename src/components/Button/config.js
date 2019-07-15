@@ -1,4 +1,4 @@
-import { colors } from 'src/utils';
+import { colors } from 'src/utils/netlify';
 
 export default {
   name: 'button',
@@ -27,6 +27,12 @@ export default {
       options: colors,
       default: 'purple',
       hint: 'Default: purple',
+    },
+    {
+      name: 'icon',
+      label: 'Icon',
+      widget: 'string',
+      required: false,
     },
   ],
 };

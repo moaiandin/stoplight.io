@@ -51,7 +51,7 @@ export const Diagnostics: React.FunctionComponent<{
 
       <div className="flex-1 overflow-auto">
         {results.length > 0 ? (
-          results.concat(results).map((result, index) => {
+          results.map((result, index) => {
             const { icon, color } = severityIcons[DiagnosticSeverity[result.severity]];
 
             return (

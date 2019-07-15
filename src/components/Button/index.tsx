@@ -1,6 +1,7 @@
+import { IconProp } from '@fortawesome/fontawesome-svg-core';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import cn from 'classnames';
 import * as React from 'react';
-
 import { Link } from 'src/components/Link';
 
 export interface IButton {
@@ -10,6 +11,7 @@ export interface IButton {
   color?: string;
   outlined?: boolean;
   shadow?: string;
+  icon?: IconProp;
 }
 
 export const Button: React.FunctionComponent<IButton> = ({
@@ -19,6 +21,7 @@ export const Button: React.FunctionComponent<IButton> = ({
   outlined,
   href,
   title,
+  icon,
   children,
 }) => {
   return (
@@ -34,11 +37,16 @@ export const Button: React.FunctionComponent<IButton> = ({
           [`bg-${color} hover:bg-${color}-dark text-white`]: !outlined,
           [`text-${color}-dark hover:text-${color}-darker`]: outlined,
           [`shadow-${shadow}`]: shadow,
-        }
+        },
       )}
       to={href}
     >
-      {children || title}
+      <div>{children || title}</div>
+      {icon && (
+        <div className="ml-2">
+          <FontAwesomeIcon icon={icon} size="lg" />
+        </div>
+      )}
     </Link>
   );
 };

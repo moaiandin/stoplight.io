@@ -28,5 +28,11 @@ export default {
       default: 'purple',
       hint: 'Default: purple',
     },
+    {
+      name: 'icon',
+      label: 'Icon',
+      widget: 'string',
+      required: false,
+    },
   ],
 };

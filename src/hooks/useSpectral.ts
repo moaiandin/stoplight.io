@@ -47,8 +47,7 @@ export function useSpectral(value?: string) {
 
         runSpectral(value)
           .then((res: IDiagnostic[]) => {
-            res.sort((a, b) => (a.range.start.line > b.range.start.line ? -1 : 1));
-            res.sort((a, b) => (a.severity > b.severity ? 1 : -1));
+            res.sort((a, b) => (a.range.start.line < b.range.start.line ? -1 : 1));
 
             setResults(res);
             setIsValidating(false);

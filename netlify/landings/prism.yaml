@@ -28,7 +28,7 @@ featureSection:
         potential consumers think about your software can be source of huge problems.
         With Prism you can move the feedback stage to the design phase of your API by
         providing a real server to use and play with.
-      image: /images/mocking_instant.png
+      image: /images/prism_mocking.png
       shortName: Quick Iterations
       title: Quickly iterate on your API
 
@@ -36,7 +36,7 @@ featureSection:
         Static examples in mock APIs can bias the way you write the code and test the API.
         Prism can generate dynamic random examples based on your API description,
         so the examples are always valid.
-      image: /images/mocking_virtualization.png
+      image: /images/prism_dynamic.png
       shortName: Dynamic Examples
       title: Generate dynamic examples
 
@@ -44,7 +44,7 @@ featureSection:
         Prism validates both request and response data. If you have an
         invalid example in the specification, Prism will let you know; if your request is not compliant with the rules
         of your API specification, Prism will return an error message. It will never yell to you, we promise.
-      image: /images/mocking_request_validation.png
+      image: /images/prism_validation.png
       shortName: Validation
       title: Validate input and output
 

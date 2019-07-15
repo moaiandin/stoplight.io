@@ -52,7 +52,9 @@ This latest version can save your team time, money, and headaches, by getting yo
 ![Prism CLI usage](https://rawcdn.githack.com/stoplightio/prism/cc4ec0955525470e358c281ee173f96bd5898b44/examples/prism-cli.svg)
 
 Let me give you a detailed rundown of what Prism v3 can do.
+
 ## Built-in Support for OpenAPI 3.0 from the Ground Up
+
 Prism v3 was purpose-built to be the engine that powers your mocking needs. You can quickly generate your servers using OpenAPI 3.0.x, the latest iteration of the format previously known as Swagger. The big advantage to this is that Prism v3 now supports a dynamic example generator which will produce a large variety of data output, rather than static data for each response. This allows for a larger range of instant feedback than ever before.
 
 When your mock servers produce static results, they can misrepresent the data that comes from your API. The responses can even become out-dated if they’re not tied to the OpenAPI document. Prism v3 can detect changes in your OpenAPI document and restart the mock servers seamlessly.
@@ -60,6 +62,7 @@ When your mock servers produce static results, they can misrepresent the data th
 Even better, OpenAPI allows for schema extensions. We’ve included support for dynamic example generation from [JSON Schema Faker](https://github.com/json-schema-faker/json-schema-faker). Even without the extensions enabled, you’ll always receive the accurate response type. With JSON Schema Faker, you can also create specific value types, such as names street addresses.
 
 With the recent [release of Spectral](https://github.com/stoplightio/spectral), Prism v3 marks multiple open source projects from Stoplight that support Open API 3.0.x. Oh, and what if you are still using OpenAPI 2.0?  Don’t worry. We fully support OpenAPI 2.0 with Prism v3.
+
 ## More Detailed Logging for Failed Requests
 
 One of the most exciting changes for me about Prism v3 is the new logging capabilities.  In Prism v2, when you were receiving a response that did not make sense to you, the program would not give you actionable feedback to tell you why that message was occurring. Prism v3 gives you a running log, with a series of messages including why the program returned the response it did, and what it did as a result of that error. This vastly improves the observability and debuggability of your API.
@@ -69,6 +72,7 @@ Prism logs report inconsistencies within request data. For example, your API may
 Detailed logging helps you better test your API and also uncover the need for more complete OpenAPI definitions. In both cases, you’ll be building better APIs as a result.
 
 ## Prism v3 is Over 300 Times Faster
+
 Prism v2 was built using an inefficient translation layer as the program worked between the Go and Javascript code it was written in. While we could have improved the performance here, we chose to rewrite the Go portion of Prism. Now Prism v3 is written solely in TypeScript, which allows for easier contributions from the community and reusing some of the libraries we’ve been already open sourced in the past.
 
 The best part is that the performance improvements were staggering. Prism v3 is over 300 times faster than the previous version. You can include mock server tests in your build process without noticing any slowdown.
@@ -76,6 +80,7 @@ The best part is that the performance improvements were staggering. Prism v3 is 
 Go is an efficient language, but it was Stoplight’s only tool that used it. That not only meant that Prism v2 was harder for the development community to contribute to its refinement, but it also meant that it was harder for us to build Prism into our hosted product.
 
 ## Try Prism v3 Today
+
 Regardless of whether you’re an existing Prism user or brand new to mock APIs, we invite you to [give Prism v3 a try](https://github.com/stoplightio/prism). As you can probably tell, we’re excited and the advantages of this rewrite are clear:
 
 - OpenAPI 3.0 support

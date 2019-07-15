@@ -15,7 +15,7 @@ hero:
 featureSection:
   actionBar:
     buttons:
-      - href: 'https://github.com/stoplightio/spectral'
+      - href: 'https://stoplight.io/spectral/'
         title: Get Started
     enabled: true
     text: Do you want feedback on your API descriptions right now?

@@ -20,7 +20,7 @@ disqus:
 actionBar:
   buttons:
     - color: purple
-      href: 'https://github.com/stoplightio/spectral'
+      href: 'https://stoplight.io/spectral/'
       outlined: false
       title: Get Started with Spectral
   enabled: true

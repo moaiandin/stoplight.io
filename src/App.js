@@ -1,30 +1,27 @@
 import React from 'react';
-import Routes from 'react-static-routes';
-import { Router } from 'react-static';
+import { Root, Routes } from 'react-static';
 
-import Analytics from 'src/components/Analytics';
-import Header from 'src/components/Header';
-import Footer from 'src/components/Footer';
+import { Image } from './components/Image';
 
 import 'src/styles/app.css';
 import 'src/styles/app.scss';
 
-class App extends React.Component {
-  render() {
-    return (
-      <Router>
-        <Analytics>
-          <Header />
+function App() {
+  return (
+    <Root>
+      <React.Suspense fallback={<Loading />}>
+        <Routes />
+      </React.Suspense>
+    </Root>
+  );
+}
 
-          <div className="relative">
-            <Routes />
-          </div>
-
-          <Footer />
-        </Analytics>
-      </Router>
-    );
-  }
+function Loading() {
+  return (
+    <div className="flex items-center justify-center h-screen">
+      <Image style={{ width: 100 }} src="/images/stoplight-dude-dark.png" />
+    </div>
+  );
 }
 
 export default App;

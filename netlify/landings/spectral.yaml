@@ -16,7 +16,7 @@ featureSection:
   actionBar:
     buttons:
       - href: 'https://github.com/stoplightio/spectral'
-        title: Get Started
+        title: Get Started with Spectral
     enabled: true
     text: Do you want feedback on your API descriptions right now?
 
@@ -46,7 +46,7 @@ featureSection:
         answers, but all most developers really want is consistency. Using a
         style guide, can reduce decision making and improve consistency for all your teams.
         <br><br>You can use the default style guides, extend it, or write one to match your
-        organization's style guide. 
+        organization's style guide.
       image: /images/errors_and_warnings.png
       shortName: Increase Consistency
       title: Reduce decision-making and promote consistent API descriptions

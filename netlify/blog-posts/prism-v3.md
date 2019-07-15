@@ -49,7 +49,7 @@ We are excited to announce the release of Prism v3, which contains significant u
 
 This latest version can save your team time, money, and headaches, by getting your clients feedback early on in the design process, instead of after you’ve written a whole bunch of code. Making sure people are happy with how the API works early on means you can just tweak the description documents, which is a lot easier than rewriting code.
 
-![Prism CLI usage](https://raw.githubusercontent.com/stoplightio/prism/master/examples/prism-cli.svg)
+![Prism CLI usage](https://rawcdn.githack.com/stoplightio/prism/cc4ec0955525470e358c281ee173f96bd5898b44/examples/prism-cli.svg)
 
 Let me give you a detailed rundown of what Prism v3 can do.
 ## Built-in Support for OpenAPI 3.0 from the Ground Up

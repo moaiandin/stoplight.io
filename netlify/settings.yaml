@@ -67,7 +67,7 @@ header:
             - server
           subtitle: Open source HTTP Mock Server
           title: Prism
-          titleColor: yellow             
+          titleColor: yellow
       title: Products
       width: 400
     - links:
@@ -98,14 +98,14 @@ header:
             - video
           subtitle: Learn how to design with Stoplight
           title: Webinars
-          titleColor: purple                 
+          titleColor: purple
         - href: /api-design-guide/basics/
           icon:
             - fas
             - book-open
           subtitle: Learn API Design Best Practices
           title: API Design Guide
-          titleColor: blue           
+          titleColor: blue
         - href: /api-documentation-guide/basics/
           icon:
             - fas

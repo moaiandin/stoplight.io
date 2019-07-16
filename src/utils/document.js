@@ -16,9 +16,7 @@ export function Document({ Html, Head, Body, children, state }) {
 
   const { integrations = {}, info = {} } = siteData;
   const { intercom, hubspot, googleTagManager } = integrations || {};
-
-  const routeData = (routeInfo && routeInfo.allProps) || {};
-  const { pagination = {}, meta: routeMeta, path } = routeData;
+  const { pagination = {}, meta: routeMeta, path } = (routeInfo && routeInfo.data) || {};
 
   const meta = resolveMeta(siteData.meta, routeMeta);
   const { jld } = meta;

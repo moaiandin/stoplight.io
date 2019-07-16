@@ -25,7 +25,7 @@ export const CallToAction: React.FunctionComponent<ICallToAction> = ({
 
   const cta = (
     <div
-      className={`Button rounded shadow-md flex select-none inline-flex justify-center font-bold h-xl text-xl rounded z-0 hover:z-5 border-transparent text-white hover:text-white bg-${color} hover:bg-${color}-dark cursor-pointer solid`}
+      className={`Button rounded shadow-md flex select-none inline-flex justify-center whitespace-no-wrap font-bold h-xl text-xl rounded z-0 hover:z-5 border-transparent text-white hover:text-white bg-${color} hover:bg-${color}-dark cursor-pointer solid`}
     >
       <div className="flex items-center px-6">
         <div>{name}</div>

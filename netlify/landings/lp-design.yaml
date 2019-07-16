@@ -6,9 +6,9 @@ hero:
     allows you to prototype and share your API within minutes.
   title: Visual API Designer
   short: true
-  cta:
-    href: '#demo'
-    name: Get a free demo
+  ctas:
+    - href: '#demo'
+      name: Get a free demo
 color: blue
 featureSection:
   features:

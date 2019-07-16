@@ -6,17 +6,22 @@ relatedTags:
 hero:
   subtitle: Accelerate API development with realistic mock servers powered by API descriptions
   title: Prism, an Open Source HTTP Mock Server
-  cta:
-    color: muted-light
-    href: 'https://github.com/stoplightio/prism/'
-    name: View it on GitHub 
+  ctas:
+    - color: indigo
+      href: 'https://github.com/stoplightio/prism/'
+      name: View it on GitHub
+      icon: ['fab', 'github']
+    - color: indigo
+      href: 'https://www.youtube.com/watch?v=IJtFI9mkZ8Y'
+      name: Watch the video
+      icon: ['fas', 'video']
 featureSection:
   actionBar:
     buttons:
       - href: 'https://github.com/stoplightio/prism'
         title: Get Started with Prism
     enabled: true
-    text: Do you want to mock your API in minutes? 
+    text: Do you want to mock your API in minutes?
 
   title: Work with your API before you write any code
   description: >-
@@ -49,7 +54,7 @@ featureSection:
       title: Validate input and output
 
     - description: >-
-        In case you're wondering why Prism has responded to a request in such way, 
+        In case you're wondering why Prism has responded to a request in such way,
         the logs show you the entire negotiation process, so you can modify the spec
         or your code quickly.
       image: /images/prism_logging.png

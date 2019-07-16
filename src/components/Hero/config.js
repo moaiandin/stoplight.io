@@ -1,4 +1,4 @@
-import cta from 'src/components/CallToAction/config';
+import CallToActionConfig from 'src/components/CallToAction/config';
 
 export default {
   name: 'hero',
@@ -33,7 +33,13 @@ export default {
       required: false,
       hint: 'Default: center',
     },
-    cta,
+    {
+      name: 'ctas',
+      label: 'Call To Actions',
+      widget: 'list',
+      required: false,
+      fields: CallToActionConfig.fields,
+    },
     {
       name: 'bgColor',
       label: 'Background Color',

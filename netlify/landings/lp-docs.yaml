@@ -7,9 +7,9 @@ hero:
     your OpenAPI Specification
   title: Hosted API Documentation
   short: true
-  cta:
-    href: '#demo'
-    name: Get a free demo
+  ctas:
+    - href: '#demo'
+      name: Get a free demo
 color: green
 featureSection:
   features:

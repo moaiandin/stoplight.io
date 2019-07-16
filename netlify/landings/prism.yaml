@@ -11,10 +11,6 @@ hero:
       href: 'https://github.com/stoplightio/prism/'
       name: View it on GitHub
       icon: ['fab', 'github']
-    - color: indigo
-      href: 'https://www.youtube.com/watch?v=IJtFI9mkZ8Y'
-      name: Watch the video
-      icon: ['fas', 'video']
 featureSection:
   actionBar:
     buttons:

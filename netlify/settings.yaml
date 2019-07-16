@@ -99,6 +99,13 @@ header:
           subtitle: Learn how to design with Stoplight
           title: Webinars
           titleColor: purple
+        - href: /prism
+          icon:
+            - fas
+            - server
+          subtitle: Open Source API Mock Server
+          title: Prism
+          titleColor: red
         - href: /api-design-guide/basics/
           icon:
             - fas

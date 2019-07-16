@@ -10,7 +10,7 @@ publishedDate: 2019-07-16T00:19:11.840Z
 author: Vincenzo Chianese
 title: Prism v3 Adds OpenAPI 3.0 and Goes Open Source
 subtitle: Generate a mock API server without writing code
-image: /images/dayne-topkin-cxruh7pmmsu-unsplash.jpg
+image: /images/apurv-das-H63k7kYljbY-unsplash.jpg
 color: purple-dark
 tabs:
   - {}
@@ -29,11 +29,11 @@ meta:
   description: "Prism has now a version 3: it's faster and goes Open Source"
   robots: 'index, follow'
   title: Prism v3 Adds OpenAPI 3.0 and Goes Open Source | Stoplight API Corner
-  image: /images/dayne-topkin-cxruh7pmmsu-unsplash.jpg
+  image: /images/apurv-das-H63k7kYljbY-unsplash.jpg
   twitter:
     description: "Prism has now a version 3: it's faster and goes Open Source"
     title: Prism v3 Adds OpenAPI 3.0 and Goes Open Source | Stoplight API Corner"
-    image: /images/dayne-topkin-cxruh7pmmsu-unsplash.jpg
+    image: /images/apurv-das-H63k7kYljbY-unsplash.jpg
     username: '@stoplightio'
 ---
 

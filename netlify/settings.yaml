@@ -1,12 +1,12 @@
 banners:
   - ends: '1564714800000'
     markdown: >-
-      **Introducing <u>**[**Spectral**](https://stoplight.io/spectral/)**</u>,
-      an open source API description linter with built-in OpenAPI support.**
+      **Introducing <u>**[**Prism**](https://stoplight.io/prism/)**</u>,
+      test and prototype your APIs earlier and iterate faster!**
 
 
       <u class='ml-3'>[Register for a webinar with Phil
-      Sturgeon!](https://zoom.us/webinar/register/WN_9rokGnkiRN6t8kSOmuUpwQ)</u>
+      Sturgeon!](https://zoom.us/webinar/register/WN_aUiJ0RZZQT2pdGMPcHwhCQ)</u>
     starts: 1558463654467
 info:
   address:

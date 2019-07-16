@@ -54,6 +54,11 @@ export const convertMarkdownToHTML = (data, options) => {
 
   for (const key in data) {
     if (data.hasOwnProperty(key)) {
+      // No need to resolve meta data
+      if (key === 'meta') {
+        continue;
+      }
+
       if (typeof data[key] === 'object') {
         data[key] = convertMarkdownToHTML(data[key], options);
       } else if (['description', 'markdown'].includes(key)) {

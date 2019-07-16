@@ -39,7 +39,7 @@ meta:
 
 When designing APIs, it can be difficult to get meaningful feedback until you have a real API to share. That’s a complex process if you’re prototyping APIs in code. Prism is the mock server that enables you to have a test API that behaves how you specify without having to write a single line of code. For teams working in a CI/CD workflow, enterprise companies looking to get client-side teams involved as soon as possible, or small start-ups working on a big project with fewer resources, mock servers get feedback earlier in the development process and lead to more efficient results.
 
-We are excited to announce the release of Prism v3, which contains significant upgrades, including:
+We are excited to announce [the release of Prism v3](https://stoplight.io/prism), which contains significant upgrades, including:
 
 - support for OpenAPI 3.0.x (in addition to 2.0)
 - fully open-source, we’ve already got quite a few community contributions
@@ -48,6 +48,8 @@ We are excited to announce the release of Prism v3, which contains significant u
 - a huge jump in request volume for your mock API
 
 This latest version can save your team time, money, and headaches, by getting your clients feedback early on in the design process, instead of after you’ve written a whole bunch of code. Making sure people are happy with how the API works early on means you can just tweak the description documents, which is a lot easier than rewriting code.
+
+Also, we will be doing a webinar on July 23th at 10:00 AM CT, if you'd like to learn more about the project. Sign up for the webinar [here](https://zoom.us/webinar/register/WN_aUiJ0RZZQT2pdGMPcHwhCQ).
 
 ![Prism CLI usage](https://rawcdn.githack.com/stoplightio/prism/cc4ec0955525470e358c281ee173f96bd5898b44/examples/prism-cli.svg)
 

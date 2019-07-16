@@ -26,13 +26,13 @@ actionBar:
   enabled: true
   text: Do you want a mock server on your API descriptions right now?
 meta:
-  description: "Prism has now a version 3: it's faster and goes Open Source"
+  description: "Prism now has a version 3: it's open source, faster, has OpenAPI 3 support, and more!"
   robots: 'index, follow'
   title: Prism v3 Adds OpenAPI 3.0 and Goes Open Source | Stoplight API Corner
   image: /images/apurv-das-H63k7kYljbY-unsplash.jpg
   twitter:
-    description: "Prism has now a version 3: it's faster and goes Open Source"
-    title: Prism v3 Adds OpenAPI 3.0 and Goes Open Source | Stoplight API Corner"
+    description: "Prism now has a version 3: it's open source, faster, has OpenAPI 3 support, and more!"
+    title: Prism v3 Adds OpenAPI 3.0 and Goes Open Source | Stoplight API Corner
     image: /images/apurv-das-H63k7kYljbY-unsplash.jpg
     username: '@stoplightio'
 ---

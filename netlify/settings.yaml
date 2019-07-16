@@ -82,9 +82,16 @@ header:
           icon:
             - fas
             - terminal
-          subtitle: Open source API description linter
+          subtitle: Open source API Description Linter
           title: Spectral
           titleColor: purple
+        - href: /prism
+          icon:
+            - fas
+            - server
+          subtitle: Open Source API Mock Server
+          title: Prism
+          titleColor: red
         - href: /api-design-guide/basics/
           icon:
             - fas

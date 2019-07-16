@@ -4,9 +4,9 @@ hero:
   subtitle: Build APIs and accelerate API development with instant mock servers
   title: OpenAPI Powered Mock Servers
   short: true
-  cta:
-    href: '#demo'
-    name: Get a free demo
+  ctas:
+    - href: '#demo'
+      name: Get a free demo
 color: grey-darkest
 featureSection:
   features:

@@ -41,7 +41,7 @@ export interface IHero {
   contentBgImage?: string;
   contentBgOverlay?: string;
   aligned?: 'center' | 'right' | 'left';
-  cta?: ICallToAction;
+  ctas?: ICallToAction[];
   cards?: IHeroCard[];
   buttons?: IHeroButton[];
   particles?: boolean;
@@ -59,7 +59,7 @@ export const Hero: React.FunctionComponent<IHero> = ({
   title,
   subtitle,
   author,
-  cta,
+  ctas,
   bgColor = 'black',
   contentBgImage,
   particles,
@@ -121,7 +121,7 @@ export const Hero: React.FunctionComponent<IHero> = ({
         <div
           className={cn(
             containerClassName,
-            `container text-white flex flex-col pt-32 md:pt-24 relative z-5 text-${aligned} relative`
+            `container text-white flex flex-col pt-32 md:pt-24 relative z-5 text-${aligned} relative`,
           )}
           style={contentBgImage ? { textShadow: `rgba(0, 0, 0, 0.5) 1px 1px 0px` } : undefined}
         >
@@ -176,15 +176,18 @@ export const Hero: React.FunctionComponent<IHero> = ({
             )}
           </div>
 
-          {cta && (
-            <CallToAction
-              className={cn('pb-16 md:pb-4', {
+          {ctas && (
+            <div
+              className={cn('flex items-center md:flex-col md:pb-4 pb-16', {
                 'mx-auto': aligned === 'center',
                 'ml-auto': aligned === 'right',
                 'mr-auto': aligned === 'left',
               })}
-              {...cta}
-            />
+            >
+              {ctas.map((action, i) => (
+                <CallToAction key={i} className="m-3 w-1/2 md:w-full" {...action} />
+              ))}
+            </div>
           )}
 
           {!cards.length && heroButtons.length ? (
@@ -194,7 +197,6 @@ export const Hero: React.FunctionComponent<IHero> = ({
               ))}
             </div>
           ) : null}
-
           {cards.length ? (
             <div className="flex mx-auto md:flex-col md:pt-16">
               {cards.map((card, i) => (

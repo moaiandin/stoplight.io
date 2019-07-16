@@ -7,9 +7,9 @@ hero:
     more.
   title: OpenAPI Testing
   short: true
-  cta:
-    href: '#demo'
-    name: Get a free demo
+  ctas:
+    - href: '#demo'
+      name: Get a free demo
 color: orange
 featureSection:
   features:

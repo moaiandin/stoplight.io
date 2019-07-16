@@ -7,11 +7,15 @@ relatedTags:
 hero:
   subtitle: Improve the quality of your API by improving the quality of your API descriptions
   title: Spectral, an Open Source API Description Linter
-  cta:
-    color: indigo
-    href: 'https://github.com/stoplightio/spectral/'
-    name: View it on GitHub
-    icon: ['fab', 'github']
+  ctas:
+    - color: indigo
+      href: 'https://github.com/stoplightio/spectral/'
+      name: View it on GitHub
+      icon: ['fab', 'github']
+    - color: indigo
+      href: 'https://www.youtube.com/watch?v=IJtFI9mkZ8Y'
+      name: Watch the video
+      icon: ['fas', 'video']
 featureSection:
   actionBar:
     buttons:

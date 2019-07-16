@@ -4,7 +4,6 @@ import * as React from 'react';
 import { withRouteData } from 'react-static';
 
 import { ActionBar, IActionBar } from 'src/components/ActionBar';
-import { ICallToAction } from 'src/components/CallToAction';
 import { Container } from 'src/components/Container';
 import { Hero, IHero, IHeroBreadCrumb } from 'src/components/Hero';
 import { IHeroAuthor } from 'src/components/Hero/HeroAuthor';
@@ -30,7 +29,6 @@ export interface IPage {
   publishedDate?: string;
   color?: string;
   hero: Partial<IHero>;
-  cta?: ICallToAction;
   actionBar?: IActionBar;
   sidebar?: {
     info?: IInfo;
@@ -59,7 +57,6 @@ export const Subpage: React.FunctionComponent<IPage> = ({
   publishedDate,
   color,
   hero,
-  cta,
   sidebar,
   actionBar,
   relatedPages,
@@ -72,7 +69,6 @@ export const Subpage: React.FunctionComponent<IPage> = ({
     title,
     subtitle,
     pageName,
-    cta,
     bgColor: color,
     breadCrumbs,
   };

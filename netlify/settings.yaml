@@ -54,6 +54,20 @@ header:
             OpenAPI.
           title: Mocking
           titleColor: grey-darkest
+        - href: /spectral
+          icon:
+            - fas
+            - terminal
+          subtitle: Open source API description linter
+          title: Spectral
+          titleColor: purple
+        - href: /prism
+          icon:
+            - fas
+            - server
+          subtitle: Open source HTTP Mock Server
+          title: Prism
+          titleColor: yellow
       title: Products
       width: 400
     - links:
@@ -78,12 +92,12 @@ header:
           subtitle: Stay up to date on Stoplight
           title: Blog
           titleColor: orange
-        - href: /spectral
+        - href: /video
           icon:
             - fas
-            - terminal
-          subtitle: Open source API Description Linter
-          title: Spectral
+            - video
+          subtitle: Learn how to design with Stoplight
+          title: Webinars
           titleColor: purple
         - href: /prism
           icon:
@@ -98,7 +112,7 @@ header:
             - book-open
           subtitle: Learn API Design Best Practices
           title: API Design Guide
-          titleColor: yellow
+          titleColor: blue
         - href: /api-documentation-guide/basics/
           icon:
             - fas
@@ -112,14 +126,7 @@ header:
             - bolt
           subtitle: Create mock API servers
           title: API Mocking Guide
-          titleColor: grey-darkest
-        - href: /video
-          icon:
-            - fas
-            - video
-          subtitle: Learn how to design with Stoplight
-          title: Webinars
-          titleColor: purple
+          titleColor: orange
       title: Resources
       width: 400
     - links:

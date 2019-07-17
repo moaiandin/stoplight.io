@@ -76,7 +76,8 @@ meta:
   description: >-
     Spectral is an open source OpenAPI linter, which can tell you not just if
     your API descriptions are valid, but if they are any good.
-  favicon: /images/spectral_cli.png
+  favicon: /images/mark_light_bg.png
+  image: /images/spectral_cli.png  
   title: Spectral - Open Source API Description Linter | Stoplight
   twitter:
     description: >-

@@ -77,13 +77,13 @@ meta:
     Spectral is an open-source OpenAPI-linter, which can tell you not just if
     your API descriptions are valid, but if they are any good. Use our baked-in rulesets for
     OpenAPI Specification v2/v3 (formerly known as Swagger specification), or write your own!
-  favicon: /images/mark_light_bg.png
+  favicon: /images/spectral_cli.png
   title: Spectral - Open Source API Description Linter | Stoplight
   twitter:
     description: >-
       Spectral is an open-source OpenAPI-linter, which can tell you not just if
       your API descriptions are valid, but if they are any good. Use our baked-in rulesets for
       OpenAPI Specification v2/v3 (formerly known as Swagger specification), or write your own!
-    image: /images/mocking_instant.png
+    image: /images/spectral_cli.png
     title: Spectral - Open Source API Description Linter | Stoplight
     username: '@stoplightio'

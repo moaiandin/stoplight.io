@@ -22,7 +22,7 @@ actionBar:
   enabled: false
 meta:
   canonical: >-
-    /blog/writing-documentation-when-you-arent-a-technical-writer-part-two-59997587cc2a
+    /blog/writing-documentation-when-you-arent-a-technical-writer-part-two-59997587cc2a/
   description: >-
     Avoiding oversimplification, writing good error messages, and having better
     word choice

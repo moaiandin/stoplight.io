@@ -41,6 +41,8 @@
     "react-headroom": "^2.2.8",
     "react-no-ssr": "^1.1.0",
     "react-particles-js": "2.6.0",
+    "react-player": "^1.11.1",
+    "react-responsive-modal": "^4.0.1",
     "react-router-dom": "^4.3.1",
     "react-static": "7.1.0",
     "react-static-plugin-react-router": "^7.0.10",

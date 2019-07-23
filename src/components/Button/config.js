@@ -34,5 +34,13 @@ export default {
       widget: 'string',
       required: false,
     },
+    {
+      name: 'type',
+      label: 'Type',
+      widget: 'select',
+      options: ['link', 'video'],
+      default: 'link',
+      required: false,
+    },
   ],
 };

@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import cn from 'classnames';
 import * as React from 'react';
 import { Link } from 'src/components/Link';
+import { VideoPlayerModal } from '../VideoPlayerModal';
 
 export interface IButton {
   href: string;
@@ -12,6 +13,7 @@ export interface IButton {
   outlined?: boolean;
   shadow?: string;
   icon?: IconProp;
+  type?: 'link' | 'video';
 }
 
 export const Button: React.FunctionComponent<IButton> = ({
@@ -23,8 +25,9 @@ export const Button: React.FunctionComponent<IButton> = ({
   title,
   icon,
   children,
+  type,
 }) => {
-  return (
+  const linkComponent = (
     <Link
       title={title}
       className={cn(
@@ -49,4 +52,6 @@ export const Button: React.FunctionComponent<IButton> = ({
       )}
     </Link>
   );
+
+  return type === 'video' ? <VideoPlayerModal href={href} cta={linkComponent} /> : linkComponent;
 };

@@ -3,12 +3,14 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import cn from 'classnames';
 import * as React from 'react';
 import { Link } from 'src/components/Link';
+import { VideoPlayerModal } from '../VideoPlayerModal';
 
 export interface ICallToAction {
   name: string;
   color: string;
   className: string;
   href: string;
+  type?: 'link' | 'video';
   icon?: IconProp;
 }
 
@@ -17,6 +19,7 @@ export const CallToAction: React.FunctionComponent<ICallToAction> = ({
   color = 'purple',
   className,
   href = 'https://next.stoplight.io',
+  type = 'link',
   icon,
 }) => {
   if (!name) {
@@ -40,7 +43,7 @@ export const CallToAction: React.FunctionComponent<ICallToAction> = ({
 
   return (
     <div className={cn(className)}>
-      <Link to={href}>{cta}</Link>
+      {type === 'video' ? <VideoPlayerModal href={href} cta={cta} /> : <Link to={href}>{cta}</Link>}
     </div>
   );
 };

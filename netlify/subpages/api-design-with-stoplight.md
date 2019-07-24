@@ -18,7 +18,10 @@ includeToc: false
 actionBar:
   buttons:
     - color: purple
-  enabled: false
+      href: 'https://www.youtube.com/channel/UCQMe84IAmmkU0FYw_jFtw6w/featured'
+      title: 'Subscribe to our YouTube channel'
+  enabled: true
+  text: Want to watch more API design content?
 meta:
   description: >-
     Stoplight promotes a design-first approach. Developing good design-first

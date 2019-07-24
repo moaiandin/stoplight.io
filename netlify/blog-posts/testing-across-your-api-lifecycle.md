@@ -6,6 +6,7 @@ tags:
 relatedTags:
   - blog-testing
 publishedDate: 2019-07-24T15:58:55.775Z
+author: Ross McDonald
 title: Testing Across Your API Lifecycle
 subtitle: Adopt real use cases for better API testing
 listSubtitle: ''

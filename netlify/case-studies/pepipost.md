@@ -27,7 +27,7 @@ sidebar:
         tool which has helped us learn the art of designing world class APIs.
       role: Co-Founder
 actionBar:
-  enabled: true
+  enabled: false
 meta:
   description: >-
     How Pepipost found a single source of truth for API development with

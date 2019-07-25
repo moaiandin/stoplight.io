@@ -17,21 +17,19 @@ hero:
       name: Watch the video
       icon: ['fas', 'video']
       type: video
+actionBar:
+  buttons:
+    - href: 'https://github.com/stoplightio/spectral'
+      title: Get Started with Spectral
+  enabled: true
+  text: Do you want feedback on your API descriptions right now?
 featureSection:
-  actionBar:
-    buttons:
-      - href: 'https://github.com/stoplightio/spectral'
-        title: Get Started with Spectral
-    enabled: true
-    text: Do you want feedback on your API descriptions right now?
-
   title: Your API descriptions deserve better than "Technically Correct"
   description: >-
     Spectral is an open source OpenAPI-linter, which can tell you not just if
     your API descriptions are valid, but if they are any good. Use our baked-in
     rulesets for OpenAPI Specification v2/v3 (formerly known as Swagger specification),
     or write your own!
-
   features:
     - description: >-
         API description formats like the OpenAPI Specification are permissive and vague in many

@@ -4,6 +4,7 @@ import hubspot from 'src/components/HubSpotForm/config';
 import collage from 'src/components/Collage/config';
 import imageCallout from 'src/components/ImageCallout/config';
 import featureSection from 'src/components/FeatureSection/config';
+import actionBar from 'src/components/ActionBar/config';
 import { colors } from 'src/utils/netlify';
 
 export default {
@@ -60,5 +61,6 @@ export default {
     featureSection,
     hubspot,
     metaTags,
+    actionBar,
   ],
 };

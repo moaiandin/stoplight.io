@@ -2,6 +2,7 @@ import * as React from 'react';
 import NoSSR from 'react-no-ssr';
 import { withRouteData } from 'react-static';
 
+import { ActionBar, IActionBar } from 'src/components/ActionBar';
 import { Collage, ICollage } from '../../components/Collage';
 import { FeatureSection, IFeatureSection } from '../../components/FeatureSection';
 import { Hero, IHero } from '../../components/Hero';
@@ -22,6 +23,7 @@ export interface ILanding {
   collage: ICollage;
   featureSection: IFeatureSection;
   hubspot: IHubSpotForm & { title?: string; description?: string };
+  actionBar: IActionBar;
   relatedPages?: IRelatedPage[];
   hasSandbox?: boolean;
 }
@@ -33,6 +35,7 @@ export const Landing: React.FunctionComponent<ILanding> = ({
   collage,
   featureSection,
   hubspot,
+  actionBar,
   relatedPages,
   hasSandbox,
 }) => {
@@ -62,6 +65,8 @@ export const Landing: React.FunctionComponent<ILanding> = ({
       <ImageCallout {...imageCallout} />
 
       <FeatureSection color={color} {...featureSection} />
+
+      {actionBar && actionBar.enabled ? <ActionBar {...actionBar} /> : null}
 
       {hubspot && (
         <Section key="hubspot" id="demo">

@@ -12,13 +12,13 @@ hero:
     coverage based on your API contracts. Test your endpoints, status codes, and
     more.
   title: OpenAPI Testing
+actionBar:
+  buttons:
+    - href: 'https://next.stoplight.io/'
+      title: Get Started
+  enabled: true
+  text: Ready to Start Testing?
 featureSection:
-  actionBar:
-    buttons:
-      - href: 'https://next.stoplight.io/'
-        title: Get Started
-    enabled: true
-    text: Ready to Start Testing?
   description: >-
     Increase the test coverage of your web APIs so they break less for your
     consumers online. Create a full collection of tests with Stoplight Testing.

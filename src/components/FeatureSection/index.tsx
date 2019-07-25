@@ -6,7 +6,6 @@ import { Container } from 'src/components/Container';
 import { Link } from 'src/components/Link';
 import { ISection, Section } from 'src/components/Section';
 
-import { ActionBar, IActionBar } from 'src/components/ActionBar';
 import { Image } from 'src/components/Image';
 import { slugify } from 'src/utils/slugify';
 
@@ -26,7 +25,6 @@ export interface IFeatureSection extends ISection {
   description: string;
   color: string;
   features: IFeature[];
-  actionBar: IActionBar;
   buttons: IButton[];
 }
 
@@ -82,7 +80,6 @@ export const FeatureSection: React.FunctionComponent<IFeatureSection> = ({
   description,
   color,
   features,
-  actionBar,
   buttons = [],
   ...sectionProps
 }) => {
@@ -124,8 +121,6 @@ export const FeatureSection: React.FunctionComponent<IFeatureSection> = ({
           />
         ))}
       </Container>
-
-      <ActionBar className="bg-white sm:mt-14 mt-20" {...actionBar} />
     </Section>
   );
 };

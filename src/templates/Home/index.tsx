@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { withRouteData } from 'react-static';
 
+import { ActionBar, IActionBar } from '../../components/ActionBar';
 import { Collage, ICollage } from '../../components/Collage';
 import { Hero, IHero } from '../../components/Hero';
 import { IImageCallout, ImageCallout } from '../../components/ImageCallout';
@@ -13,9 +14,17 @@ export interface IHome {
   imageCallout: IImageCallout;
   collage: ICollage;
   testimonials: ITestimonials;
+  actionBar?: IActionBar;
 }
 
-export const Home: React.FunctionComponent<IHome> = ({ color, hero, imageCallout, collage, testimonials }) => {
+export const Home: React.FunctionComponent<IHome> = ({
+  color,
+  hero,
+  imageCallout,
+  collage,
+  testimonials,
+  actionBar,
+}) => {
   return (
     <Layout>
       <Hero bgColor={color} {...hero} />
@@ -25,6 +34,8 @@ export const Home: React.FunctionComponent<IHome> = ({ color, hero, imageCallout
       <Collage id="customers" {...collage} />
 
       <Testimonials {...testimonials} />
+
+      {actionBar && actionBar.enabled ? <ActionBar className="bg-grey-lightest" {...actionBar} /> : null}
     </Layout>
   );
 };

@@ -66,14 +66,10 @@ export const About: React.FunctionComponent<IAbout> = ({
               <Member key={index} isLast={index === team.length - 1} {...member} />
             ))}
           </div>
-
-          {actionBar && actionBar.enabled ? (
-            <div className="md:pb-24 pb-40 -mt-10">
-              <ActionBar className="bg-white" {...actionBar} />
-            </div>
-          ) : null}
         </div>
       ) : null}
+
+      {actionBar && actionBar.enabled ? <ActionBar className="bg-white" {...actionBar} /> : null}
 
       <PressSection id="press" {...pressSection} />
 

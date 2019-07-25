@@ -18,7 +18,6 @@ export interface ITestimonials {
   title?: string;
   description?: string;
   testimonials: ITestimonial[];
-  actionBar: IActionBar;
 }
 
 export const Testimonial: React.FunctionComponent<ITestimonial> = ({ image, quote, author, company, role }) => {
@@ -65,12 +64,7 @@ export const Testimonial: React.FunctionComponent<ITestimonial> = ({ image, quot
   );
 };
 
-export const Testimonials: React.FunctionComponent<ITestimonials> = ({
-  title,
-  description,
-  testimonials,
-  actionBar,
-}) => {
+export const Testimonials: React.FunctionComponent<ITestimonials> = ({ title, description, testimonials }) => {
   if (!testimonials || !testimonials.length) {
     return null;
   }
@@ -84,8 +78,6 @@ export const Testimonials: React.FunctionComponent<ITestimonials> = ({
           })}
         </div>
       </Container>
-
-      {actionBar && actionBar.enabled ? <ActionBar className="bg-grey-lightest sm:mt-20 mt-32" {...actionBar} /> : null}
     </Section>
   );
 };

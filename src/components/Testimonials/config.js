@@ -1,4 +1,3 @@
-import actionBar from 'src/components/ActionBar/config';
 import container from 'src/components/Container/config';
 
 export default {
@@ -41,6 +40,5 @@ export default {
         },
       ],
     },
-    actionBar,
   ],
 };

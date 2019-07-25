@@ -76,18 +76,18 @@ imageCallout:
     accurately describe your APIs.
   image: /images/home-hero.png
   title: The Complete OpenAPI Specification Toolkit
+actionBar:
+  buttons:
+    - color: purple
+      href: /demo
+      title: Request a Demo
+  links:
+    - href: 'https://next.stoplight.io'
+      title: Create a Free Account
+  enabled: true
+  headline: Getting started is easy
+  text: Be up and running in minutes
 testimonials:
-  actionBar:
-    buttons:
-      - color: purple
-        href: /demo
-        title: Request a Demo
-    links:
-      - href: 'https://next.stoplight.io'
-        title: Create a Free Account
-    enabled: true
-    headline: Getting started is easy
-    text: Be up and running in minutes
   testimonials:
     - author: Kin Lane
       image: /images/testimonials/kin_lane.jpeg

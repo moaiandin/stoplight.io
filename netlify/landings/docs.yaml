@@ -12,14 +12,14 @@ hero:
     Create beautiful, customizable, interactive API documentation generated from
     your OpenAPI Specification
   title: Hosted API Documentation
+actionBar:
+  buttons:
+    - color: accent
+      href: 'https://next.stoplight.io/'
+      title: Get Started Now
+  enabled: true
+  text: 'Ready to Publish? '
 featureSection:
-  actionBar:
-    buttons:
-      - color: accent
-        href: 'https://next.stoplight.io/'
-        title: Get Started Now
-    enabled: true
-    text: 'Ready to Publish? '
   description: >-
     Create API documentation in minutes. Combine OpenAPI Specifications
     (formerly known as Swagger) with Markdown to create robust, searchable,

@@ -19,10 +19,26 @@ export default {
       widget: 'string',
     },
     {
+      name: 'headline',
+      label: 'Headline',
+      widget: 'string',
+    },
+    {
       name: 'buttons',
       label: 'Buttons',
       widget: 'list',
       fields: button.fields,
+    },
+    {
+      name: 'links',
+      label: 'Links',
+      widget: 'string',
+    },
+    {
+      name: 'icon',
+      label: 'Icon',
+      widget: 'string',
+      required: false,
     },
   ],
 };

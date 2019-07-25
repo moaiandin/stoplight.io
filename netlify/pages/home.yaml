@@ -81,13 +81,13 @@ testimonials:
     buttons:
       - color: purple
         href: /demo
-        outlined: true
         title: Request a Demo
-      - color: purple
-        href: 'https://next.stoplight.io'
+    links:
+      - to: 'https://next.stoplight.io'
         title: Create a Free Account
     enabled: true
-    text: Getting started is easy. Be up and running in minutes.
+    headline: Getting started is easy
+    text: Be up and running in minutes
   testimonials:
     - author: Kin Lane
       image: /images/testimonials/kin_lane.jpeg

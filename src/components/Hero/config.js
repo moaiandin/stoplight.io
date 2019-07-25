@@ -145,6 +145,7 @@ export default {
       name: 'image',
       label: 'Image',
       widget: 'object',
+      required: false,
       fields: [
         {
           name: 'src',

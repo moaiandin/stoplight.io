@@ -6,18 +6,11 @@ const klaw = require('klaw');
 const publicImagesDir = path.resolve(__dirname, '..', '..', 'public', 'images');
 const distImagesDir = path.resolve(__dirname, '..', '..', 'dist', 'images');
 
-console.log(distImagesDir);
-
-const sizes = [
-  { height: 500, default: true },
-  { height: 700, name: 'lg' },
-  { height: 400, name: 'md' },
-  { height: 130, name: 'sm' },
-];
+const sizes = [{ height: 500, default: true }, { height: 700, name: 'lg' }, { height: 130, name: 'sm' }];
 
 export default pluginOptions => ({
   afterExport: async state => {
-    if (process.env.NODE_ENV === 'production') {
+    if (process.env.RELEASE_STAGE === 'production') {
       await processImages();
     }
 

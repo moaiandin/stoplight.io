@@ -58,7 +58,6 @@ export const ListItem: React.FunctionComponent<IListItem> = ({
           className={cn(`h-full w-2/5 sm:w-1/5 bg-center bg-no-repeat bg-${backgroundSize}`, {
             [`bg-${color}`]: !image,
           })}
-          size="md"
           useDiv
         />
 

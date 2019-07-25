@@ -29,16 +29,5 @@ export default {
       widget: 'list',
       fields: button.fields,
     },
-    {
-      name: 'links',
-      label: 'Links',
-      widget: 'string',
-    },
-    {
-      name: 'icon',
-      label: 'Icon',
-      widget: 'string',
-      required: false,
-    },
   ],
 };

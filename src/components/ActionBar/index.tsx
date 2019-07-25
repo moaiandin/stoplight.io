@@ -47,11 +47,14 @@ export const ActionBar: React.FunctionComponent<IActionBar> = withSiteData(props
         {links && (
           <div className="flex-1 flex justify-center sm:justify-center">
             {links.map((link, index) => (
-              <div key={index}>
-                <a href={link.to} className="text-purple hover:text-purple-darker font-bold text-lg">
-                  {link.title}
-                </a>
-              </div>
+              <Link
+                key={index}
+                title={link.title}
+                to={link.href}
+                className="text-purple hover:text-purple-darker font-bold text-lg"
+              >
+                <div>{link.title}</div>
+              </Link>
             ))}
           </div>
         )}

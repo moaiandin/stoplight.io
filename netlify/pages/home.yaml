@@ -83,7 +83,7 @@ testimonials:
         href: /demo
         title: Request a Demo
     links:
-      - to: 'https://next.stoplight.io'
+      - href: 'https://next.stoplight.io'
         title: Create a Free Account
     enabled: true
     headline: Getting started is easy

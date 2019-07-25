@@ -31,7 +31,7 @@ hero:
       title: Mocking
   ctas:
     - href: 'https://next.stoplight.io/'
-      name: Get Started Now
+      name: Start Free Trial
   particles: true
   skew: rounded
   subtitle: >-

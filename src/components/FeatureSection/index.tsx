@@ -70,7 +70,6 @@ export const Feature: React.FunctionComponent<IFeature> = props => {
           src={image}
           className="bg-center bg-cover bg-no-repeat h-128 w-128 rounded-full"
           style={{ boxShadow: '0 0 4px rgba(0, 0, 0, 0.5)' }}
-          size="md"
           useDiv
         />
       </div>

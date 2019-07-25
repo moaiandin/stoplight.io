@@ -6,14 +6,15 @@ export interface IImage {
   src: string;
   alt?: string;
   className?: string;
-  size?: 'sm' | 'md' | 'lg';
+  size?: 'sm' | 'lg';
   style?: any;
   background?: boolean;
   useDiv?: boolean;
 }
 
 export const Image: React.FunctionComponent<IImage> = ({ className, src, alt, style, size, background, useDiv }) => {
-  if (src && path.isAbsolute(src) && size && getConfigVar('NODE_ENV') === 'production') {
+  // Transform image urls in production to match the processed images
+  if (getConfigVar('RELEASE_STAGE') === 'production' && src && path.isAbsolute(src) && size) {
     const extname = path.extname(src);
     src = `${src.replace(extname, '')}-${size}${extname}`;
   }

@@ -35,7 +35,7 @@ export const VideoPlayerModal: React.FunctionComponent<IVideoPlayerModal> = ({ h
           },
         }}
       >
-        <VideoPlayer href={href} />
+        <VideoPlayer href={href} playing={isOpen} />
       </Modal>
     </div>
   );

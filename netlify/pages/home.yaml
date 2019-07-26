@@ -32,6 +32,10 @@ hero:
   ctas:
     - href: 'https://next.stoplight.io/'
       name: Start Free Trial
+    - href: 'https://youtube.com/watch?v=iHzFoc4ls8E'
+      name: Watch Video
+      type: video
+      icon: ['fas', 'video']
   particles: true
   skew: rounded
   subtitle: >-

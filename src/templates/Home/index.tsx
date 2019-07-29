@@ -2,6 +2,7 @@ import * as React from 'react';
 import { withRouteData } from 'react-static';
 
 import { Collage, ICollage } from '../../components/Collage';
+import { GartnerCoolVendor, IGartnerCoolVendor } from '../../components/GartnerCoolVendor';
 import { Hero, IHero } from '../../components/Hero';
 import { IImageCallout, ImageCallout } from '../../components/ImageCallout';
 import { Layout } from '../../components/Layout';
@@ -13,9 +14,17 @@ export interface IHome {
   imageCallout: IImageCallout;
   collage: ICollage;
   testimonials: ITestimonials;
+  gartnerCoolVendor: IGartnerCoolVendor;
 }
 
-export const Home: React.FunctionComponent<IHome> = ({ color, hero, imageCallout, collage, testimonials }) => {
+export const Home: React.FunctionComponent<IHome> = ({
+  color,
+  hero,
+  imageCallout,
+  collage,
+  testimonials,
+  gartnerCoolVendor,
+}) => {
   return (
     <Layout>
       <Hero bgColor={color} {...hero} />
@@ -23,6 +32,8 @@ export const Home: React.FunctionComponent<IHome> = ({ color, hero, imageCallout
       <ImageCallout {...imageCallout} />
 
       <Collage id="customers" {...collage} />
+
+      <GartnerCoolVendor {...gartnerCoolVendor} />
 
       <Testimonials {...testimonials} />
     </Layout>

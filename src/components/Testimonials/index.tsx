@@ -27,14 +27,14 @@ export const Testimonial: React.FunctionComponent<ITestimonial> = ({ image, quot
       <div className="testimonial-card max-w-lg w-full lg:flex shadow-lg mx-auto items-stretch bg-white relative">
         {!image && (
           <FontAwesomeIcon
-            className="absolute text-grey"
+            className="absolute text-grey h-10"
             style={{ top: -15, left: -15, fontSize: 30 }}
             icon="quote-left"
           />
         )}
         {!image && (
           <FontAwesomeIcon
-            className="absolute text-grey"
+            className="absolute text-grey h-10"
             style={{ bottom: -15, right: -15, fontSize: 30 }}
             icon="quote-right"
           />

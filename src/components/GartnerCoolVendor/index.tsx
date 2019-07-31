@@ -22,7 +22,7 @@ export const GartnerCoolVendor: React.FunctionComponent<IGartnerCoolVendor> = ({
       <Container className="flex md:flex-wrap md:justify-center">
         {image && (
           <div className="flex relative pl-16 md:p-10 md:ml-6">
-            <Image src={image} className="max-w-xs" />
+            <Image src={image} className="pr-20 sm:p-0" style={{ maxHeight: '250px' }} />
           </div>
         )}
 

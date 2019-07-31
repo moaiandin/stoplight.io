@@ -99,7 +99,7 @@ You’ll want to keep your entire team updated as you make [design decisions tog
 
 The OpenAPI spec is focused on describing REST APIs. However, it’s still possible to describe an API that violates the RESTful principles. This section is not meant to be exhaustive, but will instead help you avoid the most common infringements in REST API design.
 
-**Use HTTP verbs** to communicate action. While REST guidelines can be used outside of HTTP, they are so frequently used together that it’s safe to assume your API will operate over HTTP. This protocol, upon which the web is built, offers useful operations that should form the foundation of our APIs.
+**Use HTTP methods** to communicate action. While REST guidelines can be used outside of HTTP, they are so frequently used together that it’s safe to assume your API will operate over HTTP. This protocol, upon which the web is built, offers useful operations that should form the foundation of our APIs.
 
 - GET: read existing data
 - POST: create new data
@@ -107,18 +107,18 @@ The OpenAPI spec is focused on describing REST APIs. However, it’s still possi
 - PATCH: update a subset of existing data
 - DELETE: remove existing data
 
-By relying upon these verbs, you can build your API to perform these actions on your fields or resources.
+By relying upon these methods, you can build your API to perform these actions on your fields or resources.
 
-**Use nouns for resources** and avoid anything that looks like procedure calls. There’s no need for endpoints like `/getContacts` when we’re using HTTP verbs. Instead, your resource would be named `/contacts` and you could perform the GET action (and any others that are relevant) against that resource.
+**Use nouns for resources** and avoid anything that looks like procedure calls. There’s no need for endpoints like `/getContacts` when we’re using HTTP methods. Instead, your resource would be named `/contacts` and you could perform the GET action (and any others that are relevant) against that resource.
 
 You may find yourself in a debate about naming your resources. Should they be singular or plural? When there are multiple words in a resource name, should you use punctuation or capitalization to distinguish each word? The most important thing to choose is consistency. If you use one convention with one endpoint, choose the same with another endpoint. If possible, look to maintain this consistency between your APIs, as well.
 
-**Use HTTP status codes** to communicate errors and success. Just as the verbs provide a solid foundation for how your API takes action, the standard status codes share the results of those actions. For example, never send a 200-level status code along with any error message. Both machines and humans will be confused.
+**Use HTTP status codes** to communicate errors and success. Just as the methods provide a solid foundation for how your API takes action, the standard status codes share the results of those actions. For example, never send a 200-level status code along with any error message. Both machines and humans will be confused.
 
 Here’s a quick list of the most common status codes and how they should be used:
 
-- 200: Successfully read the data you requested
-- 201: Successfully wrote the data you sent
+- 200: Successfully read the resource you requested
+- 201: Successfully created the resource you sent
 - 401: Authentication is missing or incorrect
 - 403: Authentication succeeded, but the user does not have access to the resource
 - 404: The resource cannot be found, client-side error

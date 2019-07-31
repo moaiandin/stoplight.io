@@ -21,6 +21,7 @@ https://stoplightio.netlify.com/* https://stoplight.io/:splat 301!
 # Guide redirects
 /api-documentation-guide /api-documentation-guide/basics/
 /api-design-guide /api-design-guide/basics/
+/api-design-guide/oas-spec /api-design-guide/openapi/
 /mock-api-guide /mock-api-guide/basics/
 
 # Redirect images

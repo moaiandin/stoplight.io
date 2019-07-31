@@ -15,8 +15,8 @@ tabs:
     title: API Design Basics
   - href: /api-design-guide/tooling
     title: API Design Tooling
-  - href: /api-design-guide/oas-spec
-    title: Understanding the OpenAPI Specification
+  - href: /api-design-guide/openapi
+    title: Understanding OpenAPI
 actionBar:
   enabled: false
 meta:
@@ -40,24 +40,24 @@ There is not a single approach to design APIs “the right way.” Instead, we n
 
 ## Choose your API Specification
 
-Before you can communicate your API design, you need an artifact that someone else can use to understand your design. Historically, this might have been called documentation. While it’s still important to have human-facing documentation that is easy to use, more is required of modern APIs. In recent years the industry has rallied around the [OpenAPI Specification](https://github.com/OAI/OpenAPI-Specification) (OAS).
+Before you can communicate your API design, you need an artifact that someone else can use to understand your design. Historically, this might have been called documentation. While it’s still important to have human-facing documentation that is easy to use, more is required of modern APIs. In recent years the industry has rallied around the [OpenAPI Specification](https://github.com/OAI/OpenAPI-Specification).
 
-OAS allows you to define how your REST API works, in a way that can be easily consumed by both humans and machines. It serves as a contract that specifies how a consumer can use the API and what responses you can expect.
+OpenAPI allows you to define how your REST API works, in a way that can be easily consumed by both humans and machines. It serves as a contract that specifies how a consumer can use the API and what responses you can expect.
 
-OAS 3.0 was released in July, 2017, by the OpenAPI Initiative, a consortium of member companies who want to standardize how REST APIs are described. There are various other approaches to API description:
+OpenAPI v3.0 was released in July, 2017, by the OpenAPI Initiative, a consortium of member companies who want to standardize how REST APIs are described. There are various other approaches to API description:
 
-- **OAS 2.0**, based on the Swagger definition. Still widely used, but being replaced by OAS 3.0
-- **Swagger**, the best known of the approaches being replaced or augmented by OAS 3.0
+- **OpenAPI v2**, (formerly known as Swagger v2.0) is still widely used, but increasingly being replaced by OpenAPI v3
+- **JSON Schema**, very similar to OpenAPI, but able to describe any JSON-like data, not just APIs
 - **API Blueprint** was created to foster collaboration between API design stakeholders
 - **RAML**, the RESTful API Modeling Language, focuses on the planning stage of API design
 
-While OAS 3.0 is the way forward, each of these alternative formats has tooling associated. You may find yourself converting between them, especially OAS 2.0, until the tools catch up.
+While OpenAPI v3 is the way forward, each of these alternative formats has tooling associated. You may find yourself converting between them, especially OpenAPI v2, until the tools catch up.
 
-Your API design requires a way to define how the API will be used. The future-thinking approach is to select [OAS 3.0](/api-design-guide/oas-spec/) to describe your API.
+Your API design requires a way to define how the API will be used. The future-thinking approach is to select [OpenAPI v3](/api-design-guide/OpenAPI-spec/) to describe your API.
 
 ## Why API Design-First Matters
 
-Now that you’ve chosen OAS 3.0, you may be tempted to set that aside until after you build your API. While it’s useful to describe existing APIs, you should also use your OpenAPI description while designing a new API.
+Now that you’ve chosen OpenAPI v3, you may be tempted to set that aside until after you build your API, and "write the docs later." While it’s useful to describe existing APIs, you can also create API descriptions before and during writing the code.
 
 When you design your API alongside a description, you always have the artifact to communicate what’s possible with your API. The [design-first approach](/blog/openapi-and-design-first-principles-96e7c4b2aec1) offers a single source of truth, readable by collaborators and machines alike.
 

@@ -174,7 +174,7 @@ In a practical sense, Assertion of Truth in API design terms is offering cryptog
 For the API designer, both approaches have implications:
 
 - JWS are inherently hard to represent in OpenAPI Specification documents, which is due to the fact that it is difficult to represent three BASE64 encoded strings separated by periods in the underlying JSON schema.
-- In contrast, HTTP Signatures are easy to represent in an [OpenAPI Specification document](https://stoplight.io/api-design-guide/oas-spec/) - they are simply a HTTP Header - and designers can represent their payloads as native JSON Schema. However, at an implementation level, they lack the encapsulation benefit that JSON Web Signatures provide.
+- In contrast, HTTP Signatures are easy to represent in an [OpenAPI Specification document](https://stoplight.io/api-design-guide/openapi) - they are simply a HTTP Header - and designers can represent their payloads as native JSON Schema. However, at an implementation level, they lack the encapsulation benefit that JSON Web Signatures provide.
 
 There is therefore little to say on HTTP Signatures. For JWS, the UK Open Banking standards show a number of ways to express them in an OpenAPI Specification document. Admittedly, these might be viewed as workarounds for the lack of formal JOSE support in OpenAPI, but they do provide useful examples of the approach.
 

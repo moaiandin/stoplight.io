@@ -69,7 +69,7 @@ export class HubSpotForm extends React.Component<IHubSpotForm, IHubSpotFormState
       <div
         id="hubspot-form"
         className={cn('bg-white shadow rounded mx-auto md:overflow-hidden', className)}
-        style={{ display: isLoaded ? 'block' : 'none', maxWidth: 600, ...style }}
+        style={{ display: isLoaded ? 'block' : 'none', maxWidth: 800, ...style }}
       />
     );
   }

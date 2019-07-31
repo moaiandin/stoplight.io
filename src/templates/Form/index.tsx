@@ -71,10 +71,10 @@ export const Form: React.FunctionComponent<IForm> = ({
         {hubspot && (
           <div className={hasLeftContent ? 'z-10 relative md:w-full' : 'flex-1 -mt-40'}>
             <HubSpotForm
-              className="p-8 sticky"
+              className={hasLeftContent ? 'p-8 w-128 sm:w-auto sticky' : 'p-8 sticky'}
               portalId={hubspot.portalId}
               formId={hubspot.formId}
-              style={{ width: hasLeftContent ? 450 : 500, top: 100 }}
+              style={{ top: 100 }}
             />
           </div>
         )}

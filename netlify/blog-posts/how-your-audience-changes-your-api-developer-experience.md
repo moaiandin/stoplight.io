@@ -6,6 +6,7 @@ tags:
 relatedTags:
   - blog-documentation
 publishedDate: 2019-08-01T15:52:25.832Z
+author: Maggie Summers
 title: How Your Audience Changes Your API Developer Experience
 subtitle: 'There are different needs for internal, partner, and public APIs'
 listSubtitle: ''

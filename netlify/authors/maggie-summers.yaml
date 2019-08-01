@@ -1,0 +1,31 @@
+path: /blog/author/maggie-summers
+tag: author
+title: Maggie Summers
+subtitle: >-
+  Maggie Summers is a Jill of all trades. After working in social media
+  marketing for years, she decided to pivot to a career in tech and enrolled in
+  Epicodus, an intensive coding bootcamp in downtown Portland. She currently
+  works as a support engineer at New Relic, and freelances as a writer. She
+  lives in SE Portland with her husband, stepson and small dog Nugget. 
+pageName: Contributing Writer
+image: /images/maggie-summers.jpeg
+color: black
+actionBar:
+  buttons: []
+  enabled: false
+  text: Maggie Summers
+meta:
+  description: Jill of all trades and support engineer
+  favicon: /images/mark_light_bg.png
+  robots: 'index, follow'
+  title: Maggie Summers | Contributing Writer at Stoplight.io
+  image: /images/maggie-summers.jpeg
+  twitter:
+    description: Jill of all trades and support engineer
+    title: Maggie Summers | Contributing Writer at Stoplight.io
+    image: /images/maggie-summers.jpeg
+    username: '@stoplightio'
+  url: 'https://stoplight.io/blog/author/maggie-summers'
+pagination:
+  enabled: false
+  perPage: 1

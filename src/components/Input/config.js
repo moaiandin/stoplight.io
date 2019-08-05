@@ -9,6 +9,7 @@ export default {
       label: 'Type',
       widget: 'string',
       default: 'email',
+      required: false,
     },
     {
       name: 'placeholder',

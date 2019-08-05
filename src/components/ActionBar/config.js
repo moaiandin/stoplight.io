@@ -12,17 +12,20 @@ export default {
       widget: 'boolean',
       default: false,
       hint: 'Default: false',
+      required: false,
     },
     {
       name: 'text',
       label: 'Text',
       widget: 'string',
+      required: false,
     },
     {
       name: 'ctas',
       label: 'CTAs',
       widget: 'list',
       fields: cta.fields,
+      required: false,
     },
   ],
 };

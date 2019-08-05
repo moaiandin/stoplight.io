@@ -12,6 +12,7 @@ export default {
       label: 'Name',
       widget: 'string',
       hint: 'Leave blank to hide',
+      required: false,
     },
     {
       label: 'Color',
@@ -19,6 +20,7 @@ export default {
       widget: 'select',
       options: colors,
       default: 'black',
+      required: false,
     },
     {
       name: 'href',
@@ -26,6 +28,7 @@ export default {
       widget: 'string',
       default: 'https://next.stoplight.io',
       hint: 'Default: https://next.stoplight.io',
+      required: false,
     },
     {
       name: 'icon',

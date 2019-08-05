@@ -9,6 +9,7 @@ export default {
       name: 'href',
       label: 'Link',
       widget: 'string',
+      required: false,
     },
     {
       name: 'title',
@@ -23,6 +24,7 @@ export default {
       options: colors,
       default: 'purple',
       hint: 'Default: purple',
+      required: false,
     },
     {
       name: 'outlined',

@@ -13,10 +13,10 @@ tabs:
   - {}
 includeToc: false
 actionBar:
-  buttons:
+  ctas:
     - color: purple
       href: 'https://www.youtube.com/channel/UCQMe84IAmmkU0FYw_jFtw6w/featured'
-      title: 'Subscribe to our YouTube channel'
+      name: 'Subscribe to our YouTube channel'
   enabled: true
   text: Want to watch more API design content?
 meta:
@@ -31,6 +31,7 @@ meta:
     image: /images/api-design-part-two-webinar.png
     username: '@stoplightio'
 ---
+
 <style>.markdown-body { max-width: 100% !important; } </style>
 
 <iframe width="100%" height="678" src="https://www.youtube.com/embed/Y8gQydMgxY4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

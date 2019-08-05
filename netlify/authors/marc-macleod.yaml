@@ -6,7 +6,7 @@ pageName: Founder & CEO
 image: /images/macleod_headshot.png
 color: purple
 actionBar:
-  buttons:
+  ctas:
     - color: purple
   enabled: false
 meta:

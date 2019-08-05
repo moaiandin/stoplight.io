@@ -168,10 +168,10 @@ collage:
     - alt: Social Starts
       src: /images/logo_socialstarts.png
 actionBar:
-  buttons:
+  ctas:
     - color: accent
       href: 'https://angel.co/stoplight/jobs'
-      title: Learn More
+      name: Learn More
   enabled: true
   text: Want to join the team? We're hiring!
 meta:

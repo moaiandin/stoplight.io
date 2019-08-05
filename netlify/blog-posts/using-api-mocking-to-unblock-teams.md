@@ -14,7 +14,7 @@ color: black
 disqus:
   enabled: true
 actionBar:
-  buttons:
+  ctas:
     - color: purple
   enabled: false
 meta:
@@ -29,6 +29,7 @@ meta:
     image: /images/service-virtualization.jpeg
     username: '@stoplightio'
 ---
+
 There’s no denying that a well-written test suite breeds a better product. Not only does it provide a high level of confidence in your code, but it also covers your butt whenever you make any changes.
 
 And an essential part of a well-written test suite is mocking. Mocking helps keep individual tests focused and lightweight, which ensures a fast, clean test suite, and provides a mechanism for testing functionality that requires objects that aren’t quite finished yet.
@@ -41,13 +42,13 @@ Although mocking is often used in the context of unit testing, a far more powerf
 
 While mock APIs can be used for unit testing, a more common use case is the parallelization of work. By standing up a mock API server, teams that are building features that are dependent on that API can begin working on them without waiting for the API to actually exist. This ensures that, API or no, each team can work as productively as possible.
 
-Beyond simply allowing teams to work better in tandem, how does service virtualization help teams build a *better* product together?
+Beyond simply allowing teams to work better in tandem, how does service virtualization help teams build a _better_ product together?
 
 ### Emphasize Form and Function
 
 In my experience, teams that communicate well perform well. Standing up a mock API server is an important step towards unblocking conflicting team priorities, but that is only half of the battle. The other half is the actual design of the mock API.
 
-In the early stages of product design, when the design and usability of a product are being worked on, and the architecture is being decided, outlining the form and function of the API is a crucial step. Much like how writing API documentation *before* developing an API helps identify usability and design problems, designing a mock API with all stakeholders present can provide the same benefit.
+In the early stages of product design, when the design and usability of a product are being worked on, and the architecture is being decided, outlining the form and function of the API is a crucial step. Much like how writing API documentation _before_ developing an API helps identify usability and design problems, designing a mock API with all stakeholders present can provide the same benefit.
 
 Once the design of the API has been agreed upon, any teams dependent on it can begin working in tandem on their own piece of the product puzzle. This mock API not only works to unblock the various stakeholders — it also acts as a blueprint for the API development team to follow. Defining the expected endpoints, requests, and responses early on will drastically speed up API development. When the decisions are already made, no time is wasted.
 
@@ -59,12 +60,12 @@ By spinning up a mock server using something like Stoplight.io, an organization 
 
 ### Taking It Further
 
-One way to take a mock API further than simply filling in some blanks is to use it to validate the completeness of the official API development. By comparing the API with the mock API, we can determine which endpoints are done, which ones aren’t, and which ones do not match the design spec. This is a great way to close the loop on product development, as once the API and mock API are in parity, the mock API can then be integrated directly into the test suite to ensure that the API *stays* accurate.
+One way to take a mock API further than simply filling in some blanks is to use it to validate the completeness of the official API development. By comparing the API with the mock API, we can determine which endpoints are done, which ones aren’t, and which ones do not match the design spec. This is a great way to close the loop on product development, as once the API and mock API are in parity, the mock API can then be integrated directly into the test suite to ensure that the API _stays_ accurate.
 
 In the end, service virtualization should make your organization more efficient, not less, so it is important to focus on the things that matter. API design, communication, documentation, consistency, and test integrations are all huge gains that can be the difference between a two-month project and a 10-month project.
 
-*Have an API, want to add mocking into the mix? [Stoplight Scenarios](/testing) makes it easy to mock both pre-existing APIs, and new APIs.*
+_Have an API, want to add mocking into the mix? [Stoplight Scenarios](/testing) makes it easy to mock both pre-existing APIs, and new APIs._
 
-***About the author:** Zachary Flower ([@zachflower](http://twitter.com/zachflower)) is a freelance web developer, writer, and polymath. He has an eye for simplicity and usability, and strives to build products with both the end user and business goals in mind.*
+**\*About the author:** Zachary Flower ([@zachflower](http://twitter.com/zachflower)) is a freelance web developer, writer, and polymath. He has an eye for simplicity and usability, and strives to build products with both the end user and business goals in mind.\*
 
-*Want to write for Stoplight? We’re hiring! Shoot an email to hi@stoplight.io and let’s chat.*
+_Want to write for Stoplight? We’re hiring! Shoot an email to hi@stoplight.io and let’s chat._

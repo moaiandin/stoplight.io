@@ -16,7 +16,7 @@ tabs:
 disqus:
   enabled: true
 actionBar:
-  buttons:
+  ctas:
     - color: purple
   enabled: false
 meta:
@@ -31,12 +31,15 @@ meta:
     image: /images/rubber-stamp-cloning.jpg
     username: '@stoplightio'
 ---
+
 Less is definitely more in software engineering. When we stand back and admire a job well done, the source of our pleasure is often because we've implemented a terse solution with the fewest lines of code possible. Thriftiness is definitely a virtue amongst software developers.
 
 This tendency towards minimalism should also ring true in our OpenAPI specifications (previously known as Swagger). A concise, well-structured specification document with a [Components Object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#componentsObject) that includes appropriately reusable objects is the bare minimum an API designer should aim for. There are opportunities to manifest reuse both vertically - ensuring the overall length of the document is kept both digestible and manageable - and horizontally - by creating [Schema Objects](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#schemaObject) that can readily be used across different operations for the same endpoint.
 
 To that end, API designers can structure their Schema objects so one base definition can readily support appropriate request or response bodies across POST, GET, PUT and PATCH operations. This approach takes some thought on the part of the designer, but is worth the effort to produce a more readily consumable specification (for humans and machines alike).
+
 ## Creating and Extending Definitions
+
 The first step for the API designer is create a base object that encapsulates the properties of a given resource. By way of example, a designer may be creating a Customer API that implements a `/customers` collection with each Customer resource identified by `/customers/{CustomerId}`. The properties of the Customer resources are defined by the `CustomerProperties` definition in our OpenAPI document:
 
 ```yaml
@@ -74,7 +77,7 @@ components:
         - DOB
 ```
 
- The two definitions are combined using the `allOf` keyword. These properties are encapsulated in the `CreateCustomer` [Request Body Object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#requestBodyObject). The payload will need to be valid against both of the listed schemas for the implementation of the API to successfully process the request:
+The two definitions are combined using the `allOf` keyword. These properties are encapsulated in the `CreateCustomer` [Request Body Object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#requestBodyObject). The payload will need to be valid against both of the listed schemas for the implementation of the API to successfully process the request:
 
 ```yaml
 components:
@@ -126,6 +129,7 @@ components:
 The Customer API now has sufficient definitions to both create and describe a Customer resource. Taking this structured approach to creating the definitions gives us the flexibility to reuse then across of HTTP methods.
 
 ## GET One or GET Many
+
 The obvious first reuse of these objects is for a GET operation. When implementing a GET to retrieve a given Customer resource we can simply return `CustomerProperties` as we already know the value of `CustomerId` and don't need it back in the response. However, the API consumer will also be interested in understanding the mandatory properties so the Response Object should also include the `CustomerRequiredProperties` definition.
 
 However, if the client wants to retrieve all the Customers that they are authorised for then the API can return an array of `Customer` items. This definition includes the `CustomerId` so we can easily identify a given Customer resource.
@@ -171,7 +175,9 @@ components:
 ```
 
 By using these three schemas, we’ve managed to avoid unnecessary repetition in our OpenAPI description. We’ve kept the document readable, while making it easy to extend to other endpoints and methods.
+
 ## Update Some or All Properties
+
 We can really see the power of reuse if we want to implement a PUT to update a given Customer resource. With the expectation that we are replacing the properties of a resource completely, we can just use reuse `CreateCustomer` definition as is (perhaps renaming it to `CreateUpdateCustomer`). This definition will apply the same constraints as when the Customer resource was created:
 
 ```yaml
@@ -218,6 +224,7 @@ paths:
 ```
 
 Our full OpenAPI document is at a minimum length, while providing readable implementations of GET, POST, PUT, and PATCH.
-## Designing for Reuse
-The examples above show how the OpenAPI specification can engender significant amounts of reuse from relatively few objects. By incorporating this design approach, it's possible to create terse, well-constructed API specification documents that you as API designer can stand back and be proud of.
 
+## Designing for Reuse
+
+The examples above show how the OpenAPI specification can engender significant amounts of reuse from relatively few objects. By incorporating this design approach, it's possible to create terse, well-constructed API specification documents that you as API designer can stand back and be proud of.

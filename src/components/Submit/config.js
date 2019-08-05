@@ -1,8 +1,9 @@
-import cta from 'src/components/CallToAction/config';
+import button from 'src/components/Button/config';
+import input from 'src/components/Input/config';
 
 export default {
-  name: 'actionBar',
-  label: 'Action Bar',
+  name: 'submit',
+  label: 'Submit',
   widget: 'object',
   required: false,
   fields: [
@@ -18,11 +19,12 @@ export default {
       label: 'Text',
       widget: 'string',
     },
+    button,
+    input,
     {
-      name: 'ctas',
-      label: 'CTAs',
-      widget: 'list',
-      fields: cta.fields,
+      name: 'formId',
+      label: 'Hubspot FormId',
+      widget: 'string',
     },
   ],
 };

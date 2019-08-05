@@ -16,7 +16,7 @@ tabs:
 includeToc: true
 disqus: {}
 actionBar:
-  buttons:
+  ctas:
     - color: purple
   enabled: false
 meta:
@@ -31,9 +31,10 @@ meta:
     image: /images/architect-designing.jpg
     username: '@stoplightio'
 ---
+
 Engineering teams need to collaborate amongst themselves and across departments to create great software. The frontend team may not create the API, but they should have a say in what it can do. Similarly, product and other non-engineering roles may have the most knowledge of the requirements.
 
-As we covered in the [API Design Guide](https://stoplight.io/api-design-guide/basics/), there’s no such thing as design-second APIs. In this post, we’ll see how you might take an API for tracking employee vacation requests from concept through implementation. 
+As we covered in the [API Design Guide](https://stoplight.io/api-design-guide/basics/), there’s no such thing as design-second APIs. In this post, we’ll see how you might take an API for tracking employee vacation requests from concept through implementation.
 
 ## Identify the Use Cases
 
@@ -46,10 +47,10 @@ There are at least two audiences you’re serving:
 
 When you have short discussions with one or both of these audiences, you’ll uncover additional use cases. For example, you might discover that employees need to:
 
-* Add many individual vacation request dates at once (such as for public holidays)
-* Request different types of time off, including holidays, PTO, bereavement, and potentially more
-* Add a date range when planning multiple weeks of time off
-* Update previous requests with additional information
+- Add many individual vacation request dates at once (such as for public holidays)
+- Request different types of time off, including holidays, PTO, bereavement, and potentially more
+- Add a date range when planning multiple weeks of time off
+- Update previous requests with additional information
 
 Your API will work in concert with a frontend, so the API does not have to directly support every use case. However, you should expose the common use cases with the API and ideally make the task easy to perform with minimal API calls.
 
@@ -57,7 +58,7 @@ Your API will work in concert with a frontend, so the API does not have to direc
 
 Now that you have some use cases in mind for your vacation tracking API, you can start to design a potential implementation. One place to start is to consider the _resources_ within your API. Typically, these are nouns that can be used alongside HTTP verbs.
 
-With our vacation tracking example, we know we have _employees_ and _time off_. From our use cases, we learned “vacation” is not always vacation. Sometimes an employee will be recording a public holiday, parental leave, or similar time you may want to track differently. 
+With our vacation tracking example, we know we have _employees_ and _time off_. From our use cases, we learned “vacation” is not always vacation. Sometimes an employee will be recording a public holiday, parental leave, or similar time you may want to track differently.
 
 Since the time off is associated with a particular user, we’ll create new time off:
 `POST /employee/{employee-id}/time-off`
@@ -78,10 +79,10 @@ A successful response would return a 201 status code with a `Location` header in
 
 Some other endpoint/verb combinations:
 
-* `GET /employee/{employee-id}/time-off` — list the employee’s time off
-* `GET /employee/{employee-id}/time-off/{time-off-id}` — retrieve a specific time off request
-* `PUT /employee/{employee-id}/time-off/{time-off-id}` — update a specific time off request
-* `DELETE /employee/{employee-id}/time-off/{time-off-id}` — remove a specific time off request
+- `GET /employee/{employee-id}/time-off` — list the employee’s time off
+- `GET /employee/{employee-id}/time-off/{time-off-id}` — retrieve a specific time off request
+- `PUT /employee/{employee-id}/time-off/{time-off-id}` — update a specific time off request
+- `DELETE /employee/{employee-id}/time-off/{time-off-id}` — remove a specific time off request
 
 There’s a lot of detail behind each of the API calls. What data needs to be sent and what do responses look like? What are potential non-200 status codes for each call?
 

@@ -1,4 +1,5 @@
 import { colors } from 'src/utils/netlify';
+import submit from '../Submit/config';
 
 export default {
   name: 'cta',
@@ -36,8 +37,15 @@ export default {
       name: 'type',
       label: 'Type',
       widget: 'select',
-      options: ['link', 'video'],
+      options: ['link', 'video', 'submit'],
       default: 'link',
+      required: false,
+    },
+    submit,
+    {
+      name: 'outlined',
+      label: 'Outlined?',
+      widget: 'boolean',
       required: false,
     },
   ],

@@ -15,7 +15,7 @@ color: black
 disqus:
   enabled: true
 actionBar:
-  buttons:
+  ctas:
     - color: purple
   enabled: false
 meta:
@@ -41,7 +41,7 @@ In this article, I’ll show you how API testing can add significant value to yo
 
 ### **Something to Test**
 
-For the purposes of this article, we’ll assume we have a simple *Express* and *Node.js* API that performs some basic CRUD operations on a MongoDB database. Each document has a schema matching the following example:
+For the purposes of this article, we’ll assume we have a simple _Express_ and _Node.js_ API that performs some basic CRUD operations on a MongoDB database. Each document has a schema matching the following example:
 
     {
      "_id": "5889481213d6a93ada33e23c",
@@ -105,7 +105,7 @@ From here, we can quickly click endpoints to create a scenario. Let’s run thro
 
 Now, we’re almost ready to run our test. We just need to double-check to make sure we capture the ID after the object is created.
 
-From the sidebar, select **CREATE item**. Then from the **Captures** tab, choose **Add Capture**. Give your capture a name. I went with itemsId. Select from the output body output.body, and type the name of the property. In our case, we want _id.
+From the sidebar, select **CREATE item**. Then from the **Captures** tab, choose **Add Capture**. Give your capture a name. I went with itemsId. Select from the output body output.body, and type the name of the property. In our case, we want \_id.
 
 ![](https://cdn-images-1.medium.com/max/800/0*BeqGBYd1smQ8uRMD.)
 

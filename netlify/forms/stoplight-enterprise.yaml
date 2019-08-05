@@ -66,12 +66,12 @@ testimonials:
         magnitude has gone from days to hours.
       role: 'Senior Enterprise Architect, GFT Group'
   actionBar:
-    buttons:
+    ctas:
       - href: 'https://next.stoplight.io/join'
-        title: Try Stoplight Now
+        name: Try Stoplight Now
     enabled: true
 actionBar:
-  buttons: []
+  ctas: []
   enabled: false
 tags: []
 relatedTags: []

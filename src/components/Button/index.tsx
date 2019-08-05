@@ -13,7 +13,9 @@ export interface IButton {
   outlined?: boolean;
   shadow?: string;
   icon?: IconProp;
+  loading?: boolean;
   type?: 'link' | 'video';
+  onClick?: () => void;
 }
 
 export const Button: React.FunctionComponent<IButton> = ({
@@ -25,7 +27,9 @@ export const Button: React.FunctionComponent<IButton> = ({
   title,
   icon,
   children,
+  loading,
   type,
+  onClick,
 }) => {
   const linkComponent = (
     <Link
@@ -35,20 +39,27 @@ export const Button: React.FunctionComponent<IButton> = ({
         `border-${color}`,
         `hover:border-${color}-dark`,
         `focus:border-${color}-dark`,
-        `px-12 font-bold sm:w-full sm:mt-6 rounded-md py-3 flex justify-center select-none border-2 cursor-pointer`,
+        `px-12 font-bold sm:w-full sm:mt-6 rounded-md py-2 flex justify-center select-none border-2 cursor-pointer`,
         {
           [`bg-${color} hover:bg-${color}-dark text-white`]: !outlined,
           [`text-${color}-dark hover:text-${color}-darker`]: outlined,
           [`shadow-${shadow}`]: shadow,
         },
       )}
+      onClick={onClick}
       to={href}
     >
-      <div>{children || title}</div>
-      {icon && (
-        <div className="ml-2">
-          <FontAwesomeIcon icon={icon} size="lg" />
-        </div>
+      {loading ? (
+        <FontAwesomeIcon icon={['fas', 'spinner']} size="lg" />
+      ) : (
+        <>
+          <div>{children || title}</div>
+          {icon && (
+            <div className="ml-2">
+              <FontAwesomeIcon icon={icon} size="lg" />
+            </div>
+          )}
+        </>
       )}
     </Link>
   );

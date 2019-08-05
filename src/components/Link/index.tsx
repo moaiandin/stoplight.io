@@ -7,6 +7,7 @@ export interface ILink {
   title?: string;
   disabled?: boolean;
   style?: object;
+  onClick?: () => void;
 }
 
 export const Link: React.FunctionComponent<ILink> = ({ to, children, disabled, ...props }) => {

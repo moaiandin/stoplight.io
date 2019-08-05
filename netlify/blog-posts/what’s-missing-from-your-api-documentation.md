@@ -16,7 +16,7 @@ tabs:
 disqus:
   enabled: true
 actionBar:
-  buttons:
+  ctas:
     - color: purple
   enabled: false
 meta:
@@ -30,7 +30,8 @@ meta:
     title: What’s Missing From Your API Documentation | Stoplight API Corner
     image: /images/missing-docs.jpeg
 ---
-It's hard to create comprehensive API documentation that speaks to developers in every stage of the integration process. Companies will be rewarded when they put in the additional effort to make sure their developers have a great experience. It's important to give attention to your documentation, even if all your developers are internal.  When you fill the gaps in your docs, you help developers succeed and do so efficiently.
+
+It's hard to create comprehensive API documentation that speaks to developers in every stage of the integration process. Companies will be rewarded when they put in the additional effort to make sure their developers have a great experience. It's important to give attention to your documentation, even if all your developers are internal. When you fill the gaps in your docs, you help developers succeed and do so efficiently.
 
 It should go without saying that your documentation must be complete, accurate, and up-to-date. Even if that's the case, consider the other needs developers might have, which could enhance their experience. Put yourself into a fresh developer mindset and see if you can find the areas of your documentation that may be missing or could be improved.
 

@@ -13,9 +13,10 @@ hero:
   title: 'API Design, Planning & Modeling Tool'
 featureSection:
   actionBar:
-    buttons:
+    ctas:
       - href: 'https://next.stoplight.io/'
-        title: Get Started
+        name: Get Started
+        color: green
     enabled: true
     text: Ready to Model and Design?
   description: >-

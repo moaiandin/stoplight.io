@@ -8,9 +8,9 @@ hero:
   title: Mock REST API Server
 featureSection:
   actionBar:
-    buttons:
+    ctas:
       - href: 'https://next.stoplight.io/'
-        title: Get Started
+        name: Get Started
     enabled: true
     text: 'Want to mock your API? '
   description: >-

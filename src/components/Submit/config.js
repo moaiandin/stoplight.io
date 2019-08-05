@@ -7,18 +7,6 @@ export default {
   widget: 'object',
   required: false,
   fields: [
-    {
-      name: 'enabled',
-      label: 'Enabled?',
-      widget: 'boolean',
-      default: false,
-      hint: 'Default: false',
-    },
-    {
-      name: 'text',
-      label: 'Text',
-      widget: 'string',
-    },
     button,
     input,
     {

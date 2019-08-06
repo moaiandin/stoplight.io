@@ -159,6 +159,12 @@ export default {
           widget: 'string',
           required: false,
         },
+        {
+          name: 'video',
+          label: 'Video URL',
+          widget: 'string',
+          required: false,
+        },
       ],
     },
   ],

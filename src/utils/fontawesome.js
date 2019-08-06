@@ -26,6 +26,7 @@ import { faExclamationTriangle } from '@fortawesome/free-solid-svg-icons/faExcla
 import { faInfoCircle } from '@fortawesome/free-solid-svg-icons/faInfoCircle';
 import { faTerminal } from '@fortawesome/free-solid-svg-icons/faTerminal';
 import { faSpinner } from '@fortawesome/free-solid-svg-icons/faSpinner';
+import { faPlayCircle } from '@fortawesome/free-solid-svg-icons/faPlayCircle';
 
 import { faTwitter } from '@fortawesome/free-brands-svg-icons/faTwitter';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons/faLinkedin';
@@ -58,6 +59,7 @@ export function init() {
   library.add(faInfoCircle);
   library.add(faTerminal);
   library.add(faSpinner);
+  library.add(faPlayCircle);
 
   library.add(faTwitter);
   library.add(faLinkedin);

@@ -20,7 +20,7 @@ export const Link: React.FunctionComponent<ILink> = ({ to, children, disabled, .
   } else if (typeof href === 'string') {
     href = href.trim(); // Make sure there aren't any trailing white spaces
 
-    if (/^http/.test(href)) {
+    if (href.includes('/p/') || /^http/.test(href)) {
       return (
         <a {...props} href={href} target="_blank" rel="noopener noreferrer">
           {children}

@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import cn from 'classnames';
 import * as React from 'react';
 import { Link } from 'src/components/Link';
+import { Download, IDownload } from '../Download';
 import { ISubmit, Submit } from '../Submit';
 import { VideoPlayerModal } from '../VideoPlayerModal';
 
@@ -11,10 +12,11 @@ export interface ICallToAction {
   color?: string;
   href?: string;
   className?: string;
-  type?: 'link' | 'video' | 'submit';
+  type?: 'link' | 'video' | 'submit' | 'download';
   icon?: IconProp;
   submit?: ISubmit;
   outlined?: boolean;
+  download?: IDownload;
 }
 
 export const CallToAction: React.FunctionComponent<ICallToAction> = ({
@@ -26,6 +28,7 @@ export const CallToAction: React.FunctionComponent<ICallToAction> = ({
   icon,
   submit,
   outlined,
+  download,
 }) => {
   if (!name) {
     return null;
@@ -56,6 +59,7 @@ export const CallToAction: React.FunctionComponent<ICallToAction> = ({
   return (
     <div className={cn(className)}>
       {(submit && <Submit {...submit} />) ||
+        (download && <Download {...download} name={name} />) ||
         (type === 'video' && <VideoPlayerModal href={href} cta={cta} />) ||
         (type === 'link' && <Link to={href}>{cta}</Link>)}
     </div>

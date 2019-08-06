@@ -15,6 +15,7 @@ export interface IButton {
   icon?: IconProp;
   loading?: boolean;
   type?: 'link' | 'video';
+  download?: string;
   onClick?: () => void;
 }
 
@@ -29,6 +30,7 @@ export const Button: React.FunctionComponent<IButton> = ({
   children,
   loading,
   type,
+  download,
   onClick,
 }) => {
   const linkComponent = (
@@ -48,6 +50,7 @@ export const Button: React.FunctionComponent<IButton> = ({
       )}
       onClick={onClick}
       to={href}
+      download={download}
     >
       {loading ? (
         <FontAwesomeIcon icon={['fas', 'spinner']} size="lg" />

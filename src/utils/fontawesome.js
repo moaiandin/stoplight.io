@@ -31,6 +31,9 @@ import { faPlayCircle } from '@fortawesome/free-solid-svg-icons/faPlayCircle';
 import { faTwitter } from '@fortawesome/free-brands-svg-icons/faTwitter';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons/faLinkedin';
 import { faGithub } from '@fortawesome/free-brands-svg-icons/faGithub';
+import { faApple } from '@fortawesome/free-brands-svg-icons/faApple';
+import { faLinux } from '@fortawesome/free-brands-svg-icons/faLinux';
+import { faWindows } from '@fortawesome/free-brands-svg-icons/faWindows';
 
 export function init() {
   library.add(faPaintBrush);
@@ -59,6 +62,9 @@ export function init() {
   library.add(faInfoCircle);
   library.add(faTerminal);
   library.add(faSpinner);
+  library.add(faApple);
+  library.add(faLinux);
+  library.add(faWindows);
   library.add(faPlayCircle);
 
   library.add(faTwitter);

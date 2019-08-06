@@ -7,10 +7,11 @@ export interface ILink {
   title?: string;
   disabled?: boolean;
   style?: object;
+  download?: string;
   onClick?: () => void;
 }
 
-export const Link: React.FunctionComponent<ILink> = ({ to, children, disabled, ...props }) => {
+export const Link: React.FunctionComponent<ILink> = ({ to, children, disabled, download, ...props }) => {
   let href = to;
 
   if (!to) {
@@ -22,7 +23,7 @@ export const Link: React.FunctionComponent<ILink> = ({ to, children, disabled, .
 
     if (href.includes('/p/') || /^http/.test(href)) {
       return (
-        <a {...props} href={href} target="_blank" rel="noopener noreferrer">
+        <a {...props} href={href} download={download} target="_blank" rel="noopener noreferrer">
           {children}
         </a>
       );

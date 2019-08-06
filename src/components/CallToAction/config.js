@@ -40,7 +40,7 @@ export default {
       name: 'type',
       label: 'Type',
       widget: 'select',
-      options: ['link', 'video', 'submit'],
+      options: ['link', 'video', 'submit', 'download'],
       default: 'link',
       required: false,
     },

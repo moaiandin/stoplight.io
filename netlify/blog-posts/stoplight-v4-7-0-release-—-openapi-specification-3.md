@@ -14,7 +14,7 @@ color: green
 disqus:
   enabled: true
 actionBar:
-  buttons:
+  ctas:
     - color: purple
   enabled: false
 meta:
@@ -29,17 +29,18 @@ meta:
     image: /images/oas3-code-editor.png
     username: '@stoplightio'
 ---
+
 ## New 🚀
 
 ### OpenAPI Specification (OAS) 3
 
-* Create and edit OAS 3 files
+- Create and edit OAS 3 files
 
-* Find and fix issues in OAS 3 documents using validation and linting rules
+- Find and fix issues in OAS 3 documents using validation and linting rules
 
-* Publish auto-generated OAS 3 documentation
+- Publish auto-generated OAS 3 documentation
 
-* Visual editing coming soon!
+- Visual editing coming soon!
 
 ![*OpenAPI 3 Editor — Code View with Validation and Linting*](https://cdn-images-1.medium.com/max/800/1*8gUxm53NiXCs80Cn8NMIjg.png)
 
@@ -47,24 +48,24 @@ meta:
 
 ## Fixes 🔧
 
-* [API] Publishing can lose references if GitLab times out
+- [API] Publishing can lose references if GitLab times out
 
-* [Hubs] Segment key should be wrapped in quotes when injecting into HTML
+- [Hubs] Segment key should be wrapped in quotes when injecting into HTML
 
-* [Hubs] Auto-generated links for nested pages are incorrect when published under a base path
+- [Hubs] Auto-generated links for nested pages are incorrect when published under a base path
 
-* [Platform] Discussion comment timestamps are incorrect in Safari
+- [Platform] Discussion comment timestamps are incorrect in Safari
 
-* [Platform] String length validation is being stored as a string instead of an integer ([#315](https://github.com/stoplightio/desktop/issues/315))
+- [Platform] String length validation is being stored as a string instead of an integer ([#315](https://github.com/stoplightio/desktop/issues/315))
 
-* [Platform] Prevent overwrites when editing documents ([#283](https://github.com/stoplightio/desktop/issues/283))
+- [Platform] Prevent overwrites when editing documents ([#283](https://github.com/stoplightio/desktop/issues/283))
 
-* [Platform] Unable to single-click on draggable sidebar items
+- [Platform] Unable to single-click on draggable sidebar items
 
-* [Platform] Ensure correct billing plan when using features
+- [Platform] Ensure correct billing plan when using features
 
-* [Platform] Can’t click possible enum values in path param
+- [Platform] Can’t click possible enum values in path param
 
-* [Prism] Empty security array on an operation is not being respected
+- [Prism] Empty security array on an operation is not being respected
 
-* [Prism] $$.env variables are not being set correctly in referenced utilities ([#347](https://github.com/stoplightio/desktop/issues/347))
+- [Prism] \$\$.env variables are not being set correctly in referenced utilities ([#347](https://github.com/stoplightio/desktop/issues/347))

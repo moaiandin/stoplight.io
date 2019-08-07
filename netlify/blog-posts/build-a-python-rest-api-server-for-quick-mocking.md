@@ -16,7 +16,7 @@ tabs:
 disqus:
   enabled: true
 actionBar:
-  buttons:
+  ctas:
     - color: purple
   enabled: false
 meta:
@@ -31,9 +31,10 @@ meta:
     image: /images/python-snake.jpg
     username: '@stoplightio'
 ---
+
 Throughout web and mobile software, you’ll find APIs to exchange data. They are now a foundational element of the development process. Many organizations have adopted an API-first approach, where this interface that programmers see is built before one that users see.
 
-The most forward-thinking companies will prototype their API designs before committing them to permanent code. While this can happen with any language, Python is easy to read and has straightforward frameworks to help build REST APIs. In this tutorial, we’ll look at two Python API frameworks, as well as a code-free way to create mock servers. 
+The most forward-thinking companies will prototype their API designs before committing them to permanent code. While this can happen with any language, Python is easy to read and has straightforward frameworks to help build REST APIs. In this tutorial, we’ll look at two Python API frameworks, as well as a code-free way to create mock servers.
 
 ## Code-First vs Design-First APIs
 
@@ -51,8 +52,8 @@ Most REST APIs use resource endpoints and HTTP methods to help communicate actio
 
 There are many ways you can stub out your APIs in Python. This post includes the same examples in two frameworks, so you can compare their approaches and decide which to use.
 
-* [Flask](http://flask.pocoo.org/) is a web framework that can be adapted to return JSON (or any data).
-* [Falcon](https://falconframework.org/) is more opinionated and built specifically for REST APIs
+- [Flask](http://flask.pocoo.org/) is a web framework that can be adapted to return JSON (or any data).
+- [Falcon](https://falconframework.org/) is more opinionated and built specifically for REST APIs
 
 We’ll cover them in that order, since Flask examples are typically shorter.
 
@@ -178,7 +179,7 @@ Both Flask and Falcon provide fast ways to prototype a REST API in Python. If yo
 
 You can use an open source command line utility like [Prism API Server](https://github.com/stoplightio/prism) to stage a mock API. It will consume your OpenAPI document to determine the endpoints, methods, and data supported by the API. Then it serves mock data and validates the API description.
 
-![Dynamic mock servers in Stoplight](/images/dynamic-mocking.png "Dynamic mock servers in Stoplight")
+![Dynamic mock servers in Stoplight](/images/dynamic-mocking.png 'Dynamic mock servers in Stoplight')
 
 Stoplight also provides [hosted mock API servers](https://stoplight.io/mocking/) which connects Prism to your API design and testing process. It’s easy to make sample calls against your mock API right from the browser. Then you can share them with your team and even connect your server to the frontend before you write any backend code.
 

@@ -32,6 +32,10 @@ hero:
   ctas:
     - href: 'https://next.stoplight.io/'
       name: Start Free Trial
+    - href: 'https://youtube.com/watch?v=iHzFoc4ls8E'
+      name: Watch Video
+      type: video
+      icon: ['fas', 'video']
   particles: true
   skew: rounded
   subtitle: >-
@@ -77,44 +81,51 @@ imageCallout:
   image: /images/home-hero.png
   title: The Complete OpenAPI Specification Toolkit
 actionBar:
-  buttons:
+  ctas:
     - color: purple
       href: /demo
-      title: Request a Demo
-  links:
+      name: Request a Demo
     - href: 'https://next.stoplight.io'
-      title: Create a Free Account
+      name: Create a Free Account
   enabled: true
   headline: Getting started is easy
   text: Be up and running in minutes
+gartnerCoolVendor:
+  cta:
+    href: '/gartner-cool-vendor/'
+    name: Learn More
+  description: >-
+    Stoplight is cool because it enables enterprises to scale API Design.
+    Learn more about collaborative API Design in this Gartner report.
+  image: /images/gartner_cv_2019_rgb.png
+  title: Stoplight is a Gartner Cool Vendor
 testimonials:
-  testimonials:
-    - author: Kin Lane
-      image: /images/testimonials/kin_lane.jpeg
-      quote: >-
-        I feel like Stoplight has the potential to shift the landscape pretty
-        significantly, something I haven't seen any API service provider do in a
-        while.
-      role: API Evangelist
-    - author: 'Carlos Lozano '
-      image: /images/carlos_testimonial.jpeg
-      quote: >-
-        When it comes to specification markup and documentation, the order of
-        magnitude has gone from days to hours.
-      role: 'Senior Enterprise Architect, GFT Group'
-    - author: John Vajda
-      image: /images/testimonials/john_vajda.jpeg
-      quote: >-
-        Stoplight has been a serious game changer for JumpCloud’s API
-        development! We love all the rich design, documentation and testing
-        features, which has enabled us to design awesome APIs for our customers.
-      role: 'Product Manager, JumpCloud'
-    - author: Gil Barbara
-      image: /images/testimonials/gil.jpeg
-      quote: >-
-        Stoplight provides a centralized, testable and reliable source for our
-        APIs.
-      role: 'Frontend Engineer, AMARO'
+  - author: Kin Lane
+    image: /images/testimonials/kin_lane.jpeg
+    quote: >-
+      I feel like Stoplight has the potential to shift the landscape pretty
+      significantly, something I haven't seen any API service provider do in a
+      while.
+    role: API Evangelist
+  - author: 'Carlos Lozano '
+    image: /images/carlos_testimonial.jpeg
+    quote: >-
+      When it comes to specification markup and documentation, the order of
+      magnitude has gone from days to hours.
+    role: 'Senior Enterprise Architect, GFT Group'
+  - author: John Vajda
+    image: /images/testimonials/john_vajda.jpeg
+    quote: >-
+      Stoplight has been a serious game changer for JumpCloud’s API
+      development! We love all the rich design, documentation and testing
+      features, which has enabled us to design awesome APIs for our customers.
+    role: 'Product Manager, JumpCloud'
+  - author: Gil Barbara
+    image: /images/testimonials/gil.jpeg
+    quote: >-
+      Stoplight provides a centralized, testable and reliable source for our
+      APIs.
+    role: 'Frontend Engineer, AMARO'
 meta:
   description: >-
     Using Stoplight you can create OpenAPI Specifications, documentation, mock

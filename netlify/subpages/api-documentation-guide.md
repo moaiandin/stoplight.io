@@ -19,7 +19,7 @@ tabs:
   - href: /api-documentation-guide/best-practices
     title: 'API Documentation Best Practices '
 actionBar:
-  buttons: []
+  ctas: []
   enabled: false
 meta:
   description: >-
@@ -32,6 +32,7 @@ meta:
     title: API Documentation Guide | Simple API Documentation & Tutorials
     username: '@stoplightio'
 ---
+
 ## Create Comprehensive API Documentation
 
 Can an API even be used without documentation? While technically possible, it’s through good API documentation that developers first experience an API and get to know its functionality. Whether your API is meant for internal use, exposed to partners, or fully public, developers will need complete and accurate documentation to best complete their integrations.
@@ -40,7 +41,7 @@ In this guide, we’ll cover the basics of documentation and the different types
 
 ### What is API documentation?
 
-API docs are the collection of references, tutorials, and examples that help developers use your API. 
+API docs are the collection of references, tutorials, and examples that help developers use your API.
 
 Your documentation is the primary resource for explaining what is possible with your API and how to get started. It also serves as a place for developers to return with questions about syntax or functionality. Your API docs have these answers.
 
@@ -56,9 +57,9 @@ Your API documentation will have several types of content. Some is meant to show
 
 Your documentation must completely describe the API’s functionality, be accurate, educational, and inspire usage. It’s a big job that can roughly be broken down into three types:
 
-* Reference and functionality
-* Guides and tutorials
-* Examples and use cases
+- Reference and functionality
+- Guides and tutorials
+- Examples and use cases
 
 We’ll discuss these in detail, but you can think of them as moving on a continuum of facts to context. A reference describes the endpoints of an API, it lays out all the pieces. Guides take some of those pieces and start to put them together, explaining why you’d use those parts. Finally, examples offer up a very specific solution, solving a common problem.
 

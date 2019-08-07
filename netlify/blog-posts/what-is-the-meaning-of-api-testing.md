@@ -16,7 +16,7 @@ tabs:
 disqus:
   enabled: true
 actionBar:
-  buttons:
+  ctas:
     - color: purple
   enabled: false
 meta:
@@ -29,6 +29,7 @@ meta:
     title: What is the Meaning of API Testing? | Stoplight API Corner
     image: /images/formulas-and-equations.jpg
 ---
+
 Modern software is built on top of web APIs—connected services that exchange data between systems. Most APIs are built and consumed by internal teams. It’s important to both provider and consumer that the API work as designed. Yet, many teams do not have a formal way to ensure that an API operates as expected.
 
 API testing will help teams building APIs be certain that every endpoint returns the appropriate status codes and response data. And their colleagues consuming the API can have the same peace of mind. In this post, we’ll define API testing and look at the best ways to track your test coverage. We’ll also show the power of connecting API descriptions such as OpenAPI and Swagger as an API contract, building your tests from this source of truth.
@@ -45,12 +46,12 @@ There are a few meanings of API testing. Each puts an emphasis on different outc
 
 Some example types of API testing:
 
-* API contract testing
-* API load testing
-* API security testing
-* API reliability testing
-* API unit testing
-* API usability testing
+- API contract testing
+- API load testing
+- API security testing
+- API reliability testing
+- API unit testing
+- API usability testing
 
 This post primarily looks at contract testing, a foundational form of testing. Regardless of the type, API testing gives you the confidence to build software quickly, without sacrificing quality.
 

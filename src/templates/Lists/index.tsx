@@ -125,11 +125,9 @@ export const List: React.FunctionComponent<IList> = ({
         )}
       </Section>
 
-      {actionBar && (
-        <div className="md:pb-24 pb-40 mt-32">
-          <ActionBar className="bg-white" {...actionBar} />
-        </div>
-      )}
+      <Section style={{ maxHeight: 400, marginTop: 50, padding: 0 }}>
+        {actionBar && <ActionBar {...actionBar} />}
+      </Section>
     </Layout>
   );
 };

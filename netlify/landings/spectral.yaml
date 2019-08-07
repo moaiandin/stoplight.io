@@ -18,9 +18,9 @@ hero:
       icon: ['fas', 'video']
       type: video
 actionBar:
-  buttons:
+  ctas:
     - href: 'https://github.com/stoplightio/spectral'
-      title: Get Started with Spectral
+      name: Get Started with Spectral
   enabled: true
   text: Do you want feedback on your API descriptions right now?
 featureSection:

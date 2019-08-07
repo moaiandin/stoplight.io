@@ -178,7 +178,7 @@ export const Hero: React.FunctionComponent<IHero> = ({
 
           {ctas && (
             <div
-              className={cn('flex items-center md:flex-col md:pb-4 pb-16', {
+              className={cn('flex items-center justify-center md:flex-col md:pb-4 pb-16', {
                 'mx-auto': aligned === 'center',
                 'ml-auto': aligned === 'right',
                 'mr-auto': aligned === 'left',

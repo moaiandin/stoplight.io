@@ -4,18 +4,24 @@ import { VideoPlayer } from '../VideoPlayer';
 
 export interface IVideoPlayerModal {
   href: string;
-  cta: object;
+  cta?: object;
+  className?: string;
+  children?: (props: IVideoModalChildrenProps) => void;
 }
 
-export const VideoPlayerModal: React.FunctionComponent<IVideoPlayerModal> = ({ href, cta }) => {
+export interface IVideoModalChildrenProps {
+  onClick(e: any): void;
+}
+
+export const VideoPlayerModal: React.FunctionComponent<IVideoPlayerModal> = ({ href, cta, className, children }) => {
   const [isOpen, setIsOpen] = React.useState(false);
 
   const onOpenModal = React.useCallback(() => setIsOpen(true), [setIsOpen]);
   const onCloseModal = React.useCallback(() => setIsOpen(false), [setIsOpen]);
 
   return (
-    <div>
-      <button onClick={onOpenModal}>{cta}</button>
+    <div className={className}>
+      {children ? children({ onClick: onOpenModal }) : <button onClick={onOpenModal}>{cta}</button>}
       <Modal
         open={isOpen}
         onClose={onCloseModal}
@@ -35,7 +41,7 @@ export const VideoPlayerModal: React.FunctionComponent<IVideoPlayerModal> = ({ h
           },
         }}
       >
-        <VideoPlayer href={href} />
+        <VideoPlayer href={href} playing={isOpen} />
       </Modal>
     </div>
   );

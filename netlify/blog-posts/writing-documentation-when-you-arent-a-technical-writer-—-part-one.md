@@ -18,7 +18,7 @@ color: yellow
 disqus:
   enabled: true
 actionBar:
-  buttons:
+  ctas:
     - color: purple
   enabled: false
 meta:
@@ -41,7 +41,8 @@ meta:
     image: /images/not-technical-writer-part-one.jpeg
     username: '@stoplightio'
 ---
-*Photo by [rawpixel](https://unsplash.com/photos/VfZOC3kV6sM) on [Unsplash](https://unsplash.com)*
+
+_Photo by [rawpixel](https://unsplash.com/photos/VfZOC3kV6sM) on [Unsplash](https://unsplash.com)_
 
 _In the fall of 2016, my teammate and I were tasked with the mission of improving my former company’s documentation and content. We spent a year working on all kinds of documentation — API references, guides, tutorials, and blog posts. I had been writing documentation off and on over the previous 5 years, but I wasn’t formally trained in technical writing. I was by no means inexperienced though, due to working on API documentation for projects and a startup and teaching Python Flask workshops towards the end of my computer science degree. This was the first time I had ever been able to focus on documentation, which allowed me to pursue my passion for helping people of all skill levels through technical documentation._
 
@@ -49,7 +50,7 @@ _In that year, I learned a lot from the Write the Docs community, other API prov
 
 ## How do people actually read documentation?
 
-![“Nation Shudders At Large Block Of Uninterrupted Text,” photo from [The Onion](https://www.theonion.com/nation-shudders-at-large-block-of-uninterrupted-text-1819571366)](/images/the-onion.png)*“Nation Shudders At Large Block Of Uninterrupted Text,” photo from [The Onion](https://www.theonion.com/nation-shudders-at-large-block-of-uninterrupted-text-1819571366)*
+![“Nation Shudders At Large Block Of Uninterrupted Text,” photo from [The Onion](https://www.theonion.com/nation-shudders-at-large-block-of-uninterrupted-text-1819571366)](/images/the-onion.png)_“Nation Shudders At Large Block Of Uninterrupted Text,” photo from [The Onion](https://www.theonion.com/nation-shudders-at-large-block-of-uninterrupted-text-1819571366)_
 
 Do you know that feeling when The Onion is eerily right? This is one of those times. People might not be physically shuddering at your docs, but there’s a good chance they are doing it mentally. I struggled with the idea that people aren’t going to read what I write, unless I present it in the most easily digestible way. Heck, this could even happen for this blog post. (Note to self: Remind myself why I even write. 🤔)
 
@@ -59,7 +60,7 @@ In an [eye-tracking study](https://www.nngroup.com/articles/f-shaped-pattern-rea
 2. “Next, users move down the page a bit and then read across in a **second horizontal** movement that typically covers a shorter area than the previous movement. This additional element forms the F’s lower bar.”
 3. “Finally, users scan the content’s left side in a **vertical movement**. Sometimes this is a slow and systematic scan that appears as a solid stripe on an eye-tracking heatmap. Other times users move faster, creating a spottier heatmap. This last element forms the F’s stem.”
 
-![Heatmaps from [Nielsen Norman Group](https://www.nngroup.com/articles/f-shaped-pattern-reading-web-content-discovered/)](/images/heat-maps.png)*Heatmaps from [Nielsen Norman Group](https://www.nngroup.com/articles/f-shaped-pattern-reading-web-content-discovered/)*
+![Heatmaps from [Nielsen Norman Group](https://www.nngroup.com/articles/f-shaped-pattern-reading-web-content-discovered/)](/images/heat-maps.png)_Heatmaps from [Nielsen Norman Group](https://www.nngroup.com/articles/f-shaped-pattern-reading-web-content-discovered/)_
 
 The study also found some alternative scanning patterns such as layer-cake pattern, spotted pattern, marking pattern, bypassing pattern, and commitment pattern. I highly recommend reviewing the rest of [the report](https://www.nngroup.com/articles/f-shaped-pattern-reading-web-content-discovered/).
 
@@ -67,17 +68,17 @@ It’s important to note that F-pattern is [negative for users](https://www.nngr
 
 ## What exactly are the implications of this with respect to documentation?
 
-* The first two paragraphs must state the **most important information**
-* Further, the first 3–5 words are **critical**
-* Start headers, paragraphs, and bullet points with information-carrying words
-* Variations in typeface (text size, links, bold, etc.) can be essential to keep people’s attention
+- The first two paragraphs must state the **most important information**
+- Further, the first 3–5 words are **critical**
+- Start headers, paragraphs, and bullet points with information-carrying words
+- Variations in typeface (text size, links, bold, etc.) can be essential to keep people’s attention
 
 ## So how should you structure the content on a page?
 
-* Prevent search failure — make sure what the users wants stands out
-* One idea per paragraph, if there’s more than one, split the paragraphs
-* Users skip over things that look like ads, so be careful how you display images
-* Don’t make your content body too wide — aim for 65–90 characters in width
+- Prevent search failure — make sure what the users wants stands out
+- One idea per paragraph, if there’s more than one, split the paragraphs
+- Users skip over things that look like ads, so be careful how you display images
+- Don’t make your content body too wide — aim for 65–90 characters in width
 
 I learned some of these tips from Kevin Burke’s [talk](https://www.youtube.com/watch?v=sQP_hUNCrcE), “How to Write Documentation for Users that Don’t Read.” Kevin maintained Twilio’s docs from 2011 to 2014.
 
@@ -91,9 +92,9 @@ Event collections can have almost any name, but there are a few rules to follow:
 
 Event collections can have almost any name, but there are a few rules to follow:
 
-* The name must be 64 characters or less.
-* It must contain only Ascii characters.
-* It cannot be a null value.
+- The name must be 64 characters or less.
+- It must contain only Ascii characters.
+- It cannot be a null value.
 
 Both of these contain the **exact** same content. It’s not rocket science that the second one helps you comprehend the information better and in less time. We have to remember that some paragraphs can benefit from being broken up into bullets. If your paragraph contains a list of any kind, turn it into a bulleted list.
 
@@ -121,7 +122,7 @@ These are all things that could be made more evident in the code.
 
 Here’s an example from the Twilio docs that gives good context to the end user:
 
-![*Photo from the /[Twilio Node Helper Library/](https://www.twilio.com/docs/libraries/node)*](/images/twilio-context-example.png)*Photo from the [Twilio Node Helper Library](https://www.twilio.com/docs/libraries/node)*
+![*Photo from the /[Twilio Node Helper Library/](https://www.twilio.com/docs/libraries/node)*](/images/twilio-context-example.png)_Photo from the [Twilio Node Helper Library](https://www.twilio.com/docs/libraries/node)_
 
 It makes it very clear how you should install the library, include it in your code, and then what needs to be replaced in the sample code to run the sample.
 
@@ -141,7 +142,7 @@ It seems pretty harmless, right? Think again, what happens when you go copy and 
 bash: command not found: $
 ```
 
-It’s a common mistake. Either, you want your command to appear like it is in a command line environment or you accidentally copied it over yourself. I would recommend just leaving off the $. You can also find a way to make it not copy and pastable because the error will happen to your users and it will be annoying.
+It’s a common mistake. Either, you want your command to appear like it is in a command line environment or you accidentally copied it over yourself. I would recommend just leaving off the \$. You can also find a way to make it not copy and pastable because the error will happen to your users and it will be annoying.
 
 Here’s a more recent example: Have you checked how easy it is to select the code the user needs to copy?
 

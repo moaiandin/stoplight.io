@@ -17,9 +17,9 @@ hero:
       icon: ['fas', 'video']
       type: video
 actionBar:
-  buttons:
+  ctas:
     - href: 'https://github.com/stoplightio/prism'
-      title: Get Started with Prism
+      name: Get Started with Prism
   enabled: true
   text: Do you want to mock your API in minutes?
 featureSection:

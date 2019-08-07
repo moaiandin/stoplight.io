@@ -14,7 +14,7 @@ color: black
 disqus:
   enabled: true
 actionBar:
-  buttons:
+  ctas:
     - color: purple
   enabled: false
 meta:
@@ -34,7 +34,7 @@ TLDR; I’m tired of the election, and I made a fun prank calling app with the l
 
 — -
 
-Politics. Clinton. Trump. Obama. Walls. Pu**y (API Corner is actually in the corner of a locker room.). Tax Returns. Open Borders.
+Politics. Clinton. Trump. Obama. Walls. Pu\*\*y (API Corner is actually in the corner of a locker room.). Tax Returns. Open Borders.
 
 These words mean something to everyone. They change people, and as November 8th creeps closer and closer, the power of these words get stronger and stronger.
 

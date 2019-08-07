@@ -8,36 +8,37 @@ relatedTags:
 publishedDate: 2017-05-11T22:57:36.686Z
 author: Stoplight
 title: Components of Killer API Docs
-subtitle: 'Let''s face it — documentation is critical to API success '
+subtitle: "Let's face it — documentation is critical to API success "
 image: /images/pexels-photo-272980.jpeg
 color: green
 disqus:
   enabled: true
 actionBar:
-  buttons:
+  ctas:
     - color: purple
   enabled: false
 meta:
-  description: 'Let''s face it — documentation is critical to API success '
+  description: "Let's face it — documentation is critical to API success "
   favicon: /images/mark_light_bg.png
   robots: 'index, follow'
   title: Components of Killer API Docs | Stoplight API Corner
   image: /images/pexels-photo-272980.jpeg
   twitter:
-    description: 'Let''s face it — documentation is critical to API success '
+    description: "Let's face it — documentation is critical to API success "
     title: Components of Killer API Docs | Stoplight API Corner
     image: /images/pexels-photo-272980.jpeg
     username: '@stoplightio'
 ---
+
 Let’s face it — Writing documentation sucks, but not writing documentation sucks a lot more.
 
-Trying to use an API without clear and accurate documentation is like trying to read a book without any punctuation — It can be done, but it wastes a *ton* of time. As a developer, there’s nothing more frustrating than having to reverse engineer a third-party API because the vendor decided to skimp on the documentation.
+Trying to use an API without clear and accurate documentation is like trying to read a book without any punctuation — It can be done, but it wastes a _ton_ of time. As a developer, there’s nothing more frustrating than having to reverse engineer a third-party API because the vendor decided to skimp on the documentation.
 
 Unfortunately, in today’s API climate, it’s not enough to simply have accurate documentation. It has to be clean, detailed, and unambiguous. The first impression a developer gets of an API is its documentation, so creating good API documentation is as much an exercise in usability and marketing as documentation.
 
 ## Is It Good?
 
-“So,” you might be thinking, “what exactly *is* good documentation?”
+“So,” you might be thinking, “what exactly _is_ good documentation?”
 
 At a high level, good documentation is organized, detailed, accurate, and unambiguous. While every API approaches documentation a little differently, the ones that put a high level of care into their documentation all tend to share these same concepts.
 
@@ -47,7 +48,7 @@ Organizing API documentation can be almost as tough as designing the hierarchy o
 
 ![](https://cdn-images-1.medium.com/max/800/0*WCSYf3o6p-OM6hWj.)
 
-*Strava API Documentation*
+_Strava API Documentation_
 
 Take the[ Strava API documentation](https://strava.github.io/api/), for example. It is organized in a way that separates API endpoints (called “resources”) from other important API information like rate limiting and conventions. This ensures that developers can quickly and easily find information about both the API design, and information about the API as a whole.
 
@@ -57,11 +58,11 @@ Have you ever turned on an unfamiliar faucet, only to find out that the hot and 
 
 ## Detailed
 
-In writing, it is often said that less is more. Why use a paragraph when a sentence will do? Unfortunately, this is *not* the case with API documentation. Nobody has ever complained that an API’s documentation is *too* detailed. As long as it is clear and properly organized, the more information you can provide about an endpoint, parameter, or expected response, the better.
+In writing, it is often said that less is more. Why use a paragraph when a sentence will do? Unfortunately, this is _not_ the case with API documentation. Nobody has ever complained that an API’s documentation is _too_ detailed. As long as it is clear and properly organized, the more information you can provide about an endpoint, parameter, or expected response, the better.
 
 ![](https://cdn-images-1.medium.com/max/800/0*mjg-qm39Ru7svpjw.)
 
-*Plaid API Documentation*
+_Plaid API Documentation_
 
 The[ Plaid API documentation](https://plaid.com/docs/api/) does an excellent job of providing detailed resource documentation. Every endpoint is clearly outlined and, more importantly, every possible parameter is defined in detail. Because of this level of detail, there is no question as to what each parameter does, whether it is optional or required, and what its expected format is.
 
@@ -71,7 +72,7 @@ Every long story needs a tl;dr. No matter how detailed your documentation is, th
 
 ![](https://cdn-images-1.medium.com/max/800/0*b8hE97kFCRZ-rb3S.)
 
-*Stripe API Documentation*
+_Stripe API Documentation_
 
 When it comes to examples, the[ Stripe API documentation](https://stripe.com/docs/api) is second to none. Live documentation is tough to do right, and often requires end-user configuration, which can make the documentation more frustrating than it is worth. On the flip side, sample requests are useful, but can be hard to relate to. Stripe tackles this problem by providing example requests and responses with dummy data, unless you are an existing API consumer. In that case, Stripe returns real data directly from their API. This provides an element of context that can help you more accurately understand each documented endpoint.
 
@@ -79,6 +80,7 @@ When it comes to examples, the[ Stripe API documentation](https://stripe.com/doc
 
 While all good documentation contains many of the elements shown above, when it comes down to it, the most important thing to remember is that documentation is a product in and of itself. Usability and design are just as important as information, as developers may find themselves living in your documentation for an extended period of time. Anything that improves that experience always reflects positively — both on you and your product.
 
-*Have an API, need docs? [Stoplight.io](https://stoplight.io) offers a suite of tools that make it easy to create killer API docs.*
+_Have an API, need docs? [Stoplight.io](https://stoplight.io) offers a suite of tools that make it easy to create killer API docs._
+
 > **About the author.** Zachary Flower ([@zachflower](http://twitter.com/zachflower)) is a freelance web developer, writer, and polymath. He has an eye for simplicity and usability, and strives to build products with both the end user and business goals in mind. From building projects for the NSA to creating features for companies like Name.com and Buffer, Zach has always taken a strong stand against needlessly reinventing the wheel, often advocating for the use of well established third-party and open source services and solutions to improve the efficiency and reliability of a development project.
 > Want to write for Stoplight? We’re hiring! Shoot an email to hi@stoplight.io and let’s chat.

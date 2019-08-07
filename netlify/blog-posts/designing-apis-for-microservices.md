@@ -17,7 +17,7 @@ tabs:
 disqus:
   enabled: true
 actionBar:
-  buttons:
+  ctas:
     - color: purple
   enabled: false
 meta:
@@ -32,7 +32,8 @@ meta:
     image: /images/ash-edmonds-636863-unsplash.jpg
     username: '@stoplightio'
 ---
-*Photo by [Ash Edmonds](https://unsplash.com/photos/XZ0xN0hmpi4) on [Unsplash](https://unsplash.com)*
+
+_Photo by [Ash Edmonds](https://unsplash.com/photos/XZ0xN0hmpi4) on [Unsplash](https://unsplash.com)_
 
 So, you're at the start of a new project or in need of a significant refactoring to tackle technical debt, and you have decided to build a microservice architecture? Congratulations, you've just given yourself a massive API design task!
 
@@ -72,7 +73,7 @@ Unless the stated purpose of an API is to provide insights into the backend of a
 
 Every microservice should only deal with the information it needs. For example, in a microservice architecture for an online shop, the payment services do not need to know product attributes except for the price. Unnecessary information leads to unnecessary dependencies. Remember loose coupling! Still, at some point, microservices may have to have shared datatypes, for example, a user model. You should not make these models dependent on a single microservice but, instead, create a standard, shared domain model. You can then reuse this model when designing each microservice and its API.
 
-Using shared domain models for different microservices works exceptionally well with OpenAPI. You can create JSON schema files that describe these models and then reference the same models in all OpenAPI descriptions that define different interfaces by including them with $ref. Stoplight allows you to maintain different OpenAPI files within the same project.
+Using shared domain models for different microservices works exceptionally well with OpenAPI. You can create JSON schema files that describe these models and then reference the same models in all OpenAPI descriptions that define different interfaces by including them with \$ref. Stoplight allows you to maintain different OpenAPI files within the same project.
 
 ## Summary
 

@@ -18,11 +18,10 @@ includeToc: true
 disqus:
   enabled: true
 actionBar:
-  buttons:
+  ctas:
     - color: purple
       href: 'https://stoplight.io/prism/'
-      outlined: false
-      title: Get Started with Prism
+      name: Get Started with Prism
   enabled: true
   text: Do you want a mock server on your API descriptions right now?
 meta:
@@ -63,11 +62,11 @@ When your mock servers produce static results, they can misrepresent the data th
 
 Even better, OpenAPI allows for schema extensions. We’ve included support for dynamic example generation from [JSON Schema Faker](https://github.com/json-schema-faker/json-schema-faker). Even without the extensions enabled, you’ll always receive the accurate response type. With JSON Schema Faker, you can also create **specific value types**, such as _names street addresses._
 
-With the recent [release of Spectral](https://github.com/stoplightio/spectral), Prism v3 marks multiple open source projects from Stoplight that support Open API 3.0.x. Oh, and what if you are still using OpenAPI 2.0?  Don’t worry. **We still fully support OpenAPI 2.0 with Prism v3.**
+With the recent [release of Spectral](https://github.com/stoplightio/spectral), Prism v3 marks multiple open source projects from Stoplight that support Open API 3.0.x. Oh, and what if you are still using OpenAPI 2.0? Don’t worry. **We still fully support OpenAPI 2.0 with Prism v3.**
 
 ## More Detailed Logging for Failed Requests
 
-One of the most exciting changes for me about Prism v3 is the **new logging capabilities**.  In Prism v2, when you were receiving a response that did not make sense to you, the program would not give you actionable feedback to tell you **why that message was occurring.** Prism v3 gives you a running log, with a series of messages including why the program returned the response it did, and what it did as a result of that error. This vastly improves the **observability and debuggability** of your API.
+One of the most exciting changes for me about Prism v3 is the **new logging capabilities**. In Prism v2, when you were receiving a response that did not make sense to you, the program would not give you actionable feedback to tell you **why that message was occurring.** Prism v3 gives you a running log, with a series of messages including why the program returned the response it did, and what it did as a result of that error. This vastly improves the **observability and debuggability** of your API.
 
 Prism logs report inconsistencies within request data. For example, your API may expect an object with name, surname, and email address. If a field is missing from your request data, Prism tells you that not all the information was found in that user’s object and generate a 422 error highlighting the missing data.
 
@@ -90,4 +89,4 @@ Regardless of whether you’re an existing Prism user or brand new to mock APIs,
 - Detailed logging
 - Huge performance improvements
 
-The goal of Prism v3 is to help all API architects save time with simplicity and instant feedback. With your descriptions you can verify all your ideas with a mock server very early in your development process.  With the new tools available in Prism v3, you can tell your client-side team they can use the API before it’s being implemented.  They can now achieve their use cases and give your server-side team feedback without having to write a single line of code.
+The goal of Prism v3 is to help all API architects save time with simplicity and instant feedback. With your descriptions you can verify all your ideas with a mock server very early in your development process. With the new tools available in Prism v3, you can tell your client-side team they can use the API before it’s being implemented. They can now achieve their use cases and give your server-side team feedback without having to write a single line of code.

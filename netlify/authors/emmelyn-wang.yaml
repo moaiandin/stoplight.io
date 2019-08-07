@@ -8,13 +8,13 @@ subtitle: >-
   engagement, support, and evangelise. She is a global contributor to Write the
   Docs, API the Docs, API Days, and the open source AsyncAPI specification
   community. She runs the APIOps community in Dallas, TX and is a regular WWCode
-  DFW volunteer. 
+  DFW volunteer.
 image: /images/emmelyn-wang.jpg
 color: purple-darker
 tabs:
   - {}
 actionBar:
-  buttons:
+  ctas:
     - color: purple
   enabled: false
 meta:

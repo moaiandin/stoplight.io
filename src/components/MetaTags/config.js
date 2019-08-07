@@ -24,6 +24,7 @@ export default {
       label: 'URL',
       name: 'url',
       widget: 'string',
+      required: false,
     },
     {
       label: 'Image',

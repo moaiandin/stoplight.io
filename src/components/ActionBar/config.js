@@ -1,4 +1,4 @@
-import button from 'src/components/Button/config';
+import cta from 'src/components/CallToAction/config';
 
 export default {
   name: 'actionBar',
@@ -12,11 +12,13 @@ export default {
       widget: 'boolean',
       default: false,
       hint: 'Default: false',
+      required: false,
     },
     {
       name: 'text',
       label: 'Text',
       widget: 'string',
+      required: false,
     },
     {
       name: 'headline',
@@ -24,10 +26,11 @@ export default {
       widget: 'string',
     },
     {
-      name: 'buttons',
-      label: 'Buttons',
+      name: 'ctas',
+      label: 'CTAs',
       widget: 'list',
-      fields: button.fields,
+      fields: cta.fields,
+      required: false,
     },
   ],
 };

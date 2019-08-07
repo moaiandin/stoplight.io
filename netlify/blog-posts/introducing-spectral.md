@@ -19,7 +19,7 @@ tabs:
 disqus:
   enabled: true
 actionBar:
-  buttons:
+  ctas:
     - color: purple
   enabled: false
 meta:
@@ -36,9 +36,10 @@ meta:
     title: Introducing Spectral | Stoplight API Corner
     image: /images/sharon-mccutcheon-663633-unsplash.jpg
 ---
+
 _Photo by [Sharon McCutcheon](https://unsplash.com/photos/W7cPLHOa0eQ) on [Unsplash](https://unsplash.com)_
 
-Linters for your code like ESLint, pycodestyle, CSSLint, and others have grown increasingly popular as tools for maintaining a consistent code base and to prevent future errors before execution. A linter acts as a style guide, enforcing predetermined rules during the code creation process. This helps reduce the cognitive load while writing the code and saves time later in the code review. Linters also do the hard work of enforcing things like the contentious tabs vs. spaces debate. This is why we created [Spectral](https://stoplight.io/spectral/), a flexible JSON linter. 
+Linters for your code like ESLint, pycodestyle, CSSLint, and others have grown increasingly popular as tools for maintaining a consistent code base and to prevent future errors before execution. A linter acts as a style guide, enforcing predetermined rules during the code creation process. This helps reduce the cognitive load while writing the code and saves time later in the code review. Linters also do the hard work of enforcing things like the contentious tabs vs. spaces debate. This is why we created [Spectral](https://stoplight.io/spectral/), a flexible JSON linter.
 
 ![Bugs Bunny and Daffy Duck arguing over tabs versus spaces](/images/tabsvsspaces.gif)
 
@@ -66,12 +67,12 @@ A common complaint regarding linters is that they are not flexible enough. We he
 
 There are two key concepts in Spectral: **Rules** and **Functions**.
 
-* **Rules** filter your object down to a set of target values and specify the function that should evaluate those values.
-* **Functions** accept a value and return issue(s) if the value is incorrect.
+- **Rules** filter your object down to a set of target values and specify the function that should evaluate those values.
+- **Functions** accept a value and return issue(s) if the value is incorrect.
 
 Think of a set of rules and functions as a flexible and customizable style guide for your JSON objects.
 
-Spectral has a set of built-in functions to help you build custom rules for your JSON objects. These functions include pattern checks, parameter checks, alphabetical ordering, a specified number of characters, provided keys are present in an object, etc. These rules can be clearly defined thanks for TypeScript typings. 
+Spectral has a set of built-in functions to help you build custom rules for your JSON objects. These functions include pattern checks, parameter checks, alphabetical ordering, a specified number of characters, provided keys are present in an object, etc. These rules can be clearly defined thanks for TypeScript typings.
 
 In this example, we are using the `RuleFunction.PATTERN` to create a rule that checks that all property values are in snake case:
 
@@ -82,22 +83,22 @@ const spectral = new Spectral();
 
 spectral.addRules({
   snake_case: {
-    summary: "Checks for snake case pattern",
+    summary: 'Checks for snake case pattern',
 
     // evaluate every property
-    given: "$..*",
+    given: '$..*',
 
     then: {
       function: RuleFunction.PATTERN,
       functionOptions: {
-        match: "^[a-z]+[a-z0-9_]*[a-z0-9]+$"
-      }
-    }
-  }
+        match: '^[a-z]+[a-z0-9_]*[a-z0-9]+$',
+      },
+    },
+  },
 });
 
 // run!
-spectral.run({ name: "helloWorld" }).then(results => {
+spectral.run({ name: 'helloWorld' }).then(results => {
   console.log(JSON.stringify(results, null, 4));
 });
 
@@ -125,11 +126,11 @@ spectral.run({ name: "helloWorld" }).then(results => {
 // ]
 ```
 
-You can then use JSON paths to apply custom rules and functions to specific parts of your JSON objects. 
+You can then use JSON paths to apply custom rules and functions to specific parts of your JSON objects.
 
 ### OpenAPI Validation and Linting
 
-We built Spectral to have out of the box support for validating and linting OpenAPI documents. You can choose to use our rulesets or modify it to create your own custom OpenAPI rulesets. 
+We built Spectral to have out of the box support for validating and linting OpenAPI documents. You can choose to use our rulesets or modify it to create your own custom OpenAPI rulesets.
 
 In this example, we are using an OpenAPI 3 ruleset that we have included in Spectral to validate and lint an OpenAPI 3 document.
 
@@ -155,7 +156,7 @@ OpenAPI 3.x detected
 ✖ 5 problems (0 errors, 5 warnings, 0 infos)
 ```
 
-Or you can do the same thing [programmatically](https://github.com/stoplightio/spectral#example-linting-an-openapi-document): 
+Or you can do the same thing [programmatically](https://github.com/stoplightio/spectral#example-linting-an-openapi-document):
 
 ```javascript
 const { Spectral } = require('@stoplight/spectral');
@@ -165,13 +166,13 @@ const { oas3Functions, oas3Rules } = require('@stoplight/spectral/rulesets/oas3'
 const myOAS = {
   // ... properties in your document
   responses: {
-    "200": {
-      description: "",
+    '200': {
+      description: '',
       schema: {
-        $ref: "#/definitions/error-response"
-      }
-    }
-  }
+        $ref: '#/definitions/error-response',
+      },
+    },
+  },
   // ... properties in your document
 };
 
@@ -197,21 +198,21 @@ Don’t see a built-in function that fits your needs? You can create custom func
 
 ### More Rulesets
 
-We’d love to see more API style guides translated into Spectral-friendly rulesets. And we’d love to help make that happen. 
+We’d love to see more API style guides translated into Spectral-friendly rulesets. And we’d love to help make that happen.
 
-> If your API has a style guide that could potentially be translated into custom rules and functions with Spectral -- please post in the [Stoplight forum's Open Source category](https://community.stoplight.io/c/open-source)! 
+> If your API has a style guide that could potentially be translated into custom rules and functions with Spectral -- please post in the [Stoplight forum's Open Source category](https://community.stoplight.io/c/open-source)!
 
 We are here to help. We’ve seen some progress on an AsyncAPI ruleset being created.
 
 ### More Integrations
 
-One of the first integrations I built with Spectral is a GitHub pull requests bot that runs when a pull request is opened with changes to your API specification. I’d love to help people build [more integrations](https://github.com/stoplightio/spectral#example-implementations) like this. Other ideas include adding Spectral to your specification review process or your Travis CI, Jenkins, or CircleCI pipelines. 
+One of the first integrations I built with Spectral is a GitHub pull requests bot that runs when a pull request is opened with changes to your API specification. I’d love to help people build [more integrations](https://github.com/stoplightio/spectral#example-implementations) like this. Other ideas include adding Spectral to your specification review process or your Travis CI, Jenkins, or CircleCI pipelines.
 
-Also, thanks to Mike Ralphson, who contributed our first major community contribution, we now have a CLI for Spectral. 
+Also, thanks to Mike Ralphson, who contributed our first major community contribution, we now have a CLI for Spectral.
 
 ### More Use Cases
 
-We see a future for Spectral being used for other API specifications, configuration files, and more. If you have a potential use case in mind, we’d love to hear from you! You can help us shape the future of the project with these use cases. 
+We see a future for Spectral being used for other API specifications, configuration files, and more. If you have a potential use case in mind, we’d love to hear from you! You can help us shape the future of the project with these use cases.
 
 ### Automagically Fix Issues
 

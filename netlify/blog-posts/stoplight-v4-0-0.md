@@ -14,7 +14,7 @@ color: black
 disqus:
   enabled: true
 actionBar:
-  buttons:
+  ctas:
     - color: purple
   enabled: false
 meta:
@@ -84,4 +84,4 @@ Please reach out via chat or [support@stoplight.io](mailto:support@stoplight.io)
 
 - **Hubs**: When documentation is printed or turned into a PDF, the print layout has now been improved. This is available in the Stoplight application and for published documentation.
 
-![Print Layout](https://cdn-images-1.medium.com/max/800/1*Va04M_br3wIKIyficvS4CQ.png)*Print Layout*
+![Print Layout](https://cdn-images-1.medium.com/max/800/1*Va04M_br3wIKIyficvS4CQ.png)_Print Layout_

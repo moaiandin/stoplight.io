@@ -173,10 +173,10 @@ In a practical sense, Assertion of Truth in API design terms is offering cryptog
 
 For the API designer, both approaches have implications:
 
-- JWS are inherently hard to represent in OpenAPI Specification documents, which is due to the fact that it is difficult to represent three BASE64 encoded strings separated by periods in the underlying JSON schema.
-- In contrast, HTTP Signatures are easy to represent in an [OpenAPI Specification document](https://stoplight.io/api-design-guide/openapi) - they are simply a HTTP Header - and designers can represent their payloads as native JSON Schema. However, at an implementation level, they lack the encapsulation benefit that JSON Web Signatures provide.
+- JWS are inherently hard to represent in OpenAPI description documents, which is due to the fact that it is difficult to represent three BASE64 encoded strings separated by periods in the underlying JSON schema.
+- In contrast, HTTP Signatures are easy to represent in an [OpenAPI description document](https://stoplight.io/api-design-guide/openapi) - they are simply a HTTP Header - and designers can represent their payloads as native JSON Schema. However, at an implementation level, they lack the encapsulation benefit that JSON Web Signatures provide.
 
-There is therefore little to say on HTTP Signatures. For JWS, the UK Open Banking standards show a number of ways to express them in an OpenAPI Specification document. Admittedly, these might be viewed as workarounds for the lack of formal JOSE support in OpenAPI, but they do provide useful examples of the approach.
+There is therefore little to say on HTTP Signatures. For JWS, the UK Open Banking standards show a number of ways to express them in an OpenAPI description document. Admittedly, these might be viewed as workarounds for the lack of formal JOSE support in OpenAPI, but they do provide useful examples of the approach.
 
 #### Detached Signatures
 
@@ -190,7 +190,7 @@ To follow this method, the API designer needs only to define the `x-jws-signatur
 
 #### Implied Signatures
 
-In this approach, the schema only implies that request or response is a JSON Web Signature by defining the payload as a regular JSON definition and then using an appropriate content type to describe it. In an OpenAPI Specification document, this is accomplished by using the `content` keyword:
+In this approach, the schema only implies that request or response is a JSON Web Signature by defining the payload as a regular JSON definition and then using an appropriate content type to describe it. In an OpenAPI description document, this is accomplished by using the `content` keyword:
 
 ```yaml
 200:

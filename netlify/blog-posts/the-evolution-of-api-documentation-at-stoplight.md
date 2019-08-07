@@ -63,7 +63,7 @@ To solve the first issue of lengthy load time, we decided to remove an unnecessa
 
 Each API Docs website would store one file, which was basically an OpenAPI Specification with some extra metadata such as page routes, themes, and configuration settings, in S3. This JSON file was downloaded at the same time as the JavaScript file and together they were used to render the documentation content. This flow worked exactly how we expected and reduced latency for our customers in other parts of the world, but it did not solve our remaining issues. To this end, we started to rethink how we were building documentation websites.
 
-We decided to create our own specification that could combine any number of OpenAPI Specification documents, Markdown and HTML files using JSON references. With it a build tool that could export the specification into a developer portal, optimized for SEO and portability. Thus, the Hub spec and Hub Builder were born:
+We decided to create our own description that could combine any number of OpenAPI description documents, Markdown and HTML files using JSON references. With it a build tool that could export the specification into a developer portal, optimized for SEO and portability. Thus, the Hub spec and Hub Builder were born:
 
 ![*Stoplight Next’s Documentation Hub*](https://cdn-images-1.medium.com/max/800/0*3HQEAjJlzRVgk0iX)**Stoplight Next’s Documentation Hub**
 

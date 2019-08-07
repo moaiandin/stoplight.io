@@ -56,7 +56,7 @@ featureSection:
   title: OpenAPI v2/v3 Visual Editor
   description: >-
     Start designing your API in minutes. Use the [OpenAPI
-    Specification](/api-design-guide/oas-spec/) (formerly known as Swagger) with
+    Specification](/api-design-guide/openapi) (formerly known as Swagger) with
     Stoplight Studio to design consistent and standardized HTTP APIs for your
     organization. Without writing any code, model complex APIs faster than ever
     while simultaneously getting feedback on your prototypes with our
@@ -88,7 +88,7 @@ featureSection:
     - description: >-
         Create API documentation in minutes. Combine OpenAPI documents with
         Markdown to create robust, searchable, internal and external
-        [API documentation](/api-documentation-guide/basics/) for your organization.
+        [API documentation](/api-documentation-guide/basics) for your organization.
       image: /images/studio_docs.png
       shortName: Markdown Documentation
       title: Generate API Documentation with OpenAPI and Markdown

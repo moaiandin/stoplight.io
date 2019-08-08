@@ -14,7 +14,7 @@ color: black
 disqus:
   enabled: true
 actionBar:
-  buttons:
+  ctas:
     - color: purple
   enabled: false
 meta:
@@ -29,13 +29,14 @@ meta:
     image: /images/general-stock-1-.jpeg
     username: '@stoplightio'
 ---
+
 Hours of planning can save you weeks of programming.
 
 Valentine’s Day, documentation and testing are often surrounded by[ alternative facts](https://media.giphy.com/media/26xBJp0c17g1LOzny/source.gif). Too often we don’t put enough time and effort into testing, documentation and valentine’s day because we feel we can’t afford it. If this was just about you, then sure, maybe the effort and time isn’t worth it. But this isn’t about you, especially not today.
 
-![When we think we can’t afford investing in testing and documentation upfront, what we really are saying (unintentionally) is that our customers don’t deserve it.](https://cdn-images-1.medium.com/max/800/1*IaX3R-g_PDuFCPLgyNhXPA.png)*When we think we can’t afford investing in testing and documentation upfront, what we really are saying (unintentionally) is that our customers don’t deserve it.*
+![When we think we can’t afford investing in testing and documentation upfront, what we really are saying (unintentionally) is that our customers don’t deserve it.](https://cdn-images-1.medium.com/max/800/1*IaX3R-g_PDuFCPLgyNhXPA.png)_When we think we can’t afford investing in testing and documentation upfront, what we really are saying (unintentionally) is that our customers don’t deserve it._
 
-SendGrid is an email infrastructure company — they handle all the technical details around emails so that their customers can worry about making awesome products. Two years ago, SendGrid realized that sending billions of emails reliably** **is only possible if customers know how to effectively (and programmatically!) use their API. With the help of Stoplight, they now have[ ~25k lines of OAI(Swagger)](https://sendgrid.com/blog/using-a-prototype-as-an-api-product-specification/),[ Interactive Documentation](https://sendgrid.com/blog/sendgrid-loves-developers/) and[ unit tests for their 7 different SDKs](https://sendgrid.com/blog/stoplight-io-to-test-api-endpoints/). These new tools ensure ease of use, consistency, and broader access managing email. This upfront investment means that SendGrid customers can get up and running faster than ever, and more importantly customers can feel confident that their emails will end up where they should, when they should.
+SendGrid is an email infrastructure company — they handle all the technical details around emails so that their customers can worry about making awesome products. Two years ago, SendGrid realized that sending billions of emails reliably\*\* \*\*is only possible if customers know how to effectively (and programmatically!) use their API. With the help of Stoplight, they now have[ ~25k lines of OAI(Swagger)](https://sendgrid.com/blog/using-a-prototype-as-an-api-product-specification/),[ Interactive Documentation](https://sendgrid.com/blog/sendgrid-loves-developers/) and[ unit tests for their 7 different SDKs](https://sendgrid.com/blog/stoplight-io-to-test-api-endpoints/). These new tools ensure ease of use, consistency, and broader access managing email. This upfront investment means that SendGrid customers can get up and running faster than ever, and more importantly customers can feel confident that their emails will end up where they should, when they should.
 
 The reality is that you can’t afford to not invest in your customers. API documentation and testing isn’t for you, it’s for everyone else in your community. SendGrid knew this, and their customers appreciate it — the investment is paying off in spades.
 

@@ -14,9 +14,9 @@ hero:
   title: OpenAPI Testing
 featureSection:
   actionBar:
-    buttons:
+    ctas:
       - href: 'https://next.stoplight.io/'
-        title: Get Started
+        name: Get Started
     enabled: true
     text: Ready to Start Testing?
   description: >-

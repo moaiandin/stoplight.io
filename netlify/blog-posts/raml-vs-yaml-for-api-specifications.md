@@ -17,7 +17,7 @@ tabs:
 disqus:
   enabled: true
 actionBar:
-  buttons:
+  ctas:
     - color: purple
   enabled: false
 meta:
@@ -30,6 +30,7 @@ meta:
     title: RAML vs YAML for API Specifications | Stoplight API Corner
     image: /images/two-camels.png
 ---
+
 Do a little research into API definition documents and you’ll run into enough terms to be confusing. Among them you’ll find two that seem very similar: RAML and YAML. These formats are both used in API design and documents. While they have similar origins (RAML is an implementation of YAML), they are very different in application.
 
 Before we can get into the similarities and differences, let’s look at what they are and how they’re used.
@@ -96,7 +97,7 @@ The industry has rallied around the OpenAPI specification as a standard to descr
 For example, an OpenAPI description of a todo list endpoint might look like this in YAML:
 
 ```yaml
-openapi: "3.0.0"
+openapi: '3.0.0'
 servers:
   - url: http://todos.stoplight.io
 paths:

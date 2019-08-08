@@ -16,7 +16,7 @@ tabs:
 includeToc: true
 disqus: {}
 actionBar:
-  buttons:
+  ctas:
     - color: purple
   enabled: false
 meta:
@@ -31,11 +31,12 @@ meta:
     image: /images/choreography-stage.jpg
     username: '@stoplightio'
 ---
+
 Legendary Broadway director Gower Champion walked into a rehearsal to find the cast standing around. They weren’t sure what to do in a scene, so they weren’t doing anything. The choreographer, who is supposed to know these things, sat puzzled in the audience. Surely Champion, who won five Tonys for choreography (and another three for directing), would have the answer.
 
 > Instead, Champion turned to the choreographer and said, “do something, so we can change it.”
 
-There are many situations where you’ll find yourself paralyzed by indecision. In many cases, including API design, taking action is exactly the answer to unblock paralysis. 
+There are many situations where you’ll find yourself paralyzed by indecision. In many cases, including API design, taking action is exactly the answer to unblock paralysis.
 
 ## Design Something, So You Can Change It
 
@@ -53,10 +54,10 @@ You need more than one star performer, whether you’re making a Broadway show o
 
 Every team has its own way of handling collaboration, even if it’s not a formal process. Some common approaches:
 
-* **Unstructured chat** in Slack or other channel-based discussion tool. It may be a project-specific channel, or tossed in with other engineering chatter.
-* **Inline in a spec document** for the project. Alongside other architecture (and product) discussion, you’ll find some sort of list of endpoints.
-* **Within project management software** like Jira, GitHub Issues, or similar place for tracking engineering work.
-* **In GitHub comments** for a work-in-progress PR, which likely means you’re designing your APIs in code.
+- **Unstructured chat** in Slack or other channel-based discussion tool. It may be a project-specific channel, or tossed in with other engineering chatter.
+- **Inline in a spec document** for the project. Alongside other architecture (and product) discussion, you’ll find some sort of list of endpoints.
+- **Within project management software** like Jira, GitHub Issues, or similar place for tracking engineering work.
+- **In GitHub comments** for a work-in-progress PR, which likely means you’re designing your APIs in code.
 
 There are probably almost as many approaches as there are dev teams. The tools you use will determine who feels welcome in the discussion. In some cases, it may determine who even has _access_ to the API design process.
 

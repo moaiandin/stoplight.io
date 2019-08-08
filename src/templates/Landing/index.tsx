@@ -44,11 +44,11 @@ export const Landing: React.FunctionComponent<ILanding> = ({
     <Layout>
       <Hero bgColor={color} buttons={buttons} {...hero} />
 
-      <Collage className="md:px-0 py-6 md:py-6" noPadding {...collage} />
-
       <ImageCallout {...imageCallout} />
 
       <FeatureSection color={color} {...featureSection} />
+
+      <Collage className="md:px-0 py-6 md:py-6" noPadding {...collage} />
 
       {hubspot && (
         <Section key="hubspot" id="demo">

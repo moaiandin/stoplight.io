@@ -15,7 +15,7 @@ color: indigo
 disqus:
   enabled: true
 actionBar:
-  buttons:
+  ctas:
     - color: purple
   enabled: false
 meta:
@@ -30,6 +30,7 @@ meta:
     image: /images/openapi-design-first.jpeg
     username: '@stoplightio'
 ---
+
 Maintaining an OpenAPI definition for an API as an artifact that is separate from the implementation source code can feel like tedious, unnecessary work. What if you could just implement your system and use a tool to generate OpenAPI, which you can then use for documentation and testing? No problem, [tools like this exist for almost every programming language](https://www.blazemeter.com/blog/how-to-generate-openapi-definitions-from-code). They can infer a lot of the interface from the code, and whatever remains can be provided through annotations. It sounds good at first, because it is less work, however, you should be careful about relying on these tools.
 
 Most explanations for why an API design generated from code is imperfect, boil down to the fact that good API design is of utmost importance for the success of any API. Automated OpenAPI generation, on the other hand, allows and tempts us to skip the design stage of the API lifecycle. In the remainder of the article, we first explain why API design is crucial. Then, we will look at a proper API lifecycle and design workflow, and how Stoplight can help. In the end, you learn where tools to generate API design from code still serve a valid purpose.
@@ -75,4 +76,3 @@ There’s a real danger that the automatically generated specifications are cons
 ## It’s Not All Bad
 
 So, is auto-generating machine-readable API definitions always wrong, by definition (pun intended)? No, because they can act as your first step into the OpenAPI ecosystem. These definitions can also assist in refactoring a legacy API. While it’s often useful to start a new, refactored API version from a clean slate, having the ability to compare both versions can help identify the differences and potential problems. You could, for example, generate an OpenAPI definition from the existing implementation and then load it into [Stoplight](/) to keep as a reference during an API-first redesign.
-

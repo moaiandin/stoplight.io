@@ -1,0 +1,109 @@
+# path: /enterprise
+title: Stoplight Enterprise
+color: grey-darker
+hero:
+  subtitle: >-
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
+    et dolore magna aliqua
+  title: Stoplight Enterprise
+  image:
+    alt: Enterprise
+    src: /images/design_header.png
+  ctas:
+    - name: Book a Demo
+      type: 'submit'
+      submit:
+        button:
+          color: green
+          title: Book a Demo
+          href: '/demo/'
+        input:
+          type: email
+          placeholder: Work email
+        formId: 'a5fb939e-7da2-4a9e-9784-338f92a71e41'
+hubspot:
+  title: Book a Demo
+  description: >-
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  formId: 7ae2bb42-67a6-4ee3-9ac5-ff21d87812ea
+  portalId: '4892910'
+collage:
+  cta:
+    color: green
+    # href: /case-studies
+    # name: Read the Case Studies
+  images:
+    - alt: EA
+      src: /images/ea.png
+    - alt: Arkea
+      src: /images/arkea-logo-transparent-2x.png
+    - alt: Chargify
+      src: /images/chargify-new-logo.png
+    - alt: Deutsche Bank
+      src: /images/deutsche_bank.png
+    - alt: quicken
+      src: /images/customers/quicken.png
+    - alt: Sendgrid
+      src: /images/logo-sendgrid.png
+    - alt: Shopgate
+      src: /images/shopgate.png
+    - alt: TiVo
+      src: /images/tivo.png
+    - alt: Zendesk
+      src: /images/logo_zendesk.png
+  title: Our Customers
+featureSection:
+  actionBar:
+    enabled: true
+    text: Want to learn more?
+    ctas:
+      - name: Book a Demo
+        type: 'submit'
+        submit:
+          button:
+            color: green
+            title: Book a Demo
+          input:
+            type: email
+            placeholder: Work email
+          formId: 'a5fb939e-7da2-4a9e-9784-338f92a71e41'
+  title: Stoplight Enterprise is awesome
+  description: >-
+    Prism is an open source mock server that can mimic your API's behavior as if you already
+    built it. Servers are generated from your OpenAPI v2/v3 (formerly known as Swagger) documents.
+  features:
+    - description: >-
+        The waterfall model does not work well for building APIs. Learning at the very end what your
+        potential consumers think about your software can be source of huge problems.
+        With Prism you can move the feedback stage to the design phase of your API by
+        providing a real server to use and play with.
+      image: /images/prism_mocking.png
+      shortName: Quick Iterations
+      title: Quickly iterate on your API
+
+    - description: >-
+        Static examples in mock APIs can bias the way you write the code and test the API.
+        Prism can generate dynamic random examples based on your API description,
+        so the examples are always valid.
+      image: /images/prism_dynamic.png
+      shortName: Dynamic Examples
+      title: Generate dynamic examples
+
+    - description: >-
+        Prism validates both request and response data. If you have an
+        invalid example in the specification, Prism will let you know; if your request is not compliant with the rules
+        of your API specification, Prism will return an error message. It will never yell to you, we promise.
+      image: /images/prism_validation.png
+      shortName: Validation
+      title: Validate input and output
+meta:
+  description: Accelerate API development with realistic mock servers powered by API descriptions
+  favicon: /images/mark_light_bg.png
+  image: /images/prism_example.png
+  title: Enterprise - Open Source HTTP Mock Server | Stoplight
+  twitter:
+    description: Accelerate API development with realistic mock servers powered by API descriptions
+    image: /images/prism_example.png
+    title: Enterprise - Open Source HTTP Mock Server | Stoplight
+    username: '@stoplightio'

@@ -58,10 +58,10 @@ testimonials:
         Prototyping, Mocking, Specification, Shared Schemas, Documentation,
         Testing and Developer Portal generation - all customisable.
   actionBar:
-    buttons: []
+    ctas: []
     enabled: false
 actionBar:
-  buttons: []
+  ctas: []
   enabled: false
 tags: []
 relatedTags: []

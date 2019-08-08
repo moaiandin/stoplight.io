@@ -11,7 +11,7 @@ image: /images/kyle-lange-headshot.jpeg
 color: blue
 tabs: []
 actionBar:
-  buttons:
+  ctas:
     - color: purple
   enabled: false
 meta:

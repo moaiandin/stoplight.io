@@ -14,7 +14,7 @@ color: indigo
 disqus:
   enabled: true
 actionBar:
-  buttons:
+  ctas:
     - color: purple
   enabled: false
 meta:
@@ -29,6 +29,7 @@ meta:
     image: /images/mocking-open-banking.jpeg
     username: '@stoplightio'
 ---
+
 Everyone is talking about Open Banking. Whether you’re doing it, thinking about doing it or pretending you’re doing it; Open Banking is the **thing** in the API space that everyone wants a slice of. The EU’s [Payment Services Directive](https://en.wikipedia.org/wiki/Payment_Services_Directive) (PSD2) has even gone so far as to require financial institutions to expose APIs for the purposes of promoting transparency, Open Banking, and consumer protection. For the champions of Open Banking — the Fintechs and challengers who see the opportunity to make a splash in financial services — this is a period of significant promise, the gold rush to start chipping away at the existing banking giants. However, for the incumbents — who are being forced to open up access to consumer accounts through both regulation and competition — this is a period of radical change that will bring significant operating challenges.
 
 Before Open Banking, sharing access to customer accounts generally meant one thing in the context of the Internet, online banking. In the vast majority of cases, online banking applications are a tightly controlled and highly secure environment with one entrance dedicated to the account owners. Other than for corporate accounts, they simply do not have delegated access models with appropriate role based access that depends on whether you are the account owner or “someone else”. All this is done for a good purpose — to ensure customer accounts are well-protected with as few attack surfaces as possible. However, the security model and need for new entitlements spanning customers and applications means that reuse is difficult and raises risks to online banking customers.
@@ -49,14 +50,14 @@ Step in mocking to help out. UK Open Banking provides a [reference implementatio
 
 Tools like [Prism](/platform/prism/) , therefore, help developers bridge the gap between what they need to get the job done and what is available in the fledgling Open Banking Space:
 
-* Developers can grab the core specification from the relevant source — for example the [UK Open Banking Payment Initiation API](https://github.com/OpenBankingUK/payment-initiation-api-spec/blob/master/dist/v1.1/payment-initiation-swagger.yaml) — and get straight to work by starting Prism from the command line.
+- Developers can grab the core specification from the relevant source — for example the [UK Open Banking Payment Initiation API](https://github.com/OpenBankingUK/payment-initiation-api-spec/blob/master/dist/v1.1/payment-initiation-swagger.yaml) — and get straight to work by starting Prism from the command line.
 
-* They can do this without waiting for sandboxes or environments to be made available, and get going with virtually zero configuration. Prism will automatically start providing dummy responses.
+- They can do this without waiting for sandboxes or environments to be made available, and get going with virtually zero configuration. Prism will automatically start providing dummy responses.
 
-* They can add their esoteric cases, in the case of Prism, creating scenarios using JavaScript that the out-of-the-box reference application does not cater for.
+- They can add their esoteric cases, in the case of Prism, creating scenarios using JavaScript that the out-of-the-box reference application does not cater for.
 
 Tools like Prism, help developers bridge the gap between what they need to get their job done, and what is available in the fledgling Open Banking space.
 
 ### **Wrap Up**
 
-Open Banking — and its approach to developer experience — has a long way to go before reaching the maturity of companies whose *raison d’etre* is providing APIs to their consumers. It is unlikely that the incumbent financial institutions will ever get to a truly API-focused implementation of their products. However, if they create an ecosystem of tooling rather than massive developer portal programs they have every chance of providing a developer experience rich enough to suit the needs of even the most demanding developers. In the meantime, tools like Prism are vital to helping bridge the gap and help developers gain traction in the Open Banking space.
+Open Banking — and its approach to developer experience — has a long way to go before reaching the maturity of companies whose _raison d’etre_ is providing APIs to their consumers. It is unlikely that the incumbent financial institutions will ever get to a truly API-focused implementation of their products. However, if they create an ecosystem of tooling rather than massive developer portal programs they have every chance of providing a developer experience rich enough to suit the needs of even the most demanding developers. In the meantime, tools like Prism are vital to helping bridge the gap and help developers gain traction in the Open Banking space.

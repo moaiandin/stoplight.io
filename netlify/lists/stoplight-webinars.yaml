@@ -9,11 +9,11 @@ tabs:
   - href: /video/subscribe
     title: Subscribe
 actionBar:
-  buttons:
+  ctas:
     - color: purple
       href: /video/subscribe
+      name: Subscribe
       outlined: true
-      title: Subscribe
   enabled: true
   text: Subscribe to Stoplight Webinars
 meta:

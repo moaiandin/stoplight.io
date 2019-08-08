@@ -185,7 +185,7 @@ export const Hero: React.FunctionComponent<IHero> = ({
               })}
             >
               {ctas.map((action, i) => (
-                <CallToAction key={i} className="m-3 w-1/2 md:w-full" {...action} />
+                <CallToAction key={i} className={cn('m-3 md:w-full', { 'w-1/2': ctas.length > 1 })} {...action} />
               ))}
             </div>
           )}

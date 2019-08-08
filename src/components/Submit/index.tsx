@@ -22,7 +22,7 @@ export const Submit: React.FunctionComponent<ISubmit> = ({ button, className, in
   if (!formId || !integrations.hubspot) return null;
 
   return (
-    <div className={cn(className, 'flex flex-wrap sm:flex-col sm:justify-center sm:items-between')}>
+    <div className={cn(className, 'flex flex-col sm:flex-col sm:justify-center sm:items-between')}>
       {response.success ? (
         <div>{response.success}</div>
       ) : (
@@ -38,6 +38,7 @@ export const Submit: React.FunctionComponent<ISubmit> = ({ button, className, in
               {...button}
               title={button.title}
               loading={loading}
+              style={{ minWidth: '200px' }}
             />
           </div>
         </div>

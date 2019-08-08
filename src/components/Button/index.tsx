@@ -15,6 +15,7 @@ export interface IButton {
   icon?: IconProp;
   loading?: boolean;
   type?: 'link' | 'video';
+  style?: object;
   download?: string;
   onClick?: () => void;
 }
@@ -30,6 +31,7 @@ export const Button: React.FunctionComponent<IButton> = ({
   children,
   loading,
   type,
+  style,
   download,
   onClick,
 }) => {
@@ -50,6 +52,7 @@ export const Button: React.FunctionComponent<IButton> = ({
       )}
       onClick={onClick}
       to={href}
+      style={style}
       download={download}
     >
       {loading ? (

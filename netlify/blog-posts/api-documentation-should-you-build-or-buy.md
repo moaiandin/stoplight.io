@@ -16,7 +16,7 @@ tabs:
 disqus:
   enabled: true
 actionBar:
-  buttons:
+  ctas:
     - color: purple
   enabled: false
 meta:
@@ -29,13 +29,14 @@ meta:
     title: 'API Documentation: Should You Build or Buy? | Stoplight API Corner'
     image: /images/barn-construction.jpg
 ---
+
 Every API needs documentation. Whether it’s made public for any developer, or meant to be consumed by a single engineering team; it can be tough to create documentation in the first place, and even tougher to keep it updated. On top of that, you need to decide where the docs live.
 
 You can build documentation yourself, piece it together with existing tools, or buy time-saving solutions. As you investigate your options, consider what you need from your documentation:
 
-* API reference for functional documentation
-* Guides, tutorials, and other long-form documentation
-* Inline personalized data, such as API keys and tokens
+- API reference for functional documentation
+- Guides, tutorials, and other long-form documentation
+- Inline personalized data, such as API keys and tokens
 
 Whether you should build or buy depends on what type of documentation you need and how much engineering time you want to spend tuning it.
 
@@ -45,11 +46,11 @@ A reference is a straightforward, just-the-facts view of an API. If your API is 
 
 There is a lot that goes into an easy-to-use reference:
 
-* An overview of endpoints
-* Technical content for each
-* Typography and other design
-* Example responses
-* Organization of API elements
+- An overview of endpoints
+- Technical content for each
+- Typography and other design
+- Example responses
+- Organization of API elements
 
 While you could fully hand craft an API reference, you’re more likely to use an existing framework. Existing content management systems are unlikely to work for this specialized content. There are open source tools like [Slate](https://github.com/lord/slate) that provide a general structure for references and have theming options with nicely designed defaults. You’re still on the hook for including technical details about your API within that construct. And while a tool may do many things for you, there’s still building to be done. You may need to incorporate existing style guides and include the reference in a website or intranet sitemap.
 
@@ -89,9 +90,9 @@ In our post [Beyond Static API Documentation](https://stoplight.io/blog/beyond-s
 
 Stripe’s audience is broad and the entire company is impacted by their developer experience. What’s right for Stripe may not be necessary for you. However, consider a few low-impact approaches to bring personalization into your API documentation:
 
-* **Separate portal and documentation functionality**. Developers expect settings and authentication details to be stored in a dashboard or portal. You can heavily interlink the two, or use some trickery to make them appear like a single site. This approach will give you personalization where you need it without the added burden of building everything yourself.
-* **Generate tokens for testing**. Authentication is often the biggest hurdle for developer adoption. If your API uses OAuth or another complex authentication scheme, build a small tool to generate easy copy-paste tokens. This small project will pay dividends in developer experience without requiring personalization across your entire documentation.
-* **Bring API testing functionality into your documentation**. Once developers have an API key or token, help them use it to make live calls from within the documentation. This sort of “try it out” functionality helps show what’s possible with custom input. It’s so powerful, it’s one of the standard Stoplight [documentation blocks](https://docs.stoplight.io/documentation/blocks).
+- **Separate portal and documentation functionality**. Developers expect settings and authentication details to be stored in a dashboard or portal. You can heavily interlink the two, or use some trickery to make them appear like a single site. This approach will give you personalization where you need it without the added burden of building everything yourself.
+- **Generate tokens for testing**. Authentication is often the biggest hurdle for developer adoption. If your API uses OAuth or another complex authentication scheme, build a small tool to generate easy copy-paste tokens. This small project will pay dividends in developer experience without requiring personalization across your entire documentation.
+- **Bring API testing functionality into your documentation**. Once developers have an API key or token, help them use it to make live calls from within the documentation. This sort of “try it out” functionality helps show what’s possible with custom input. It’s so powerful, it’s one of the standard Stoplight [documentation blocks](https://docs.stoplight.io/documentation/blocks).
 
 Only companies like Stripe should be building all of their developer experience in-house. Even when personalization is required, you can find a balance between what you build yourself from scratch and what you buy to build upon.
 

@@ -14,7 +14,7 @@ color: black
 disqus:
   enabled: true
 actionBar:
-  buttons:
+  ctas:
     - color: purple
   enabled: false
 meta:
@@ -29,6 +29,7 @@ meta:
     image: /images/changelog-stock.jpg
     username: '@stoplightio'
 ---
+
 Last Thursday we released one of the biggest updates to Scenarios yet. It includes numerous bug fixes, a whole lot of polish, and several new features. This release also coincides with Prism v2-alpha.5, which includes a couple of breaking changes - described below.
 
 ## Platform Updates
@@ -37,17 +38,17 @@ Last Thursday we released one of the biggest updates to Scenarios yet. It includ
 
 Our OAS/Swagger 2 modeling tool received a big update. Not only did we squash all of the bugs reported over the last month, but we’ve added shortcuts and organizational improvements throughout the editor.
 
-* You can more quickly extend your specification with buttons in the sidebar.
+- You can more quickly extend your specification with buttons in the sidebar.
 
-* Operation data is organized into collapsible sections.
+- Operation data is organized into collapsible sections.
 
-* Most of the root properties have been consolidated to one organized home screen (like consumes, produces, info, etc).
+- Most of the root properties have been consolidated to one organized home screen (like consumes, produces, info, etc).
 
-* We now support the global security property in the UI.
+- We now support the global security property in the UI.
 
-![New context-aware actions in the sidebar to quickly add to your spec.](https://cdn-images-1.medium.com/max/800/1*raBK-gZJrKBBie5wp8yV-g.gif)*New context-aware actions in the sidebar to quickly add to your spec.*
+![New context-aware actions in the sidebar to quickly add to your spec.](https://cdn-images-1.medium.com/max/800/1*raBK-gZJrKBBie5wp8yV-g.gif)_New context-aware actions in the sidebar to quickly add to your spec._
 
-![Switch between UI and “raw” edit modes. Navigate the sidebar and the relevant parts of your spec will highlight.](https://cdn-images-1.medium.com/max/800/1*xxGweKczpkW4wCGwc5VpiA.gif)*Switch between UI and “raw” edit modes. Navigate the sidebar and the relevant parts of your spec will highlight.*
+![Switch between UI and “raw” edit modes. Navigate the sidebar and the relevant parts of your spec will highlight.](https://cdn-images-1.medium.com/max/800/1*xxGweKczpkW4wCGwc5VpiA.gif)_Switch between UI and “raw” edit modes. Navigate the sidebar and the relevant parts of your spec will highlight._
 
 ### Share Model Data With Connections
 

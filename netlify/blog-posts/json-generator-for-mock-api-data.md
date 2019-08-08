@@ -16,7 +16,7 @@ tabs:
 disqus:
   enabled: true
 actionBar:
-  buttons:
+  ctas:
     - color: purple
   enabled: false
 meta:
@@ -30,6 +30,7 @@ meta:
     title: 'Mock API Data Generator | Dummy JSON Data Generator For Mock API '
     image: /images/mock-car.jpg
 ---
+
 With so many APIs using JSON responses, it’s become the common format to express data. It’s has a simple syntax, is human-readable, and can be efficiently parsed in modern languages. Typically, JSON is generated from existing data structures and databases. Yet, when sharing examples, mocking APIs, or building documentation, you may find yourself creating a lot of JSON by hand. That’s when you’ll wish you could generate the data automatically.
 
 ## Why Create Dummy JSON Data?
@@ -38,12 +39,12 @@ Saving manual work is a great reason to generate JSON, but why even create it in
 
 There are all sorts of places your generated data could end up:
 
-* Example results in tutorials
-* Mock API server responses
-* API references and other documentation
-* Input for integration tests
-* Replies to support emails
-* Samples in your OpenAPI/Swagger definitions
+- Example results in tutorials
+- Mock API server responses
+- API references and other documentation
+- Input for integration tests
+- Replies to support emails
+- Samples in your OpenAPI/Swagger definitions
 
 Many times you’ll find the same mock data gets copied to multiple locations. It may seem simple enough to make up your own data, especially if the schema is trivial:
 
@@ -86,10 +87,10 @@ For example, the simple example from the previous section can be repeated 100 ti
 
 Within the repeat block there are four fields that use built-in data types and features:
 
-* `user_id` uses the `objectId()` tag to create a unique identifier
-* `name` calls two tags: `firstName()` and `surname()` with a space between them, as expected
-* `email` gets a little more complicated because it requires a function to call the previously-generated name and uses an example domain with a random extension (via the `domainZone()` tag). Finally, the JavaScript string functions ensures it formats like an email address.
-* `birthdate` calls to Moment.js formatting after generating a random date that puts this user between approximately 18 and 65 years old.
+- `user_id` uses the `objectId()` tag to create a unique identifier
+- `name` calls two tags: `firstName()` and `surname()` with a space between them, as expected
+- `email` gets a little more complicated because it requires a function to call the previously-generated name and uses an example domain with a random extension (via the `domainZone()` tag). Finally, the JavaScript string functions ensures it formats like an email address.
+- `birthdate` calls to Moment.js formatting after generating a random date that puts this user between approximately 18 and 65 years old.
 
 You’ll find a handful of other tags and examples on the site. It takes a little effort to get going, but much less than making up the data yourself. For large one-off JSON data files, this is a relatively quick way to get some realistic sample data that won’t give away anyone’s personal information.
 

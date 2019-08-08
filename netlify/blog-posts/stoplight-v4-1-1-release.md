@@ -14,7 +14,7 @@ color: black
 disqus:
   enabled: true
 actionBar:
-  buttons:
+  ctas:
     - color: purple
   enabled: false
 meta:
@@ -29,16 +29,17 @@ meta:
     image: /images/changelog-stock.jpg
     username: '@stoplightio'
 ---
+
 ## Fixes 🛠
 
-* Fix mailto markdown links
+- Fix mailto markdown links
 
-* Fix custom CSS with nested argument selectors aka `.Hub a:not(.anchor) {}`
+- Fix custom CSS with nested argument selectors aka `.Hub a:not(.anchor) {}`
 
-* Fix navigation deactivating the theme editor
+- Fix navigation deactivating the theme editor
 
-* Fix google analytics hub integration
+- Fix google analytics hub integration
 
-* Allow removing a domain even if it’s unpublished
+- Allow removing a domain even if it’s unpublished
 
-* Show all results in $ref autocomplete input on click
+- Show all results in \$ref autocomplete input on click

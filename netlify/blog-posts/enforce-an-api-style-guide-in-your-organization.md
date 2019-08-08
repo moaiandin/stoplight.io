@@ -17,7 +17,7 @@ includeToc: true
 disqus:
   enabled: true
 actionBar:
-  buttons:
+  ctas:
     - color: purple
   enabled: false
 meta:
@@ -33,6 +33,7 @@ meta:
     username: '@stoplightio'
   url: 'https://stoplight.io/blog/api-style-guide'
 ---
+
 The software your company creates is made up of many APIs and microservices. While each has its own purpose, it should not have its own style. Yet, with different teams working in tandem on many projects, divergence is natural. It's also confusing to developers using your APIs when endpoints are named differently and field names use different formats.
 
 Just as an OpenAPI document can be a source of truth, an API style guide can keep your organization producing APIs that feel like part of the same whole. You don't even need to slow your progress to get these details right. Instead, with a clear style guide and [open source tooling](https://stoplight.io/blog/introducing-spectral/), you'll be able to streamline your API design, documentation, and testing.
@@ -53,11 +54,11 @@ Some large organizations, such as Google, have made their API style guides publi
 
 With REST APIs, you'll likely want to ensure you organize your API around resources. Even with this best practice explicitly stated, there are a lot of API design decisions left to make:
 
-* **Resource naming**: typically nouns, but will they be singular or plural?
-* **Field naming**: are there consistent models or labels that should be reused? 
-* **Capitalization**: in resources, fields, and data, do you use CamelCase, lowerCamel, or lowercase?
-* **Punctuation**: in resources, fields, and data, how do you define multiple words--with-dashes, or_underscores?
-* **Versioning**: if you version your APIs, do you use the path, a header, a sub-domain?
+- **Resource naming**: typically nouns, but will they be singular or plural?
+- **Field naming**: are there consistent models or labels that should be reused?
+- **Capitalization**: in resources, fields, and data, do you use CamelCase, lowerCamel, or lowercase?
+- **Punctuation**: in resources, fields, and data, how do you define multiple words--with-dashes, or_underscores?
+- **Versioning**: if you version your APIs, do you use the path, a header, a sub-domain?
 
 You may find even more areas to include in your API style guide. Committing these decisions to a written guide will help you communicate it to the rest of your organization. However, you need to include API style checks in both your human and machine processes to help maintain consistency.
 
@@ -89,11 +90,11 @@ JSON linting rules within Spectral allow you to require a field be present and n
 
 You can also include more complex rules. Capitalization and punctuation styles can be described as regular expressions. Ensure your field names are formatted like you expect:
 
-* CamelCase -- `^[A-Z]+[A-Za-z0-9]*[a-z0-9]+$`
-* lowerCamel -- `^[a-z]+[A-Za-z0-9]*[a-z0-9]+$`
-* snake_case -- `^\[a-z]+[a-z0-9_]*\[a-z0-9]+$`
-* kebab-case --`^[a-z]+[a-z0-9\-]*[a-z0-9]+$`
-* justlowercase -- `^[a-z]+[a-z0-9]*$`
+- CamelCase -- `^[A-Z]+[A-Za-z0-9]*[a-z0-9]+$`
+- lowerCamel -- `^[a-z]+[A-Za-z0-9]*[a-z0-9]+$`
+- snake*case -- `^\[a-z]+[a-z0-9*]\*\[a-z0-9]+\$`
+- kebab-case --`^[a-z]+[a-z0-9\-]*[a-z0-9]+$`
+- justlowercase -- `^[a-z]+[a-z0-9]*$`
 
 Any style checks that be written as a regular expression can be used in Spectral. And if you want to go more advanced, you can write your own custom functions. There are more details and community interaction in the [Spectral repository](https://github.com/stoplightio/spectral/).
 

@@ -17,7 +17,7 @@ color: blue
 disqus:
   enabled: true
 actionBar:
-  buttons:
+  ctas:
     - color: purple
   enabled: false
 meta:
@@ -43,7 +43,7 @@ meta:
     username: '@stoplightio'
 ---
 
-*Photo by [rawpixel](https://unsplash.com/photos/qo9WAXpAeM8) on [Unsplash](https://unsplash.com)*
+_Photo by [rawpixel](https://unsplash.com/photos/qo9WAXpAeM8) on [Unsplash](https://unsplash.com)_
 
 _Welcome back for Part Two of Writing Documentation When You Aren’t A Technical Writer! In [Part One](/blog/writing-documentation-when-you-arent-a-technical-writer-part-one-ef08a09870d1), we discussed how to write documentation people actually read and how to avoid the common pitfalls caused by code samples in your documentation._
 
@@ -62,15 +62,15 @@ Oversimplification is all over our documentation. It is most common with people 
 
 ### Empathy
 
-The language we use _really_ matters. Empathy is the ability to understand and share the feelings of another. We aren’t empathetic to our users when we use language like this. When we are empathetic to our users, we aren’t only helping the beginners, but, also the more advanced users. It helps grow the potential number of users, use cases, customers, and even $$$.
+The language we use _really_ matters. Empathy is the ability to understand and share the feelings of another. We aren’t empathetic to our users when we use language like this. When we are empathetic to our users, we aren’t only helping the beginners, but, also the more advanced users. It helps grow the potential number of users, use cases, customers, and even \$\$\$.
 
 However, when the project’s expert developer is writing the docs, this can be harder. Here are a few helpful tips that have helped me in the past:
 
-* Have people who are newer to the project give honest feedback on the docs in the review process
-* Encourage people who are newer to the project to contribute to or address documentation that doesn’t make sense to them
-* Develop an environment where asking questions is encouraged, including questions that may seem “obvious” to people familiar with the project — this helps you see your blind spots
-* Use linters in your review and CI processes to make sure the language is empathetic and friendly to **all** users
-* Lastly, ask for docs feedback from your actual users, put new docs in front of them and ask if they can follow them
+- Have people who are newer to the project give honest feedback on the docs in the review process
+- Encourage people who are newer to the project to contribute to or address documentation that doesn’t make sense to them
+- Develop an environment where asking questions is encouraged, including questions that may seem “obvious” to people familiar with the project — this helps you see your blind spots
+- Use linters in your review and CI processes to make sure the language is empathetic and friendly to **all** users
+- Lastly, ask for docs feedback from your actual users, put new docs in front of them and ask if they can follow them
 
 ## Error messages as a form of documentation
 
@@ -80,9 +80,9 @@ I learned a lot about writing better error messages from [Kate at Write the Docs
 
 Kate says the three H’s of good error messages are:
 
-* Humble
-* Human
-* Helpful
+- Humble
+- Human
+- Helpful
 
 ### Humble
 
@@ -90,7 +90,7 @@ Apologize first, even if it is not your fault. This is something I also practice
 
 Example:
 
-> Sorry, we could not connect to ___. Please check your network settings, connect to an available network, and try again.
+> Sorry, we could not connect to \_\_\_. Please check your network settings, connect to an available network, and try again.
 
 ### Human
 
@@ -100,11 +100,11 @@ Example (401 Status Code Error from Twilio):
 
 ```json
 {
-    "code": 20003,
-    "detail": "Your AccountSid or AuthToken was incorrect.",
-    "message": "Authenticate",
-    "more_info": "https://www.twilio.com/docs/errors/20003",
-    "status": 401
+  "code": 20003,
+  "detail": "Your AccountSid or AuthToken was incorrect.",
+  "message": "Authenticate",
+  "more_info": "https://www.twilio.com/docs/errors/20003",
+  "status": 401
 }
 ```
 
@@ -138,13 +138,13 @@ In the case of error 20003 (the 401 status code error from earlier), there are a
 
 ![Source: https://www.twilio.com/docs/api/errors](/images/twilio-error-codes1.png)
 
-![Source: https://www.twilio.com/docs/api/errors](/images/twilio-error-codes2.png)*Source: [https://www.twilio.com/docs/api/errors](https://www.twilio.com/docs/api/errors)*
+![Source: https://www.twilio.com/docs/api/errors](/images/twilio-error-codes2.png)_Source: [https://www.twilio.com/docs/api/errors](https://www.twilio.com/docs/api/errors)_
 
 Stripe also does something similar with extensive descriptions of the different error codes.
 
 ![Source: https://stripe.com/docs/error-codes](/images/stripe-error-codes1.png)
 
-![Source: https://stripe.com/docs/error-codes](/images/stripe-error-codes2.png)*Source: <https://stripe.com/docs/error-codes>*
+![Source: https://stripe.com/docs/error-codes](/images/stripe-error-codes2.png)_Source: <https://stripe.com/docs/error-codes>_
 
 You might even find your error messages in StackOverflow questions. Respond to these in a humble, human, and helpful way too. Because of SEO, it is common for users to end up on StackOverflow with your error messages and not your actual documentation.
 
@@ -182,10 +182,10 @@ Are you considering this when you use Americanisms and idioms in your docs? Many
 
 Then there are the cases where we recognize it is bad, but can’t, or won’t justify fixing it because we…
 
-* Are tied to it
-* Can’t justify the time
-* Don’t know the value
-* Don’t have the agency to fix it.
+- Are tied to it
+- Can’t justify the time
+- Don’t know the value
+- Don’t have the agency to fix it.
 
 You might say or hear: “But this is my baby!” “Who moved my cheese?” “If we rename this, everything will be broken and on fire forever.” “I don’t believe that changing this name will move the needle on what we care about.”
 
@@ -197,19 +197,19 @@ To help make this decision, I recommend first asking, “what words are your use
 
 In the end, it will inevitably be a judgment call and a balancing act. However, there are a few things to think about when you are evaluating how to say something. Ruthie says that bad names:
 
-* Confuse
-* Frustrate
-* Misguide
-* Obscure
-* Offend
+- Confuse
+- Frustrate
+- Misguide
+- Obscure
+- Offend
 
 Moreover, good names:
 
-* Make “aha!” moments happen
-* Contextualize
-* Explain
-* Illuminate
-* Empower
+- Make “aha!” moments happen
+- Contextualize
+- Explain
+- Illuminate
+- Empower
 
 I recommend having these qualities considered when someone is reviewing your documentation. It helps give them things to look out for so that they can give you helpful and honest feedback.
 

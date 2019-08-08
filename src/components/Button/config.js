@@ -6,19 +6,16 @@ export default {
   widget: 'object',
   fields: [
     {
-      name: 'outlined',
-      label: 'Outlined?',
-      widget: 'boolean',
+      name: 'href',
+      label: 'Link',
+      widget: 'string',
+      required: false,
     },
     {
       name: 'title',
       label: 'Title',
       widget: 'string',
-    },
-    {
-      name: 'href',
-      label: 'Link',
-      widget: 'string',
+      required: false,
     },
     {
       label: 'Color',
@@ -27,6 +24,13 @@ export default {
       options: colors,
       default: 'purple',
       hint: 'Default: purple',
+      required: false,
+    },
+    {
+      name: 'outlined',
+      label: 'Outlined?',
+      widget: 'boolean',
+      required: false,
     },
     {
       name: 'icon',

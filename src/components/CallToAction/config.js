@@ -1,4 +1,5 @@
 import { colors } from 'src/utils/netlify';
+import submit from '../Submit/config';
 
 export default {
   name: 'cta',
@@ -11,6 +12,7 @@ export default {
       label: 'Name',
       widget: 'string',
       hint: 'Leave blank to hide',
+      required: false,
     },
     {
       label: 'Color',
@@ -18,6 +20,7 @@ export default {
       widget: 'select',
       options: colors,
       default: 'black',
+      required: false,
     },
     {
       name: 'href',
@@ -25,6 +28,7 @@ export default {
       widget: 'string',
       default: 'https://next.stoplight.io',
       hint: 'Default: https://next.stoplight.io',
+      required: false,
     },
     {
       name: 'icon',
@@ -36,8 +40,15 @@ export default {
       name: 'type',
       label: 'Type',
       widget: 'select',
-      options: ['link', 'video'],
+      options: ['link', 'video', 'submit', 'download'],
       default: 'link',
+      required: false,
+    },
+    submit,
+    {
+      name: 'outlined',
+      label: 'Outlined?',
+      widget: 'boolean',
       required: false,
     },
   ],

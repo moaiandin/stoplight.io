@@ -17,7 +17,7 @@ tabs: []
 disqus:
   enabled: true
 actionBar:
-  buttons: []
+  ctas: []
   enabled: false
 meta:
   description: The Evolution of an API Specification
@@ -31,7 +31,8 @@ meta:
     image: /images/1_ezedkaglnrkx2vw-qv1rpw.jpeg
     username: '@stoplightio'
 ---
-*[Evolution of human work silhouettes](www.vexels.com%2Fvectors%2Fpreview%2F71108%2Fevolution-of-human-work-silhouettes%22%3E%20Evolution%20of%20human%20work%20silhouettes) | designed by Vexels*
+
+_[Evolution of human work silhouettes](www.vexels.com%2Fvectors%2Fpreview%2F71108%2Fevolution-of-human-work-silhouettes%22%3E%20Evolution%20of%20human%20work%20silhouettes) | designed by Vexels_
 
 The year is 2010. A year that included a devastating earthquake in Haiti, trapped Chilean miners, an Icelandic volcano grounding planes, and the first and hopefully last time any of us heard a Vuvuzela. Tony Tam, CTO of Wordnik, is attempting to produce the world's largest online dictionary. To do so, he would bank heavily on APIs being the way of the future.
 
@@ -39,7 +40,7 @@ The year is 2010. A year that included a devastating earthquake in Haiti, trappe
 >
 > \- Tony Tam
 
-![Swagger to OAS Timelines](/images/swagger-to-oas.png "Swagger to OAS Timelines")
+![Swagger to OAS Timelines](/images/swagger-to-oas.png 'Swagger to OAS Timelines')
 
 ## The Birth of Swagger (2010)
 
@@ -61,7 +62,7 @@ March 25th, 2015, SmartBear acquires Swagger Specification from Reverb technolog
 >
 > \- Tony Tam
 
-![Image Courtesy of OAI](/images/open-api-initiative-logo.jpeg "Image Courtesy of OAI")
+![Image Courtesy of OAI](/images/open-api-initiative-logo.jpeg 'Image Courtesy of OAI')
 
 _Image Courtesy of OAI_
 
@@ -77,6 +78,6 @@ OAI releases their first major update to OAS.
 
 The future is looking bright for OAS. With the open sourcing of OAS and the Linux Foundation taking the helm, we have seen a rapid increase in overall development. Things to look out for in upcoming versions of OAS include:
 
-* Allowing the use of alternative schemas such as support for more recent versions of JSON Schema and other formats such as XSD Schema and Protobuf Schema.
-* Improvements and new features for the Security Scheme Object.
-* The future of extensions and the possibility of an extension registry.
+- Allowing the use of alternative schemas such as support for more recent versions of JSON Schema and other formats such as XSD Schema and Protobuf Schema.
+- Improvements and new features for the Security Scheme Object.
+- The future of extensions and the possibility of an extension registry.

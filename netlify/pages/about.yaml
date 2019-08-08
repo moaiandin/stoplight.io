@@ -61,9 +61,6 @@ team:
   - image: /images/tonia-roberts-headshot.jpg
     name: Tonia Roberts
     role: Enterprise Account Executive
-  - image: /images/rock_headshot.png
-    name: Brian Rock
-    role: Director of Engineering
   - image: /images/jakub-rozek-headshot.jpg
     name: Jakub Rozek
     role: Software Engineer
@@ -168,10 +165,10 @@ collage:
     - alt: Social Starts
       src: /images/logo_socialstarts.png
 actionBar:
-  buttons:
+  ctas:
     - color: accent
       href: 'https://angel.co/stoplight/jobs'
-      title: Learn More
+      name: Learn More
   enabled: true
   text: Want to join the team? We're hiring!
 meta:

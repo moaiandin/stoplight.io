@@ -15,7 +15,7 @@ color: blue
 disqus:
   enabled: true
 actionBar:
-  buttons:
+  ctas:
     - color: purple
   enabled: false
 meta:
@@ -30,6 +30,7 @@ meta:
     image: /images/api-security.jpeg
     username: '@stoplightio'
 ---
+
 Security isn’t something that gets people excited. Developers find it a drag and businesses consider it a cost center. Everyone takes it for granted until it’s not, and that’s when the press starts talking about the next scandal where hackers stole data and violated people’s privacy.
 
 APIs and security are intertwined. APIs are interfaces for the exchange of data and, as such, they are a primary attack vector. Therefore, it’s essential that APIs are adequately secured. That should be part of the mindset during the whole API lifecycle, not just bolted on at the end. Security specialist [Akshay Aggarwal](https://www.linkedin.com/in/akshayaggarwal/) calls this [MASH: Make API Security Habitual](https://nordicapis.com/why-api-security-is-more-important-than-ever/)!
@@ -40,7 +41,7 @@ We can separate API security into two main aspects: access control and other tec
 
 ## Authentication and Authorization
 
-By their definition, authentication and authorization are two distinct concepts. *Authentication* means establishing and proving an identity, whereas *Authorization* links that identity to permissions in a system. For APIs, permissions pertain to the availability of resources and actions within.
+By their definition, authentication and authorization are two distinct concepts. _Authentication_ means establishing and proving an identity, whereas _Authorization_ links that identity to permissions in a system. For APIs, permissions pertain to the availability of resources and actions within.
 
 Authentication and Authorization are, however, typically implemented together and many documents use the terms incorrectly or interchangeably. OpenAPI doesn’t make the distinction as well. Therefore we will look at them in unison. When it comes to APIs, there are two approaches, two-legged and three-legged.
 
@@ -62,9 +63,9 @@ The OpenAPI Specification allows API designers to specify authentication and aut
 
 ### OpenAPI Security Terminology
 
-A *security scheme* definition is a global definition with a name that designates an authentication method available for the API. It is possible to define multiple schemes if, for example, an API supports both Basic Authentication and OAuth. There can even be various schemes of the same type.
+A _security scheme_ definition is a global definition with a name that designates an authentication method available for the API. It is possible to define multiple schemes if, for example, an API supports both Basic Authentication and OAuth. There can even be various schemes of the same type.
 
-A *security requirement*, on the other hand, can exist both globally for the entire API or on an operation level. It matches the API as a whole or the individual API operation to one or more of the previously defined security schemes. Developers can use this to specify different levels of authorization explicitly, for example, by making read requests available without authentication, but requiring OAuth for write requests.
+A _security requirement_, on the other hand, can exist both globally for the entire API or on an operation level. It matches the API as a whole or the individual API operation to one or more of the previously defined security schemes. Developers can use this to specify different levels of authorization explicitly, for example, by making read requests available without authentication, but requiring OAuth for write requests.
 
 ### Specifying OpenAPI Security with Stoplight
 
@@ -74,7 +75,7 @@ If you already have a project in Stoplight that is missing security, now is an e
 
 If you neither have an existing project nor want to go through the tutorial right now, you can also start a new project. Stoplight adds a sample OpenAPI file called main.oas2 to your workspace, which you can use as the basis.
 
-Open the .oas2 file you want to work in and switch to the *Design* tab. Then, depending on which type of scheme you want to define, follow the instructions in the respective section below.
+Open the .oas2 file you want to work in and switch to the _Design_ tab. Then, depending on which type of scheme you want to define, follow the instructions in the respective section below.
 
 ### Basic Authentication
 
@@ -82,33 +83,33 @@ Basic Authentication is a standard defined by [RFC7617](https://tools.ietf.org/h
 
 Here’s how to specify [Basic Authentication](https://docs.stoplight.io/modeling/modeling-with-openapi/security-schemes#basic-api-authentication) for your API in Stoplight:
 
-1. Click the plus sign that appears next to *Security* in the left column of the editor
+1. Click the plus sign that appears next to _Security_ in the left column of the editor
 
-1. Give your scheme a name in the key field, such as *basic-auth*. This key must be unique within the API and will be used to reference the scheme in a security requirement
+1. Give your scheme a name in the key field, such as _basic-auth_. This key must be unique within the API and will be used to reference the scheme in a security requirement
 
-1. Select *basic* in the *type* drop-down menu. There are no further configuration options for Basic Authentication
+1. Select _basic_ in the _type_ drop-down menu. There are no further configuration options for Basic Authentication
 
 1. Add a short description if you like
 
 ![](https://cdn-images-1.medium.com/max/800/0*vHvDoQ8Y0HzvtpNQ)
 
-Let’s move to the Code tab to see how it looks in OpenAPI. You’ll find your scheme with its key and attributes in the *securityDefinitions* section.
+Let’s move to the Code tab to see how it looks in OpenAPI. You’ll find your scheme with its key and attributes in the _securityDefinitions_ section.
 
 To apply your scheme to an operation, follow these steps:
 
-1. Go back to the *Design* tab
+1. Go back to the _Design_ tab
 
-1. Select a path under *Paths* and click on the operation
+1. Select a path under _Paths_ and click on the operation
 
-1. Scroll down to *Request* and expand it, if necessary
+1. Scroll down to _Request_ and expand it, if necessary
 
-1. Click on *Security* to expand it
+1. Click on _Security_ to expand it
 
-1. Choose your scheme (e.g. *basic-auth*) in the drop-down or type its name in the field
+1. Choose your scheme (e.g. _basic-auth_) in the drop-down or type its name in the field
 
 ![](https://cdn-images-1.medium.com/max/800/0*Mmal3c3Xi6J846A4)
 
-When you switch to the *Code* tab, you can see your path and operation in OpenAPI which now includes the *security* attribute that defines the security requirement and includes your scheme. You might wonder why there’s an empty JSON array behind your scheme’s key. The reason for it is that other security types support additional configuration which is not applicable to Basic Authentication.
+When you switch to the _Code_ tab, you can see your path and operation in OpenAPI which now includes the _security_ attribute that defines the security requirement and includes your scheme. You might wonder why there’s an empty JSON array behind your scheme’s key. The reason for it is that other security types support additional configuration which is not applicable to Basic Authentication.
 
 ### API Keys
 
@@ -116,37 +117,37 @@ Unlike OAuth and Basic Authentication, API Keys are not a well-defined protocol.
 
 Here’s how to specify API Key authentication for your API in Stoplight:
 
-1. Click the plus sign that appears next to *Security* in the left column of the editor
+1. Click the plus sign that appears next to _Security_ in the left column of the editor
 
-1. Give your scheme a name in the key field, such as *apikey-auth*. This key must be unique within the API and will be used to reference the scheme in a security requirement
+1. Give your scheme a name in the key field, such as _apikey-auth_. This key must be unique within the API and will be used to reference the scheme in a security requirement
 
-1. Select *apiKey* in the *type* drop-down menu
+1. Select _apiKey_ in the _type_ drop-down menu
 
-1. Choose *query* or *header* from the *in* drop-down
+1. Choose _query_ or _header_ from the _in_ drop-down
 
-1. Enter the name for the header or query parameter in the *name* field. Use something like *api_key* for query or *API-Key* for header
+1. Enter the name for the header or query parameter in the _name_ field. Use something like _api_key_ for query or _API-Key_ for header
 
 1. Add a short description if you like
 
 ![](https://cdn-images-1.medium.com/max/800/0*GPw4EFTggUF-Eu8d)
 
-Let’s move to the *Code* tab to see how it looks in OpenAPI. You’ll find your scheme with its key and attributes in the securityDefinitions section.
+Let’s move to the _Code_ tab to see how it looks in OpenAPI. You’ll find your scheme with its key and attributes in the securityDefinitions section.
 
 To apply your scheme to an operation, follow these steps:
 
-1. Go back to the *Design* tab
+1. Go back to the _Design_ tab
 
-1. Select a path under *Paths* and click on the operation
+1. Select a path under _Paths_ and click on the operation
 
-1. Scroll down to *Request* and expand it, if necessary
+1. Scroll down to _Request_ and expand it, if necessary
 
-1. Click on *Security* to expand it
+1. Click on _Security_ to expand it
 
-1. Choose your scheme (e.g. *apikey-auth*) in the drop-down or type its name in the field. Repeat this if you want to add more than one scheme
+1. Choose your scheme (e.g. _apikey-auth_) in the drop-down or type its name in the field. Repeat this if you want to add more than one scheme
 
 ![](https://cdn-images-1.medium.com/max/800/0*C450bDqkY7tApdSQ)
 
-When you switch to the *Code* tab, you can see your path and operation in OpenAPI which now includes the *security* attribute that defines the security requirement and includes your scheme. As there’s no additional configuration for API Keys, the scheme’s key points to an empty JSON array.
+When you switch to the _Code_ tab, you can see your path and operation in OpenAPI which now includes the _security_ attribute that defines the security requirement and includes your scheme. As there’s no additional configuration for API Keys, the scheme’s key points to an empty JSON array.
 
 ### OAuth
 
@@ -154,15 +155,15 @@ OAuth is an open standard defined by [RFC6749](https://tools.ietf.org/html/rfc67
 
 Here’s how to specify [OAuth](https://docs.stoplight.io/modeling/modeling-with-openapi/oauth) for your API in Stoplight:
 
-1. Click the plus sign that appears next to *Security* in the left column of the editor
+1. Click the plus sign that appears next to _Security_ in the left column of the editor
 
-1. Give your scheme a name in the key field, such as *my-oauth*. This key must be unique within the API and will be used to reference the scheme in a security requirement
+1. Give your scheme a name in the key field, such as _my-oauth_. This key must be unique within the API and will be used to reference the scheme in a security requirement
 
-1. Select *oauth2* in the *type* drop-down menu
+1. Select _oauth2_ in the _type_ drop-down menu
 
-1. Under *flow*, choose the type of flow that your OAuth server implements. If you want to support more than one flow, you must create a new security scheme for each
+1. Under _flow_, choose the type of flow that your OAuth server implements. If you want to support more than one flow, you must create a new security scheme for each
 
-1. Add your OAuth server URLs in the *authorization url* and *token url* fields. Depending on the flow you selected, you may have to provide a value for only one of them. Stoplight automatically hides the inputs that are not necessary
+1. Add your OAuth server URLs in the _authorization url_ and _token url_ fields. Depending on the flow you selected, you may have to provide a value for only one of them. Stoplight automatically hides the inputs that are not necessary
 
 1. Click the **Add Scope** button. Enter a name and description for your scope. You should add at least one scope for your API, but you can add as many as you want
 
@@ -170,25 +171,25 @@ Here’s how to specify [OAuth](https://docs.stoplight.io/modeling/modeling-with
 
 ![](https://cdn-images-1.medium.com/max/800/0*eYY3LFcdAWtoAdE9)
 
-Let’s move to the *Code* tab to see how it looks in OpenAPI. You’ll find your scheme with its key and attributes in the *securityDefinitions* section.
+Let’s move to the _Code_ tab to see how it looks in OpenAPI. You’ll find your scheme with its key and attributes in the _securityDefinitions_ section.
 
 To apply your scheme to an operation, follow these steps:
 
-1. Go back to the *Design* tab
+1. Go back to the _Design_ tab
 
-1. Select a path under *Paths* and click on the operation
+1. Select a path under _Paths_ and click on the operation
 
-1. Scroll down to *Request* and expand it, if necessary
+1. Scroll down to _Request_ and expand it, if necessary
 
-1. Click on *Security* to expand it
+1. Click on _Security_ to expand it
 
-1. Choose your scheme (e.g. *my-oauth*) in the drop-down or type its name in the field. Repeat this if you want to add more than one scheme
+1. Choose your scheme (e.g. _my-oauth_) in the drop-down or type its name in the field. Repeat this if you want to add more than one scheme
 
 1. As soon as you add an OAuth scheme, another input appears which allows you to define the scopes. Choose the scope in the drop-down or type its name. You can also add multiple scopes. Note that, [according to the OpenAPI specification](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/2.0.md#security-requirement-object), the intended semantics behind this is that the user must have approved all of these scopes
 
 ![](https://cdn-images-1.medium.com/max/800/0*OC01UuRj4rT4T3ee)
 
-When you switch to the *Code* tab, you can see your path and operation in OpenAPI which now includes the *security* attribute that defines the security requirement and includes your scheme. Your scheme key is mapped to the required scopes for the operation.
+When you switch to the _Code_ tab, you can see your path and operation in OpenAPI which now includes the _security_ attribute that defines the security requirement and includes your scheme. Your scheme key is mapped to the required scopes for the operation.
 
 ## How The OpenAPI Specification Benefits API Security
 

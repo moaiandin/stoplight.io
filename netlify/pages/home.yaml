@@ -91,14 +91,14 @@ gartnerCoolVendor:
   title: Stoplight is a Gartner Cool Vendor
 testimonials:
   actionBar:
-    buttons:
+    ctas:
       - color: purple
         href: /demo
+        name: Request a Demo
         outlined: true
-        title: Request a Demo
       - color: purple
         href: 'https://next.stoplight.io'
-        title: Create a Free Account
+        name: Create a Free Account
     enabled: true
     text: Getting started is easy. Be up and running in minutes.
   testimonials:

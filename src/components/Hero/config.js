@@ -46,6 +46,7 @@ export default {
       widget: 'string',
       default: 'black',
       hint: 'Default: black',
+      required: false,
     },
     {
       name: 'skew',
@@ -64,6 +65,7 @@ export default {
       name: 'particles',
       label: 'Show particles?',
       widget: 'boolean',
+      required: false,
     },
     {
       name: 'buttons',
@@ -150,10 +152,18 @@ export default {
         {
           name: 'src',
           widget: 'image',
+          required: false,
         },
         {
           name: 'alt',
           widget: 'string',
+          required: false,
+        },
+        {
+          name: 'video',
+          label: 'Video URL',
+          widget: 'string',
+          required: false,
         },
       ],
     },

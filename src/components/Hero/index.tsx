@@ -178,14 +178,14 @@ export const Hero: React.FunctionComponent<IHero> = ({
 
           {ctas && (
             <div
-              className={cn('flex items-center md:flex-col md:pb-4 pb-16', {
+              className={cn('flex items-center justify-center md:flex-col md:pb-4 pb-16', {
                 'mx-auto': aligned === 'center',
                 'ml-auto': aligned === 'right',
                 'mr-auto': aligned === 'left',
               })}
             >
               {ctas.map((action, i) => (
-                <CallToAction key={i} className="m-3 w-1/2 md:w-full" {...action} />
+                <CallToAction key={i} className={cn('m-3 md:w-full', { 'w-1/2': ctas.length > 1 })} {...action} />
               ))}
             </div>
           )}

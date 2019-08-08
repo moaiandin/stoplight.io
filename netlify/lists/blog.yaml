@@ -20,6 +20,18 @@ tabs:
     title: Changelog
 actionBar:
   enabled: true
+  text: Sign up for the newsletter
+  ctas:
+    - name: Sign up for the newsletter
+      type: 'submit'
+      submit:
+        button:
+          color: purple
+          title: Subscribe
+        input:
+          type: email
+          placeholder: Your email here
+        formId: 'e58e3212-f08a-42fe-bbaa-29a21c27a3f5'
 meta:
   description: >-
     Find out all you need to know about API design, testing, mocking, and

@@ -17,11 +17,11 @@ testimonials:
     href: 'https://next.stoplight.io'
   testimonials: []
   actionBar:
-    buttons:
+    ctas:
       - color: purple
     enabled: false
 actionBar:
-  buttons: []
+  ctas: []
   enabled: false
 tags: []
 relatedTags: []

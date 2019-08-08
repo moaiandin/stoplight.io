@@ -14,10 +14,10 @@ hero:
   title: Hosted API Documentation
 featureSection:
   actionBar:
-    buttons:
+    ctas:
       - color: accent
         href: 'https://next.stoplight.io/'
-        title: Get Started Now
+        name: Get Started Now
     enabled: true
     text: 'Ready to Publish? '
   description: >-

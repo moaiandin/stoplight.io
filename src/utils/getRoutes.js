@@ -3,6 +3,7 @@ import { makePageRoutes } from 'react-static/node';
 import { formatDate } from './dates';
 import { getFile, getFiles } from './files';
 import { NETLIFY_PATH, DEFAULT_PAGINATION_PAGE_SIZE, IS_PRODUCTION, RELATED_PAGES_LIMIT } from './settings';
+import get from 'lodash.get';
 
 export async function getRoutes() {
   let [
@@ -164,7 +165,7 @@ function createRoutes(template, pages, allPages, propFactory, noindex) {
       routes.push({
         path: page.path,
         template: page.hasSandbox ? 'src/templates/Spectral' : template,
-        noindex,
+        noindex: noindex ? noindex : get(page, 'meta.robots', '').includes('noindex'),
         getData: () => {
           return {
             ...page,

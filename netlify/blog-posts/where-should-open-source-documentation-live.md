@@ -14,20 +14,17 @@ image: /images/aaron-burden-nz2slpcvw1y-unsplash.jpg
 color: black
 includeToc: true
 actionBar:
-  buttons: []
+  ctas: []
   enabled: false
-  text: Where the Wild Docs Are
 meta:
   description: 'Where should open source documentation live? README or on a static site?'
   favicon: /images/mark_light_bg.png
   robots: 'index, follow'
-  title: >-
-    Where Should Open Source Documentation Live | Stoplight API Corner
+  title: Where the Wild Docs Are | Stoplight API Corner
   image: /images/aaron-burden-nz2slpcvw1y-unsplash.jpg
   twitter:
     description: 'Where should open source documentation live? README or on a static site?'
-    title: >-
-      Where the Wild Docs Are | Stoplight API Corner
+    title: Where the Wild Docs Are | Stoplight API Corner
     image: /images/aaron-burden-nz2slpcvw1y-unsplash.jpg
     username: '@stoplightio'
   url: 'https://stoplight.io/blog/open-source-documentation'

@@ -30,7 +30,7 @@ actionBar:
           title: Subscribe
         input:
           type: email
-          placeholder: Your email here
+          placeholder: Enter email
         formId: 'e58e3212-f08a-42fe-bbaa-29a21c27a3f5'
 meta:
   description: >-

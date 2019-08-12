@@ -15,6 +15,9 @@ https://stoplightio.netlify.com/* https://stoplight.io/:splat 301!
 /platform/scenarios /testing/
 /api-designer /design/
 
+# NextJS Assets
+/_next/* /p/_next/:splat
+
 # Guide redirects
 /api-documentation-guide /api-documentation-guide/basics/
 /api-design-guide /api-design-guide/basics/

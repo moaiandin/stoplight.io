@@ -22,8 +22,13 @@ actionBar:
     - color: purple
   enabled: false
 meta:
+  title: Should You Have an API Documentation Team? | Stoplight API Corner
+  description: Build API documentation that keeps up
   robots: 'index, follow'
-  twitter: {}
+  twitter:
+    description: Build API documentation that keeps up
+    title: Should You Have an API Documentation Team? | Stoplight API Corner
+    username: '@stoplightio'
 ---
 
 Developers building APIs have to consider a lot more than the technical needs of the project. Increasingly, they're working with a diverse section of people, both internally and externally. In addition to creating a useful product, they need API documentation to keep up. Lukas Rosenstock wrote about [collaboration in API design](https://stoplight.io/blog/openapi-and-design-first-principles-96e7c4b2aec1/):

@@ -18,6 +18,11 @@ actionBar:
     - color: purple
   enabled: false
 meta:
+  favicon: /images/mark_light_bg.png
   robots: 'index, follow'
-  twitter: {}
+  title: Emmelyn Wang | Stoplight
+  robots: 'index, follow'
+  twitter:
+    title: Emmelyn Wang | Stoplight
+    username: '@stoplightio'
 pagination: {}

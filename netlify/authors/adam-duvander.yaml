@@ -17,7 +17,6 @@ actionBar:
   enabled: false
 meta:
   favicon: /images/mark_light_bg.png
-  robots: 'index, follow'
   title: Adam DuVander | Stoplight
   robots: 'index, follow'
   twitter:

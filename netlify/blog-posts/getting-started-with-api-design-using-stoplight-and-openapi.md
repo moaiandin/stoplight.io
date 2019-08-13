@@ -39,7 +39,7 @@ First, we’ll look at the API lifecycle, the importance of API design, and the 
 
 ## API Lifecycle
 
-The API lifecycle is the journey from the first steps of building an API towards deployment, production use, and eventual sunsetting. One visualization of this lifecycle is the [API Transit Map](http://basics.apievangelist.com/) developed by Kin Lane ([API Evangelist](undefined)). The transit starts with definitions even before design, wherein definitions here mean specifying the ideas and goals from a business perspective while also considering industry standards when it comes to the implementation. If you’re serious about your API as a product, the what and why must happen before the how. You need to identify your potential customers and understand their needs to incorporate them into your design.
+The API lifecycle is the journey from the first steps of building an API towards deployment, production use, and eventual sunsetting. One visualization of this lifecycle is the [API Transit Map](http://basics.apievangelist.com/) developed by Kin Lane ([API Evangelist](https://blog.apievangelist.com/)). The transit starts with definitions even before design, wherein definitions here mean specifying the ideas and goals from a business perspective while also considering industry standards when it comes to the implementation. If you’re serious about your API as a product, the what and why must happen before the how. You need to identify your potential customers and understand their needs to incorporate them into your design.
 
 ## API Design
 
@@ -135,7 +135,7 @@ We’ll start work on the _Design_ tab and create a model first:
 
 1. Click the plus sign next to object to add a field. Each field has a name, or key, a datatype, optional validations and can be marked required or not. Datatypes are native JSON types whereas validations can be used to enforce constraints or formats on data that doesn’t have a native JSON type, for example, a date and time string.
 
-1. For our calendar appointments, define the following fields with the Editor: id, an _integer_; title, a _string_; start_dt, a _string_ with _date-time_ format; end_dt, a _string_ with _date-time_ format.
+1. For our calendar appointments, define the following fields with the Editor: id, an _integer_; title, a _string_; start*dt, a \_string* with _date-time_ format; end*dt, a \_string* with _date-time_ format.
 
 1. While adding the fields, pay attention to the fact that you can select multiple types and _string_ is the default type. Because of this, you may have to deselect the _string_ type when selecting _integer_, for example.
 

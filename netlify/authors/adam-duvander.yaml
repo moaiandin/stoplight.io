@@ -16,6 +16,10 @@ actionBar:
     - color: purple
   enabled: false
 meta:
+  favicon: /images/mark_light_bg.png
+  title: Adam DuVander | Stoplight
   robots: 'index, follow'
-  twitter: {}
+  twitter:
+    title: Adam DuVander | Stoplight
+    username: '@stoplightio'
 pagination: {}

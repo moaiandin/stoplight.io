@@ -21,11 +21,11 @@ meta:
   description: 'Changelog, updates, fixes, & roadmap'
   favicon: /images/mark_light_bg.png
   robots: 'index, follow'
-  title: v4.1.1 Release | Stoplight API Corner
+  title: Stoplight v4.1.1 Bug Fixes | Stoplight API Corner
   image: /images/changelog-stock.jpg
   twitter:
     description: 'Changelog, updates, fixes, & roadmap'
-    title: v4.1.1 Release | Stoplight API Corner
+    title: Stoplight v4.1.1 Bug Fixes | Stoplight API Corner
     image: /images/changelog-stock.jpg
     username: '@stoplightio'
 ---

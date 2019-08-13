@@ -43,7 +43,7 @@ meta:
     username: '@stoplightio'
 ---
 
-_Photo by [rawpixel](https://unsplash.com/photos/qo9WAXpAeM8) on [Unsplash](https://unsplash.com)_
+_Photo by [rawpixel](https://www.pexels.com/photo/person-holding-type-writer-beside-teacup-and-saucer-on-table-1059110/) on [Pexels](https://www.pexels.com/)_
 
 _Welcome back for Part Two of Writing Documentation When You Aren’t A Technical Writer! In [Part One](/blog/writing-documentation-when-you-arent-a-technical-writer-part-one-ef08a09870d1), we discussed how to write documentation people actually read and how to avoid the common pitfalls caused by code samples in your documentation._
 
@@ -215,4 +215,4 @@ I recommend having these qualities considered when someone is reviewing your doc
 
 The reality is word choice is hard. There are no magical formulas for it. All of our users and use cases are different; what might work for one set of users might not work for another. If it were easy, we’d all have a lot better documentation. As Ruthie says to developers, “writing software is an exercise in naming things. Embrace it.” And if you are writing docs for something someone else created, “let the developer know when their names miss the mark.”
 
-_I hope some of these tips help you the next time you are writing documentation. I’d love to hear what tips you’ve learned over the years that were helpful to you in the comments below. Keep your eye out for part three coming out in September, and check out [part one from July](/blog/api-corner/writing-documentation-when-you-arent-a-technical-writer-part-one-ef08a09870d1)._
+_I hope some of these tips help you the next time you are writing documentation. I’d love to hear what tips you’ve learned over the years that were helpful to you in the comments below. Keep your eye out for part three coming out in September, and check out [part one from July](/blog/writing-documentation-when-you-arent-a-technical-writer-part-one-ef08a09870d1)._

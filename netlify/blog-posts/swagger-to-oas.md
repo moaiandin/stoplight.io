@@ -32,7 +32,7 @@ meta:
     username: '@stoplightio'
 ---
 
-_[Evolution of human work silhouettes](www.vexels.com%2Fvectors%2Fpreview%2F71108%2Fevolution-of-human-work-silhouettes%22%3E%20Evolution%20of%20human%20work%20silhouettes) | designed by Vexels_
+_[Evolution of human work silhouettes](https://www.vexels.com/vectors/preview/71108/evolution-of-human-work-silhouettes) | designed by Vexels_
 
 The year is 2010. A year that included a devastating earthquake in Haiti, trapped Chilean miners, an Icelandic volcano grounding planes, and the first and hopefully last time any of us heard a Vuvuzela. Tony Tam, CTO of Wordnik, is attempting to produce the world's largest online dictionary. To do so, he would bank heavily on APIs being the way of the future.
 

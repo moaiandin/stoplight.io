@@ -38,6 +38,7 @@ export const Submit: React.FunctionComponent<ISubmit> = ({ button, className, in
               {...button}
               title={button.title}
               loading={loading}
+              style={{ minWidth: '200px' }}
             />
           </div>
         </div>

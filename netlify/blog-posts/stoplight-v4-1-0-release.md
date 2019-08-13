@@ -46,7 +46,7 @@ _Custom CSS_
 
 - **Custom HTML Landing Pages**: Create beautiful custom landing pages to greet and direct your users.
 
-- **[OAuth2 Token Generation in _Hub’s_ Try it Out](https://docs.stoplight.io/documentation/oauth-hubs)\***: _If_ \*your API is protected by OAuth2, you can now generate tokens to enable Try it Out block.
+- **[OAuth2 Token Generation in _Hub’s_ Try it Out](https://docs.stoplight.io/documentation/authorizations/oauth-hubs)\***: _If_ \*your API is protected by OAuth2, you can now generate tokens to enable Try it Out block.
 
 ## Enhancements 💪
 

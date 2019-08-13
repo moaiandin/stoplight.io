@@ -71,7 +71,7 @@ You could still argue that you can build a proper API lifecycle without a specif
 
 OpenAPI definitions generated from code are likely poor quality. Definition-generating tools cannot do magic, and while they can deduce a lot from the code, they require additional annotations and human-readable descriptions. These annotations might be inaccurate and not reflect the implementation correctly, so generating the API design from code doesn‘t mean you can forego testing your specification.
 
-There’s a real danger that the automatically generated specifications are considered good enough to be published, even for external audiences, when, in fact, they are not. Developers need to be disciplined, but when it comes to documentation, experience has shown they often aren’t (in the words of Phil Sturgeon, [“When documentation is considered an extra job, that job won’t get done.”](https://philsturgeon.uk/api/2017/07/20/my-vision-for-a-perfect-world-in-api-specification/)). Another post-production step, such as a review with a technical writer, is still necessary.
+There’s a real danger that the automatically generated specifications are considered good enough to be published, even for external audiences, when, in fact, they are not. Developers need to be disciplined, but when it comes to documentation, experience has shown they often aren’t (in the words of Phil Sturgeon, [“When documentation is considered an extra job, that job won’t get done.”](https://phil.tech/api/2017/07/20/my-vision-for-a-perfect-world-in-api-specification/)). Another post-production step, such as a review with a technical writer, is still necessary.
 
 ## It’s Not All Bad
 

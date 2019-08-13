@@ -167,7 +167,7 @@ collage:
 actionBar:
   ctas:
     - color: accent
-      href: 'https://angel.co/stoplight/jobs'
+      href: 'https://angel.co/company/stoplight/jobs'
       name: Learn More
   enabled: true
   text: Want to join the team? We're hiring!

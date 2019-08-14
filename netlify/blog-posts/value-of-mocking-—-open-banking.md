@@ -50,7 +50,7 @@ Step in mocking to help out. UK Open Banking provides a [reference implementatio
 
 Tools like [Prism](/platform/prism/) , therefore, help developers bridge the gap between what they need to get the job done and what is available in the fledgling Open Banking Space:
 
-- Developers can grab the core specification from the relevant source — for example the [UK Open Banking Payment Initiation API](https://github.com/OpenBankingUK/payment-initiation-api-spec/blob/master/dist/v1.1/payment-initiation-swagger.yaml) — and get straight to work by starting Prism from the command line.
+- Developers can grab the core specification from the relevant source — for example the [UK Open Banking Payment Initiation API](https://raw.githubusercontent.com/OpenBankingUK/read-write-api-specs/v3.1.1/dist/payment-initiation-swagger.yaml) — and get straight to work by starting Prism from the command line.
 
 - They can do this without waiting for sandboxes or environments to be made available, and get going with virtually zero configuration. Prism will automatically start providing dummy responses.
 

@@ -21,16 +21,17 @@ export const ActionBar: React.FunctionComponent<IActionBar> = withSiteData(props
 
   return (
     <Container>
-      <div
-        className={cn(
-          className,
-          'p-12 flex sm:flex-col sm:justify-center sm:items-between flex-wrap items-center shadow rounded',
+      <div className={cn(className, 'p-12 flex flex-wrap items-center shadow rounded md:flex-col md:justify-center')}>
+        {text && (
+          <div
+            className={cn('flex flex-1 font-bold text-lg text-grey-darker', { 'pb-6 justify-center': ctas.length > 2 })}
+          >
+            {text}
+          </div>
         )}
-      >
-        {text && <div className="flex-1 font-bold text-lg text-grey-darker">{text}</div>}
 
         {ctas && (
-          <div className="flex-1 flex justify-end sm:justify-center sm:items-between sm:flex-wrap">
+          <div className="flex-1 flex justify-end md:justify-center md:content-between md:flex-wrap">
             {ctas.map((cta, index) => (
               <CallToAction key={index} className={index > 0 ? 'ml-4 sm:ml-0' : ''} {...cta} />
             ))}

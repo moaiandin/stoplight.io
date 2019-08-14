@@ -18,12 +18,13 @@ actionBar:
 meta:
   description: Design Web APIs for Humans & Machines
   favicon: /images/mark_light_bg.png
-  title: Stop Calling Your APIs Microservices | Stoplight API Corner
+  title: Making the Most of Your API Specification | Stoplight API Corner
   twitter:
     description: Design Web APIs for Humans & Machines
-    title: Stop Calling Your APIs Microservices | Stoplight API Corner
+    title: Making the Most of Your API Specification | Stoplight API Corner
     username: '@stoplightio'
 ---
+
 _A bridge between humans and machines, photo by [Marc-Antoine Dépelteau](https://unsplash.com/@autumnsgrief) on [Unsplash](https://unsplash.com)_
 
 It wasn’t so long ago that an API specification was just a thing that got generated. Write some code, add some annotations, and let your build tool create an API specification document you shared with your colleagues, community, friends, and family. Job done.
@@ -32,10 +33,10 @@ All that’s changed with the advent of design-first APIs. It’s become common 
 
 ## Advantages of Design-First APIs
 
-* [Design-first APIs](/design/#powerful-visual-editor) force designers to actively _think_ about an interface that is the best fit for their consumers and the provider’s goals when offering an API
-* This process ensures that the interface and the backend it exposes do not contaminate each other. This is especially important when existing or legacy backends are being newly offered as REST APIs
-* The design process offers an outcome in the form of a tangible artifact — a draft API specification document — that can be easily shared with stakeholders to share, communicate, and agree upon the proposed design
-* A secondary benefit is that design-first APIs catapult the production of the API specification forward in the API lifecycle. Your community and stakeholders gain visibility of specific API changes much sooner than if the production of an API specification is coupled with the development of the code
+- [Design-first APIs](/design/#powerful-visual-editor) force designers to actively _think_ about an interface that is the best fit for their consumers and the provider’s goals when offering an API
+- This process ensures that the interface and the backend it exposes do not contaminate each other. This is especially important when existing or legacy backends are being newly offered as REST APIs
+- The design process offers an outcome in the form of a tangible artifact — a draft API specification document — that can be easily shared with stakeholders to share, communicate, and agree upon the proposed design
+- A secondary benefit is that design-first APIs catapult the production of the API specification forward in the API lifecycle. Your community and stakeholders gain visibility of specific API changes much sooner than if the production of an API specification is coupled with the development of the code
 
 The increasing importance of design-first APIs and use of API specification documents gives us some opportunities to optimize what we deliver to our developer communities. In the context of OpenAPI Specification, this is true for both humans and machines that we interact with.
 
@@ -67,9 +68,9 @@ I like to make it easy for my readers so I'm using headers:
 
 Providing Markdown support allows API providers a method for adding supplemental and secondary information. As an API designer, this functionality has a number of benefits:
 
-* You can provide usage notes for your developer community across a whole range of attributes — usage notes for parameters, the rationale behind type definitions, and so on
-* The first draft of the specification for an API might only contain skeleton descriptions, but don’t be afraid to embellish your specifications with information from other sources — Confluence, Jupyter notebooks, your data model, anywhere where a source of useful information for the API specification can be elicited
-* If you do draw on other sources, do it manually once, then look to automate. It’ll mean you’ll save time and effort in the future and — if it’s important to you — give you a straightforward means to keep your API specification in sync with these sources of truth
+- You can provide usage notes for your developer community across a whole range of attributes — usage notes for parameters, the rationale behind type definitions, and so on
+- The first draft of the specification for an API might only contain skeleton descriptions, but don’t be afraid to embellish your specifications with information from other sources — Confluence, Jupyter notebooks, your data model, anywhere where a source of useful information for the API specification can be elicited
+- If you do draw on other sources, do it manually once, then look to automate. It’ll mean you’ll save time and effort in the future and — if it’s important to you — give you a straightforward means to keep your API specification in sync with these sources of truth
 
 By making use full of the Description field, you therefore have the opportunity to provide a rich, self-contained document with possibly everything a human needs to know about your API.
 
@@ -81,10 +82,10 @@ However — and for the time being at least — we need to tell our machines wha
 
 Sounds like an easy day for developers — generate a client and you’re off-and-running. However, an ugly API specification can result in an ugly API client, with a sprawling, unfamiliar code base that is hard to maintain and debug. In the context of OpenAPI, using the features of the specification that promote reuse will provide benefits for the developer as they implement an integration with your API:
 
-* Most objects defined in an OpenAPI specification — Parameters, Responses, and so on — are reusable with sections in the specification dedicated to this purpose
-* On this basis, you should look to create common, reusable type definitions in your specifications where possible, rather than repeatedly embedding the same definitions inline
-* Promoting reuse will inevitably result in fewer objects being described in the specification. This will inevitably result in less code being generated by tools, resulting in a code footprint that is both smaller and easier to contain, understand, and debug
-* It also has a side effect for humans as well, ensuring the document is less verbose which promotes ease of understanding
+- Most objects defined in an OpenAPI specification — Parameters, Responses, and so on — are reusable with sections in the specification dedicated to this purpose
+- On this basis, you should look to create common, reusable type definitions in your specifications where possible, rather than repeatedly embedding the same definitions inline
+- Promoting reuse will inevitably result in fewer objects being described in the specification. This will inevitably result in less code being generated by tools, resulting in a code footprint that is both smaller and easier to contain, understand, and debug
+- It also has a side effect for humans as well, ensuring the document is less verbose which promotes ease of understanding
 
 Promoting simplicity and reuse through a well-structured API specification, therefore, gives developers the best chance of success in creating a clean and straightforward API client. Moreover, it adds to a great experience for developers, by making their lives easier.
 

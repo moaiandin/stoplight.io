@@ -22,11 +22,11 @@ meta:
   description: 'Fair Use Billing, Magic Links, Custom CSS, Landing Pages, Token Generation'
   favicon: /images/mark_light_bg.png
   robots: 'index, follow'
-  title: v4.1.1 Release | Stoplight API Corner
+  title: Stoplight v4.1.0 Release| Stoplight API Corner
   image: /images/custom-css.png
   twitter:
     description: 'Fair Use Billing, Magic Links, Custom CSS, Landing Pages, Token Generation'
-    title: v4.1.1 Release | Stoplight API Corner
+    title: Stoplight v4.1.0 Release | Stoplight API Corner
     image: /images/custom-css.png
     username: '@stoplightio'
 ---
@@ -46,7 +46,7 @@ _Custom CSS_
 
 - **Custom HTML Landing Pages**: Create beautiful custom landing pages to greet and direct your users.
 
-- **[OAuth2 Token Generation in _Hub’s_ Try it Out](https://docs.stoplight.io/documentation/oauth-hubs)\***: _If_ \*your API is protected by OAuth2, you can now generate tokens to enable Try it Out block.
+- **[OAuth2 Token Generation in _Hub’s_ Try it Out](https://docs.stoplight.io/documentation/authorizations/oauth-hubs)\***: _If_ \*your API is protected by OAuth2, you can now generate tokens to enable Try it Out block.
 
 ## Enhancements 💪
 

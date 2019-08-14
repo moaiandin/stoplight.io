@@ -12,7 +12,7 @@ tabs:
   - title: Enterprise API Testing
     href: /testing/enterprise
   - title: Free API Testing
-    href: /testing/free
+    href: /testing
   - title: API Integration Testing
     href: /testing/integration
   - title: Contract Testing

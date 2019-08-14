@@ -27,6 +27,7 @@ import { faInfoCircle } from '@fortawesome/free-solid-svg-icons/faInfoCircle';
 import { faTerminal } from '@fortawesome/free-solid-svg-icons/faTerminal';
 import { faSpinner } from '@fortawesome/free-solid-svg-icons/faSpinner';
 import { faPlayCircle } from '@fortawesome/free-solid-svg-icons/faPlayCircle';
+import { faCloud } from '@fortawesome/free-solid-svg-icons/faCloud';
 
 import { faTwitter } from '@fortawesome/free-brands-svg-icons/faTwitter';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons/faLinkedin';
@@ -66,6 +67,7 @@ export function init() {
   library.add(faLinux);
   library.add(faWindows);
   library.add(faPlayCircle);
+  library.add(faCloud);
 
   library.add(faTwitter);
   library.add(faLinkedin);

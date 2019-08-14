@@ -78,7 +78,7 @@ export const PricingPlans: React.FunctionComponent<IPricingPlans> = ({ color, pl
   }
 
   return (
-    <Container className="-mt-80 z-5 relative">
+    <Container className="-mt-40 z-5 relative">
       <div className="flex flex-wrap md:mx-0 -mx-6">
         {plans.map((pricingPlan, key) => (
           <PricingPlan key={key} titleColor={color} {...pricingPlan} />

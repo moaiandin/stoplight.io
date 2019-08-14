@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import cn from 'classnames';
 import * as React from 'react';
 import { Link } from 'src/components/Link';
+import { Button } from '../Button';
 import { Download, IDownload } from '../Download';
 import { ISubmit, Submit } from '../Submit';
 import { VideoPlayerModal } from '../VideoPlayerModal';
@@ -37,7 +38,7 @@ export const CallToAction: React.FunctionComponent<ICallToAction> = ({
   const cta = (
     <div
       className={cn(
-        `Button rounded shadow-md flex select-none inline-flex justify-center whitespace-no-wrap font-bold h-xl 
+        `Button rounded shadow-md flex select-none inline-flex justify-center whitespace-no-wrap font-bold h-xl
       rounded z-0 hover:z-5 border-transparent text-white hover:text-white cursor-pointer solid`,
         {
           [`bg-${color} hover:bg-${color}-dark text-white`]: !outlined,
@@ -56,12 +57,16 @@ export const CallToAction: React.FunctionComponent<ICallToAction> = ({
     </div>
   );
 
-  return (
-    <div className={cn(className)}>
-      {(submit && <Submit {...submit} />) ||
-        (download && <Download {...download} name={name} />) ||
-        (type === 'video' && <VideoPlayerModal href={href} cta={cta} />) ||
-        (type === 'link' && <Link to={href}>{cta}</Link>)}
-    </div>
-  );
+  let ctaComponent;
+  if (submit) {
+    ctaComponent = <Submit {...submit} />;
+  } else if (download) {
+    ctaComponent = <Button className="text-lg" shadow="md" title={name} {...download} />;
+  } else if (type === 'video') {
+    ctaComponent = <VideoPlayerModal href={href} cta={cta} />;
+  } else if (type === 'link') {
+    ctaComponent = <Link to={href}>{cta}</Link>;
+  }
+
+  return <div className={cn(className)}>{ctaComponent}</div>;
 };

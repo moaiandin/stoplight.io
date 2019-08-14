@@ -43,7 +43,6 @@ export interface IHero {
   aligned?: 'center' | 'right' | 'left';
   ctas?: ICallToAction[];
   cards?: IHeroCard[];
-  buttons?: IHeroButton[];
   particles?: boolean;
   skew?: 'rounded' | '-3deg' | '-7deg' | '3deg' | '7deg' | 'rounded';
   containerClassName?: string;
@@ -67,16 +66,10 @@ export const Hero: React.FunctionComponent<IHero> = ({
   skew,
   containerClassName,
   cards = [],
-  buttons = [],
   tabs = [],
   titleImage,
   titleClassName,
 }) => {
-  // Filter out any empty button objects
-  const heroButtons = buttons.filter(button => {
-    return button.href || button.title || button.icon;
-  });
-
   // Filter out any empty button objects
   const heroTabs = tabs.filter(tab => {
     return tab.href;
@@ -121,7 +114,7 @@ export const Hero: React.FunctionComponent<IHero> = ({
         <div
           className={cn(
             containerClassName,
-            `container text-white flex flex-col pt-32 md:pt-24 relative z-5 text-${aligned} relative`,
+            `text-white flex flex-col pt-32 md:pt-24 relative z-5 text-${aligned} relative`,
           )}
           style={contentBgImage ? { textShadow: `rgba(0, 0, 0, 0.5) 1px 1px 0px` } : undefined}
         >
@@ -185,18 +178,11 @@ export const Hero: React.FunctionComponent<IHero> = ({
               })}
             >
               {ctas.map((action, i) => (
-                <CallToAction key={i} className={cn('m-3 md:w-full', { 'w-1/2': ctas.length > 1 })} {...action} />
+                <CallToAction key={i} className={cn('m-3 md:w-full')} {...action} />
               ))}
             </div>
           )}
 
-          {!cards.length && heroButtons.length ? (
-            <div className="flex flex-wrap mx-auto pb-16 md:pt-16">
-              {heroButtons.map((button, i) => (
-                <HeroButton key={i} color={bgColor} {...button} />
-              ))}
-            </div>
-          ) : null}
           {cards.length ? (
             <div className="flex mx-auto md:flex-col md:pt-16">
               {cards.map((card, i) => (
@@ -248,7 +234,7 @@ export const Hero: React.FunctionComponent<IHero> = ({
         )}
       </div>
 
-      {image && <HeroImage {...image} />}
+      {image && <HeroImage {...image} className="shadow" />}
     </React.Fragment>
   );
 };

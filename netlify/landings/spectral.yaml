@@ -69,13 +69,13 @@ featureSection:
       shortName: CLI & JavaScript
       title: Use CLI and JavaScript interfaces
 
-    # - description: >-
-    #     Want to create and edit API descriptions with a visual editor instead of
-    #     scratching YAML into a cave wall with a rock? Use Stoplight Studio, and
-    #     let Spectral give you feedback in real-time.
-    #   image: /images/mocking_request_validation.png
-    #   shortName: Stoplight Studio Integration
-    #   title: Stoplight Studio Integration
+    - description: >-
+        Want to create and edit API descriptions with a visual editor instead of
+        scratching YAML into a cave wall with a rock? Use Stoplight Studio, and
+        let Spectral give you feedback in real-time.
+      image: /images/studio_editor.png
+      shortName: Stoplight Studio Integration
+      title: Stoplight Studio Integration
 
 meta:
   description: >-

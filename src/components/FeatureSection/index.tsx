@@ -69,7 +69,7 @@ export const Feature: React.FunctionComponent<IFeature> = props => {
       <div className="flex-1 w-1/2 md:hidden relative">
         <Image
           src={image}
-          className="bg-center bg-cover bg-no-repeat h-128 w-128 rounded-full"
+          className={cn('bg-center bg-cover bg-no-repeat h-128 w-128 rounded-full', { 'ml-auto': !isReversed })}
           style={{ boxShadow: '0 0 4px rgba(0, 0, 0, 0.5)' }}
           useDiv
         />

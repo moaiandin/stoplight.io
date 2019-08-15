@@ -1,9 +1,9 @@
 banners:
-  - ends: '1564714800000'
+  - ends: 1566295331394
     markdown: >-
-      **Introducing <u>**[**Prism**](https://stoplight.io/prism/)**</u>,
-      test and prototype your APIs earlier and iterate faster!**
-    starts: 1558463654467
+      **Announcing <u>**[**Stoplight Studio**](https://stoplight.io/studio/)**</u> to Visually Design OpenAPI v3 Docs! <u class='ml-1'>**[**Read More**](https://stoplight.io/studio/)**</u>**
+    starts: 1565815331394
+    hideOnPath: '/studio'
 info:
   address:
     addressLocality: Austin

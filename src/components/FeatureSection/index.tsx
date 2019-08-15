@@ -6,6 +6,7 @@ import { Container } from 'src/components/Container';
 import { Link } from 'src/components/Link';
 import { ISection, Section } from 'src/components/Section';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { ActionBar, IActionBar } from 'src/components/ActionBar';
 import { Image } from 'src/components/Image';
 import { slugify } from 'src/utils/slugify';
@@ -91,7 +92,22 @@ export const FeatureSection: React.FunctionComponent<IFeatureSection> = ({
   }
 
   return (
-    <Section id="product" {...sectionProps}>
+    <Section id="product" {...sectionProps} className="" noPadding>
+      <div className="bg-white border-b py-4 mb-32 whitespace-no-wrap overflow-auto">
+        <div className="container flex items-center justify-center flex-no-wrap sm:justify-start">
+          {features.map((feature, key) => (
+            <a
+              key={key}
+              href={`#${slugify(feature.title)}`}
+              className="flex items-center justify-center p-4 hover:bg-darken-50 text-grey-darker mx-4 rounded font-semibold"
+            >
+              <FontAwesomeIcon className="text-green text-lg" icon={['fas', 'check-circle']} />
+              <div className="ml-2">{feature.shortName}</div>
+            </a>
+          ))}
+        </div>
+      </div>
+
       {(title || description) && (
         <Container title={title} className={cn(!buttons.length ? 'pb-32 border-b' : null)}>
           {description && (

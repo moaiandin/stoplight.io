@@ -5,13 +5,11 @@ import { withRouteData } from 'react-static';
 import { Collage, ICollage } from '../../components/Collage';
 import { FeatureSection, IFeatureSection } from '../../components/FeatureSection';
 import { Hero, IHero } from '../../components/Hero';
-import { IHeroButton } from '../../components/Hero/HeroButton';
 import { HubSpotForm, IHubSpotForm } from '../../components/HubSpotForm';
 import { IImageCallout, ImageCallout } from '../../components/ImageCallout';
 import { Layout } from '../../components/Layout';
 import { IRelatedPage, RelatedPages } from '../../components/RelatedPages';
 import { Section } from '../../components/Section';
-import { slugify } from '../../utils/slugify';
 
 const Sandbox = React.lazy(() => import('../../components/Sandbox'));
 
@@ -36,18 +34,9 @@ export const Landing: React.FunctionComponent<ILanding> = ({
   relatedPages,
   hasSandbox,
 }) => {
-  let buttons: IHeroButton[] = [];
-  if (featureSection && featureSection.features && featureSection.features.length) {
-    buttons = featureSection.features.map(feature => ({
-      title: feature.shortName,
-      icon: 'check-circle',
-      href: `#${slugify(feature.title)}`,
-    }));
-  }
-
   return (
     <Layout>
-      <Hero bgColor={color} buttons={buttons} {...hero} containerClassName={hasSandbox ? 'pb-16' : ''} />
+      <Hero bgColor={color} {...hero} containerClassName={hasSandbox ? 'pb-16' : ''} />
 
       <Collage className="md:px-0 py-6 md:py-6" noPadding {...collage} />
 

@@ -114,7 +114,7 @@ export const Hero: React.FunctionComponent<IHero> = ({
         <div
           className={cn(
             containerClassName,
-            `text-white flex flex-col pt-32 md:pt-24 relative z-5 text-${aligned} relative`,
+            `container text-white flex flex-col pt-32 md:pt-24 relative z-5 text-${aligned} relative`,
           )}
           style={contentBgImage ? { textShadow: `rgba(0, 0, 0, 0.5) 1px 1px 0px` } : undefined}
         >

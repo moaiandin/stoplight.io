@@ -75,6 +75,11 @@ export const Hero: React.FunctionComponent<IHero> = ({
     return tab.href;
   });
 
+  // Force left alignment with hero tabs
+  if (heroTabs.length) {
+    aligned = 'left';
+  }
+
   return (
     <React.Fragment>
       <div
@@ -114,7 +119,7 @@ export const Hero: React.FunctionComponent<IHero> = ({
         <div
           className={cn(
             containerClassName,
-            `text-white flex flex-col pt-32 md:pt-24 relative z-5 text-${aligned} relative`,
+            `container text-white flex flex-col pt-32 md:pt-24 relative z-5 text-${aligned} relative`,
           )}
           style={contentBgImage ? { textShadow: `rgba(0, 0, 0, 0.5) 1px 1px 0px` } : undefined}
         >
@@ -171,14 +176,15 @@ export const Hero: React.FunctionComponent<IHero> = ({
 
           {ctas && (
             <div
-              className={cn('flex items-center justify-center md:flex-col md:pb-4 pb-16', {
-                'mx-auto': aligned === 'center',
+              className={cn('flex items-center justify-center md:flex-col md:pb-4 pb-16 whitespace-no-wrap', {
+                '-mx-40': ctas.length > 2,
+                'mx-auto md:mx-auto': aligned === 'center',
                 'ml-auto': aligned === 'right',
                 'mr-auto': aligned === 'left',
               })}
             >
               {ctas.map((action, i) => (
-                <CallToAction key={i} className={cn('m-3 md:w-full')} {...action} />
+                <CallToAction key={i} className="m-3 md:w-full" {...action} />
               ))}
             </div>
           )}
@@ -234,7 +240,7 @@ export const Hero: React.FunctionComponent<IHero> = ({
         )}
       </div>
 
-      {image && <HeroImage {...image} className="shadow" />}
+      {image && <HeroImage {...image} />}
     </React.Fragment>
   );
 };

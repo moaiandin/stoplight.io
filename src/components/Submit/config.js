@@ -13,6 +13,7 @@ export default {
       name: 'formId',
       label: 'Hubspot FormId',
       widget: 'string',
+      required: false,
     },
   ],
 };

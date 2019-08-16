@@ -28,8 +28,8 @@ team:
   - image: /images/faust_headshot.png
     name: Scott Faust
     role: Growth
-  - image: /images/deborah-garnel-headshot.jpeg
-    name: Deborah Garnel 
+  - image: /images/deborah-garnel-headshot.jpg
+    name: Deborah Garnel
     role: SDET
   - image: /images/hilton_headshot.png
     name: William Hilton
@@ -85,7 +85,7 @@ team:
   - image: /images/mateusz_wit_headshot.png
     name: Mateusz Wit
     role: Software Engineer
-  - image: /images/harrison-yeager-headshot.jpeg
+  - image: /images/harrison-yeager-headshot.jpg
     name: Harrison Yeager
     role: Ops
 businesses:

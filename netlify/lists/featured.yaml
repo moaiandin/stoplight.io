@@ -20,10 +20,10 @@ tabs:
 actionBar:
   ctas:
     - href: 'https://stoplight.io/demo/'
-      name: Request a Demo
+      title: Request a Demo
       outlined: true
     - href: 'https://next.stoplight.io/'
-      name: Create a Free Account
+      title: Create a Free Account
   enabled: true
 meta:
   favicon: /images/mark_light_bg.png

@@ -30,7 +30,9 @@ export const ActionBar: React.FunctionComponent<IActionBar> = withSiteData(props
       >
         {text && (
           <div
-            className={cn('flex flex-1 font-bold text-lg text-grey-darker', { 'pb-6 justify-center': ctas.length > 2 })}
+            className={cn('flex flex-1 font-bold text-lg text-grey-darker', {
+              'pb-6 justify-center': ctas && ctas.length > 2,
+            })}
           >
             {text}
           </div>

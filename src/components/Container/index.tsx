@@ -1,7 +1,7 @@
 import cn from 'classnames';
 import * as React from 'react';
 
-import { CallToAction, ICallToAction } from 'src/components/CallToAction';
+import { CallToAction, ICallToAction } from '../CallToAction';
 
 export interface IContainer {
   className?: string;
@@ -18,7 +18,11 @@ export const Container: React.FunctionComponent<IContainer> = ({ className, chil
 
       {children}
 
-      {cta && <CallToAction className="mt-24 md:mt-14 text-center" {...cta} />}
+      {cta && (
+        <div className="mt-24 md:mt-14 flex justify-center">
+          <CallToAction {...cta} />
+        </div>
+      )}
     </div>
   );
 };

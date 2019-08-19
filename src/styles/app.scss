@@ -4,11 +4,6 @@
 
 html,
 body {
-  font-size: 13px;
-}
-
-body {
-  font-family: 'open sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 14px;
   color: #3f4a66;
   line-height: 1.5;
@@ -20,8 +15,9 @@ button {
   border-radius: 3px;
 }
 
-h1 {
-  font-size: 30px;
+h1,
+h2 {
+  font-weight: 800;
 }
 
 a,
@@ -1161,4 +1157,45 @@ pre.line-numbers > code {
   position: absolute;
   top: 0;
   left: 0;
+}
+
+.HeaderPopover {
+  animation: 0.15s growIn;
+  animation-fill-mode: forwards;
+
+  &__caret {
+    animation: 0.15s growUp;
+    animation-delay: 0.1s;
+    animation-fill-mode: forwards;
+    position: absolute;
+    left: 50%;
+    opacity: 0;
+    margin-left: -11px;
+
+    svg {
+      font-size: 36px;
+    }
+  }
+}
+
+@keyframes growUp {
+  0% {
+    opacity: 0;
+    bottom: -50px;
+  }
+  100% {
+    opacity: 100;
+    bottom: -31px;
+  }
+}
+
+@keyframes growIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.92);
+  }
+  100% {
+    opacity: 100;
+    transform: scale(1);
+  }
 }

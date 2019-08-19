@@ -1,6 +1,7 @@
 import * as React from 'react';
+
+import { Icon } from '../Icon';
 import { Section } from '../Section';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export const G2Widget = () => {
   React.useEffect(() => {
@@ -10,11 +11,19 @@ export const G2Widget = () => {
         : (m, c) => window.attachEvent('on' + m, c);
 
       let r = function(e) {
-        if (e.origin !== 'https://www.g2.com') return;
+        if (e.origin !== 'https://www.g2.com') {
+          return;
+        }
+
         const element = document.getElementById('g2-crowd-widget-testimonial-13191');
-        if (element) element.style.height = e.data;
+        if (element) {
+          element.style.height = e.data;
+        }
       };
-      r = function() {};
+
+      r = function() {
+        // noop
+      };
 
       on('message', r);
     };
@@ -38,7 +47,7 @@ export const G2Widget = () => {
           href={`https://www.g2.com/products/stoplight/reviews?utm_campaign=testimonials_embed&amp;utm_medium=testimonials&amp;utm_source=Stoplight`}
         >
           Read More Stoplight Reviews
-          <FontAwesomeIcon icon={['fas', 'arrow-right']} className="ml-3 mt-2" />
+          <Icon icon={['fad', 'arrow-right']} className="ml-3 mt-2" />
         </a>
 
         <iframe
@@ -48,7 +57,7 @@ export const G2Widget = () => {
           src="https://www.g2.com/products/stoplight/testimonials/13191.embed"
           style={{ width: '100%', minHeight: '100%', overflow: 'hidden' }}
           width="100%"
-        ></iframe>
+        />
       </div>
     </Section>
   );

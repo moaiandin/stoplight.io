@@ -1,9 +1,9 @@
-import { IconProp } from '@fortawesome/fontawesome-svg-core';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import * as React from 'react';
 import { withSiteData } from 'react-static';
-import { Image } from 'src/components/Image';
-import { Link } from 'src/components/Link';
+
+import { Icon, IconProp } from '../Icon';
+import { Image } from '../Image';
+import { Link } from '../Link';
 
 interface IFooterColumnLink {
   title: string;
@@ -101,7 +101,7 @@ export const Footer: React.FunctionComponent<{ footer: IFooter }> = ({ footer })
               {social.map((link, index) => {
                 const elems = [
                   <Link key={index} to={link.href} className="text-grey hover:text-grey-lighter">
-                    <FontAwesomeIcon icon={link.icon} size="lg" />
+                    <Icon icon={link.icon} size="lg" />
                   </Link>,
                 ];
 

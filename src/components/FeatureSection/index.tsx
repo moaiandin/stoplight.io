@@ -1,15 +1,14 @@
 import cn from 'classnames';
 import * as React from 'react';
 
-import { Button, IButton } from 'src/components/Button';
-import { Container } from 'src/components/Container';
-import { Link } from 'src/components/Link';
-import { ISection, Section } from 'src/components/Section';
-
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { ActionBar, IActionBar } from 'src/components/ActionBar';
-import { Image } from 'src/components/Image';
-import { slugify } from 'src/utils/slugify';
+import { slugify } from '../../utils/slugify';
+import { ActionBar, IActionBar } from '../ActionBar';
+import { Button, IButton } from '../Button';
+import { Container } from '../Container';
+import { Icon } from '../Icon';
+import { Image } from '../Image';
+import { Link } from '../Link';
+import { ISection, Section } from '../Section';
 
 export interface IFeature {
   title: string;
@@ -101,7 +100,7 @@ export const FeatureSection: React.FunctionComponent<IFeatureSection> = ({
               href={`#${slugify(feature.title)}`}
               className="flex items-center justify-center p-4 hover:bg-darken-50 text-grey-darker mx-4 rounded font-semibold"
             >
-              <FontAwesomeIcon className="text-green text-lg" icon={['fas', 'check-circle']} />
+              <Icon className="text-green text-lg" icon={['fad', 'check-circle']} />
               <div className="ml-2">{feature.shortName}</div>
             </a>
           ))}

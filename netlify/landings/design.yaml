@@ -15,7 +15,7 @@ featureSection:
   actionBar:
     ctas:
       - href: 'https://next.stoplight.io/'
-        name: Get Started
+        title: Get Started
         color: green
     enabled: true
     text: Ready to Model and Design?

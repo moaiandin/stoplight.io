@@ -9,7 +9,7 @@ hero:
   short: true
   ctas:
     - href: '#demo'
-      name: Get a free demo
+      title: Book a Demo
 color: orange
 featureSection:
   features:

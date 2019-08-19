@@ -22,7 +22,7 @@ actionBar:
   enabled: true
   text: Sign up for the newsletter
   ctas:
-    - name: Sign up for the newsletter
+    - title: Sign up for the newsletter
       type: 'submit'
       submit:
         button:

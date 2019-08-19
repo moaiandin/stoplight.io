@@ -14,7 +14,7 @@ export type PopupTriggerRenderer = (
     isOver: boolean;
     showPopup: () => void;
     hidePopup: () => void;
-  }
+  },
 ) => any;
 
 export type PopupContentRenderer = (
@@ -24,7 +24,7 @@ export type PopupContentRenderer = (
     isOver: boolean;
     showPopup: () => void;
     hidePopup: () => void;
-  }
+  },
 ) => any;
 
 export interface IPopupPosition {
@@ -102,8 +102,8 @@ export class Popup extends React.PureComponent<IPopup, IPopupState> {
         {
           ...funcs,
           isOver: this._isOverTrigger,
-        }
-      )
+        },
+      ),
     );
 
     let style: object = {
@@ -139,10 +139,10 @@ export class Popup extends React.PureComponent<IPopup, IPopupState> {
               {
                 ...funcs,
                 isOver: this._isOverContent,
-              }
+              },
             )}
           </div>
-        </Portal>
+        </Portal>,
       );
     }
 
@@ -378,7 +378,7 @@ export class Popup extends React.PureComponent<IPopup, IPopupState> {
         left: 0,
         right: 0,
       },
-      this.props.offset || {}
+      this.props.offset || {},
     );
   }
 }

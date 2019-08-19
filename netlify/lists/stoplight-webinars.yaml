@@ -12,7 +12,7 @@ actionBar:
   ctas:
     - color: purple
       href: /video/subscribe
-      name: Subscribe
+      title: Subscribe
       outlined: true
   enabled: true
   text: Subscribe to Stoplight Webinars

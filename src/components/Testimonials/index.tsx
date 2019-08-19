@@ -1,10 +1,10 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import * as React from 'react';
 
-import { ActionBar, IActionBar } from 'src/components/ActionBar';
-import { Container } from 'src/components/Container';
-import { Image } from 'src/components/Image';
-import { Section } from 'src/components/Section';
+import { ActionBar, IActionBar } from '../ActionBar';
+import { Container } from '../Container';
+import { Icon } from '../Icon';
+import { Image } from '../Image';
+import { Section } from '../Section';
 
 export interface ITestimonial {
   image: string;
@@ -26,14 +26,10 @@ export const Testimonial: React.FunctionComponent<ITestimonial> = ({ image, quot
     <div className="w-1/2 sm:w-full flex px-14 pb-20 sm:px-0 sm:px-10">
       <div className="testimonial-card max-w-lg w-full lg:flex shadow-lg mx-auto items-stretch bg-white relative">
         {!image && (
-          <FontAwesomeIcon
-            className="absolute text-grey h-10"
-            style={{ top: -15, left: -15, fontSize: 30 }}
-            icon="quote-left"
-          />
+          <Icon className="absolute text-grey h-10" style={{ top: -15, left: -15, fontSize: 30 }} icon="quote-left" />
         )}
         {!image && (
-          <FontAwesomeIcon
+          <Icon
             className="absolute text-grey h-10"
             style={{ bottom: -15, right: -15, fontSize: 30 }}
             icon="quote-right"

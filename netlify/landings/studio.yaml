@@ -12,44 +12,41 @@ hero:
     allows you to prototype and share your API within minutes
   title: 'Stoplight Studio'
   ctas:
-    - name: Try the Web Version
+    - title: Try the Web Version
       href: 'https://stoplight.io/p/studio'
-      icon: ['fas', 'cloud']
+      icon: ['fad', 'cloud']
       color: purple
-    - name: Download for Mac
-      download:
-        href: 'https://github.com/stoplightio/studio/releases/download/v1.0.0/Stoplight-Studio-1.0.0.dmg'
-        icon: ['fab', 'apple']
-        color: green
-        filename: studio-mac
-    - name: Download for Windows
-      download:
-        href: 'https://github.com/stoplightio/studio/releases/download/v1.0.0/Stoplight-Studio-Setup-1.0.0.exe'
-        icon: ['fab', 'windows']
-        color: green
-        filename: studio-windows
-    - name: Download for Linux
-      download:
-        href: 'https://github.com/stoplightio/studio/releases/download/v1.0.0/Stoplight-Studio-1.0.0.AppImage'
-        icon: ['fab', 'linux']
-        color: green
-        filename: studio-linux
+    - title: Download for Mac
+      href: 'https://github.com/stoplightio/studio/releases/download/v1.0.0/Stoplight-Studio-1.0.0.dmg'
+      icon: ['fab', 'apple']
+      color: green
+      filename: studio-mac
+    - title: Download for Windows
+      href: 'https://github.com/stoplightio/studio/releases/download/v1.0.0/Stoplight-Studio-Setup-1.0.0.exe'
+      icon: ['fab', 'windows']
+      color: green
+      filename: studio-windows
+    - title: Download for Linux
+      href: 'https://github.com/stoplightio/studio/releases/download/v1.0.0/Stoplight-Studio-1.0.0.AppImage'
+      icon: ['fab', 'linux']
+      color: green
+      filename: studio-linux
 featureSection:
   actionBar:
     ctas:
-      - name: Download for Mac
+      - title: Download for Mac
         download:
           href: 'https://github.com/stoplightio/studio/releases/download/v1.0.0/Stoplight-Studio-1.0.0.dmg'
           icon: ['fab', 'apple']
           color: green
           filename: studio-mac
-      - name: Download for Windows
+      - title: Download for Windows
         download:
           href: 'https://github.com/stoplightio/studio/releases/download/v1.0.0/Stoplight-Studio-Setup-1.0.0.exe'
           icon: ['fab', 'windows']
           color: green
           filename: studio-windows
-      - name: Download for Linux
+      - title: Download for Linux
         download:
           href: 'https://github.com/stoplightio/studio/releases/download/v1.0.0/Stoplight-Studio-1.0.0.AppImage'
           icon: ['fab', 'linux']

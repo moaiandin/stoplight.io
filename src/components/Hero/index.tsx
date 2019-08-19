@@ -7,8 +7,7 @@ import { Image } from 'src/components/Image';
 import { Link } from 'src/components/Link';
 import { ITab, Tabs } from 'src/components/Tabs';
 import { HeroAuthor, IHeroAuthor } from './HeroAuthor';
-import { HeroButton, IHeroButton } from './HeroButton';
-import { HeroCard, IHeroCard } from './HeroCard';
+import { IHeroCard } from './HeroCard';
 import { HeroImage, IHeroImage } from './HeroImage';
 
 let Particles;
@@ -40,6 +39,7 @@ export interface IHero {
   bgColor?: string;
   contentBgImage?: string;
   contentBgOverlay?: string;
+  greyBg?: boolean;
   aligned?: 'center' | 'right' | 'left';
   ctas?: ICallToAction[];
   cards?: IHeroCard[];
@@ -59,12 +59,14 @@ export const Hero: React.FunctionComponent<IHero> = ({
   subtitle,
   author,
   ctas,
-  bgColor = 'black',
+  bgColor,
   contentBgImage,
+  greyBg,
   particles,
   image,
   skew,
   containerClassName,
+  children,
   cards = [],
   tabs = [],
   titleImage,
@@ -80,52 +82,27 @@ export const Hero: React.FunctionComponent<IHero> = ({
     aligned = 'left';
   }
 
+  const hasBottomContent = !children && (!heroTabs || !heroTabs.length);
+
   return (
     <React.Fragment>
-      <div
-        key="main"
-        className={cn('relative', {
-          'overflow-hidden': skew === 'rounded',
-        })}
-      >
+      <div key="main" className={cn('relative')}>
         <div className={cn(headerHeightClass, 'w-100')} />
-
-        <Image
-          src={particles ? '' : '/images/patterns/diagonal-stripes-sm.png'}
-          className={cn('absolute z-0 border-4 border-lighten-300 overflow-hidden', {
-            [`bg-${bgColor}`]: bgColor,
-          })}
-          style={{
-            bottom: image ? -150 : cards.length ? 50 : 0,
-            width: skew === 'rounded' ? '200%' : 'auto',
-            top: skew === 'rounded' ? '-50%' : -300,
-            left: skew === 'rounded' ? '-50%' : 0,
-            right: skew === 'rounded' ? '-50%' : 0,
-            borderRadius: skew === 'rounded' ? '50%' : '0',
-            transform: skew && skew !== 'rounded' ? `skew(0, ${skew})` : undefined,
-          }}
-          useDiv
-        />
-
-        {contentBgImage && (
-          <div
-            className="absolute pin z-0 bg-cover bg-no-repeat bg-center"
-            style={{
-              backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${contentBgImage})`,
-            }}
-          />
-        )}
 
         <div
           className={cn(
             containerClassName,
             `container text-white flex flex-col pt-32 md:pt-24 relative z-5 text-${aligned} relative`,
+            {
+              'pb-24': hasBottomContent && !skew,
+              'pb-40': hasBottomContent && skew,
+            },
           )}
           style={contentBgImage ? { textShadow: `rgba(0, 0, 0, 0.5) 1px 1px 0px` } : undefined}
         >
           <div className="flex">
             <div
-              className={cn('flex-1 mb-20', titleClassName, {
+              className={cn('flex-1', titleClassName, {
                 'mx-auto': !aligned || aligned === 'center',
                 'ml-auto w-2/3 md:w-full': aligned === 'right',
                 'mr-auto w-2/3 md:w-full': aligned === 'left',
@@ -146,11 +123,11 @@ export const Hero: React.FunctionComponent<IHero> = ({
 
               {pageName && <div className="uppercase text-white opacity-85 font-semibold mb-4">{pageName}</div>}
 
-              <h1>{title}</h1>
+              <h1 className="text-5xl">{title}</h1>
 
               {subtitle && (
                 <div
-                  className={cn('font-default opacity-85 text-xl max-w-lg mt-4 md:mt-6', {
+                  className={cn('font-default opacity-75 text-2xl max-w-xl mt-3 md:mt-4', {
                     'mx-auto': !aligned || aligned === 'center',
                     'ml-auto': aligned === 'right',
                     'mr-auto': aligned === 'left',
@@ -176,7 +153,7 @@ export const Hero: React.FunctionComponent<IHero> = ({
 
           {ctas && (
             <div
-              className={cn('flex items-center justify-center md:flex-col md:pb-4 pb-16 whitespace-no-wrap', {
+              className={cn('flex items-center justify-center md:flex-col mt-10 whitespace-no-wrap', {
                 '-mx-40': ctas.length > 2,
                 'mx-auto md:mx-auto': aligned === 'center',
                 'ml-auto': aligned === 'right',
@@ -188,17 +165,48 @@ export const Hero: React.FunctionComponent<IHero> = ({
               ))}
             </div>
           )}
-
-          {cards.length ? (
-            <div className="flex mx-auto md:flex-col md:pt-16">
-              {cards.map((card, i) => (
-                <HeroCard key={i} index={i + 1} {...card} />
-              ))}
-            </div>
-          ) : null}
         </div>
 
-        {heroTabs.length > 0 ? <Tabs tabs={heroTabs} /> : null}
+        {children}
+
+        {heroTabs.length > 0 ? <Tabs tabs={heroTabs} className="pt-24 sm:m-0 sm:p-0" /> : null}
+
+        <div
+          className={cn('absolute pin overflow-hidden', {
+            'bg-grey-lightest': greyBg,
+          })}
+        >
+          <Image
+            src={particles ? '' : '/images/patterns/diagonal-stripes-sm.png'}
+            className={cn('absolute z-0 overflow-hidden', {
+              [`bg-${bgColor}`]: bgColor,
+              'border-b-4 border-lighten-300': !skew,
+            })}
+            style={{
+              // TODO: should depend on height of screen
+              // NOTE: using `bottom` instead of explicit height leads to blurry border rendering in chrome for whatever reason
+              width: skew === 'rounded' ? '200%' : 'auto',
+              top: -100,
+              bottom: skew && !hasBottomContent ? 50 : 0,
+              left: skew === 'rounded' ? '-50%' : 0,
+              right: skew === 'rounded' ? '-50%' : 0,
+              borderRadius: skew === 'rounded' ? '50%' : '0',
+              transform: skew && skew !== 'rounded' ? `skew(0, ${skew})` : undefined,
+              background: bgColor ? undefined : 'radial-gradient(circle, #0f0c2f 0%, #080515 100%)',
+              borderBottom: skew ? '10px solid #e0eef9' : undefined,
+            }}
+            useDiv
+          />
+        </div>
+
+        {contentBgImage && (
+          <div
+            className="absolute pin z-0 bg-cover bg-no-repeat bg-center"
+            style={{
+              backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${contentBgImage})`,
+            }}
+          />
+        )}
 
         {particles && (
           <div className="absolute z-1 sm:hidden" style={{ left: 0, top: -100, right: 0, bottom: -100 }}>
@@ -228,7 +236,7 @@ export const Hero: React.FunctionComponent<IHero> = ({
                     },
                     move: {
                       random: true,
-                      speed: 1,
+                      speed: 1.2,
                       direction: 'top',
                       out_mode: 'out',
                     },

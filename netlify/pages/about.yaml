@@ -1,6 +1,7 @@
 path: /about
 hero:
   particles: true
+  skew: rounded
   subtitle: >-
     Headquartered in Austin, Texas, our team hails from all over the United
     States and Europe, united by their passion for APIs. From skeeball champions
@@ -16,9 +17,6 @@ team:
   - image: /images/bachi-collin-1-.jpg
     name: Collin Bachi
     role: Devops Engineer
-  - image: /images/barnett_headshot.png
-    name: Taylor Barnett
-    role: Community Engineer
   - image: /images/cassera_headshot.png
     name: Nicholas Cassera
     role: Software Engineer
@@ -154,7 +152,7 @@ pressSection:
   cta:
     color: grey-darkest
     href: 'https://press.stoplight.io/company'
-    name: More Press & Assets
+    title: More Press & Assets
   title: In The Press
 collage:
   images:
@@ -174,7 +172,7 @@ actionBar:
   ctas:
     - color: accent
       href: 'https://angel.co/company/stoplight/jobs'
-      name: Learn More
+      title: Learn More
   enabled: true
   text: Want to join the team? We're hiring!
 meta:

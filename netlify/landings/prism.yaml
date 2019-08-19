@@ -1,4 +1,4 @@
-path: /prism
+path: /open-source/prism
 title: Prism - Open Source HTTP Mock Server | Stoplight
 color: purple-darker
 relatedTags:
@@ -9,22 +9,22 @@ hero:
   ctas:
     - color: indigo
       href: 'https://youtube.com/watch?v=nZM26knV_ec'
-      name: Watch the video
-      icon: ['fas', 'video']
+      title: Watch the video
+      icon: ['fad', 'video']
       type: video
     - color: indigo
       href: 'https://stoplight.io/p/docs/gh/stoplightio/prism'
-      name: Read the Documentation
-      icon: ['fas', 'book-open']
+      title: Read the Documentation
+      icon: ['fad', 'book-open']
     - color: indigo
       href: 'https://github.com/stoplightio/prism'
-      name: GitHub
+      title: GitHub
       icon: ['fab', 'github']
 featureSection:
   actionBar:
     ctas:
       - href: 'https://stoplight.io/p/docs/gh/stoplightio/prism/docs/getting-started/installation.md'
-        name: Get Started with Prism
+        title: Get Started with Prism
     enabled: true
     text: Do you want to mock your API in minutes?
 

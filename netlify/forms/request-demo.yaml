@@ -11,7 +11,7 @@ collage:
   cta:
     color: green
     href: /case-studies
-    name: Read the Case Studies
+    title: Read the Case Studies
   images:
     - alt: EA
       src: /images/ea.png

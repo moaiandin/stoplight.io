@@ -3,14 +3,14 @@ title: Stoplight Enterprise
 color: grey-darker
 hero:
   subtitle: >-
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
     et dolore magna aliqua
   title: Stoplight Enterprise
   image:
     alt: Enterprise
     src: /images/design_header.png
   ctas:
-    - name: Book a Demo
+    - title: Book a Demo
       type: 'submit'
       submit:
         button:
@@ -24,7 +24,7 @@ hero:
 hubspot:
   title: Book a Demo
   description: >-
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
   formId: 7ae2bb42-67a6-4ee3-9ac5-ff21d87812ea
   portalId: '4892910'
@@ -58,7 +58,7 @@ featureSection:
     enabled: true
     text: Want to learn more?
     ctas:
-      - name: Book a Demo
+      - title: Book a Demo
         type: 'submit'
         submit:
           button:

@@ -17,7 +17,7 @@ collage:
   title: 'Thousands of companies use Stoplight to streamline
 their API & Microservices workflow'
   cta:
-    name: Read the Case Studies
+    title: Read the Case Studies
     href: /case-studies
     color: green
   images:

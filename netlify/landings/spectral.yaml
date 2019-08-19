@@ -1,4 +1,4 @@
-path: /spectral
+path: /open-source/spectral
 title: Spectral - Open Source API Description Linter | Stoplight
 color: purple-darker
 hasSandbox: true
@@ -10,22 +10,22 @@ hero:
   ctas:
     - color: indigo
       href: 'https://youtube.com/watch?v=IJtFI9mkZ8Y'
-      name: Watch the video
-      icon: ['fas', 'video']
+      title: Watch the video
+      icon: ['fad', 'video']
       type: video
     - color: indigo
       href: 'https://stoplight.io/p/docs/gh/stoplightio/spectral'
-      name: Read the Documentation
-      icon: ['fas', 'book-open']
+      title: Read the Documentation
+      icon: ['fad', 'book-open']
     - color: indigo
       href: 'https://github.com/stoplightio/spectral'
-      name: GitHub
+      title: GitHub
       icon: ['fab', 'github']
 featureSection:
   actionBar:
     ctas:
       - href: 'https://stoplight.io/p/docs/gh/stoplightio/spectral/docs/getting-started/installation.md'
-        name: Get Started with Spectral
+        title: Get Started with Spectral
     enabled: true
     text: Do you want feedback on your API descriptions right now?
 

@@ -17,7 +17,7 @@ featureSection:
     ctas:
       - color: accent
         href: 'https://next.stoplight.io/'
-        name: Get Started Now
+        title: Get Started Now
     enabled: true
     text: 'Ready to Publish? '
   description: >-

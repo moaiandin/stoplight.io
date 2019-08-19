@@ -1,52 +1,43 @@
 hero:
-  bgColor: black
+  particles: true
+  skew: rounded
+  title: The best APIs start with Stoplight
+  subtitle: >-
+    The API design management platform powering the world’s leading API first companies.
   cards:
     - bgColor: blue
       href: /design
-      icon:
-        name: paint-brush
-        style: solid
+      icon: ['fad', 'paint-brush']
       subtitle: Use our visual designer to manage OpenAPI (Swagger) 10x faster
       title: Design
     - bgColor: green
       href: /documentation
-      icon:
-        name: book
-        style: solid
+      icon: ['fad', 'book']
       subtitle: 'Increase customer adoption with beautiful, functional documentation'
       title: Documentation
     - bgColor: orange
       href: /testing
-      icon:
-        name: flask
-        style: solid
+      icon: ['fad', 'flask']
       subtitle: 'Leverage OpenAPI to test, automate, and debug web APIs'
       title: Testing
     - bgColor: grey-darkest
       href: /mocking
-      icon:
-        name: server
-        style: solid
+      icon: ['fad', 'server']
       subtitle: 'Parallelize development with one click mock servers, powered by Prism'
       title: Mocking
   ctas:
-    - href: 'https://next.stoplight.io/'
-      name: Start Free Trial
-    - href: 'https://youtube.com/watch?v=iHzFoc4ls8E'
-      name: Watch Video
-      type: video
-      icon: ['fas', 'video']
-  particles: true
-  skew: rounded
-  subtitle: >-
-    Stoplight leverages your OpenAPI documents to drive the entire API
-    development process
-  title: 'Best in class API Design, Docs, Mocking, and Testing'
+    - title: Get Started
+      href: 'https://next.stoplight.io/'
+    - type: video
+      title: Quick Overview
+      outlined: true
+      href: 'https://youtube.com/watch?v=iHzFoc4ls8E'
+      color: white
 collage:
   cta:
     color: green
     href: /case-studies
-    name: Read the Case Studies
+    title: Read the Case Studies
   images:
     - alt: EA
       src: /images/ea.png
@@ -70,7 +61,7 @@ collage:
 imageCallout:
   cta:
     href: 'https://next.stoplight.io/'
-    name: Get Started Now
+    title: Get Started Now
   description: >-
     Create OpenAPI Specifications (formerly known as Swagger) 10x faster with no
     specialized knowledge required. Combine OpenAPI documents with Markdown to
@@ -83,7 +74,7 @@ imageCallout:
 gartnerCoolVendor:
   cta:
     href: '/gartner-cool-vendor/'
-    name: Learn More
+    title: Learn More
   description: >-
     Stoplight is cool because it enables enterprises to scale API Design.
     Learn more about collaborative API Design in this Gartner report.
@@ -94,11 +85,11 @@ testimonials:
     ctas:
       - color: purple
         href: /demo
-        name: Request a Demo
+        title: Book a Demo
         outlined: true
       - color: purple
         href: 'https://next.stoplight.io'
-        name: Create a Free Account
+        title: Create a Free Account
     enabled: true
     text: Getting started is easy. Be up and running in minutes.
   testimonials:

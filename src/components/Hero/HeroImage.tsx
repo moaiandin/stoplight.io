@@ -1,9 +1,9 @@
 import cn from 'classnames';
 import * as React from 'react';
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { Container } from 'src/components/Container';
-import { IImage, Image } from 'src/components/Image';
+import { Container } from '../Container';
+import { Icon } from '../Icon';
+import { IImage, Image } from '../Image';
 import { VideoPlayerModal } from '../VideoPlayerModal';
 
 export interface IHeroImage extends IImage {
@@ -22,7 +22,7 @@ export const HeroImage: React.FunctionComponent<IHeroImage> = ({ className, vide
           <VideoPlayerModal href={video}>
             {({ onClick }) => (
               <div className="absolute pin flex items-center justify-center cursor-pointer" onClick={onClick}>
-                <FontAwesomeIcon icon="play-circle" size={'5x'} />
+                <Icon icon="play-circle" size="5x" />
               </div>
             )}
           </VideoPlayerModal>

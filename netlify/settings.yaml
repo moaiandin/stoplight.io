@@ -1,9 +1,9 @@
 banners:
   - ends: 1566295331394
     markdown: >-
-      **Announcing Free <u>**[**Stoplight Studio**](https://stoplight.io/studio/)**</u> to Visually Design OpenAPI v3 Docs! <u class='ml-1'>**[**Try Now**](https://stoplight.io/studio/)**</u>**
+      Announcing Stoplight Studio, our most powerful API Designer yet, now with OpenAPI v3 support! <u class='ml-1'>**[Learn More](https://stoplight.io/studio)**</u>
     starts: 1565815331394
-    hideOnPath: '/studio'
+    hideOnPath: ['/home.', '/studio']
 info:
   address:
     addressLocality: Austin
@@ -20,152 +20,103 @@ info:
 header:
   items:
     - links:
-        - href: /design/
-          icon:
-            - fas
-            - paint-brush
+        - href: 'http://docs.stoplight.io/'
+          icon: ['fad', 'book-open']
+          subtitle: Learn how to use Stoplight
+          title: Help Center
+          titleColor: blue
+        - href: /blog
+          icon: ['fad', 'rss']
+          subtitle: Stay up to date on Stoplight
+          title: Blog
+          titleColor: green
+        - href: 'https://community.stoplight.io/'
+          icon: ['fad', 'users']
+          subtitle: Join the Stoplight community
+          title: Forum
+          titleColor: orange
+        - href: /case-studies
+          icon: ['fad', 'graduation-cap']
+          title: Case Studies
+          titleColor: indigo
+        - href: /video
+          icon: ['fad', 'video']
+          subtitle: Learn how to design with Stoplight
+          title: Webinars
+          titleColor: yellow
+        - divider: true
+        - href: /api-design-guide/basics
+          icon: ['fad', 'paint-brush']
+          subtitle: Learn API Design Best Practices
+          title: API Design Guide
+          titleColor: green
+        - href: /mock-api-guide/basics
+          icon: ['fad', 'database']
+          subtitle: Create mock API servers
+          title: API Mocking Guide
+          titleColor: blue
+        - href: /api-documentation-guide/basics
+          icon: ['fad', 'bookmark']
+          subtitle: Learn API Documentation Best Practices
+          title: API Documentation Guide
+          titleColor: purple
+      title: Resources
+      width: 300
+    - href: /enterprise
+      title: Enterprise
+    - links:
+        - href: /design
+          icon: ['fad', 'paint-brush']
           subtitle: Use our visual designer to manage OpenAPI (Swagger) 10x faster.
           title: Design
           titleColor: blue
-        - href: /documentation/
-          icon:
-            - fas
-            - book
+        - href: /documentation
+          icon: ['fad', 'book-open']
           subtitle: 'Increase customer adoption with beautiful, functional documentation.'
           title: Documentation
           titleColor: green
-        - href: /testing/
-          icon:
-            - fas
-            - flask
-          subtitle: 'Leverage OpenAPI to test, automate, and debug web APIs.'
-          title: Testing
-          titleColor: orange
-        - href: /mocking/
-          icon:
-            - fas
-            - server
+        - href: /mocking
+          icon: ['fad', 'database']
           subtitle: >-
             Parallelize development with one click mock servers, powered by
             OpenAPI.
           title: Mocking
-          titleColor: grey-darkest
-        - href: /spectral
-          icon:
-            - fas
-            - terminal
-          subtitle: Open source API description linter
-          title: Spectral
           titleColor: purple
-        - href: /prism
-          icon:
-            - fas
-            - server
-          subtitle: Open source HTTP Mock Server
-          title: Prism
-          titleColor: red
-      title: Products
-      width: 400
-    - links:
-        - href: 'http://docs.stoplight.io/'
-          icon:
-            - fas
-            - book
-          subtitle: Learn how to use Stoplight
-          title: Help Center
-          titleColor: blue
-        - href: 'https://community.stoplight.io/'
-          icon:
-            - fas
-            - users
-          subtitle: Join the Stoplight community
-          title: Forum
-          titleColor: green
-        - href: /blog/
-          icon:
-            - fas
-            - rss
-          subtitle: Stay up to date on Stoplight
-          title: Blog
-          titleColor: orange
-        - href: /video
-          icon:
-            - fas
-            - video
-          subtitle: Learn how to design with Stoplight
-          title: Webinars
-          titleColor: purple
-        - href: /api-design-guide/basics/
-          icon:
-            - fas
-            - book-open
-          subtitle: Learn API Design Best Practices
-          title: API Design Guide
-          titleColor: blue
-        - href: /api-documentation-guide/basics/
-          icon:
-            - fas
-            - bookmark
-          subtitle: Learn API Documentation Best Practices
-          title: API Documentation Guide
-          titleColor: green
-        - href: /mock-api-guide/basics/
-          icon:
-            - fas
-            - bolt
-          subtitle: Create mock API servers
-          title: API Mocking Guide
-          titleColor: orange
-      title: Resources
-      width: 400
-    - links:
-        - href: /about/
-          icon:
-            - fas
-            - users
-          title: About Us
-        - href: /case-studies/
-          icon:
-            - fas
-            - graduation-cap
-          title: Case Studies
-      title: Company
+      title: Use Cases
       width: 250
-    - href: /pricing/
-      title: Pricing
-    - href: /demo/
+    - href: /demo
       isButton: true
-      title: Request Demo
-    - altBg: green
-      altTitle: Sign Up FREE
-      hideMobile: true
-      href: 'https://next.stoplight.io'
-      icon:
-        - fas
-        - arrow-right
-      isButton: true
-      title: Sign In
+      title: Book a Demo
+    # - altBg: green
+    #   altTitle: Sign Up FREE
+    #   hideMobile: true
+    #   href: 'https://next.stoplight.io'
+    #   icon:
+    #     - fas
+    #     - arrow-right
+    #   isButton: true
+    #   title: Sign In
 actionBar:
   ctas:
     - color: purple
       href: /demo
-      name: Request a Demo
+      title: Book a Demo
       outlined: true
     - color: purple
       href: 'https://next.stoplight.io'
-      name: Create a Free Account
+      title: Create a Free Account
   enabled: false
   text: Getting started is easy. Be up and running in minutes.
 footer:
   columns:
     - links:
-        - href: /design/
+        - href: /design
           title: Design
-        - href: /documentation/
+        - href: /documentation
           title: Documentation
-        - href: /testing/
+        - href: /testing
           title: Testing
-        - href: /mocking/
+        - href: /mocking
           title: Mocking
       title: Products
     - links:
@@ -173,41 +124,35 @@ footer:
           title: Help Center
         - href: 'https://community.stoplight.io'
           title: 'Forum '
-        - href: /blog/
+        - href: /blog
           title: Blog
         - href: 'https://press.stoplight.io'
           title: Press
       title: Resources
     - links:
-        - href: /about/
+        - href: /about
           title: About Us
-        - href: /case-studies/
+        - href: /case-studies
           title: Case Studies
-        - href: /contact-us/
+        - href: /contact-us
           title: Contact Us
         - href: 'https://app.stoplight.io/login'
           title: Classic Login
       title: Company
   legal:
-    - href: /privacy/
+    - href: /privacy
       title: Privacy
-    - href: /terms/
+    - href: /terms
       title: Terms of Use
-    - href: /policy/
+    - href: /policy
       title: Policy
   social:
     - href: 'https://twitter.com/stoplightio'
-      icon:
-        - fab
-        - twitter
+      icon: ['fab', 'twitter']
     - href: 'https://www.linkedin.com/company/stoplight'
-      icon:
-        - fab
-        - linkedin
+      icon: ['fab', 'linkedin']
     - href: 'https://www.github.com/stoplightio'
-      icon:
-        - fab
-        - github
+      icon: ['fab', 'github']
 meta:
   description: API Design Management for Teams and Enterprise | Stoplight
   favicon: /favicons/favicon.ico

@@ -1,9 +1,9 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import cn from 'classnames';
 import * as React from 'react';
 
-import { Link } from 'src/components/Link';
-import { Portal } from 'src/components/Portal';
+import { Icon } from '../Icon';
+import { Link } from '../Link';
+import { Portal } from '../Portal';
 import { IHeaderItem } from './index';
 
 export interface IMobileHeader {
@@ -27,9 +27,9 @@ export class Mobile extends React.Component<IMobileHeader, IMobileHeaderState> {
     const buttons = other.filter(item => item.isButton);
 
     return (
-      <div className="hidden sm:flex flex-1 justify-end">
+      <div className="hidden md:flex flex-1 justify-end">
         <span onClick={() => this.setState({ showMenu: true })}>
-          <FontAwesomeIcon icon={['fas', 'bars']} className="cursor-pointer ml-3 text-white" size="2x" />
+          <Icon icon={['fad', 'bars']} className="cursor-pointer ml-3 text-white" size="2x" />
         </span>
 
         {showMenu && (
@@ -39,7 +39,7 @@ export class Mobile extends React.Component<IMobileHeader, IMobileHeaderState> {
                 <div className="px-6">
                   <div className="absolute pin-t pin-r p-4 flex items-center">
                     <span onClick={() => this.setState({ showMenu: false })}>
-                      <FontAwesomeIcon icon={['fas', 'times']} className="cursor-pointer text-grey" size="lg" />
+                      <Icon icon={['fad', 'times']} className="cursor-pointer text-grey" size="lg" />
                     </span>
                   </div>
 
@@ -53,7 +53,7 @@ export class Mobile extends React.Component<IMobileHeader, IMobileHeaderState> {
                             return (
                               <Link key={index} to={product.href} className="w-1/2 flex items-center text-black py-4">
                                 {product.icon && (
-                                  <FontAwesomeIcon
+                                  <Icon
                                     className={cn(product.titleColor && `text-${product.titleColor}`)}
                                     icon={product.icon}
                                   />

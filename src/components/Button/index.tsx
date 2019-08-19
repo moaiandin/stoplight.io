@@ -1,39 +1,43 @@
-import { IconProp } from '@fortawesome/fontawesome-svg-core';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import cn from 'classnames';
 import * as React from 'react';
-import { Link } from 'src/components/Link';
-import { VideoPlayerModal } from '../VideoPlayerModal';
+
+import { Icon, IconProp } from '../Icon';
+import { Link } from '../Link';
 
 export interface IButton {
-  href: string;
+  href?: string;
   title?: string;
   className?: string;
   color?: string;
   outlined?: boolean;
+  textColor?: string;
   shadow?: string;
   icon?: IconProp;
+  rightIcon?: IconProp;
   loading?: boolean;
   type?: 'link' | 'video';
   style?: object;
+  large?: boolean;
   download?: string;
-  onClick?: () => void;
+  onClick?: (e: any) => void;
 }
 
 export const Button: React.FunctionComponent<IButton> = ({
   className,
   color = 'purple',
-  shadow,
+  shadow = 'md',
   outlined,
   href,
   title,
   icon,
+  rightIcon,
   children,
   loading,
   type,
   style,
   download,
   onClick,
+  large,
 }) => {
   const linkComponent = (
     <Link
@@ -43,11 +47,14 @@ export const Button: React.FunctionComponent<IButton> = ({
         `border-${color}`,
         `hover:border-${color}-dark`,
         `focus:border-${color}-dark`,
-        `px-12 font-bold sm:w-full sm:mt-6 rounded-md py-2 flex justify-center select-none border-2 cursor-pointer`,
+        `font-bold sm:w-full rounded-lg inline-flex justify-center select-none border cursor-pointer`,
         {
+          'px-4 py-2': !large,
+          'px-8 py-3': large,
           [`bg-${color} hover:bg-${color}-dark text-white`]: !outlined,
-          [`text-${color}-dark hover:text-${color}-darker`]: outlined,
+          [`text-${color} hover:text-${color}-dark opacity-85 hover:opacity-100`]: outlined,
           [`shadow-${shadow}`]: shadow,
+          'text-lg': large,
         },
       )}
       onClick={onClick}
@@ -56,13 +63,20 @@ export const Button: React.FunctionComponent<IButton> = ({
       download={download}
     >
       {loading ? (
-        <FontAwesomeIcon icon={['fas', 'spinner']} size="lg" />
+        <Icon icon="spinner" />
       ) : (
         <>
-          <div>{children || title}</div>
           {icon && (
-            <div className="ml-2">
-              <FontAwesomeIcon icon={icon} size="lg" />
+            <div className="mr-3">
+              <Icon icon={icon} />
+            </div>
+          )}
+
+          <div>{children || title}</div>
+
+          {rightIcon && (
+            <div className="ml-4">
+              <Icon icon={rightIcon} />
             </div>
           )}
         </>
@@ -70,5 +84,5 @@ export const Button: React.FunctionComponent<IButton> = ({
     </Link>
   );
 
-  return type === 'video' ? <VideoPlayerModal href={href} cta={linkComponent} /> : linkComponent;
+  return linkComponent;
 };

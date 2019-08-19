@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { withRouteData } from 'react-static';
 
+import { ProductCards } from 'src/components/ProductCard';
 import { Collage, ICollage } from '../../components/Collage';
 import { GartnerCoolVendor, IGartnerCoolVendor } from '../../components/GartnerCoolVendor';
 import { Hero, IHero } from '../../components/Hero';
@@ -27,7 +28,9 @@ export const Home: React.FunctionComponent<IHome> = ({
 }) => {
   return (
     <Layout>
-      <Hero bgColor={color} {...hero} />
+      <Hero bgColor={color} {...hero}>
+        <ProductCards className="pt-32" />
+      </Hero>
 
       <ImageCallout {...imageCallout} />
 

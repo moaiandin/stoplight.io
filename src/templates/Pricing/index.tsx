@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { withRouteData } from 'react-static';
 import { DocPlans, IDocPlans } from '../../components/DocPlans';
+import { G2Widget } from '../../components/G2Widget';
 import { Hero, IHero } from '../../components/Hero';
 import { Layout } from '../../components/Layout';
 import { IPricingPlan, PricingPlans } from '../../components/PricingPlans';
@@ -17,7 +18,8 @@ export const Pricing: React.FunctionComponent<IPricing> = ({ color, hero, plans,
     <Layout>
       <Hero bgColor={color} {...hero} skew="7deg" containerClassName="pb-64" />
       <PricingPlans color={color} plans={plans} />
-      <DocPlans {...docPlans} />ƒ
+      <DocPlans {...docPlans} />
+      <G2Widget />
     </Layout>
   );
 };

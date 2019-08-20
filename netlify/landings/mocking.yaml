@@ -12,10 +12,11 @@ hero:
       title: Try Out Mocking in Stoplight Studio
 featureSection:
   actionBar:
-    href: '/studio'
-    title: Get Started with Stoplight Studio
-    enabled: true
     text: 'Ready to mock your API?'
+    enabled: true
+    ctas:
+      - href: '/studio'
+        title: Get Started with Stoplight Studio
   description: >-
     Mocking your API with [Stoplight Studio](/studio/) is your API design’s perfect companion.
     Powered by [Prism](/prism), the instant [mock server](/mock-api-guide/basics/) routes
@@ -59,15 +60,15 @@ featureSection:
 meta:
   description: >-
     'Mocking your API with Stoplight Studio is your API design's perfect companion.
-    Powered by Prism, the mock server routes incoming requests to examples on the
-    fly based on your OpenAPI v2/v3 document (formerly known as Swagger).'
+
+    Powered by Prism, the mock server routes incoming requests to examples on the fly based on your OpenAPI v2/v3 document (formerly known as Swagger).'
   favicon: /images/mark_light_bg.png
   title: Mock HTTP API Server & Service By Stoplight | Mock HTTP API Online
   twitter:
     description: >-
       'Mocking your API with Stoplight Studio is your API design's perfect companion.
-      Powered by Prism, the mock server routes incoming requests to examples on the
-      fly based on your OpenAPI v2/v3 document (formerly known as Swagger).'
+
+      Powered by Prism, the mock server routes incoming requests to examples on the fly based on your OpenAPI v2/v3 document (formerly known as Swagger).'
     image: /images/mocking_instant.png
     title: Mock HTTP API Server & Service By Stoplight | Mock HTTP API Online
     username: '@stoplightio'

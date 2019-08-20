@@ -127,7 +127,7 @@ export const List: React.FunctionComponent<IList> = ({
 
       {actionBar && (
         <div className="md:pb-24 pb-40 mt-32">
-          <ActionBar className="bg-white" {...actionBar} />
+          <ActionBar {...actionBar} />
         </div>
       )}
     </Layout>

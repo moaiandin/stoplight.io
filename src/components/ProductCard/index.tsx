@@ -6,7 +6,7 @@ import { Icon, IconProp } from '../Icon';
 
 export const ProductCards = ({ className }: { className?: string }) => {
   return (
-    <div className={cn(className, 'container relative z-5 flex justify-between text-left')}>
+    <div className={cn(className, 'container relative z-5 flex justify-between text-left sm:flex-col sm:items-center')}>
       <ProductCard
         tag="design"
         name="Stoplight Studio"
@@ -14,8 +14,7 @@ export const ProductCards = ({ className }: { className?: string }) => {
         description="Stoplight Studio turns you into an API Design superhero. Create OpenAPI 10x faster, with no prior knowledge, and no mistakes."
         color="blue"
         icon={['fad', 'paint-brush-alt']}
-        style={{ width: '49%' }}
-        className="bg-grey-lightest"
+        className="bg-grey-lightest bg-white w-1/2 mx-3 sm:w-full sm:h-128 sm:mb-6"
         href="/studio"
         image="/images/studio-glimpse.png"
       />
@@ -27,8 +26,7 @@ export const ProductCards = ({ className }: { className?: string }) => {
         description="The Stoplight Platform increases consistency, visibility, and quality across your internal and external APIs."
         color="indigo"
         icon={['fad', 'chart-network']}
-        style={{ width: '49%' }}
-        className="bg-white"
+        className="bg-white w-1/2 mx-3 sm:w-full sm:h-128"
         href="/enterprise"
         image="/images/platform-glimpse.png"
       />
@@ -61,7 +59,7 @@ export const ProductCard = ({
 }) => {
   return (
     <div className={cn(className, `flex rounded-xl pt-10 pl-10 shadow-lg overflow-hidden`)} style={style}>
-      <div className="flex flex-col flex-1 pb-10 h-96">
+      <div className="flex flex-col flex-1 pb-10 h-96 sm:h-full">
         <div className="flex">
           <div
             className={`flex items-center rounded-full border border-${color}-lighter bg-${color}-lightest text-${color} uppercase font-semibold px-4 py-1`}
@@ -74,7 +72,7 @@ export const ProductCard = ({
 
         <div className="text-lg text-grey-darker leading-loose mt-4 flex-1">{description}</div>
 
-        <div>
+        <div className="sm:mt-6">
           <Button href={href} color={color} shadow="md" rightIcon={['fad', 'arrow-right']}>
             {name}
           </Button>
@@ -83,7 +81,7 @@ export const ProductCard = ({
 
       {image && (
         <div
-          className="w-2/5 bg-left-top bg-cover rounded-tl-lg border-l border-t ml-6 mt-12"
+          className="w-2/5 bg-left-top bg-cover rounded-tl-lg border-l border-t ml-6 mt-12 sm"
           style={{ backgroundImage: `url(${image})` }}
         />
       )}

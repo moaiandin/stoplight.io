@@ -213,14 +213,14 @@ export const Desktop: React.FunctionComponent<{ items: IHeaderItem[]; unpinned: 
     const { title, href, links, altTitle } = item;
 
     if (links && links.length) {
-      return <HeaderDropdown key={index} className="text-lg md:hidden" {...item} />;
+      return <HeaderDropdown key={index} className="text-lg sm:hidden" {...item} />;
     }
 
     return (
       <Link
         key={index}
         to={href}
-        className="opacity-85 hover:opacity-100 text-lg md:hidden text-white hover:text-white rounded-lg px-3 py-1 mx-4 hover:bg-lighten-50"
+        className="opacity-85 hover:opacity-100 text-lg sm:hidden text-white hover:text-white rounded-lg px-3 py-1 mx-4 hover:bg-lighten-50"
       >
         {unpinned ? altTitle || title : title}
       </Link>
@@ -236,7 +236,7 @@ export const Desktop: React.FunctionComponent<{ items: IHeaderItem[]; unpinned: 
         title={unpinned ? altTitle || title : title}
         href={href}
         icon={icon}
-        className={cn('text-lg md:hidden', {
+        className={cn('text-lg sm:hidden', {
           [`bg-${altBg} ease-in`]: unpinned && altBg,
         })}
       />
@@ -245,9 +245,9 @@ export const Desktop: React.FunctionComponent<{ items: IHeaderItem[]; unpinned: 
 
   return (
     <>
-      <HeaderDropdown title="Products" className="md:hidden text-lg" content={() => <ProductLinks />} />
+      <HeaderDropdown title="Products" className="sm:hidden text-lg" content={() => <ProductLinks />} />
       {nonButtonElems}
-      <HeaderDropdown title="Open Source" className="md:hidden text-lg" content={() => <OpenSourceLinks />} />
+      <HeaderDropdown title="Open Source" className="sm:hidden text-lg" content={() => <OpenSourceLinks />} />
       <div className="flex-1" />
       {buttonElems}
     </>

@@ -81,7 +81,7 @@ export const Testimonials: React.FunctionComponent<ITestimonials> = ({
         </div>
       </Container>
 
-      {actionBar && actionBar.enabled ? <ActionBar className="bg-grey-lightest sm:mt-20 mt-32" {...actionBar} /> : null}
+      {actionBar && actionBar.enabled ? <ActionBar className="sm:mt-20 mt-32" {...actionBar} /> : null}
     </Section>
   );
 };

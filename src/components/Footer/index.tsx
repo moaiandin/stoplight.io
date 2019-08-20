@@ -37,7 +37,7 @@ export const Footer: React.FunctionComponent<{ footer: IFooter }> = ({ footer })
 
   return (
     <footer className="bg-black py-12 border-t-4 border-lighten-300 z-5 relative">
-      <nav className="container mx-auto flex flex-col items-center">
+      <nav className="container mx-auto flex flex-col items-center" style={{ maxWidth: 1000 }}>
         <div className="py-4">
           <Link to="/">
             <Image className="h-16 hover:opacity-75" src="/images/robot-dude.svg" alt="Logo" />
@@ -45,7 +45,7 @@ export const Footer: React.FunctionComponent<{ footer: IFooter }> = ({ footer })
         </div>
 
         {columns && (
-          <div className="flex flex-wrap justify-between py-8 w-3/5 sm:w-full">
+          <div className="flex flex-wrap justify-between py-8 w-full">
             {columns.map((column, index) => {
               return (
                 <div key={index}>
@@ -69,7 +69,7 @@ export const Footer: React.FunctionComponent<{ footer: IFooter }> = ({ footer })
           </div>
         )}
 
-        <div className="flex flex-wrap justify-between py-8 w-3/5 sm:w-full">
+        <div className="flex flex-wrap justify-around py-8 w-full">
           <Link className="block text-grey pr-4" to="/">
             &copy; {new Date().getFullYear()} Stoplight
           </Link>

@@ -24,13 +24,13 @@ export const ActionBar: React.FunctionComponent<IActionBar> = withSiteData(props
   return (
     <Container>
       <div
-        className={cn(className, 'p-12 flex-wrap items-center shadow rounded md:flex-col md:justify-center', {
+        className={cn(className, 'ActionBar p-12 flex-wrap items-center shadow rounded sm:flex-col sm:justify-center', {
           flex: !isCentered,
         })}
       >
         {text && (
           <div
-            className={cn('flex flex-1 font-bold text-lg text-grey-darker', {
+            className={cn('flex flex-1 font-bold text-lg text-grey-darker sm:text-center', {
               'pb-6 justify-center': ctas && ctas.length > 2,
             })}
           >
@@ -41,12 +41,12 @@ export const ActionBar: React.FunctionComponent<IActionBar> = withSiteData(props
         {ctas && (
           <div
             className={cn(
-              'flex-1 flex md:justify-center md:content-between md:flex-wrap',
+              'flex-1 flex sm:justify-center sm:content-between sm:flex-wrap sm:mt-3',
               isCentered ? 'justify-center' : 'justify-end',
             )}
           >
             {ctas.map((cta, index) => (
-              <CallToAction key={index} className={index > 0 ? 'ml-4 sm:ml-0' : ''} {...cta} />
+              <CallToAction key={index} className={cn(index > 0 ? 'ml-4 sm:ml-0' : '', 'sm:my-3')} {...cta} />
             ))}
           </div>
         )}

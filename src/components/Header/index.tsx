@@ -108,7 +108,7 @@ export const Header: React.FunctionComponent<IHeader> = props => {
 
               <Desktop items={headerItems} unpinned={unpinned} />
 
-              <Mobile items={headerItems} />
+              <Mobile />
             </nav>
           </div>
 

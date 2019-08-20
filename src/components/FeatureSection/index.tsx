@@ -37,15 +37,15 @@ export const Feature: React.FunctionComponent<IFeature> = props => {
     <div
       id={slugify(title)}
       key="content"
-      className={cn('flex items-center py-12 md:pb-0', {
+      className={cn('flex items-center py-12 sm:pb-0', {
         'flex-row': !isReversed,
         'flex-row-reverse': isReversed,
       })}
     >
       <div
-        className={cn('flex flex-col flex-1 w-1/2 md:w-100', {
-          'pr-24 md:pr-0': !isReversed,
-          'pl-18 md:pl-0': isReversed,
+        className={cn('flex flex-col flex-1 w-1/2 sm:w-100 sm:items-center sm:text-center', {
+          'pr-24 sm:pr-0': !isReversed,
+          'pl-18 sm:pl-0': isReversed,
         })}
       >
         <h2 className={cn('max-w-sm mb-10 text-3xl', `text-${titleColor || 'grey-darkest'}`)}>
@@ -58,14 +58,14 @@ export const Feature: React.FunctionComponent<IFeature> = props => {
           )}
         </h2>
         <div
-          className={cn('mb-12 pb-12 md:pb-0 max-w-md leading-loose text-lg', {
-            'md:mb-0': isLast,
+          className={cn('mb-12 pb-12 sm:pb-0 max-w-md leading-loose text-lg', {
+            'sm:mb-0': isLast,
           })}
           dangerouslySetInnerHTML={{ __html: description }}
         />
       </div>
 
-      <div className="flex-1 w-1/2 md:hidden relative">
+      <div className="flex-1 w-1/2 sm:hidden relative">
         <Image
           src={image}
           className={cn('bg-center bg-cover bg-no-repeat h-128 w-128 rounded-full', { 'ml-auto': !isReversed })}
@@ -140,7 +140,7 @@ export const FeatureSection: React.FunctionComponent<IFeatureSection> = ({
         ))}
       </Container>
 
-      <ActionBar className="bg-white sm:mt-14 mt-20" {...actionBar} />
+      <ActionBar className="sm:mt-14 mt-20" {...actionBar} />
     </Section>
   );
 };

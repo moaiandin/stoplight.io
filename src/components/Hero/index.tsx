@@ -7,7 +7,6 @@ import { Image } from 'src/components/Image';
 import { Link } from 'src/components/Link';
 import { ITab, Tabs } from 'src/components/Tabs';
 import { HeroAuthor, IHeroAuthor } from './HeroAuthor';
-import { IHeroCard } from './HeroCard';
 import { HeroImage, IHeroImage } from './HeroImage';
 
 let Particles;
@@ -42,7 +41,6 @@ export interface IHero {
   greyBg?: boolean;
   aligned?: 'center' | 'right' | 'left';
   ctas?: ICallToAction[];
-  cards?: IHeroCard[];
   particles?: boolean;
   skew?: 'rounded' | '-3deg' | '-7deg' | '3deg' | '7deg' | 'rounded';
   containerClassName?: string;
@@ -59,7 +57,7 @@ export const Hero: React.FunctionComponent<IHero> = ({
   subtitle,
   author,
   ctas,
-  bgColor,
+  bgColor = 'black',
   contentBgImage,
   greyBg,
   particles,
@@ -67,7 +65,6 @@ export const Hero: React.FunctionComponent<IHero> = ({
   skew,
   containerClassName,
   children,
-  cards = [],
   tabs = [],
   titleImage,
   titleClassName,
@@ -87,7 +84,7 @@ export const Hero: React.FunctionComponent<IHero> = ({
   return (
     <React.Fragment>
       <div key="main" className={cn('relative')}>
-        <div className={cn(headerHeightClass, 'w-100')} />
+        <div className={cn(headerHeightClass, 'w-100', { [`bg-${bgColor}`]: bgColor })} />
 
         <div
           className={cn(
@@ -127,7 +124,7 @@ export const Hero: React.FunctionComponent<IHero> = ({
 
               {subtitle && (
                 <div
-                  className={cn('font-default opacity-75 text-2xl max-w-xl mt-3 md:mt-4', {
+                  className={cn('font-default opacity-75 text-2xl max-w-xl mt-3 sm:mt-4', {
                     'mx-auto': !aligned || aligned === 'center',
                     'ml-auto': aligned === 'right',
                     'mr-auto': aligned === 'left',
@@ -153,15 +150,15 @@ export const Hero: React.FunctionComponent<IHero> = ({
 
           {ctas && (
             <div
-              className={cn('flex items-center justify-center md:flex-col mt-10 whitespace-no-wrap', {
-                '-mx-40': ctas.length > 2,
-                'mx-auto md:mx-auto': aligned === 'center',
+              className={cn('flex justify-center sm:flex-col sm:w-full mt-10 whitespace-no-wrap', {
+                '-mx-40 sm:mx-0': ctas.length > 2,
+                'mx-auto': aligned === 'center',
                 'ml-auto': aligned === 'right',
                 'mr-auto': aligned === 'left',
               })}
             >
               {ctas.map((action, i) => (
-                <CallToAction key={i} className="m-3 md:w-full" {...action} />
+                <CallToAction key={i} className="m-3 sm:w-full sm:mx-auto" {...action} />
               ))}
             </div>
           )}
@@ -169,7 +166,7 @@ export const Hero: React.FunctionComponent<IHero> = ({
 
         {children}
 
-        {heroTabs.length > 0 ? <Tabs tabs={heroTabs} className="pt-24 sm:m-0 sm:p-0" /> : null}
+        {heroTabs.length > 0 ? <Tabs tabs={heroTabs} className="pt-24" /> : null}
 
         <div
           className={cn('absolute pin overflow-hidden', {

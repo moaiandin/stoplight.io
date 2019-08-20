@@ -87,15 +87,7 @@ header:
     - href: /demo
       isButton: true
       title: Book a Demo
-    # - altBg: green
-    #   altTitle: Sign Up FREE
-    #   hideMobile: true
-    #   href: 'https://next.stoplight.io'
-    #   icon:
-    #     - fas
-    #     - arrow-right
-    #   isButton: true
-    #   title: Sign In
+      altBg: purple
 actionBar:
   ctas:
     - color: purple

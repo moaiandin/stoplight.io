@@ -91,7 +91,7 @@ export const FeatureSection: React.FunctionComponent<IFeatureSection> = ({
   }
 
   return (
-    <Section id="product" {...sectionProps} className="" noPadding>
+    <Section id="product" {...sectionProps} className="pb-40" noPadding>
       <div className="bg-white border-b py-4 mb-32 whitespace-no-wrap overflow-auto">
         <div className="container flex items-center justify-center flex-no-wrap sm:justify-start">
           {features.map((feature, key) => (
@@ -108,7 +108,7 @@ export const FeatureSection: React.FunctionComponent<IFeatureSection> = ({
       </div>
 
       {(title || description) && (
-        <Container title={title} className={cn(!buttons.length ? 'pb-32 border-b' : null)}>
+        <Container title={title} className={cn(!buttons || !buttons.length ? 'pb-32 border-b' : null)}>
           {description && (
             <div
               className="flex leading-loose text-lg text-center max-w-lg mx-auto"
@@ -118,7 +118,7 @@ export const FeatureSection: React.FunctionComponent<IFeatureSection> = ({
         </Container>
       )}
 
-      {buttons.length ? (
+      {buttons && buttons.length ? (
         <Container className="mt-20 pb-32 border-b">
           <div className="flex-1 flex lg:justify-center lg:items-between lg:flex-wrap">
             {buttons.map((button, index) => (

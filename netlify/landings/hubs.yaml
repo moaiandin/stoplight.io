@@ -75,6 +75,44 @@ featureSection:
       title: 'Simple, Flexible Deployment'
       titleURL: /documentation/hosted/
   title: Complete OpenAPI Documentation Solution
+pricingSection:
+  title: Documentation Plans
+  cards:
+    - icon: ['fad', 'user-check']
+      title: "Basic"
+      tag: "FREE"
+      buttonText: "Learn more about free docs"
+      href: "/docs"
+      features: ['OpenAPI v2 & v3', 'HTTP Request Maker', 'Unlimited Published Pages']
+
+    - isDark: true
+      icon: ['fad', 'user-friends']
+      title: "Pro"
+      tag: "$179 / month"
+      href: "https://next.stoplight.io"
+      buttonText: "Get Started Now"
+      featuresTitle: "All Basic features plus:"
+      features: [
+        'Basic Themeing',
+        'Build History & Instant Rollbacks',
+        'Custom Domains',
+        'Username/Password Login Page',
+      ]
+
+    - isDark: true
+      icon: ['fad', 'users']
+      title: "Enterprise"
+      tag: "Contact Us"
+      href: "/enterprise-contact"
+      buttonText: "Contact Us"
+      featuresTitle: "All Pro features plus:"
+      features: [
+        'Custom CSS & JavaScript',
+        'Download static HTML/CSS',
+        'SAML Single Sign-On',
+        'OAuth Token Manager',
+        'Custom Invoicing',
+      ]
 meta:
   description: >-
     Create custom API documentation in minutes. Combine OpenAPI documents

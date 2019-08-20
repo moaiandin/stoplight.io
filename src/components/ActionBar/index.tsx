@@ -24,14 +24,18 @@ export const ActionBar: React.FunctionComponent<IActionBar> = withSiteData(props
   return (
     <Container>
       <div
-        className={cn(className, 'ActionBar p-12 flex-wrap items-center shadow rounded sm:flex-col sm:justify-center', {
-          flex: !isCentered,
-        })}
+        className={cn(
+          className,
+          'ActionBar p-12 flex-wrap items-center sm:flex-col sm:justify-center bg-blue-darkest rounded-lg shadow-lg',
+          {
+            flex: !isCentered,
+          },
+        )}
       >
         {text && (
           <div
-            className={cn('flex flex-1 font-bold text-lg text-grey-darker sm:text-center', {
-              'pb-6 justify-center': ctas && ctas.length > 2,
+            className={cn('flex flex-1 font-semibold text-xl text-white sm:text-lg sm:text-center', {
+              'pb-10 justify-center': ctas && ctas.length > 2,
             })}
           >
             {text}

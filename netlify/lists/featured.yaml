@@ -22,7 +22,8 @@ actionBar:
     - href: 'https://stoplight.io/demo/'
       title: Request a Demo
       outlined: true
-    - href: 'https://next.stoplight.io/'
+      color: white
+    - href: 'https://stoplight.io/p/signup'
       title: Create a Free Account
   enabled: true
 meta:

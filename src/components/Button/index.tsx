@@ -44,13 +44,14 @@ export const Button: React.FunctionComponent<IButton> = ({
       title={title}
       className={cn(
         className,
+        'active-depress',
         `border-${color}`,
         `hover:border-${color}-dark`,
         `focus:border-${color}-dark`,
-        `font-bold sm:w-full rounded-lg inline-flex justify-center select-none border cursor-pointer`,
+        `font-bold sm:w-full rounded-lg inline-flex justify-center items-center select-none border cursor-pointer`,
         {
           'px-4 py-2': !large,
-          'px-8 py-3': large,
+          'px-6 py-3': large,
           [`bg-${color} hover:bg-${color}-dark text-white`]: !outlined,
           [`text-${color} hover:text-${color}-dark opacity-85 hover:opacity-100`]: outlined,
           [`shadow-${shadow}`]: shadow,
@@ -67,7 +68,12 @@ export const Button: React.FunctionComponent<IButton> = ({
       ) : (
         <>
           {icon && (
-            <div className="mr-3">
+            <div
+              className={cn('leading-none', {
+                'mr-3': !large,
+                'mr-5 text-xl': large,
+              })}
+            >
               <Icon icon={icon} />
             </div>
           )}
@@ -75,7 +81,7 @@ export const Button: React.FunctionComponent<IButton> = ({
           <div>{children || title}</div>
 
           {rightIcon && (
-            <div className="ml-4">
+            <div className="ml-5">
               <Icon icon={rightIcon} />
             </div>
           )}

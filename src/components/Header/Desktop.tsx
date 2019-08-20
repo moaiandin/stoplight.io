@@ -20,9 +20,7 @@ const DropdownItem = (item, index) => {
       })}
     >
       {item.icon && (
-        <div className="w-10 text-center mr-2">
-          <Icon className={cn(item.titleColor && `text-${item.titleColor}`)} icon={item.icon} />
-        </div>
+        <Icon className={cn('fa-fw mr-1', { [`text-${item.titleColor}`]: item.titleColor })} icon={item.icon} />
       )}
 
       {item.title}
@@ -76,7 +74,7 @@ const HeaderButton: React.FunctionComponent<IHeaderItem> = ({ title, href, icon,
       key="2"
       to={href}
       className={cn(
-        'py-1 px-3 ml-6 flex items-center border rounded-lg text-white hover:text-white border-lighten-300 hover:border-lighten-500 bg-lighten-50 whitespace-no-wrap',
+        'active-depress py-1 px-3 ml-6 flex items-center border rounded-lg text-white hover:text-white border-lighten-300 hover:border-lighten-500 bg-lighten-50 whitespace-no-wrap',
         className,
       )}
     >
@@ -105,7 +103,10 @@ const ProductLink = ({
   return (
     <Link
       to={href}
-      className={cn(className, `text-black border flex-1 rounded-lg p-6 bg-white hover:border-${color} cursor-pointer`)}
+      className={cn(
+        className,
+        `active-depress text-black border flex-1 rounded-lg p-6 bg-white hover:border-${color} cursor-pointer`,
+      )}
       style={{ width: 275 }}
     >
       {tag && (

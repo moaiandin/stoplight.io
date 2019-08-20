@@ -16,8 +16,11 @@ export const HeroImage: React.FunctionComponent<IHeroImage> = ({ className, vide
     return null;
   }
   return (
-    <section>
-      <Container className="relative text-center" style={{ maxHeight: 500 }}>
+    <Container className={className}>
+      <div
+        className="relative text-center border-4 border-lighten-300 rounded-lg overflow-hidden"
+        style={{ height: 500, borderBottom: 'none' }}
+      >
         {video && (
           <VideoPlayerModal href={video}>
             {({ onClick }) => (
@@ -27,8 +30,9 @@ export const HeroImage: React.FunctionComponent<IHeroImage> = ({ className, vide
             )}
           </VideoPlayerModal>
         )}
-        <Image className={cn(className, 'rounded-lg')} src={src} alt={alt} size="lg" />
-      </Container>
-    </section>
+
+        <Image className={'rounded-t-lg bg-cover bg-position-top absolute pin'} src={src} alt={alt} useDiv size="lg" />
+      </div>
+    </Container>
   );
 };

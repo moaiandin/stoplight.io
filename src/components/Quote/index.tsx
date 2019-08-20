@@ -8,7 +8,7 @@ export interface IQuote {
 
 export const Quote: React.FunctionComponent<IQuote> = ({ quote, author, role }) => {
   return (
-    <div className="mt-8 p-8 shadow rounded bg-grey-lighter relative">
+    <div className="mt-10 p-8 border rounded-lg bg-grey-lighter relative">
       <p className="leading-loose pb-6 italic text-lg">{`"${quote}"`}</p>
 
       {(author || role) && (

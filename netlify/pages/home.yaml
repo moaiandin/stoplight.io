@@ -27,12 +27,8 @@ hero:
       title: Mocking
   ctas:
     - title: Get Started
-      href: 'https://next.stoplight.io/'
-    - type: video
-      title: Quick Overview
-      outlined: true
-      href: 'https://youtube.com/watch?v=iHzFoc4ls8E'
-      color: white
+      rightIcon: ['fad', 'arrow-right']
+      href: '/start'
 collage:
   cta:
     color: green
@@ -83,7 +79,7 @@ gartnerCoolVendor:
 testimonials:
   actionBar:
     ctas:
-      - color: purple
+      - color: white
         href: /demo
         title: Book a Demo
         outlined: true

@@ -64,38 +64,21 @@ header:
       width: 300
     - href: /enterprise
       title: Enterprise
-    - links:
-        - href: /design
-          icon: ['fad', 'paint-brush']
-          subtitle: Use our visual designer to manage OpenAPI (Swagger) 10x faster.
-          title: Design
-          titleColor: blue
-        - href: /documentation
-          icon: ['fad', 'book-open']
-          subtitle: 'Increase customer adoption with beautiful, functional documentation.'
-          title: Documentation
-          titleColor: green
-        - href: /mocking
-          icon: ['fad', 'database']
-          subtitle: >-
-            Parallelize development with one click mock servers, powered by
-            OpenAPI.
-          title: Mocking
-          titleColor: purple
-      title: Use Cases
-      width: 250
+    - href: /start
+      isButton: true
+      title: Start
     - href: /demo
       isButton: true
       title: Book a Demo
       altBg: purple
 actionBar:
   ctas:
-    - color: purple
+    - color: white
       href: /demo
       title: Book a Demo
       outlined: true
     - color: purple
-      href: 'https://next.stoplight.io'
+      href: 'https://stoplight.io/p/signup'
       title: Create a Free Account
   enabled: false
   text: Getting started is easy. Be up and running in minutes.
@@ -157,6 +140,20 @@ meta:
     title: Stoplight
     username: '@stoplightio'
   url: 'https://stoplight.io'
+customers:
+  images:
+    - alt: EA
+      src: /images/ea.png
+    - alt: Deutsche Bank
+      src: /images/deutsche_bank.png
+    - alt: quicken
+      src: /images/customers/quicken.png
+    - alt: Sendgrid
+      src: /images/logo-sendgrid.png
+    - alt: TiVo
+      src: /images/tivo.png
+    - alt: Zendesk
+      src: /images/logo_zendesk.png
 integrations:
   googleTagManager: GTM-58LWL5P
   hubspot: 4892910

@@ -1,4 +1,4 @@
-path: /pricing
+# path: /pricing
 color: blue
 hero:
   skew: '-7deg'

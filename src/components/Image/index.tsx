@@ -6,13 +6,23 @@ export interface IImage {
   src: string;
   alt?: string;
   className?: string;
+  title?: string;
   size?: 'sm' | 'lg';
   style?: any;
   background?: boolean;
   useDiv?: boolean;
 }
 
-export const Image: React.FunctionComponent<IImage> = ({ className, src, alt, style, size, background, useDiv }) => {
+export const Image: React.FunctionComponent<IImage> = ({
+  className,
+  title,
+  src,
+  alt,
+  style,
+  size,
+  background,
+  useDiv,
+}) => {
   // Transform image urls in production to match the processed images
   if (getConfigVar('RELEASE_STAGE') === 'production' && src && path.isAbsolute(src) && size) {
     const extname = path.extname(src);
@@ -32,8 +42,8 @@ export const Image: React.FunctionComponent<IImage> = ({ className, src, alt, st
   }
 
   if (useDiv) {
-    return <div className={className} style={style} />;
+    return <div className={className} title={title} style={style} />;
   }
 
-  return <img className={className} src={src} alt={alt || src} style={style} />;
+  return <img className={className} title={title} src={src} alt={alt || src} style={style} />;
 };

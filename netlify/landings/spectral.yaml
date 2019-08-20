@@ -5,22 +5,23 @@ hasSandbox: true
 relatedTags:
   - blog-design
 hero:
-  subtitle: Improve the quality of your API by improving the quality of your API descriptions
+  subtitle: Improve the quality of your API by improving the quality of your API descriptions.
   title: Spectral, an Open Source API Description Linter
+  particles: true
   ctas:
+    - color: green
+      href: 'https://github.com/stoplightio/spectral'
+      title: GitHub
+      icon: ['fab', 'github']
     - color: indigo
       href: 'https://youtube.com/watch?v=IJtFI9mkZ8Y'
-      title: Watch the video
+      title: Watch the Video
       icon: ['fad', 'video']
       type: video
     - color: indigo
       href: 'https://stoplight.io/p/docs/gh/stoplightio/spectral'
-      title: Read the Documentation
+      title: Read the Docs
       icon: ['fad', 'book-open']
-    - color: indigo
-      href: 'https://github.com/stoplightio/spectral'
-      title: GitHub
-      icon: ['fab', 'github']
 featureSection:
   actionBar:
     ctas:

@@ -49,7 +49,6 @@ export const Form: React.FunctionComponent<IForm> = ({
         subtitle={subtitle}
         bgColor={color}
         aligned={hasLeftContent || titleImage ? 'left' : 'center'}
-        titleClassName={hasLeftContent ? '' : 'mb-40'}
       />
 
       <Container className="flex relative z-20 py-24 md:flex-wrap-reverse">

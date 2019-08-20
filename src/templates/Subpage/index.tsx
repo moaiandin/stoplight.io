@@ -94,7 +94,7 @@ export const Subpage: React.FunctionComponent<IPage> = ({
         <Container className="mx-auto my-24">
           <div className="relative">
             {sidebar && (
-              <div className="-mt-40 ml-12 mb-12 w-1/3 sm:mt-0 sm:ml-0 sm:mb-24 sm:w-full float-right sm:float-none">
+              <div className="-mt-24 ml-12 mb-12 w-1/3 sm:mt-0 sm:ml-0 sm:mb-24 sm:w-full float-right sm:float-none">
                 {sidebar.info ? <Info {...sidebar.info} /> : null}
 
                 {sidebar.quotes && sidebar.quotes.length
@@ -117,7 +117,7 @@ export const Subpage: React.FunctionComponent<IPage> = ({
             )}
 
             <div
-              className={cn('markdown-body pt-10', className, { 'm-auto': !sidebar && !includeToc })}
+              className={cn('markdown-body', className, { 'm-auto': !sidebar && !includeToc })}
               dangerouslySetInnerHTML={{ __html: html }}
             />
           </div>

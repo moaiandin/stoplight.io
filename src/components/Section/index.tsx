@@ -15,7 +15,7 @@ export const Section: React.FunctionComponent<ISection> = ({ id, children, class
     <section
       id={slugify(id)}
       className={cn(className, 'relative md:px-0 z-5', {
-        'py-40 md:py-24': !noPadding,
+        'py-32 md:py-20': !noPadding,
       })}
       style={style}
     >

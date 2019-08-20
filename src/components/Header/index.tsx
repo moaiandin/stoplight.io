@@ -78,7 +78,7 @@ export const Header: React.FunctionComponent<IHeader> = props => {
         <header
           key="header"
           className={cn('z-50 sticky pin-t pin-l pin-r', {
-            [`shadow bg-${color || 'black'}`]: unpinned,
+            [`shadow-md bg-${color || 'black'}`]: unpinned,
           })}
         >
           {banner &&

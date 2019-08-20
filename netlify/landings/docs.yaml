@@ -7,7 +7,7 @@ hero:
   bgColor: green
   image:
     alt: Documentation
-    src: /images/docs_header.png
+    src: /images/hubs/hero.png
   subtitle: >-
     Create beautiful, customizable, interactive API documentation generated from
     your OpenAPI Specification

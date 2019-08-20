@@ -49,17 +49,9 @@ ul {
   section {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
 
-    .ActionBar {
-      background: #f5f7f9;
-    }
-
     &:nth-of-type(even) {
       background: #f5f7f9;
       z-index: 30;
-
-      .ActionBar {
-        background: white;
-      }
     }
 
     &:first-of-type {
@@ -105,6 +97,20 @@ ul {
   }
   &.block-four {
     animation-delay: 1.5s;
+  }
+}
+
+.active-depress {
+  transition: transform 0.12s;
+  &:active {
+    transform: translateY(1.5px);
+  }
+}
+
+.hover-scale {
+  transition: transform 0.15s;
+  &:hover {
+    transform: scale(1.04);
   }
 }
 
@@ -232,6 +238,7 @@ ul {
 
 .case-study {
   max-width: 100%;
+  margin-top: -100px;
 }
 
 .markdown-body s {

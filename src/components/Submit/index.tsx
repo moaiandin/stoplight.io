@@ -27,18 +27,16 @@ export const Submit: React.FunctionComponent<ISubmit> = ({ button, className, in
         <div>{response.success}</div>
       ) : (
         <div className="flex sm:flex-wrap sm:justify-center sm:py-4">
-          <Input {...input} value={value} onChange={setValue} />
+          <Input autoFocus {...input} value={value} onChange={setValue} />
 
           <div className="flex-1 flex px-4 justify-end font-bold text-lg sm:justify-center sm:items-between sm:flex-wrap sm:py-2 sm:w-full sm:px-0">
             <Button
               onClick={() => {
                 submitForm([{ name: 'email', value }]);
               }}
-              shadow={'sm'}
               {...button}
               title={button.title}
               loading={loading}
-              style={{ minWidth: '200px' }}
             />
           </div>
         </div>

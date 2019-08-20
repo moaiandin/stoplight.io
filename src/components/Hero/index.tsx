@@ -23,6 +23,29 @@ export const indexMap = {
   6: 'six',
 };
 
+const skewMap = {
+  '3deg': {
+    containerClass: 'pb-48',
+    bottom: 45,
+  },
+  '7deg': {
+    containerClass: 'pb-24',
+    bottom: 60,
+  },
+  '-7deg': {
+    containerClass: 'pb-64',
+    bottom: 105,
+  },
+  '-10deg': {
+    containerClass: 'pb-24',
+    bottom: 150,
+  },
+  '-15deg': {
+    containerClass: 'pb-48',
+    bottom: 225,
+  },
+};
+
 export interface IHeroBreadCrumb {
   title: string;
   path?: string;
@@ -42,11 +65,14 @@ export interface IHero {
   aligned?: 'center' | 'right' | 'left';
   ctas?: ICallToAction[];
   particles?: boolean;
-  skew?: 'rounded' | '-3deg' | '-7deg' | '3deg' | '7deg' | 'rounded';
+  skew?: 'rounded' | '-15deg' | '-10deg' | '-7deg' | '-3deg' | '3deg' | '7deg' | '10deg' | '15deg';
   containerClassName?: string;
+  wrapperClassName?: string;
   tabs?: ITab[];
   titleImage?: string;
   titleClassName?: string;
+  rightElem?: React.ReactNode;
+  bottomElem?: React.ReactNode;
 }
 
 export const Hero: React.FunctionComponent<IHero> = ({
@@ -64,7 +90,9 @@ export const Hero: React.FunctionComponent<IHero> = ({
   image,
   skew,
   containerClassName,
-  children,
+  wrapperClassName,
+  rightElem,
+  bottomElem,
   tabs = [],
   titleImage,
   titleClassName,
@@ -79,23 +107,27 @@ export const Hero: React.FunctionComponent<IHero> = ({
     aligned = 'left';
   }
 
-  const hasBottomContent = !children && (!heroTabs || !heroTabs.length);
+  const hasBottomContent = bottomElem || (heroTabs && heroTabs.length) || image;
+  const skewOpts = skew && skewMap[skew];
 
   return (
     <React.Fragment>
-      <div key="main" className={cn('relative')}>
+      <div
+        key="main"
+        className={cn(wrapperClassName, 'relative', {
+          [skewOpts ? skewOpts.containerClass : undefined]: skewOpts,
+          'pb-40 sm:pb-10': !hasBottomContent && !skew && !contentBgImage,
+          'pb-24': contentBgImage,
+        })}
+      >
         <div className={cn(headerHeightClass, 'w-100', { [`bg-${bgColor}`]: bgColor })} />
 
         <div
           className={cn(
             containerClassName,
-            `container text-white flex flex-col pt-32 md:pt-24 relative z-5 text-${aligned} relative`,
-            {
-              'pb-24': hasBottomContent && !skew,
-              'pb-40': hasBottomContent && skew,
-            },
+            `container text-white flex flex-col pt-32 sm:pt-14 relative z-5 text-${aligned} relative`,
           )}
-          style={contentBgImage ? { textShadow: `rgba(0, 0, 0, 0.5) 1px 1px 0px` } : undefined}
+          style={contentBgImage ? { textShadow: `rgba(0, 0, 0, 0.6) 1px 1px 0px` } : undefined}
         >
           <div className="flex">
             <div
@@ -120,19 +152,40 @@ export const Hero: React.FunctionComponent<IHero> = ({
 
               {pageName && <div className="uppercase text-white opacity-85 font-semibold mb-4">{pageName}</div>}
 
-              <h1 className="text-5xl">{title}</h1>
+              <div className="flex">
+                <div className="flex-1">
+                  <h1 className="text-5xl md:text-4xl leading-tight">{title}</h1>
 
-              {subtitle && (
-                <div
-                  className={cn('font-default opacity-75 text-2xl max-w-xl mt-3 sm:mt-4', {
-                    'mx-auto': !aligned || aligned === 'center',
-                    'ml-auto': aligned === 'right',
-                    'mr-auto': aligned === 'left',
-                  })}
-                >
-                  {subtitle}
+                  {subtitle && (
+                    <h2
+                      className={cn('font-default opacity-75 max-w-xl mt-4 md:mt-4', {
+                        'mx-auto': !aligned || aligned === 'center',
+                        'ml-auto': aligned === 'right',
+                        'mr-auto': aligned === 'left',
+                      })}
+                    >
+                      {subtitle}
+                    </h2>
+                  )}
+
+                  {ctas && (
+                    <div
+                      className={cn('flex sm:flex-col sm:w-full mt-14 sm:mt-8 whitespace-no-wrap', {
+                        '-mx-40 sm:mx-0': ctas && ctas.length > 2,
+                        'mx-auto justify-center': aligned === 'center',
+                        'ml-auto': aligned === 'right',
+                        'mr-auto': aligned === 'left',
+                      })}
+                    >
+                      {ctas.map((action, i) => (
+                        <CallToAction key={i} className="m-3 sm:w-full sm:mx-auto" {...action} />
+                      ))}
+                    </div>
+                  )}
                 </div>
-              )}
+
+                {rightElem}
+              </div>
 
               {author && (
                 <div>
@@ -147,24 +200,20 @@ export const Hero: React.FunctionComponent<IHero> = ({
               </div>
             )}
           </div>
-
-          {ctas && (
-            <div
-              className={cn('flex justify-center sm:flex-col sm:w-full mt-10 whitespace-no-wrap', {
-                '-mx-40 sm:mx-0': ctas.length > 2,
-                'mx-auto': aligned === 'center',
-                'ml-auto': aligned === 'right',
-                'mr-auto': aligned === 'left',
-              })}
-            >
-              {ctas.map((action, i) => (
-                <CallToAction key={i} className="m-3 sm:w-full sm:mx-auto" {...action} />
-              ))}
-            </div>
-          )}
         </div>
 
-        {children}
+        {bottomElem}
+
+        {image && <HeroImage {...image} className="relative z-5 mt-16" />}
+
+        {contentBgImage && (
+          <div
+            className="absolute pin z-1 bg-cover bg-no-repeat bg-center"
+            style={{
+              backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(${contentBgImage})`,
+            }}
+          />
+        )}
 
         {heroTabs.length > 0 ? <Tabs tabs={heroTabs} className="pt-24" /> : null}
 
@@ -177,14 +226,14 @@ export const Hero: React.FunctionComponent<IHero> = ({
             src={particles ? '' : '/images/patterns/diagonal-stripes-sm.png'}
             className={cn('absolute z-0 overflow-hidden', {
               [`bg-${bgColor}`]: bgColor,
-              'border-b-4 border-lighten-300': !skew,
+              'border-b-4 border-lighten-300': !skew && heroTabs && heroTabs.length,
             })}
             style={{
               // TODO: should depend on height of screen
               // NOTE: using `bottom` instead of explicit height leads to blurry border rendering in chrome for whatever reason
               width: skew === 'rounded' ? '200%' : 'auto',
-              top: -100,
-              bottom: skew && !hasBottomContent ? 50 : 0,
+              top: -300,
+              bottom: skew ? (skewOpts && skewOpts.bottom) || 50 : 0,
               left: skew === 'rounded' ? '-50%' : 0,
               right: skew === 'rounded' ? '-50%' : 0,
               borderRadius: skew === 'rounded' ? '50%' : '0',
@@ -196,23 +245,14 @@ export const Hero: React.FunctionComponent<IHero> = ({
           />
         </div>
 
-        {contentBgImage && (
-          <div
-            className="absolute pin z-0 bg-cover bg-no-repeat bg-center"
-            style={{
-              backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${contentBgImage})`,
-            }}
-          />
-        )}
-
         {particles && (
-          <div className="absolute z-1 sm:hidden" style={{ left: 0, top: -100, right: 0, bottom: -100 }}>
+          <div className="absolute z-1 sm:hidden" style={{ left: 0, top: -25, right: 0, bottom: -100 }}>
             {Particles && (
               <Particles
                 style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0 }}
                 params={{
                   fps_limit: 15,
-                  retina_detect: false, // possible performance issues when true
+                  retina_detect: true, // possible performance issues when true
                   particles: {
                     number: {
                       value: 160,
@@ -244,8 +284,6 @@ export const Hero: React.FunctionComponent<IHero> = ({
           </div>
         )}
       </div>
-
-      {image && <HeroImage {...image} />}
     </React.Fragment>
   );
 };

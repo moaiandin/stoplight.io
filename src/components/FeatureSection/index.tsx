@@ -77,6 +77,32 @@ export const Feature: React.FunctionComponent<IFeature> = props => {
   );
 };
 
+export interface IFeatureStrip {
+  features: Array<{
+    shortName: string;
+    title?: string;
+  }>;
+}
+
+export const FeatureStrip = ({ features }: IFeatureStrip) => {
+  return (
+    <div className="bg-blue-darkest shadow-md py-5 text-white whitespace-no-wrap overflow-auto">
+      <div className="container flex items-center justify-around flex-no-wrap sm:justify-start">
+        {features.map((feature, key) => (
+          <a
+            key={key}
+            href={`#${slugify(feature.title)}`}
+            className="flex items-center justify-center py-2 px-4 hover:bg-lighten-50 rounded-lg text-white font-semibold"
+          >
+            <Icon className="text-lg" icon={['fad', 'check-circle']} />
+            <div className="ml-3">{feature.shortName}</div>
+          </a>
+        ))}
+      </div>
+    </div>
+  );
+};
+
 export const FeatureSection: React.FunctionComponent<IFeatureSection> = ({
   title,
   description,
@@ -91,24 +117,11 @@ export const FeatureSection: React.FunctionComponent<IFeatureSection> = ({
   }
 
   return (
-    <Section id="product" {...sectionProps} className="pb-40" noPadding>
-      <div className="bg-white border-b py-4 mb-32 whitespace-no-wrap overflow-auto">
-        <div className="container flex items-center justify-center flex-no-wrap sm:justify-start">
-          {features.map((feature, key) => (
-            <a
-              key={key}
-              href={`#${slugify(feature.title)}`}
-              className="flex items-center justify-center p-4 hover:bg-darken-50 text-grey-darker mx-4 rounded font-semibold"
-            >
-              <Icon className="text-green text-lg" icon={['fad', 'check-circle']} />
-              <div className="ml-2">{feature.shortName}</div>
-            </a>
-          ))}
-        </div>
-      </div>
+    <Section id="product" {...sectionProps} className="pb-32" noPadding>
+      <FeatureStrip features={features} />
 
       {(title || description) && (
-        <Container title={title} className={cn(!buttons || !buttons.length ? 'pb-32 border-b' : null)}>
+        <Container title={title} className={cn(!buttons || !buttons.length ? 'py-32 border-b' : null)}>
           {description && (
             <div
               className="flex leading-loose text-lg text-center max-w-lg mx-auto"
@@ -119,7 +132,7 @@ export const FeatureSection: React.FunctionComponent<IFeatureSection> = ({
       )}
 
       {buttons && buttons.length ? (
-        <Container className="mt-20 pb-32 border-b">
+        <Container className="mt-20 border-b">
           <div className="flex-1 flex lg:justify-center lg:items-between lg:flex-wrap">
             {buttons.map((button, index) => (
               <Button key={index} className={index > 0 ? 'ml-4 sm:ml-0' : ''} {...button} />
@@ -128,7 +141,7 @@ export const FeatureSection: React.FunctionComponent<IFeatureSection> = ({
         </Container>
       ) : null}
 
-      <Container className="mx-auto py-16">
+      <Container className="mx-auto pt-16">
         {features.map((feature, index) => (
           <Feature
             key={index}

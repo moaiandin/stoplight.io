@@ -1,21 +1,25 @@
 path: /hubs
 title: Stoplight Hubs
-color: green
+color: green-dark
 relatedTags:
   - blog-documentation
 hero:
-  bgColor: green
+  particles: true
   image:
     alt: Documentation
-    src: /images/docs_header.png
+    src: /images/hubs/hero.png
   subtitle: >-
     Create beautiful, customizable, interactive API documentation generated from
     your OpenAPI document
   title: Stoplight Hubs
   ctas:
-    - color: indigo
+    - color: purple-dark
       href: 'https://next.stoplight.io'
       title: Get Started Now
+    - type: video
+      title: Quick Overview
+      href: 'https://youtube.com/watch?v=iHzFoc4ls8E'
+      color: purple-dark
 featureSection:
   actionBar:
     ctas:

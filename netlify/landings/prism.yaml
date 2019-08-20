@@ -4,22 +4,23 @@ color: purple-darker
 relatedTags:
   - blog-mocking
 hero:
-  subtitle: Accelerate API development with realistic mock servers powered by API descriptions
+  subtitle: Accelerate API development with realistic mock servers, powered by your OpenAPI documents.
   title: Prism, an Open Source HTTP Mock Server
+  particles: true
   ctas:
+    - color: green
+      href: 'https://github.com/stoplightio/prism'
+      title: GitHub
+      icon: ['fab', 'github']
     - color: indigo
       href: 'https://youtube.com/watch?v=nZM26knV_ec'
-      title: Watch the video
+      title: Watch the Video
       icon: ['fad', 'video']
       type: video
     - color: indigo
       href: 'https://stoplight.io/p/docs/gh/stoplightio/prism'
-      title: Read the Documentation
+      title: Read the Docs
       icon: ['fad', 'book-open']
-    - color: indigo
-      href: 'https://github.com/stoplightio/prism'
-      title: GitHub
-      icon: ['fab', 'github']
 featureSection:
   actionBar:
     ctas:

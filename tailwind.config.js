@@ -316,8 +316,7 @@ module.exports = {
     '2xl': '1.5rem', // 24px
     '3xl': '1.875rem', // 30px
     '4xl': '2.25rem', // 36px
-    '5xl': '3rem', // 48px
-    '6xl': '4rem', // ??
+    '5xl': '2.75rem', // 48px
   },
 
   /*
@@ -727,6 +726,7 @@ module.exports = {
     '2': '6px',
     '3': '10px',
     '4': '13px',
+    '5': '16px',
     '6': '20px',
     '8': '26px',
     '10': '32px',
@@ -769,6 +769,7 @@ module.exports = {
     '2': '6px',
     '3': '10px',
     '4': '13px',
+    '5': '16px',
     '6': '20px',
     '8': '26px',
     '10': '32px',
@@ -1028,7 +1029,7 @@ module.exports = {
   plugins: [
     require('tailwindcss/plugins/container')({
       center: true,
-      padding: '1rem',
+      padding: '30px',
     }),
   ],
 

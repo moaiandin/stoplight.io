@@ -4,17 +4,17 @@ color: blue
 relatedTags:
   - blog-design
 hero:
+  particles: true
   image:
     alt: Stoplight Studio
-    src: /images/stoplight-studio.png
+    src: /images/studio/hero.png
   subtitle: >-
-    Build first-class APIs with a collaborative, powerful, visual editor that
-    allows you to prototype and share your API within minutes
+    Design APIs 10x faster with with our free OpenAPI editor. Prototype and share your API within minutes.
   title: 'Stoplight Studio'
   ctas:
-    - title: Try the Web Version
+    - title: On the Web
       href: 'https://stoplight.io/p/studio'
-      icon: ['fad', 'cloud']
+      icon: ['fad', 'browser']
       color: purple
     - title: Download for Mac
       href: 'https://github.com/stoplightio/studio/releases/download/v1.0.0/Stoplight-Studio-1.0.0.dmg'
@@ -34,26 +34,27 @@ hero:
 featureSection:
   actionBar:
     ctas:
+      - title: On the Web
+        href: 'https://stoplight.io/p/studio'
+        icon: ['fad', 'browser']
+        color: purple
       - title: Download for Mac
-        download:
-          href: 'https://github.com/stoplightio/studio/releases/download/v1.0.0/Stoplight-Studio-1.0.0.dmg'
-          icon: ['fab', 'apple']
-          color: green
-          filename: studio-mac
+        href: 'https://github.com/stoplightio/studio/releases/download/v1.0.0/Stoplight-Studio-1.0.0.dmg'
+        icon: ['fab', 'apple']
+        color: green
+        filename: studio-mac
       - title: Download for Windows
-        download:
-          href: 'https://github.com/stoplightio/studio/releases/download/v1.0.0/Stoplight-Studio-Setup-1.0.0.exe'
-          icon: ['fab', 'windows']
-          color: green
-          filename: studio-windows
+        href: 'https://github.com/stoplightio/studio/releases/download/v1.0.0/Stoplight-Studio-Setup-1.0.0.exe'
+        icon: ['fab', 'windows']
+        color: green
+        filename: studio-windows
       - title: Download for Linux
-        download:
-          href: 'https://github.com/stoplightio/studio/releases/download/v1.0.0/Stoplight-Studio-1.0.0.AppImage'
-          icon: ['fab', 'linux']
-          color: green
-          filename: studio-linux
+        href: 'https://github.com/stoplightio/studio/releases/download/v1.0.0/Stoplight-Studio-1.0.0.AppImage'
+        icon: ['fab', 'linux']
+        color: green
+        filename: studio-linux
     enabled: true
-    text: Ready to Model and Design?
+    text: Ready to start designing APIs?
   title: OpenAPI v2/v3 Visual Editor
   description: >-
     Start designing your API in minutes. Use the [OpenAPI

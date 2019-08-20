@@ -1,8 +1,7 @@
 path: /demo
 title: Request a Demo
 subtitle: >-
-  Stoplight on average shows a 36% gain in engineering time and increases
-  quality 30%.
+  On average, adopting Stoplight results in a 36% gain in API development efficiency, and increases API quality by 30%.
 color: black
 hubspot:
   formId: 7ae2bb42-67a6-4ee3-9ac5-ff21d87812ea

@@ -1,57 +1,69 @@
 path: /docs
-title: Simple, Lightweight Documentation
+title: Free Hosted Technical Docs
 color: indigo
 relatedTags:
   - blog-documentation
 hero:
-  title: Simple, Lightweight Documentation
+  title: Free Hosted Technical Docs
   particles: true
   subtitle: >-
     Generate beautiful technical documentation for any of your git projects
   image:
     alt: Documentation
-    src: /images/docs/landing.png
+    src: /images/docs/studio.png
+  ctas:
+    - color: purple-dark
+      href: /studio
+      title: Publish from Studio
+    - title: Looking for more?
+      href: /hubs
+      color: grey-dark
 
 featureSection:
-  title: Built for Open Source
+  title: Built for Personal and Open Source projects
   description: >-
-    Create API documentation in seconds using any git repository. Combine OpenAPI Specifications (formerly known as Swagger) with Markdown to create robust, searchable, [API documentation](/api-documentation-guide/basics/)
-    for any project. One-click publish from [Stoplight Studio](/studio) or add the Stopight CLI in your CI/CD workflow.
+    Stoplight Docs are free and easy to use. Connect your Github and automatically generate technical documentation in seconds for any of your projects. One-click publish from [Stoplight Studio](/studio) or add the Stopight CLI to your CI/CD workflow.
 
   features:
     - description: >-
-        TODO
-      image: /images/docs_feature_3.png
+        Automatically generate documentation from your OpenAPI v2 or v3 documents. With a powerful request maker, your users will be able to try out your API directly from the docs. Our JSON schema viewer allows them to easily navigate deeply nested request and response structures.
+      image: /images/docs/request-maker.png
+      shortName: OpenAPI v2/v3
+      title: Generate from OpenAPI v2/v3
+
+    - description: >-
+        Stoplight Docs uses a powerful markdown engine built using CommonMark, an industry standard, to give your users the best experience. Enhance your documentation with embedded models, code snippets, call outs and more to keep your users engaged.
+      image: /images/docs/jsv.png
+      shortName: Powerful Markdown
+      title: Powerful Markdown Rendering
+
+    - description: >-
+        Write content using your favorite editor, such as [Stoplight Studio](/studio), then use git to push changes into a git repository on Github, Bitbucket, Gitlab, etc. View a preview of the updated content with a changelog before your publish.
+      image: /images/docs/preview-changelog.png
+      shortName: Preview & Changelog
+      title: Preview & Changelog
+
+    - description: >-
+        Connect your Github account to one-click publish from [Stoplight Studio](/studio) or use the Stoplight CLI to automate your documentation process by integrating it into your existing CI/CD workflow.
+      image: /images/docs/git.png
       shortName: Git Integration
-      title: Git Integration
+      title: Publish from anywhere
 
-    - description: >-
-        Never have out-of-date documentation. Use the Stoplight CLI to
-        automate your documentation process by integrating it into your existing
-        CI/CD workflow.
-      image: /images/docs_feature_3.png
-      shortName: Publish from CI/CD
-      title: Automated API Documentation
-
-    - description: >-
-        Never have out-of-date documentation. Use the Stoplight CLI to
-        automate your documentation process by integrating it into your existing
-        CI/CD workflow.
-      image: /images/docs_feature_3.png
-      shortName: Stoplight Studio Integration
-      title: Stoplight Studio Integration
-
-  # actionBar:
-  #   enabled: true
-  #   text: 'Ready to Publish?'
-  #   ctas:
-  #     - color: accent
-  #       href: 'https://stoplight.io/p/docs'
-  #       title: Get Started Now
+  actionBar:
+    enabled: true
+    text: 'Ready to Publish?'
+    ctas:
+      - color: accent
+        href: 'https://stoplight.io/studio'
+        title: Get started with Studio
+      - color: grey-dark
+        href: 'https://stoplight.io/p/login'
+        title: Login with Github
+        icon: ['fab', 'github']
 
 meta:
   description: >-
-    Create API documentation in minutes. Combine OpenAPI Specifications
+    Create API documentation in minutes. Combine OpenAPI descriptions
     (formerly known as Swagger) with Markdown to create robust, searchable,
     internal and external API documentation for your organization. One-click
     cloud deployment with Stoplight or download the static assets to host
@@ -61,7 +73,7 @@ meta:
   title: REST API Documentation Generator | Hosted API Documentation
   twitter:
     description: >-
-      Create API documentation in minutes. Combine OpenAPI Specifications
+      Create API documentation in minutes. Combine OpenAPI descriptions
       (formerly known as Swagger) with Markdown to create robust, searchable,
       internal and external API documentation for your organization. One-click
       cloud deployment with Stoplight or download the static assets to host

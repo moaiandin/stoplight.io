@@ -29,7 +29,7 @@ featureSection:
         href: 'https://next.stoplight.io/'
         title: Get Started Now
     enabled: true
-    text: 'Ready to Publish? '
+    text: Ready to Publish?
   description: >-
     Create API documentation in minutes. Combine OpenAPI Specifications
     (formerly known as Swagger) with Markdown to create robust, searchable,

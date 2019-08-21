@@ -38,7 +38,7 @@ featureSection:
       title: Powerful Markdown Rendering
 
     - description: >-
-        Write content using your favorite editor, such as [Stoplight Studio](/studio), then use git to push changes into a git repository on Github, Bitbucket, Gitlab, etc. View a preview of the updated content with a changelog before your publish.
+        Write content using your favorite editor, such as [Stoplight Studio](/studio), then use git to push changes into a git repository on Github, Bitbucket, Gitlab, etc. Before you publish, you can see a preview of your updated docs with a breakdown of all the changes.
       image: /images/docs/preview-changelog.png
       shortName: Preview & Changelog
       title: Preview & Changelog

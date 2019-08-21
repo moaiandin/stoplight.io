@@ -1,6 +1,6 @@
 path: /hubs
 title: Stoplight Hubs
-color: orange-dark
+color: indigo
 relatedTags:
   - blog-documentation
 hero:
@@ -76,7 +76,7 @@ featureSection:
       titleURL: /documentation/hosted/
   title: Complete OpenAPI Documentation Solution
 pricingSection:
-  title: Documentation Plans
+  title: Documentation Pricing
   cards:
     - icon: ['fad', 'user-check']
       title: "Basic"
@@ -93,9 +93,9 @@ pricingSection:
       buttonText: "Get Started Now"
       featuresTitle: "All Basic features plus:"
       features: [
-        'Basic Themeing',
-        'Build History & Instant Rollbacks',
+        'Custom Branding',
         'Custom Domains',
+        'Build History & Instant Rollbacks',
         'Username/Password Login Page',
       ]
 

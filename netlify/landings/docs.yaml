@@ -41,13 +41,13 @@ featureSection:
       shortName: Stoplight Studio Integration
       title: Stoplight Studio Integration
 
-  actionBar:
-    enabled: true
-    text: 'Ready to Publish?'
-    ctas:
-      - color: accent
-        href: 'https://stoplight.io/p/docs'
-        title: Get Started Now
+  # actionBar:
+  #   enabled: true
+  #   text: 'Ready to Publish?'
+  #   ctas:
+  #     - color: accent
+  #       href: 'https://stoplight.io/p/docs'
+  #       title: Get Started Now
 
 meta:
   description: >-

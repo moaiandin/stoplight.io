@@ -46,7 +46,12 @@ export const PricingCard = ({
           {tag && (
             <div className="flex justify-center mb-8">
               <div
-                className={`flex items-center text-sm rounded-full border border-${tagColor}-lighter bg-${tagColor}-lightest text-${tagColor} uppercase font-semibold px-4 py-1`}
+                className={cn(
+                  `flex items-center text-sm rounded-full bg-${tagColor}-lightest text-${tagColor} uppercase font-semibold px-4 py-1`,
+                  {
+                    [`border border-${tagColor}-lighter`]: !isDark,
+                  },
+                )}
               >
                 <div>{tag}</div>
               </div>

@@ -1,8 +1,8 @@
 banners:
-  - ends: 1566295331394
+  - ends: 1567815331394
     markdown: >-
-      **Announcing Free <u>**[**Stoplight Studio**](https://stoplight.io/studio/)**</u> to Visually Design OpenAPI v3 Docs! <u class='ml-1'>**[**Try Now**](https://stoplight.io/studio/)**</u>**
-    starts: 1567815331394
+      Announcing Stoplight Studio, our most powerful API Designer yet, now with OpenAPI v3 support! <u class='ml-1'>**[Learn More](https://stoplight.io/studio)**</u>
+    starts: 1566295331394
     hideOnPath: '/studio'
 info:
   address:

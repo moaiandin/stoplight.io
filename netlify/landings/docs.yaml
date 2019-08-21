@@ -71,7 +71,7 @@ meta:
   favicon: /images/mark_light_bg.png
   image: /images/docs/landing.png
   title: Free Hosted Technical Docs | Stoplight
-  robots: 'noindex, nofollow'
+  robots: 'noindex, follow'
   twitter:
     description: >-
       Stoplight Docs are free and easy to use. Connect your Github and automatically generate technical documentation in seconds for any of your projects. One-click publish from [Stoplight Studio](/studio) or add the Stopight CLI to your CI/CD workflow.

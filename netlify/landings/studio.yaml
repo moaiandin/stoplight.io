@@ -126,7 +126,7 @@ meta:
   favicon: /images/mark_light_bg.png
   image: /images/studio/hero.png
   title: Stoplight Studio | OpenAPI Design, Planning & Modeling Tool
-  robots: 'noindex, nofollow'
+  robots: 'noindex, follow'
   twitter:
     description: >-
       Build first-class APIs with a collaborative, powerful, visual editor that

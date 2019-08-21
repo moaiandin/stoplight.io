@@ -122,7 +122,7 @@ meta:
     anywhere.
   favicon: /images/mark_light_bg.png
   image: /images/hubs/hero.png
-  robots: 'noindex, nofollow'
+  robots: 'noindex, follow'
   title: Stoplight Hubs | Hosted API Documentation
   twitter:
     description: >-

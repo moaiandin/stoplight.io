@@ -45,19 +45,6 @@ ul {
 #root {
   position: relative;
   height: 100%;
-
-  section {
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
-
-    &:nth-of-type(even) {
-      background: #f5f7f9;
-      z-index: 30;
-    }
-
-    &:first-of-type {
-      box-shadow: none;
-    }
-  }
 }
 
 #hs-eu-cookie-confirmation {
@@ -238,7 +225,6 @@ ul {
 
 .case-study {
   max-width: 100%;
-  margin-top: -100px;
 }
 
 .markdown-body s {

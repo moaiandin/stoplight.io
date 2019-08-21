@@ -17,7 +17,7 @@ export const HeroAuthor: React.FunctionComponent<IHeroAuthor> = ({ className, na
     <Link to={path} disabled={!path} className={cn(className, 'flex items-center')}>
       {image && (
         <Image
-          className="mr-2 rounded-full h-16 w-16 bg-center bg-contain bg-no-repeat"
+          className="mr-4 rounded-full h-14 w-14 bg-center bg-contain bg-no-repeat"
           src={image}
           alt="author"
           background

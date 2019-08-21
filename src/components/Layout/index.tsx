@@ -9,7 +9,7 @@ export const Layout: React.FunctionComponent = ({ children }) => {
     <Analytics>
       <Header />
 
-      <div className="relative">{children}</div>
+      <div className="relative bg-grey-lightest">{children}</div>
 
       <Footer />
     </Analytics>

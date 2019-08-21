@@ -113,6 +113,8 @@ footer:
     - links:
         - href: /about
           title: About Us
+        - href: https://stoplight.io/p/roadmap
+          title: Roadmap
         - href: 'https://press.stoplight.io'
           title: Press
         - href: /contact-us

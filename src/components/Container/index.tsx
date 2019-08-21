@@ -2,8 +2,10 @@ import cn from 'classnames';
 import * as React from 'react';
 
 import { CallToAction, ICallToAction } from '../CallToAction';
+import { Chips, IChips } from '../Chip';
 
 export interface IContainer {
+  chips?: IChips;
   className?: string;
   title?: string;
   description?: string;
@@ -11,10 +13,12 @@ export interface IContainer {
   style?: object;
 }
 
-export const Container: React.FunctionComponent<IContainer> = ({ className, children, title, style, cta }) => {
+export const Container: React.FunctionComponent<IContainer> = ({ chips, className, children, title, style, cta }) => {
   return (
     <div className={cn('container', className)} style={style}>
-      {title && <h2 className="text-center text-3xl mb-20 md:mb-14">{title}</h2>}
+      {chips && <Chips {...chips} />}
+
+      {title && <h3 className="text-center text-3xl mb-20 md:mb-14">{title}</h3>}
 
       {children}
 

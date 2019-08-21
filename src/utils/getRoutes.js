@@ -282,7 +282,6 @@ function caseStudyProps(props) {
     pageName: 'Case Study',
     sidebar,
     hero: {
-      skew: '3deg',
       aligned: 'left',
     },
     includeToc: false,

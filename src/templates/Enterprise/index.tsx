@@ -36,12 +36,11 @@ export const Enterprise: React.FunctionComponent<IEnterprise> = ({
         bgColor={color}
         {...hero}
         aligned="left"
-        wrapperClassName="border-b-8 border-blue-darkest"
         rightElem={
           <div className="flex-2 relative sm:hidden w-3/5 pl-20">
             <Image
               src="/images/enterprise/hero.png"
-              className="-mt-3 -mb-24 bg-darken-100 rounded-lg border border-darken-300"
+              className="-mt-3 -mb-12 bg-darken-100 rounded-lg border border-darken-300"
             />
           </div>
         }
@@ -54,7 +53,7 @@ export const Enterprise: React.FunctionComponent<IEnterprise> = ({
         </Container>
       </Section>
 
-      {customers && <CustomerSection images={customers.images} cardBg="white" />}
+      {customers && <CustomerSection noPadding images={customers.images} cardBg="white" />}
 
       <GartnerCoolVendor {...gartnerCoolVendor} />
 

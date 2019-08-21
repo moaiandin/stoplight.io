@@ -50,17 +50,9 @@ export const ListItem: React.FunctionComponent<IListItem> = ({
   return (
     <Link
       to={href}
-      className="block shadow bg-grey-lightest rounded-lg text-grey-darkest hover:bg-grey-lighter my-12 overflow-hidden h-80"
+      className="block shadow hover:shadow-lg bg-white rounded-lg text-grey-darkest mb-12 overflow-hidden h-80"
     >
       <article className="flex box h-full w-full items-center">
-        <Image
-          src={image}
-          className={cn(`h-full w-2/5 sm:w-1/5 bg-center bg-no-repeat bg-${backgroundSize}`, {
-            [`bg-${color}`]: !image,
-          })}
-          useDiv
-        />
-
         <div className="flex-1 flex flex-col h-full p-10 md:p-6">
           <div className="flex-1 mb-2 flex flex-col relative overflow-hidden">
             <div className="text-3xl font-bold mb-4">{title}</div>
@@ -87,6 +79,14 @@ export const ListItem: React.FunctionComponent<IListItem> = ({
             )}
           </div>
         </div>
+
+        <Image
+          src={image}
+          className={cn(`h-full w-2/5 sm:w-1/5 bg-center bg-no-repeat bg-${backgroundSize}`, {
+            [`bg-${color}`]: !image,
+          })}
+          useDiv
+        />
       </article>
     </Link>
   );

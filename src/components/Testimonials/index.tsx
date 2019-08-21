@@ -68,8 +68,15 @@ export const Testimonials: React.FunctionComponent<ITestimonials> = ({
   }
 
   return (
-    <Section id="testimonials">
-      <Container title={title} description={description}>
+    <Section id="testimonials" noPadding className="pb-32">
+      <Container
+        title={title}
+        description={description}
+        chips={{
+          className: 'justify-center mb-32',
+          segments: [{ color: 'orange-light', length: 2 }, { color: 'orange-dark', length: 4 }, { color: 'orange' }],
+        }}
+      >
         <div className="flex flex-wrap -mx-14 sm:mx-0">
           {testimonials.map((testimonial, index) => {
             return <Testimonial key={index} {...testimonial} />;

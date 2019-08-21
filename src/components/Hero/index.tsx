@@ -116,7 +116,7 @@ export const Hero: React.FunctionComponent<IHero> = ({
         key="main"
         className={cn(wrapperClassName, 'relative', {
           [skewOpts ? skewOpts.containerClass : undefined]: skewOpts,
-          'pb-40 sm:pb-10': !hasBottomContent && !skew && !contentBgImage,
+          'pb-32 sm:pb-10': !hasBottomContent && !skew && !contentBgImage,
           'pb-24': contentBgImage,
         })}
       >
@@ -206,42 +206,42 @@ export const Hero: React.FunctionComponent<IHero> = ({
 
         {image && <HeroImage {...image} className="relative z-5 mt-16" />}
 
-        {contentBgImage && (
+        {heroTabs.length > 0 ? <Tabs tabs={heroTabs} className="pt-24" /> : null}
+
+        {contentBgImage ? (
           <div
-            className="absolute pin z-1 bg-cover bg-no-repeat bg-center"
+            className="absolute pin z-1 bg-cover bg-no-repeat bg-center border-b-4 border-darken-300"
             style={{
               backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(${contentBgImage})`,
             }}
           />
-        )}
-
-        {heroTabs.length > 0 ? <Tabs tabs={heroTabs} className="pt-24" /> : null}
-
-        <div
-          className={cn('absolute pin overflow-hidden', {
-            'bg-grey-lightest': greyBg,
-          })}
-        >
-          <Image
-            src={particles ? '' : '/images/patterns/diagonal-stripes-sm.png'}
-            className={cn('absolute z-0 overflow-hidden', {
-              [`bg-${bgColor}`]: bgColor,
-              'border-b-4 border-lighten-300': !skew && heroTabs && heroTabs.length,
-              'shadow-inner-intense': skew === 'rounded',
+        ) : (
+          <div
+            className={cn('absolute pin overflow-hidden', {
+              'bg-grey-lightest': greyBg,
             })}
-            style={{
-              width: skew === 'rounded' ? '200%' : 'auto',
-              top: -300,
-              bottom: skew ? (skewOpts && skewOpts.bottom) || 50 : 0,
-              left: skew === 'rounded' ? '-50%' : 0,
-              right: skew === 'rounded' ? '-50%' : 0,
-              borderRadius: skew === 'rounded' ? '50%' : '0',
-              transform: skew && skew !== 'rounded' ? `skew(0, ${skew})` : undefined,
-              background: bgColor ? undefined : 'radial-gradient(circle, #0f0c2f 0%, #080515 100%)',
-            }}
-            useDiv
-          />
-        </div>
+          >
+            <Image
+              src={particles ? '' : '/images/patterns/diagonal-stripes-sm.png'}
+              className={cn('absolute z-0 overflow-hidden', {
+                [`bg-${bgColor}`]: bgColor,
+                'shadow-inner-intense': skew === 'rounded',
+                'border-b-4 border-lighten-300': !hasBottomContent && !skew,
+              })}
+              style={{
+                width: skew === 'rounded' ? '200%' : 'auto',
+                top: -300,
+                bottom: skew ? (skewOpts && skewOpts.bottom) || 50 : 0,
+                left: skew === 'rounded' ? '-50%' : 0,
+                right: skew === 'rounded' ? '-50%' : 0,
+                borderRadius: skew === 'rounded' ? '50%' : '0',
+                transform: skew && skew !== 'rounded' ? `skew(0, ${skew})` : undefined,
+                background: bgColor ? undefined : 'radial-gradient(circle, #0f0c2f 0%, #080515 100%)',
+              }}
+              useDiv
+            />
+          </div>
+        )}
 
         {particles && (
           <div className="absolute z-1 sm:hidden" style={{ left: 0, top: -25, right: 0, bottom: -100 }}>

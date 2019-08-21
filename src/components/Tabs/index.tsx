@@ -26,7 +26,7 @@ export const Tab: React.FunctionComponent<ITab> = ({ isActive, href, title }) =>
     >
       <div
         className={cn('pt-3 pb-4 px-6 font-semibold', {
-          'bg-white text-black': isActive,
+          'bg-grey-lightest text-black': isActive,
           'hover:bg-lighten-100': !isActive,
         })}
       >

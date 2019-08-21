@@ -57,7 +57,7 @@ export const About: React.FunctionComponent<IAbout> = ({
 }) => {
   return (
     <Layout>
-      <Hero key="hero" bgColor={color} greyBg wrapperClassName="border-b-4 border-darken-200" {...hero} />
+      <Hero key="hero" bgColor={color} greyBg {...hero} />
 
       {team.length ? (
         <div className="bg-grey-lightest relative z-5 pt-12">

@@ -1183,6 +1183,30 @@ pre.line-numbers > code {
   }
 }
 
+.StartPopover {
+  &__caret {
+    position: absolute;
+    left: 50%;
+    margin-left: -11px;
+    top: -20px;
+
+    svg {
+      font-size: 36px;
+    }
+  }
+}
+
+.anim-wiggle {
+  animation-name: wiggle;
+  animation-iteration-count: 5;
+  animation-duration: 150ms;
+  transform-origin: 50% 50%;
+}
+
+.anim-delay-1s {
+  animation-delay: 1s;
+}
+
 @keyframes growUp {
   0% {
     opacity: 0;
@@ -1203,4 +1227,10 @@ pre.line-numbers > code {
     opacity: 100;
     transform: scale(1);
   }
+}
+
+@keyframes wiggle {
+  0% { transform: translate(0px, 0px); }
+  50% { transform: translate(-3px, 0px); }
+  100% { transform: translate(0px, 0px); }
 }

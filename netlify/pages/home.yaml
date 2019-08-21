@@ -6,6 +6,8 @@ hero:
     The API design management platform powering the world’s leading API first companies.
   # ctas:
   #   - title: Get Started
+  #     icon: ['fad', 'rocket']
+  #     large: true
   #     rightIcon: ['fad', 'arrow-right']
   #     href: '/start'
 testimonials:

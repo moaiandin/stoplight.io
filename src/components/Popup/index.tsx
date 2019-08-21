@@ -347,7 +347,7 @@ export class Popup extends React.PureComponent<IPopup, IPopupState> {
   };
 
   private get _controlled() {
-    return this.props.hasOwnProperty('show') ? true : false;
+    return this.props.hasOwnProperty('show') && typeof this.props.show !== 'undefined' ? true : false;
   }
 
   private get _posX() {

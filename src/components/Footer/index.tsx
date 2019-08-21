@@ -1,3 +1,4 @@
+import cn from 'classnames';
 import * as React from 'react';
 import { withSiteData } from 'react-static';
 
@@ -32,11 +33,24 @@ export interface IFooter {
   legal: IFooterLegal[];
 }
 
-export const Footer: React.FunctionComponent<{ footer: IFooter }> = ({ footer }) => {
+export interface IFooterProps {
+  bg?: string;
+  noBorder?: boolean;
+}
+
+export const Footer: React.FunctionComponent<{ footer: IFooter } & IFooterProps> = ({
+  footer,
+  bg = 'black',
+  noBorder,
+}) => {
   const { columns, social, legal } = footer;
 
   return (
-    <footer className="bg-black py-12 border-t-4 border-lighten-300 z-5 relative">
+    <footer
+      className={cn(`bg-${bg} py-12 z-5 relative`, {
+        'border-t-4 border-lighten-300': !noBorder,
+      })}
+    >
       <nav className="container mx-auto flex flex-col items-center" style={{ maxWidth: 1000 }}>
         <div className="py-4">
           <Link to="/">

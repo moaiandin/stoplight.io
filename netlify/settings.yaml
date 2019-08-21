@@ -64,13 +64,14 @@ header:
       width: 300
     - href: /enterprise
       title: Enterprise
-    - href: /start
-      isButton: true
-      title: Start
     - href: /demo
       isButton: true
       title: Book a Demo
       altBg: purple
+    - href: /start
+      isButton: true
+      title: Start
+      icon: ['fad', 'arrow-right']
 actionBar:
   ctas:
     - color: white

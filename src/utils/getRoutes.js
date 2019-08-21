@@ -81,6 +81,10 @@ export async function getRoutes() {
       template: 'src/templates/Enterprise',
       getData: () => enterprise,
     },
+    {
+      path: '/start',
+      template: 'src/templates/Start',
+    },
 
     ...createListRoutes('src/templates/Lists', lists, allPages),
     ...createListRoutes('src/templates/Lists', authors, allPages, authorProps),

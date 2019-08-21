@@ -32,19 +32,7 @@ export const Enterprise: React.FunctionComponent<IEnterprise> = ({
 }) => {
   return (
     <Layout>
-      <Hero
-        bgColor={color}
-        {...hero}
-        aligned="left"
-        rightElem={
-          <div className="flex-2 relative sm:hidden w-3/5 pl-20">
-            <Image
-              src="/images/enterprise/hero.png"
-              className="-mt-3 -mb-12 bg-darken-100 rounded-lg border border-darken-300"
-            />
-          </div>
-        }
-      />
+      <Hero bgColor={color} {...hero} aligned="center" />
 
       <Section>
         <Container>

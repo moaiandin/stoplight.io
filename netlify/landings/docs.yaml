@@ -32,7 +32,7 @@ featureSection:
       title: Generate from OpenAPI v2/v3
 
     - description: >-
-        Stoplight Docs uses a powerful markdown engine built using CommonMark, an industry standard, to give your users the best experience. Enhance your documentation with embedded models, code snippets, call outs and more to keep your users engaged.
+        Stoplight Docs uses a powerful markdown engine built on top of the CommonMark spec. Enhance your documentation with embedded models, code snippets, call outs and more to give your users the best experience.
       image: /images/docs/jsv.png
       shortName: Powerful Markdown
       title: Powerful Markdown Rendering

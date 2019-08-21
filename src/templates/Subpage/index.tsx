@@ -116,10 +116,7 @@ export const Subpage: React.FunctionComponent<IPage> = ({
               </div>
             )}
 
-            <div
-              className={cn('markdown-body', className, { 'm-auto': !sidebar && !includeToc })}
-              dangerouslySetInnerHTML={{ __html: html }}
-            />
+            <div className={cn('markdown-body', className)} dangerouslySetInnerHTML={{ __html: html }} />
           </div>
         </Container>
       </Section>

@@ -210,9 +210,9 @@ export const Hero: React.FunctionComponent<IHero> = ({
 
         {contentBgImage ? (
           <div
-            className="absolute pin z-1 bg-cover bg-no-repeat bg-center border-b-4 border-darken-300"
+            className="absolute pin z-1 bg-cover bg-no-repeat border-b-4 border-darken-300"
             style={{
-              backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(${contentBgImage})`,
+              backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${contentBgImage})`,
             }}
           />
         ) : (

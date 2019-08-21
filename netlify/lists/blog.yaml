@@ -2,7 +2,7 @@ path: /blog
 tag: blog
 title: Stoplight API Corner
 subtitle: 'Musings on API design, testing, documentation, trends, and related technology.'
-color: purple
+color: indigo
 tabs:
   - href: /blog
     title: Latest

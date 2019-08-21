@@ -25,11 +25,6 @@ header:
           subtitle: Learn how to use Stoplight
           title: Help Center
           titleColor: blue
-        - href: /blog
-          icon: ['fad', 'rss']
-          subtitle: Stay up to date on Stoplight
-          title: Blog
-          titleColor: green
         - href: 'https://community.stoplight.io/'
           icon: ['fad', 'users']
           subtitle: Join the Stoplight community
@@ -62,6 +57,8 @@ header:
           titleColor: purple
       title: Resources
       width: 300
+    - href: /blog
+      title: Blog
     - href: /enterprise
       title: Enterprise
     - href: /demo

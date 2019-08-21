@@ -126,6 +126,7 @@ function filterPages(allPages, filter) {
       subtitle: page.subtitle,
       listSubtitle: page.listSubtitle,
       image: page.image,
+      listImage: page.listImage,
       href: page.path,
       tags: page.tags, // used to show which tag matches the search
       author: page.author,

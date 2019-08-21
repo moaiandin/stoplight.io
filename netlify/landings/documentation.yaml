@@ -1,10 +1,9 @@
 path: /documentation
 title: OpenAPI Documentation
-color: green
+color: indigo
 relatedTags:
   - blog-documentation
 hero:
-  bgColor: green
   image:
     alt: Documentation
     src: /images/hubs/hero.png
@@ -12,6 +11,17 @@ hero:
     Create beautiful, customizable, interactive API documentation generated from
     your OpenAPI Specification
   title: Hosted API Documentation
+  ctas:
+    - href: '/docs'
+      title: Free Hosted Docs
+      icon: ['fad', 'book-open']
+      rightIcon: ['fad', 'arrow-right']
+      color: green
+    - href: '/hubs'
+      title: Branded Company Docs
+      icon: ['fad', 'book']
+      rightIcon: ['fad', 'arrow-right']
+      color: orange
 featureSection:
   actionBar:
     ctas:

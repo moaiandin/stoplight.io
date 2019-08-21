@@ -85,9 +85,11 @@ footer:
     - links:
         - href: /studio
           title: Design Studio
-        - href: /enterprise
-          title: Enterprise Platform
+        - href: /docs
+          title: Free Docs
         - href: /hubs
+          title: Docs Hubs
+        - href: /enterprise
           title: Docs Hubs
       title: Products
     - links:
@@ -96,6 +98,14 @@ footer:
         - href: /prism
           title: Prism
       title: Open Source
+    - links:
+        - href: /design
+          title: API Design
+        - href: /documentation
+          title: API Documentation
+        - href: /mocking
+          title: API Mocking
+      title: Use Cases
     - links:
         - href: 'https://docs.stoplight.io'
           title: Help Center

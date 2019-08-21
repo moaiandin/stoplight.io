@@ -30,7 +30,7 @@ sidebar:
         partials or the entire schema, which is rad.
       role: Lead Developer
 actionBar:
-  enabled: true
+  enabled: false
 meta:
   description: How AppointmentPlus managed multiple APIs with Stoplight
   title: AppointmentPlus | Stoplight

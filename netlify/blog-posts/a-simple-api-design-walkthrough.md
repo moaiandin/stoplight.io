@@ -86,7 +86,7 @@ Some other endpoint/verb combinations:
 
 There’s a lot of detail behind each of the API calls. What data needs to be sent and what do responses look like? What are potential non-200 status codes for each call?
 
-This sort of API design is best stored as an [OpenAPI document](https://stoplight.io/api-design-guide/oas-spec/). This machine-readable description, formerly known as Swagger, serves as a source of truth for the current design of your API. It can also be an artifact that you can use to discuss with the rest of your organization.
+This sort of API design is best stored as an [OpenAPI document](https://stoplight.io/api-design-guide/openapi). This machine-readable description, formerly known as Swagger, serves as a source of truth for the current design of your API. It can also be an artifact that you can use to discuss with the rest of your organization.
 
 ## Seek Feedback from Collaborators
 

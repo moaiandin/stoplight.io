@@ -14,7 +14,7 @@ tabs:
   - href: 'https://community.stoplight.io/c/api-best-practices/documentation'
     title: Documentation | Stoplight Community
 actionBar:
-  enabled: true
+  enabled: false
 meta:
   description: >-
     Our tool is built to product aesthetically pleasing and user oriented

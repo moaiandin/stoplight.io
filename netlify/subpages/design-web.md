@@ -20,7 +20,7 @@ tabs:
   - title: API Testing
     href: /testing
 actionBar:
-  enabled: true
+  enabled: false
 meta:
   description: >-
     Our cloud-based API design tooling allows anyone with little experience to

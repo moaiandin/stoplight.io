@@ -131,7 +131,7 @@ let colors = {
   'positive-lighter': '#a2f5bf',
   'positive-lightest': '#e3fcec',
 
-  black: '#13101C',
+  black: '#0e0b2a',
   'grey-darkest': '#3D4852',
   'grey-darker': '#606f7b',
   'grey-dark': '#8795a1',
@@ -234,9 +234,9 @@ module.exports = {
   */
 
   screens: {
-    sm: { max: '767px' }, // mobile
-    md: { max: '1007px' }, // tablet
-    lg: { min: '1008px' }, // desktop
+    sm: { max: '800px' }, // mobile
+    md: { max: '1249px' }, // tablet
+    lg: { min: '1250px' }, // desktop
     print: { raw: 'print' },
   },
 
@@ -316,8 +316,7 @@ module.exports = {
     '2xl': '1.5rem', // 24px
     '3xl': '1.875rem', // 30px
     '4xl': '2.25rem', // 36px
-    '5xl': '3rem', // 48px
-    '6xl': '4rem', // ??
+    '5xl': '2.75rem', // 48px
   },
 
   /*
@@ -343,8 +342,8 @@ module.exports = {
     medium: 500,
     semibold: 600,
     bold: 700,
-    extrabold: 900,
-    // black: 900,
+    extrabold: 800,
+    black: 900,
   },
 
   /*
@@ -727,6 +726,7 @@ module.exports = {
     '2': '6px',
     '3': '10px',
     '4': '13px',
+    '5': '16px',
     '6': '20px',
     '8': '26px',
     '10': '32px',
@@ -769,6 +769,7 @@ module.exports = {
     '2': '6px',
     '3': '10px',
     '4': '13px',
+    '5': '16px',
     '6': '20px',
     '8': '26px',
     '10': '32px',
@@ -845,12 +846,14 @@ module.exports = {
   */
 
   shadows: {
-    sm: '0 1px 2px 0 rgba(19, 15, 33, .3)',
-    default: '0 2px 5px 0 rgba(51, 51, 79, .3)',
-    md: '0 4px 8px 0 rgba(19, 15, 33, 0.12), 0 2px 4px 0 rgba(19, 15, 33, 0.1)',
-    lg: '0 15px 30px 0 rgba(19, 15, 33, 0.11), 0 5px 15px 0 rgba(19, 15, 33, 0.1)',
-    dark: '0 3px 10px 0 rgba(19, 15, 33, .75)',
-    inner: 'inset 0 2px 4px 0 rgba(19, 15, 33, 0.08)',
+    default: '0px 1px 2px rgba(0, 0, 0, 0.25)',
+    md: '0px 2px 6px rgba(0, 0, 0, .2)',
+    lg: '0px 4px 12px rgba(0, 0, 0, .14)',
+    'md-intense': '0px 2px 5px rgba(0, 0, 0, 0.4)',
+    'lg-intense': '0px 4px 8px rgba(0, 0, 0, 0.35)',
+    inner: 'inset 0 2px 4px 0 rgba(0, 0, 0, 0.06)',
+    'inner-intense': 'inset 0 -10px 20px rgba(0, 0, 0, .95)',
+    outline: '0 0 0 3px rgba(66, 153, 225, 0.5)',
     none: 'none',
   },
 
@@ -1027,7 +1030,7 @@ module.exports = {
   plugins: [
     require('tailwindcss/plugins/container')({
       center: true,
-      padding: '1rem',
+      padding: '30px',
     }),
   ],
 

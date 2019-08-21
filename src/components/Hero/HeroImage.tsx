@@ -1,9 +1,9 @@
 import cn from 'classnames';
 import * as React from 'react';
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { Container } from 'src/components/Container';
-import { IImage, Image } from 'src/components/Image';
+import { Container } from '../Container';
+import { Icon } from '../Icon';
+import { IImage, Image } from '../Image';
 import { VideoPlayerModal } from '../VideoPlayerModal';
 
 export interface IHeroImage extends IImage {
@@ -16,19 +16,23 @@ export const HeroImage: React.FunctionComponent<IHeroImage> = ({ className, vide
     return null;
   }
   return (
-    <section>
-      <Container className="relative text-center" style={{ maxHeight: 500 }}>
+    <Container className={className}>
+      <div
+        className="relative text-center shadow-lg-intense -mb-1 rounded-t-lg overflow-hidden"
+        style={{ height: 430, borderBottom: 'none' }}
+      >
         {video && (
           <VideoPlayerModal href={video}>
             {({ onClick }) => (
               <div className="absolute pin flex items-center justify-center cursor-pointer" onClick={onClick}>
-                <FontAwesomeIcon icon="play-circle" size={'5x'} />
+                <Icon icon="play-circle" size="5x" />
               </div>
             )}
           </VideoPlayerModal>
         )}
-        <Image className={cn(className, 'rounded-lg')} src={src} alt={alt} size="lg" />
-      </Container>
-    </section>
+
+        <Image className={'rounded-t-lg bg-cover bg-position-top absolute pin'} src={src} alt={alt} useDiv size="lg" />
+      </div>
+    </Container>
   );
 };

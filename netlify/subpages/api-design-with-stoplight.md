@@ -19,7 +19,7 @@ actionBar:
   ctas:
     - color: purple
       href: 'https://www.youtube.com/channel/UCQMe84IAmmkU0FYw_jFtw6w/featured'
-      name: 'Subscribe to our YouTube channel'
+      title: 'Subscribe to our YouTube channel'
   enabled: true
   text: Want to watch more API design content?
 meta:

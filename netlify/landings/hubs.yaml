@@ -1,0 +1,136 @@
+path: /hubs
+title: Stoplight Hubs
+color: indigo
+relatedTags:
+  - blog-documentation
+hero:
+  particles: true
+  image:
+    alt: Documentation
+    src: /images/hubs/hero.png
+  subtitle: >-
+    Create beautiful, customizable, interactive API documentation generated from
+    your OpenAPI document
+  title: Stoplight Hubs
+  ctas:
+    - color: green
+      href: 'https://next.stoplight.io'
+      title: Get Started Now
+    - type: video
+      title: Quick Overview
+      href: 'https://youtube.com/watch?v=iHzFoc4ls8E'
+      color: green
+featureSection:
+  actionBar:
+    ctas:
+      - color: accent
+        href: 'https://next.stoplight.io/'
+        title: Get Started Now
+    enabled: true
+    text: 'Ready to Publish?'
+  description: >-
+    Create API documentation in minutes. Combine OpenAPI descriptions
+    (formerly known as Swagger) with Markdown to create robust, searchable,
+    internal and external [API documentation](/api-documentation-guide/basics/)
+    for your organization. One-click cloud deployment with Stoplight or download
+    the static assets to host anywhere.
+  features:
+    - description: >-
+        Never have out-of-date documentation. Reference your OpenAPI document
+        to automatically generate API reference documentation. Integrate Stoplight
+        into your existing CI/CD workflow.
+      image: /images/docs_feature_3.png
+      shortName: Auto-Generated API Documentation
+      title: Auto-Generated API Documentation
+      titleURL: /documentation/automation/
+    - description: >-
+        Design your documentation for your audience. With fully customizable layouts,
+        page design, and our Markdown-based editor, you can document multiple APIs
+        and add rich content and resources, like guides and tutorials, alongside your
+        auto-generated, OpenAPI-based reference documentation for a more complete
+        view of your platform. Customize the headers and navigation to fit your users
+        needs.
+      image: /images/docs_feature_1.png
+      shortName: Custom Pages & Layouts
+      title: Custom Pages, Layouts, and Design
+    - description: >-
+        Want your documentation to match the rest of your site? Customize your
+        documentation with Themes, Custom CSS, and JavaScript. Don't worry if you don't want
+        to write a bunch of CSS, Themes can help you brand your documentation without a
+        line of CSS.
+      image: /images/product/docs-theme.png
+      shortName: Theming
+      title: Fully Customizable
+      titleURL: /documentation/helper/
+    - description: >-
+        With flexible and secure deployment options, you can find a hosting
+        solution that works for you. With custom domain support, allow Stoplight
+        to host your documentation for you, so you never have to worry about
+        managing servers for your documentation ever again. Manage access control
+        and measure analytics with integrations. Our enterprise ready documentation
+        tool allows you to download the static assets or use our on-premise
+        solutions behind your firewall to host your documentation from anywhere.
+      image: /images/flexible_deployment.png
+      shortName: Deployment Options
+      title: 'Simple, Flexible Deployment'
+      titleURL: /documentation/hosted/
+  title: Complete OpenAPI Documentation Solution
+pricingSection:
+  title: Documentation Pricing
+  cards:
+    - icon: ['fad', 'user-check']
+      title: "Basic"
+      tag: "FREE"
+      buttonText: "Learn more about free docs"
+      href: "/docs"
+      features: ['OpenAPI v2 & v3', 'HTTP Request Maker', 'Unlimited Published Pages']
+
+    - isDark: true
+      icon: ['fad', 'user-friends']
+      title: "Pro"
+      tag: "$179 / month"
+      href: "https://next.stoplight.io"
+      buttonText: "Get Started Now"
+      featuresTitle: "All Basic features plus:"
+      features: [
+        'Custom Branding',
+        'Custom Domains',
+        'Build History & Instant Rollbacks',
+        'Username/Password Login Page',
+      ]
+
+    - isDark: true
+      icon: ['fad', 'users']
+      title: "Enterprise"
+      tag: "Contact Us"
+      href: "/enterprise-contact"
+      buttonText: "Contact Us"
+      featuresTitle: "All Pro features plus:"
+      features: [
+        'Custom CSS & JavaScript',
+        'Download static HTML/CSS',
+        'SAML Single Sign-On',
+        'OAuth Token Manager',
+        'Custom Invoicing',
+      ]
+meta:
+  description: >-
+    Create custom API documentation in minutes. Combine OpenAPI documents
+    (formerly known as Swagger) with Markdown to create robust, searchable,
+    internal and external API documentation for your organization. One-click
+    cloud deployment with Stoplight or download the static assets to host
+    anywhere.
+  favicon: /images/mark_light_bg.png
+  image: /images/hubs/hero.png
+  robots: 'noindex, follow'
+  title: Stoplight Hubs | Hosted API Documentation
+  twitter:
+    description: >-
+      Create API documentation in minutes. Combine OpenAPI documents
+      (formerly known as Swagger) with Markdown to create robust, searchable,
+      internal and external API documentation for your organization. One-click
+      cloud deployment with Stoplight or download the static assets to host
+      anywhere.
+    image: /images/hubs/hero.png
+    title: Stoplight Hubs | Hosted API Documentation
+    username: '@stoplightio'

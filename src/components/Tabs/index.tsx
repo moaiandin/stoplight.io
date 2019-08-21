@@ -12,28 +12,36 @@ export interface ITab {
 
 export interface ITabs {
   tabs: ITab[];
+  className?: string;
 }
 
 export const Tab: React.FunctionComponent<ITab> = ({ isActive, href, title }) => {
   return (
     <Link
-      className={cn('whitespace-no-wrap border-4 border-b-0 rounded-lg', {
-        'border-lighten-300': isActive,
+      className={cn('whitespace-no-wrap border-t-4 border-lighten-300 relative', {
         'text-white border-transparent': !isActive,
       })}
+      style={{ top: 4 }}
       to={href}
     >
-      <div className={cn('py-4 px-6 font-semibold', { 'bg-white text-black': isActive })}>{title}</div>
+      <div
+        className={cn('pt-3 pb-4 px-6 font-semibold', {
+          'bg-grey-lightest text-black': isActive,
+          'hover:bg-lighten-100': !isActive,
+        })}
+      >
+        {title}
+      </div>
     </Link>
   );
 };
 
-export const Tabs: React.FunctionComponent<ITabs> = withRouteData(({ tabs, path }) => {
+export const Tabs: React.FunctionComponent<ITabs> = withRouteData(({ tabs, path, className }) => {
   const reg = new RegExp(`^${path}$`);
 
   return (
-    <div className="container relative z-5 sm:m-0 sm:p-0">
-      <div className="flex flex-no-wrap w-full sm:overflow-auto scrolling-touch">
+    <div className={cn(className, 'relative z-5 border-b-4 border-lighten-300')}>
+      <div className="container flex flex-no-wrap w-full sm:overflow-auto scrolling-touch -mb-1 pb-1">
         {tabs.map(tab => (
           <Tab key={tab.href} isActive={reg.test(tab.href)} {...tab} />
         ))}

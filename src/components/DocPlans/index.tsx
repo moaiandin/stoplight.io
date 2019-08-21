@@ -1,10 +1,9 @@
 import * as React from 'react';
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
-import { Container } from 'src/components/Container';
-import { Link } from 'src/components/Link';
-import { Section } from 'src/components/Section';
+import { Container } from '../Container';
+import { Icon } from '../Icon';
+import { Link } from '../Link';
+import { Section } from '../Section';
 
 export interface IDocPlanFeature {
   title: string;
@@ -79,7 +78,7 @@ export const DocPlans: React.FunctionComponent<IDocPlans> = ({
                         return (
                           <td key={planIndex}>
                             {feature.plans.includes(plan.title) && (
-                              <FontAwesomeIcon className="text-green" icon={['fas', 'check-circle']} size="lg" />
+                              <Icon className="text-green" icon="check-circle" size="lg" />
                             )}
                           </td>
                         );
@@ -97,7 +96,7 @@ export const DocPlans: React.FunctionComponent<IDocPlans> = ({
               className="block py-6 bg-green hover:bg-green-light font-bold text-center text-xl text-white hover:text-white"
             >
               {buttonText}
-              <FontAwesomeIcon icon={['fas', 'arrow-right']} className="ml-3" />
+              <Icon icon="arrow-right" className="ml-3" />
             </Link>
           </div>
         </div>

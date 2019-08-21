@@ -4,63 +4,61 @@ color: blue
 relatedTags:
   - blog-design
 hero:
+  particles: true
   image:
     alt: Stoplight Studio
-    src: /images/stoplight-studio.png
+    src: /images/studio/hero.png
   subtitle: >-
-    Build first-class APIs with a collaborative, powerful, visual editor that
-    allows you to prototype and share your API within minutes
+    Design APIs 10x faster with with our free OpenAPI editor. Prototype and share your API within minutes.
   title: 'Stoplight Studio'
   ctas:
-    - name: Try the Web Version
+    - title: On the Web
       href: 'https://stoplight.io/p/studio'
-      icon: ['fas', 'cloud']
+      icon: ['fad', 'browser']
       color: purple
-    - name: Download for Mac
-      download:
-        href: 'https://github.com/stoplightio/studio/releases/download/v1.0.0/Stoplight-Studio-1.0.0.dmg'
-        icon: ['fab', 'apple']
-        color: green
-        filename: studio-mac
-    - name: Download for Windows
-      download:
-        href: 'https://github.com/stoplightio/studio/releases/download/v1.0.0/Stoplight-Studio-Setup-1.0.0.exe'
-        icon: ['fab', 'windows']
-        color: green
-        filename: studio-windows
-    - name: Download for Linux
-      download:
-        href: 'https://github.com/stoplightio/studio/releases/download/v1.0.0/Stoplight-Studio-1.0.0.AppImage'
-        icon: ['fab', 'linux']
-        color: green
-        filename: studio-linux
+    - title: Mac App
+      href: 'https://github.com/stoplightio/studio/releases/download/v1.0.1/Stoplight-Studio-1.0.1.dmg'
+      icon: ['fab', 'apple']
+      color: green
+      filename: studio-mac
+    - title: Windows App
+      href: 'https://github.com/stoplightio/studio/releases/download/v1.0.1/Stoplight-Studio-Setup-1.0.1.exe'
+      icon: ['fab', 'windows']
+      color: green
+      filename: studio-windows
+    - title: Linux App
+      href: 'https://github.com/stoplightio/studio/releases/download/v1.0.1/Stoplight-Studio-1.0.1.AppImage'
+      icon: ['fab', 'linux']
+      color: green
+      filename: studio-linux
 featureSection:
   actionBar:
     ctas:
-      - name: Download for Mac
-        download:
-          href: 'https://github.com/stoplightio/studio/releases/download/v1.0.0/Stoplight-Studio-1.0.0.dmg'
-          icon: ['fab', 'apple']
-          color: green
-          filename: studio-mac
-      - name: Download for Windows
-        download:
-          href: 'https://github.com/stoplightio/studio/releases/download/v1.0.0/Stoplight-Studio-Setup-1.0.0.exe'
-          icon: ['fab', 'windows']
-          color: green
-          filename: studio-windows
-      - name: Download for Linux
-        download:
-          href: 'https://github.com/stoplightio/studio/releases/download/v1.0.0/Stoplight-Studio-1.0.0.AppImage'
-          icon: ['fab', 'linux']
-          color: green
-          filename: studio-linux
+      - title: On the Web
+        href: 'https://stoplight.io/p/studio'
+        icon: ['fad', 'browser']
+        color: purple
+      - title: Mac App
+        href: 'https://github.com/stoplightio/studio/releases/download/v1.0.1/Stoplight-Studio-1.0.1.dmg'
+        icon: ['fab', 'apple']
+        color: green
+        filename: studio-mac
+      - title: Windows App
+        href: 'https://github.com/stoplightio/studio/releases/download/v1.0.1/Stoplight-Studio-Setup-1.0.1.exe'
+        icon: ['fab', 'windows']
+        color: green
+        filename: studio-windows
+      - title: Linux App
+        href: 'https://github.com/stoplightio/studio/releases/download/v1.0.1/Stoplight-Studio-1.0.1.AppImage'
+        icon: ['fab', 'linux']
+        color: green
+        filename: studio-linux
     enabled: true
-    text: Ready to Model and Design?
-  title: OpenAPI v2/v3 Visual Editor
+    text: Ready to start designing APIs?
+  title: OpenAPI v2 & v3 API Designer
   description: >-
     Start designing your API in minutes. Use the [OpenAPI
-    Specification](/api-design-guide/oas-spec/) (formerly known as Swagger) with
+    Specification](/api-design-guide/openapi) (formerly known as Swagger) with
     Stoplight Studio to design consistent and standardized HTTP APIs for your
     organization. Without writing any code, model complex APIs faster than ever
     while simultaneously getting feedback on your prototypes with our
@@ -74,7 +72,20 @@ featureSection:
         examples, and much more for complex APIs.
       image: /images/studio_editor.png
       shortName: OpenAPI Visual Editor
-      title: 'Powerful, OpenAPI v2/v3 Visual Editor'
+      title: 'A Powerful OpenAPI v2 & v3 Visual Editor'
+
+    - description: >-
+        Use the Git integration with your organization's Git provider
+        (GitHub, GitLab, Bitbucket, etc.). Invite teammates, partners,
+        and API consumers to view and collaborate on your API designs privately
+        or publicly with the tooling you already know and use.
+        <br><br>
+        With Offline File Support, open an existing OpenAPI document on your local
+        machine or start from scratch with a new API, zero coding required. You can
+        also share your OpenAPI document where ever you want.
+      image: /images/studio_git_local_files.png
+      shortName: Git & Offline Support
+      title: Git Integration for Collaboration and Offline File Support
 
     - description: >-
         Instantly prototype and collaborate on your API design with our integrated,
@@ -92,7 +103,7 @@ featureSection:
     - description: >-
         Create API documentation in minutes. Combine OpenAPI documents with
         Markdown to create robust, searchable, internal and external
-        [API documentation](/api-documentation-guide/basics/) for your organization.
+        [API documentation](/api-documentation-guide/basics) for your organization.
       image: /images/studio_docs.png
       shortName: Markdown Documentation
       title: Generate API Documentation with OpenAPI and Markdown
@@ -108,29 +119,18 @@ featureSection:
       shortName: Linting
       title: OpenAPI Linting and API Style Guides
 
-    - description: >-
-        Use the Git integration with your organization's Git provider
-        (GitHub, GitLab, Bitbucket, etc.). Invite teammates, partners,
-        and API consumers to view and collaborate on your API designs privately
-        or publicly with the tooling you already know and use.
-        <br><br>
-        With Offline File Support, open an existing OpenAPI document on your local
-        machine or start from scratch with a new API, zero coding required. You can
-        also share your OpenAPI document where ever you want.
-      image: /images/studio_git_local_files.png
-      shortName: Git & Offline Support
-      title: Git Integration for Collaboration and Offline File Support
 meta:
   description: >-
     Build first-class APIs with a collaborative, powerful, visual editor that
     allows you to prototype and share your API within minutes
   favicon: /images/mark_light_bg.png
-  image: /images/design_feature_3.png
+  image: /images/studio/hero.png
   title: Stoplight Studio | OpenAPI Design, Planning & Modeling Tool
+  robots: 'noindex, follow'
   twitter:
     description: >-
       Build first-class APIs with a collaborative, powerful, visual editor that
       allows you to prototype and share your API within minutes
-    image: /images/design_feature_3.png
+    image: /images/studio/hero.png
     title: Stoplight Studio | OpenAPI Design, Planning & Modeling Tool
     username: '@stoplightio'

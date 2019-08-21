@@ -34,7 +34,7 @@ collage:
   cta:
     color: green
     href: /case-studies
-    name: Read the Case Studies
+    title: Read the Case Studies
   images: []
 testimonials:
   cta:

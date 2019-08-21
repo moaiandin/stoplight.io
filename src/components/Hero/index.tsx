@@ -7,8 +7,6 @@ import { Image } from 'src/components/Image';
 import { Link } from 'src/components/Link';
 import { ITab, Tabs } from 'src/components/Tabs';
 import { HeroAuthor, IHeroAuthor } from './HeroAuthor';
-import { HeroButton, IHeroButton } from './HeroButton';
-import { HeroCard, IHeroCard } from './HeroCard';
 import { HeroImage, IHeroImage } from './HeroImage';
 
 let Particles;
@@ -23,6 +21,29 @@ export const indexMap = {
   4: 'four',
   5: 'five',
   6: 'six',
+};
+
+const skewMap = {
+  '3deg': {
+    containerClass: 'pb-48',
+    bottom: 45,
+  },
+  '7deg': {
+    containerClass: 'pb-24',
+    bottom: 60,
+  },
+  '-7deg': {
+    containerClass: 'pb-64',
+    bottom: 105,
+  },
+  '-10deg': {
+    containerClass: 'pb-24',
+    bottom: 150,
+  },
+  '-15deg': {
+    containerClass: 'pb-48',
+    bottom: 225,
+  },
 };
 
 export interface IHeroBreadCrumb {
@@ -40,15 +61,18 @@ export interface IHero {
   bgColor?: string;
   contentBgImage?: string;
   contentBgOverlay?: string;
+  greyBg?: boolean;
   aligned?: 'center' | 'right' | 'left';
   ctas?: ICallToAction[];
-  cards?: IHeroCard[];
   particles?: boolean;
-  skew?: 'rounded' | '-3deg' | '-7deg' | '3deg' | '7deg' | 'rounded';
+  skew?: 'rounded' | '-15deg' | '-10deg' | '-7deg' | '-3deg' | '3deg' | '7deg' | '10deg' | '15deg';
   containerClassName?: string;
+  wrapperClassName?: string;
   tabs?: ITab[];
   titleImage?: string;
   titleClassName?: string;
+  rightElem?: React.ReactNode;
+  bottomElem?: React.ReactNode;
 }
 
 export const Hero: React.FunctionComponent<IHero> = ({
@@ -61,11 +85,14 @@ export const Hero: React.FunctionComponent<IHero> = ({
   ctas,
   bgColor = 'black',
   contentBgImage,
+  greyBg,
   particles,
   image,
   skew,
   containerClassName,
-  cards = [],
+  wrapperClassName,
+  rightElem,
+  bottomElem,
   tabs = [],
   titleImage,
   titleClassName,
@@ -80,52 +107,31 @@ export const Hero: React.FunctionComponent<IHero> = ({
     aligned = 'left';
   }
 
+  const hasBottomContent = bottomElem || (heroTabs && heroTabs.length) || image;
+  const skewOpts = skew && skewMap[skew];
+
   return (
     <React.Fragment>
       <div
         key="main"
-        className={cn('relative', {
-          'overflow-hidden': skew === 'rounded',
+        className={cn(wrapperClassName, 'relative', {
+          [skewOpts ? skewOpts.containerClass : undefined]: skewOpts,
+          'pb-32 sm:pb-10': !hasBottomContent && !skew && !contentBgImage,
+          'pb-24': contentBgImage,
         })}
       >
-        <div className={cn(headerHeightClass, 'w-100')} />
-
-        <Image
-          src={particles ? '' : '/images/patterns/diagonal-stripes-sm.png'}
-          className={cn('absolute z-0 border-4 border-lighten-300 overflow-hidden', {
-            [`bg-${bgColor}`]: bgColor,
-          })}
-          style={{
-            bottom: image ? -150 : cards.length ? 50 : 0,
-            width: skew === 'rounded' ? '200%' : 'auto',
-            top: skew === 'rounded' ? '-50%' : -300,
-            left: skew === 'rounded' ? '-50%' : 0,
-            right: skew === 'rounded' ? '-50%' : 0,
-            borderRadius: skew === 'rounded' ? '50%' : '0',
-            transform: skew && skew !== 'rounded' ? `skew(0, ${skew})` : undefined,
-          }}
-          useDiv
-        />
-
-        {contentBgImage && (
-          <div
-            className="absolute pin z-0 bg-cover bg-no-repeat bg-center"
-            style={{
-              backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${contentBgImage})`,
-            }}
-          />
-        )}
+        <div className={cn(headerHeightClass, 'w-100', { [`bg-${bgColor}`]: bgColor })} />
 
         <div
           className={cn(
             containerClassName,
-            `container text-white flex flex-col pt-32 md:pt-24 relative z-5 text-${aligned} relative`,
+            `container text-white flex flex-col pt-32 sm:pt-14 relative z-5 text-${aligned} relative`,
           )}
-          style={contentBgImage ? { textShadow: `rgba(0, 0, 0, 0.5) 1px 1px 0px` } : undefined}
+          style={contentBgImage ? { textShadow: `rgba(0, 0, 0, 0.6) 1px 1px 0px` } : undefined}
         >
           <div className="flex">
             <div
-              className={cn('flex-1 mb-20', titleClassName, {
+              className={cn('flex-1', titleClassName, {
                 'mx-auto': !aligned || aligned === 'center',
                 'ml-auto w-2/3 md:w-full': aligned === 'right',
                 'mr-auto w-2/3 md:w-full': aligned === 'left',
@@ -146,19 +152,40 @@ export const Hero: React.FunctionComponent<IHero> = ({
 
               {pageName && <div className="uppercase text-white opacity-85 font-semibold mb-4">{pageName}</div>}
 
-              <h1>{title}</h1>
+              <div className="flex">
+                <div className="flex-1">
+                  <h1 className="text-5xl md:text-4xl leading-tight">{title}</h1>
 
-              {subtitle && (
-                <div
-                  className={cn('font-default opacity-85 text-xl max-w-lg mt-4 md:mt-6', {
-                    'mx-auto': !aligned || aligned === 'center',
-                    'ml-auto': aligned === 'right',
-                    'mr-auto': aligned === 'left',
-                  })}
-                >
-                  {subtitle}
+                  {subtitle && (
+                    <h2
+                      className={cn('font-default opacity-75 max-w-xl mt-4 md:mt-4', {
+                        'mx-auto': !aligned || aligned === 'center',
+                        'ml-auto': aligned === 'right',
+                        'mr-auto': aligned === 'left',
+                      })}
+                    >
+                      {subtitle}
+                    </h2>
+                  )}
+
+                  {ctas && (
+                    <div
+                      className={cn('flex sm:flex-col sm:w-full mt-14 sm:mt-8 whitespace-no-wrap', {
+                        '-mx-40 sm:mx-0': ctas && ctas.length > 2,
+                        'mx-auto justify-center': aligned === 'center',
+                        'ml-auto': aligned === 'right',
+                        'mr-auto': aligned === 'left',
+                      })}
+                    >
+                      {ctas.map((action, i) => (
+                        <CallToAction key={i} className="m-3 sm:w-full sm:mx-auto" {...action} />
+                      ))}
+                    </div>
+                  )}
                 </div>
-              )}
+
+                {rightElem}
+              </div>
 
               {author && (
                 <div>
@@ -173,41 +200,57 @@ export const Hero: React.FunctionComponent<IHero> = ({
               </div>
             )}
           </div>
-
-          {ctas && (
-            <div
-              className={cn('flex items-center justify-center md:flex-col md:pb-4 pb-16 whitespace-no-wrap', {
-                '-mx-40': ctas.length > 2,
-                'mx-auto md:mx-auto': aligned === 'center',
-                'ml-auto': aligned === 'right',
-                'mr-auto': aligned === 'left',
-              })}
-            >
-              {ctas.map((action, i) => (
-                <CallToAction key={i} className="m-3 md:w-full" {...action} />
-              ))}
-            </div>
-          )}
-
-          {cards.length ? (
-            <div className="flex mx-auto md:flex-col md:pt-16">
-              {cards.map((card, i) => (
-                <HeroCard key={i} index={i + 1} {...card} />
-              ))}
-            </div>
-          ) : null}
         </div>
 
-        {heroTabs.length > 0 ? <Tabs tabs={heroTabs} /> : null}
+        {bottomElem}
+
+        {image && <HeroImage {...image} className="relative z-5 mt-16" />}
+
+        {heroTabs.length > 0 ? <Tabs tabs={heroTabs} className="pt-24" /> : null}
+
+        {contentBgImage ? (
+          <div
+            className="absolute pin z-1 bg-cover bg-no-repeat border-b-4 border-darken-300"
+            style={{
+              backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${contentBgImage})`,
+            }}
+          />
+        ) : (
+          <div
+            className={cn('absolute pin overflow-hidden', {
+              'bg-grey-lightest': greyBg,
+            })}
+          >
+            <Image
+              src={particles ? '' : '/images/patterns/diagonal-stripes-sm.png'}
+              className={cn('absolute z-0 overflow-hidden', {
+                [`bg-${bgColor}`]: bgColor,
+                'shadow-inner-intense': skew === 'rounded',
+                'border-b-4 border-lighten-300': !hasBottomContent && !skew,
+              })}
+              style={{
+                width: skew === 'rounded' ? '200%' : 'auto',
+                top: -300,
+                bottom: skew ? (skewOpts && skewOpts.bottom) || 50 : 0,
+                left: skew === 'rounded' ? '-50%' : 0,
+                right: skew === 'rounded' ? '-50%' : 0,
+                borderRadius: skew === 'rounded' ? '50%' : '0',
+                transform: skew && skew !== 'rounded' ? `skew(0, ${skew})` : undefined,
+                background: bgColor ? undefined : 'radial-gradient(circle, #0f0c2f 0%, #080515 100%)',
+              }}
+              useDiv
+            />
+          </div>
+        )}
 
         {particles && (
-          <div className="absolute z-1 sm:hidden" style={{ left: 0, top: -100, right: 0, bottom: -100 }}>
+          <div className="absolute z-1 sm:hidden" style={{ left: 0, top: -25, right: 0, bottom: -100 }}>
             {Particles && (
               <Particles
                 style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0 }}
                 params={{
                   fps_limit: 15,
-                  retina_detect: false, // possible performance issues when true
+                  retina_detect: true, // possible performance issues when true
                   particles: {
                     number: {
                       value: 160,
@@ -228,7 +271,7 @@ export const Hero: React.FunctionComponent<IHero> = ({
                     },
                     move: {
                       random: true,
-                      speed: 1,
+                      speed: 1.2,
                       direction: 'top',
                       out_mode: 'out',
                     },
@@ -239,8 +282,6 @@ export const Hero: React.FunctionComponent<IHero> = ({
           </div>
         )}
       </div>
-
-      {image && <HeroImage {...image} />}
     </React.Fragment>
   );
 };

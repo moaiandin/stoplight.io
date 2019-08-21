@@ -18,7 +18,7 @@ tabs:
   - href: /blog/changelog
     title: Changelog
 actionBar:
-  enabled: true
+  enabled: false
 meta:
   title: Changelog | Stoplight API Corner
   twitter:

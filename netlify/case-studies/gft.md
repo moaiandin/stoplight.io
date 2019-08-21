@@ -11,7 +11,7 @@ subtitle: >-
   financial sector.
 listSubtitle: >-
   GFT Technology was looking for an API Design tool that promoted and allowed
-  for collaboration between technical and non-technical staff. 
+  for collaboration between technical and non-technical staff.
 image: /images/gft_group_logo.jpg
 color: blue
 sidebar:
@@ -30,7 +30,7 @@ sidebar:
         breeze.
       role: Senior Enterprise Architect
 actionBar:
-  enabled: true
+  enabled: false
 meta:
   description: >-
     How GFT Technology found a balanced tool for developers and non-technical

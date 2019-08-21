@@ -31,7 +31,7 @@ sidebar:
         easily deliver documentation to the clients and third party developers.
       role: Executive Manager
 actionBar:
-  enabled: true
+  enabled: false
 meta:
   description: How Bodev integrated their Design and Documentation processed with Stoplight
   title: Bodev | Stoplight

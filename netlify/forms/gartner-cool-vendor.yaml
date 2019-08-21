@@ -60,7 +60,7 @@ leftContent:
 
     <p class="text-xs">Gartner \[Cool Vendors in Application Development and
     Platforms], \[Jim Scheibmeir, Mark Driver, Thomas Murphy, Jason Wong, Mark
-    O'Neill], \[2 May 2019].</p> 
+    O'Neill], \[2 May 2019].</p>
 
 
     <p class="text-xs">The GARTNER COOL VENDOR badge is a trademark and service
@@ -77,7 +77,7 @@ collage:
   cta:
     color: green
     href: /case-studies
-    name: Read the Case Studies
+    title: Read the Case Studies
   images:
     - alt: EA
       src: /images/ea.png
@@ -118,7 +118,7 @@ testimonials:
         Prototyping, Mocking, Specification, Shared Schemas, Documentation,
         Testing and Developer Portal generation - all customisable.
 actionBar:
-  enabled: true
+  enabled: false
 meta:
   description: >-
     Stoplight named in Gartner’s prestigious “Cool Vendor in Application

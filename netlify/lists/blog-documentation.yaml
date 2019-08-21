@@ -18,7 +18,7 @@ tabs:
   - href: /blog/changelog
     title: Changelog
 actionBar:
-  enabled: true
+  enabled: false
 meta:
   favicon: /images/mark_light_bg.png
   title: API Documentation | Stoplight API Corner

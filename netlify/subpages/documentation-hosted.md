@@ -19,7 +19,7 @@ tabs:
   - title: Intercom Integration
     href: https://docs.stoplight.io/documentation/integrations/intercom
 actionBar:
-  enabled: true
+  enabled: false
 meta:
   description: >-
     Our cloud based documentation generator allows you to host your

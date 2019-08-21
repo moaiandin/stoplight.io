@@ -7,7 +7,7 @@ hero:
   ctas:
     - color: blue
       href: 'https://next.stoplight.io/'
-      name: Try it out now
+      title: Try it out now
   image:
     alt: Testing
     src: /images/testing_header.png
@@ -20,7 +20,7 @@ featureSection:
   actionBar:
     ctas:
       - href: 'https://next.stoplight.io/'
-        name: Get Started
+        title: Get Started
     enabled: true
     text: Ready to Start Testing?
   description: >-

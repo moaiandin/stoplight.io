@@ -21,7 +21,7 @@ actionBar:
   ctas:
     - color: purple
       href: 'https://stoplight.io/spectral/'
-      name: Get Started with Spectral
+      title: Get Started with Spectral
   enabled: true
   text: Do you want feedback on your API descriptions right now?
 meta:

@@ -11,7 +11,7 @@ collage:
   cta:
     color: purple
     href: /case-studies
-    name: Read The Case Studies
+    title: Read The Case Studies
   images:
     - alt: EA
       src: /images/ea.png
@@ -68,7 +68,7 @@ testimonials:
   actionBar:
     ctas:
       - href: 'https://next.stoplight.io/join'
-        name: Try Stoplight Now
+        title: Try Stoplight Now
     enabled: true
 actionBar:
   ctas: []

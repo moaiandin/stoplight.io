@@ -22,7 +22,7 @@ tabs:
   - href: /design/web
     title: Web API Design Tool
 actionBar:
-  enabled: true
+  enabled: false
 meta:
   description: >-
     Build web APIs with a powerful, free visual OpenAPI Specification editor

@@ -2,11 +2,13 @@ import * as React from 'react';
 import { withRouteData } from 'react-static';
 
 import { Collage, ICollage } from '../../components/Collage';
+import { Container } from '../../components/Container';
 import { FeatureSection, IFeatureSection } from '../../components/FeatureSection';
 import { Hero, IHero } from '../../components/Hero';
 import { HubSpotForm, IHubSpotForm } from '../../components/HubSpotForm';
 import { IImageCallout, ImageCallout } from '../../components/ImageCallout';
 import { Layout } from '../../components/Layout';
+import { PricingCard } from '../../components/PricingCard';
 import { IRelatedPage, RelatedPages } from '../../components/RelatedPages';
 import { Section } from '../../components/Section';
 
@@ -18,6 +20,7 @@ export interface ILanding {
   featureSection: IFeatureSection;
   hubspot: IHubSpotForm & { title?: string; description?: string };
   relatedPages?: IRelatedPage[];
+  pricingSection?: any;
 }
 
 export const Landing: React.FunctionComponent<ILanding> = ({
@@ -28,6 +31,7 @@ export const Landing: React.FunctionComponent<ILanding> = ({
   featureSection,
   hubspot,
   relatedPages,
+  pricingSection,
 }) => {
   return (
     <Layout>
@@ -57,6 +61,18 @@ export const Landing: React.FunctionComponent<ILanding> = ({
               <HubSpotForm className="p-16 md:p-4" portalId={hubspot.portalId} formId={hubspot.formId} />
             </div>
           </div>
+        </Section>
+      )}
+
+      {pricingSection && (
+        <Section id="pricing">
+          <Container title={pricingSection.title}>
+            <div className="flex justify-around flex-wrap mt-12">
+              {pricingSection.cards.map((card, index) => (
+                <PricingCard key={index} {...card} />
+              ))}
+            </div>
+          </Container>
         </Section>
       )}
 

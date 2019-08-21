@@ -15,8 +15,8 @@ tabs:
     title: API Design Basics
   - href: /api-design-guide/tooling
     title: API Design Tooling
-  - href: /api-design-guide/oas-spec
-    title: Understanding the OpenAPI Specification
+  - href: /api-design-guide/openapi
+    title: Understanding OpenAPI
 actionBar:
   enabled: false
 meta:

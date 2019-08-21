@@ -6,22 +6,29 @@ relatedTags:
 hero:
   image:
     alt: Designer
-    src: /images/design_header.png
+    src: /images/studio/hero.png
   subtitle: >-
     Build first-class APIs with a collaborative, powerful, visual editor that
     allows you to prototype and share your API within minutes
   title: 'API Design, Planning & Modeling Tool'
+  ctas:
+    - href: '/studio'
+      title: Try Studio
+      large: true
+      icon: ['fad', 'paint-brush']
+      rightIcon: ['fad', 'arrow-right']
+      color: purple
 featureSection:
   actionBar:
     ctas:
-      - href: 'https://next.stoplight.io/'
-        name: Get Started
+      - href: '/studio'
+        title: Try Studio
         color: green
     enabled: true
-    text: Ready to Model and Design?
+    text: Ready to Start Designing APIs?
   description: >-
     Start designing your API in minutes. Use the [OpenAPI
-    Specification](/api-design-guide/oas-spec/) (formerly known as Swagger) with
+    Specification](/api-design-guide/openapi) (formerly known as Swagger) with
     Stoplight’s visual editor to [design consistent and standardized REST
     APIs](/design/web/) for your organization. Without writing any code, model
     complex APIs faster than ever while simultaneously getting feedback on your

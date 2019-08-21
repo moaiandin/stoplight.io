@@ -1,10 +1,10 @@
-import { IconProp } from '@fortawesome/fontawesome-svg-core';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import cn from 'classnames';
 import * as React from 'react';
 import Headroom from 'react-headroom';
 import { Head, withRouteData, withSiteData } from 'react-static';
-import { Link } from 'src/components/Link';
+
+import { Icon, IconProp } from '../Icon';
+import { Link } from '../Link';
 import { Desktop } from './Desktop';
 import { Mobile } from './Mobile';
 
@@ -18,9 +18,9 @@ export interface IHeaderLink {
 }
 
 export interface IHeaderItem {
-  href: string;
   title: string;
   altTitle?: string;
+  href?: string;
   altBg?: string;
   isButton?: boolean;
   hideMobile?: boolean;
@@ -28,6 +28,7 @@ export interface IHeaderItem {
   links?: IHeaderLink[];
   width?: number;
   icon?: IconProp;
+  content?: () => React.ReactElement;
 }
 
 export interface IBanner {
@@ -77,20 +78,23 @@ export const Header: React.FunctionComponent<IHeader> = props => {
         <header
           key="header"
           className={cn('z-50 sticky pin-t pin-l pin-r', {
-            [`shadow-sm bg-${color || 'black'}`]: unpinned,
+            [`shadow-md bg-${color || 'black'}`]: unpinned,
           })}
         >
           {banner &&
             banner.markdown &&
-            (banner.hideOnPath !== props.path && props.path) && (
-              <div className="relative z-50 border-b-4 border-lighten-200 bg-darken-200 text-white Banner">
-                <div className="h-16 flex flex-no-wrap items-center px-4">
-                  <div className="flex-1 text-center" dangerouslySetInnerHTML={{ __html: banner.markdown }} />
+            !(banner.hideOnPath || []).includes(props.path) && (
+              <div className="relative z-50 border-b border-lighten-200 text-white Banner bg-lighten-50 sm:hidden">
+                <div className="container h-12 flex flex-no-wrap items-center">
+                  <Icon icon={['fad', 'rocket']} className="mr-3" />
+
+                  <div className="flex-1" dangerouslySetInnerHTML={{ __html: banner.markdown }} />
+
                   <div
-                    className="cursor-pointer flex hover:bg-lighten-100 items-center justify-center justify-end p-2 rounded text-lighten-300 hover:text-white"
+                    className="cursor-pointer flex hover:bg-lighten-100 items-center justify-center justify-end p-2 rounded text-lighten-400 hover:text-white"
                     onClick={onClickBanner}
                   >
-                    <FontAwesomeIcon icon="times" />
+                    <Icon icon="times" />
                   </div>
                 </div>
               </div>
@@ -98,13 +102,13 @@ export const Header: React.FunctionComponent<IHeader> = props => {
 
           <div className="container relative">
             <nav className={cn(headerHeightClass, 'flex items-center')}>
-              <Link to="/" className="text-white hover:opacity-75 hover:text-white text-2xl font-bold">
+              <Link to="/" className="text-white hover:opacity-75 hover:text-white text-lg font-bold mr-8">
                 Stoplight
               </Link>
 
               <Desktop items={headerItems} unpinned={unpinned} />
 
-              <Mobile items={headerItems} />
+              <Mobile />
             </nav>
           </div>
 

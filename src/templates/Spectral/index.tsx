@@ -2,11 +2,11 @@ import * as React from 'react';
 import NoSSR from 'react-no-ssr';
 import { withRouteData } from 'react-static';
 
-import { Collage, ICollage } from '../../components/Collage';
+import { ICollage } from '../../components/Collage';
 import { FeatureSection, IFeatureSection } from '../../components/FeatureSection';
 import { Hero, IHero } from '../../components/Hero';
 import { HubSpotForm, IHubSpotForm } from '../../components/HubSpotForm';
-import { IImageCallout, ImageCallout } from '../../components/ImageCallout';
+import { IImageCallout } from '../../components/ImageCallout';
 import { Layout } from '../../components/Layout';
 import { IRelatedPage, RelatedPages } from '../../components/RelatedPages';
 import { Section } from '../../components/Section';
@@ -27,8 +27,6 @@ export interface ILanding {
 export const Landing: React.FunctionComponent<ILanding> = ({
   color,
   hero,
-  imageCallout,
-  collage,
   featureSection,
   hubspot,
   relatedPages,
@@ -36,19 +34,20 @@ export const Landing: React.FunctionComponent<ILanding> = ({
 }) => {
   return (
     <Layout>
-      <Hero bgColor={color} {...hero} containerClassName={hasSandbox ? 'pb-16' : ''} />
-
-      <Collage className="md:px-0 py-6 md:py-6" noPadding {...collage} />
-
-      {hasSandbox && (
-        <NoSSR>
-          <React.Suspense fallback={<div />}>
-            <Sandbox className="-mt-16" />
-          </React.Suspense>
-        </NoSSR>
-      )}
-
-      <ImageCallout {...imageCallout} />
+      <Hero
+        bgColor={color}
+        {...hero}
+        containerClassName={hasSandbox ? 'pb-16' : ''}
+        bottomElem={
+          hasSandbox && (
+            <NoSSR>
+              <React.Suspense fallback={<div />}>
+                <Sandbox />
+              </React.Suspense>
+            </NoSSR>
+          )
+        }
+      />
 
       <FeatureSection color={color} {...featureSection} />
 

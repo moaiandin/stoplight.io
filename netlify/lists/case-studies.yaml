@@ -3,7 +3,7 @@ tag: 'case-study'
 subtitle: Discover & Educate
 title: Case Studies
 actionBar:
-  enabled: true
+  enabled: false
 meta:
   favicon: /images/mark_light_bg.png
   title: Read Our Case Studies | Stoplight

@@ -11,14 +11,21 @@ hero:
     Build first-class APIs with a collaborative, powerful, visual editor that
     allows you to prototype and share your API within minutes
   title: 'API Design, Planning & Modeling Tool'
+  ctas:
+    - href: '/studio'
+      title: Try Studio
+      large: true
+      icon: ['fad', 'paint-brush']
+      rightIcon: ['fad', 'arrow-right']
+      color: purple
 featureSection:
   actionBar:
     ctas:
-      - href: 'https://next.stoplight.io/'
-        title: Get Started
+      - href: '/studio'
+        title: Try Studio
         color: green
     enabled: true
-    text: Ready to Model and Design?
+    text: Ready to Start Designing APIs?
   description: >-
     Start designing your API in minutes. Use the [OpenAPI
     Specification](/api-design-guide/openapi) (formerly known as Swagger) with

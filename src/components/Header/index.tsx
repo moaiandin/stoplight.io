@@ -84,7 +84,7 @@ export const Header: React.FunctionComponent<IHeader> = props => {
           {banner &&
             banner.markdown &&
             !(banner.hideOnPath || []).includes(props.path) && (
-              <div className="relative z-50 border-b border-lighten-200 text-white Banner bg-lighten-50">
+              <div className="relative z-50 border-b border-lighten-200 text-white Banner bg-lighten-50 sm:hidden">
                 <div className="container h-12 flex flex-no-wrap items-center">
                   <Icon icon={['fad', 'rocket']} className="mr-3" />
 

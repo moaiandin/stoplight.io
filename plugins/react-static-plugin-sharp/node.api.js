@@ -10,9 +10,9 @@ const sizes = [{ height: 500, default: true }, { height: 700, name: 'lg' }, { he
 
 export default pluginOptions => ({
   afterExport: async state => {
-    if (process.env.RELEASE_STAGE === 'production') {
-      await processImages();
-    }
+    // if (process.env.RELEASE_STAGE === 'production') {
+    //   await processImages();
+    // }
 
     return state;
   },

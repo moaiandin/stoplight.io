@@ -3,6 +3,7 @@ import * as React from 'react';
 
 import { Button } from '../Button';
 import { Icon, IconProp } from '../Icon';
+import { Link } from '../Link';
 
 export const ProductCard = ({
   name,
@@ -28,8 +29,12 @@ export const ProductCard = ({
   image?: string;
 }) => {
   return (
-    <div
-      className={cn(className, `flex rounded-xl pt-10 pl-10 sm:px-5 sm:pt-5 shadow-lg overflow-hidden`)}
+    <Link
+      className={cn(
+        className,
+        `flex rounded-xl pt-10 pl-10 sm:px-5 sm:pt-5 shadow-md hover-scale-sm text-grey-darkest overflow-hidden`,
+      )}
+      to={href}
       style={style}
     >
       <div className="flex flex-col flex-1 pb-10 sm:pb-5 h-96 sm:h-auto">
@@ -46,7 +51,7 @@ export const ProductCard = ({
         <div className="text-lg text-grey-darker leading-loose mt-4 flex-1">{description}</div>
 
         <div className="sm:mt-6">
-          <Button href={href} color={color} shadow="md" rightIcon={['fad', 'arrow-right']}>
+          <Button shadow="none" color={color} rightIcon={['fad', 'arrow-right']}>
             {name}
           </Button>
         </div>
@@ -58,6 +63,6 @@ export const ProductCard = ({
           style={{ backgroundImage: `url(${image})` }}
         />
       )}
-    </div>
+    </Link>
   );
 };

@@ -16,7 +16,7 @@ tabs:
   - href: /blog
     title: Stoplight Blog
 actionBar:
-  enabled: true
+  enabled: false
 meta:
   description: >-
     Our unique documentation tool allows you to easily generate API

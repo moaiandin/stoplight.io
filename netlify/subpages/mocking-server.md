@@ -12,7 +12,7 @@ tabs:
   - title: Javascript Runtime
     href: https://docs.stoplight.io/mocking/javascript-runtime
 actionBar:
-  enabled: true
+  enabled: false
 meta:
   description: >-
     Mock your APIs with Stoplight to accelerate API development and create

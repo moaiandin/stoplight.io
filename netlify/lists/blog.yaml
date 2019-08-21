@@ -2,7 +2,7 @@ path: /blog
 tag: blog
 title: Stoplight API Corner
 subtitle: 'Musings on API design, testing, documentation, trends, and related technology.'
-color: purple
+color: indigo
 tabs:
   - href: /blog
     title: Latest
@@ -19,7 +19,7 @@ tabs:
   - href: /blog/changelog
     title: Changelog
 actionBar:
-  enabled: true
+  enabled: false
   text: Sign up for the newsletter
   ctas:
     - title: Sign up for the newsletter

@@ -1,7 +1,8 @@
 import cn from 'classnames';
 import * as React from 'react';
 
-import { IContainer } from '../Container';
+import { Chips } from '../Chip';
+import { Container, IContainer } from '../Container';
 import { Icon, IconProp } from '../Icon';
 import { IImage, Image } from '../Image';
 import { Link } from '../Link';
@@ -27,20 +28,17 @@ export const CustomerSection: React.FunctionComponent<ICustomerSection> = ({
 
   return (
     <Section {...sectionProps}>
-      <div className="container">
-        <div className="uppercase text-grey-dark font-bold text-center text-lg">
+      <Container
+        chips={{
+          className: 'justify-center mb-10',
+          segments: [{ color: 'indigo', length: 2 }, { color: 'indigo-lighter' }],
+        }}
+      >
+        <div className="uppercase text-grey-dark font-semibold text-center text-lg">
           Stoplight powers some of the worlds leading API first companies
         </div>
 
-        <div className="flex justify-between flex-wrap items-center mt-12">
-          {images.map((image, key) => (
-            <div key={key} className="sm:w-1/2 sm:p-6 py-8 text-center">
-              <Image className="h-8" src={image.src} title={`${image.alt} Logo`} alt={image.alt} size="sm" />
-            </div>
-          ))}
-        </div>
-
-        <div className="flex justify-between flex-wrap items-center mt-12">
+        <div className="flex justify-between flex-wrap items-center mt-14">
           <CaseStudyCard
             href="/case-studies/arkea"
             company="Arkea"
@@ -57,7 +55,7 @@ export const CustomerSection: React.FunctionComponent<ICustomerSection> = ({
             image="/images/logo_namely_transparent.png"
             summary="Namely’s chief objective was to adopt API Design First principles. As they applied their new principle, they realized the importance of reliable, up to date, documentation."
             tag="HR"
-            color="blue"
+            color="indigo"
             bg={cardBg}
           />
 
@@ -71,7 +69,15 @@ export const CustomerSection: React.FunctionComponent<ICustomerSection> = ({
             bg={cardBg}
           />
         </div>
-      </div>
+
+        <div className="flex justify-between flex-wrap items-center mt-10 px-6">
+          {images.map((image, key) => (
+            <div key={key} className="sm:w-1/2 sm:p-6 py-8 text-center">
+              <Image className="h-8" src={image.src} title={`${image.alt} Logo`} alt={image.alt} size="sm" />
+            </div>
+          ))}
+        </div>
+      </Container>
     </Section>
   );
 };
@@ -87,7 +93,7 @@ interface ICaseStudyCard {
   icon?: IconProp;
 }
 
-const CaseStudyCard = ({ company, image, color, summary, href, tag, icon, bg = 'grey-lightest' }: ICaseStudyCard) => {
+const CaseStudyCard = ({ company, image, color, summary, href, tag, icon, bg = 'white' }: ICaseStudyCard) => {
   return (
     <Link
       className={cn(`bg-${bg}`, 'w-96 h-80 flex flex-col rounded-lg p-8 pb-6 sm:mb-8 shadow-md hover-scale')}

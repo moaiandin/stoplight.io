@@ -27,7 +27,7 @@ sidebar:
         when it came to the user experience, design, and customization.
       role: Technologist
 actionBar:
-  enabled: true
+  enabled: false
 meta:
   description: How Namely adopted API Design First Principles with Stoplight
   title: Namely | Stoplight

@@ -1,6 +1,6 @@
 path: /hubs
 title: Stoplight Hubs
-color: green-dark
+color: indigo
 relatedTags:
   - blog-documentation
 hero:
@@ -13,13 +13,13 @@ hero:
     your OpenAPI document
   title: Stoplight Hubs
   ctas:
-    - color: purple-dark
+    - color: green
       href: 'https://next.stoplight.io'
       title: Get Started Now
     - type: video
       title: Quick Overview
       href: 'https://youtube.com/watch?v=iHzFoc4ls8E'
-      color: purple-dark
+      color: green
 featureSection:
   actionBar:
     ctas:
@@ -29,7 +29,7 @@ featureSection:
     enabled: true
     text: 'Ready to Publish?'
   description: >-
-    Create API documentation in minutes. Combine OpenAPI Specifications
+    Create API documentation in minutes. Combine OpenAPI descriptions
     (formerly known as Swagger) with Markdown to create robust, searchable,
     internal and external [API documentation](/api-documentation-guide/basics/)
     for your organization. One-click cloud deployment with Stoplight or download
@@ -75,6 +75,44 @@ featureSection:
       title: 'Simple, Flexible Deployment'
       titleURL: /documentation/hosted/
   title: Complete OpenAPI Documentation Solution
+pricingSection:
+  title: Documentation Pricing
+  cards:
+    - icon: ['fad', 'user-check']
+      title: "Basic"
+      tag: "FREE"
+      buttonText: "Learn more about free docs"
+      href: "/docs"
+      features: ['OpenAPI v2 & v3', 'HTTP Request Maker', 'Unlimited Published Pages']
+
+    - isDark: true
+      icon: ['fad', 'user-friends']
+      title: "Pro"
+      tag: "$179 / month"
+      href: "https://next.stoplight.io"
+      buttonText: "Get Started Now"
+      featuresTitle: "All Basic features plus:"
+      features: [
+        'Custom Branding',
+        'Custom Domains',
+        'Build History & Instant Rollbacks',
+        'Username/Password Login Page',
+      ]
+
+    - isDark: true
+      icon: ['fad', 'users']
+      title: "Enterprise"
+      tag: "Contact Us"
+      href: "/enterprise-contact"
+      buttonText: "Contact Us"
+      featuresTitle: "All Pro features plus:"
+      features: [
+        'Custom CSS & JavaScript',
+        'Download static HTML/CSS',
+        'SAML Single Sign-On',
+        'OAuth Token Manager',
+        'Custom Invoicing',
+      ]
 meta:
   description: >-
     Create custom API documentation in minutes. Combine OpenAPI documents
@@ -83,7 +121,8 @@ meta:
     cloud deployment with Stoplight or download the static assets to host
     anywhere.
   favicon: /images/mark_light_bg.png
-  image: /images/docs_header.png
+  image: /images/hubs/hero.png
+  robots: 'noindex, nofollow'
   title: Stoplight Hubs | Hosted API Documentation
   twitter:
     description: >-
@@ -92,6 +131,6 @@ meta:
       internal and external API documentation for your organization. One-click
       cloud deployment with Stoplight or download the static assets to host
       anywhere.
-    image: /images/docs_header.png
+    image: /images/hubs/hero.png
     title: Stoplight Hubs | Hosted API Documentation
     username: '@stoplightio'

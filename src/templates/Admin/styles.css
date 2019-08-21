@@ -21735,14 +21735,8 @@ ul {
 
 #root {
   position: relative;
-  height: 100%; }
-  #root section {
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.25); }
-    #root section:nth-of-type(even) {
-      background: #f5f7f9;
-      z-index: 30; }
-    #root section:first-of-type {
-      box-shadow: none; }
+  height: 100%;
+}
 
 #hs-eu-cookie-confirmation {
   display: none; }

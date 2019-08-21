@@ -118,7 +118,7 @@ testimonials:
         Prototyping, Mocking, Specification, Shared Schemas, Documentation,
         Testing and Developer Portal generation - all customisable.
 actionBar:
-  enabled: true
+  enabled: false
 meta:
   description: >-
     Stoplight named in Gartner’s prestigious “Cool Vendor in Application

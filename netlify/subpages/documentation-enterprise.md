@@ -14,7 +14,7 @@ tabs:
   - href: /documentation/generator
     title: Generated API Documentation
 actionBar:
-  enabled: true
+  enabled: false
 meta:
   favicon: /images/mark_light_bg.png
   title: Enterprise Ready API Documentation Software | Stoplight

@@ -9,7 +9,7 @@ subtitle: >-
 title: API Prototype Tool
 color: blue
 actionBar:
-  enabled: true
+  enabled: false
 tabs:
   - title: API Design
     href: /design

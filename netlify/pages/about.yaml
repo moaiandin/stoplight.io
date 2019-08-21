@@ -1,14 +1,12 @@
 path: /about
 hero:
   particles: true
-  skew: rounded
   subtitle: >-
-    Headquartered in Austin, Texas, our team hails from all over the United
-    States and Europe, united by their passion for APIs. From skeeball champions
-    to rock climbers, tough mudders to restaurateurs, each and every member
+    Headquartered in Austin, Texas, our team hails from across the US and Europe, and is united by our passion for APIs.
+    From skeeball champions to rock climbers, tough mudders to restaurateurs, each and every member
     brings their own unique perspectives and experiences to the table. Thinking
-    out of the box is our purpose, the weirder the better, and challenging the
-    status quo is our culture
+    out of the box is our purpose - the weirder the better - and challenging the
+    status quo is our culture.
   title: About Us
 team:
   - image: /images/andoni-alanis-cue.jpeg

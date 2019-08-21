@@ -20,7 +20,7 @@ tabs:
   - title: Stoplight Blog
     href: /blog
 actionBar:
-  enabled: true
+  enabled: false
 meta:
   description: >-
     When building web APIs, use Spotlight’s fully customizable integration

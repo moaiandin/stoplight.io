@@ -60,7 +60,7 @@ export const About: React.FunctionComponent<IAbout> = ({
       <Hero key="hero" bgColor={color} greyBg {...hero} />
 
       {team.length ? (
-        <div className="bg-grey-lightest relative z-5">
+        <div className="bg-grey-lightest relative z-5 pt-12">
           <div className="container flex flex-wrap justify-center md:justify-around text-center md:px-0">
             {team.map((member, index) => (
               <Member key={index} isLast={index === team.length - 1} {...member} />
@@ -69,7 +69,7 @@ export const About: React.FunctionComponent<IAbout> = ({
 
           {actionBar && actionBar.enabled ? (
             <div className="md:pb-24 pb-40 -mt-10">
-              <ActionBar className="bg-white" {...actionBar} />
+              <ActionBar {...actionBar} />
             </div>
           ) : null}
         </div>

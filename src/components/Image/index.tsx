@@ -24,10 +24,10 @@ export const Image: React.FunctionComponent<IImage> = ({
   useDiv,
 }) => {
   // Transform image urls in production to match the processed images
-  if (getConfigVar('RELEASE_STAGE') === 'production' && src && path.isAbsolute(src) && size) {
-    const extname = path.extname(src);
-    src = `${src.replace(extname, '')}-${size}${extname}`;
-  }
+  // if (getConfigVar('RELEASE_STAGE') === 'production' && src && path.isAbsolute(src) && size) {
+  //   const extname = path.extname(src);
+  //   src = `${src.replace(extname, '')}-${size}${extname}`;
+  // }
 
   if (background || useDiv) {
     style = {

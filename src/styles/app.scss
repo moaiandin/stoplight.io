@@ -45,19 +45,6 @@ ul {
 #root {
   position: relative;
   height: 100%;
-
-  section {
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
-
-    &:nth-of-type(even) {
-      background: #f5f7f9;
-      z-index: 30;
-    }
-
-    &:first-of-type {
-      box-shadow: none;
-    }
-  }
 }
 
 #hs-eu-cookie-confirmation {
@@ -110,7 +97,14 @@ ul {
 .hover-scale {
   transition: transform 0.15s;
   &:hover {
-    transform: scale(1.04);
+    transform: scale(1.03);
+  }
+}
+
+.hover-scale-sm {
+  transition: transform 0.15s;
+  &:hover {
+    transform: scale(1.015);
   }
 }
 
@@ -238,7 +232,6 @@ ul {
 
 .case-study {
   max-width: 100%;
-  margin-top: -100px;
 }
 
 .markdown-body s {
@@ -1197,6 +1190,30 @@ pre.line-numbers > code {
   }
 }
 
+.StartPopover {
+  &__caret {
+    position: absolute;
+    left: 50%;
+    margin-left: -11px;
+    top: -20px;
+
+    svg {
+      font-size: 36px;
+    }
+  }
+}
+
+.anim-wiggle {
+  animation-name: wiggle;
+  animation-iteration-count: 5;
+  animation-duration: 150ms;
+  transform-origin: 50% 50%;
+}
+
+.anim-delay-1s {
+  animation-delay: 1s;
+}
+
 @keyframes growUp {
   0% {
     opacity: 0;
@@ -1217,4 +1234,10 @@ pre.line-numbers > code {
     opacity: 100;
     transform: scale(1);
   }
+}
+
+@keyframes wiggle {
+  0% { transform: translate(0px, 0px); }
+  50% { transform: translate(-3px, 0px); }
+  100% { transform: translate(0px, 0px); }
 }

@@ -26,7 +26,7 @@ export const ActionBar: React.FunctionComponent<IActionBar> = withSiteData(props
       <div
         className={cn(
           className,
-          'ActionBar p-12 flex-wrap items-center sm:flex-col sm:justify-center bg-blue-darkest rounded-lg shadow-lg',
+          'ActionBar p-12 flex-wrap items-center sm:flex-col sm:justify-center bg-black rounded-lg shadow-md',
           {
             flex: !isCentered,
           },

@@ -1,5 +1,5 @@
 title: Stoplight Enterprise
-color: blue-darker
+color: black
 path: /enterprise
 hero:
   particles: true
@@ -34,12 +34,12 @@ actionBar:
   enabled: true
   text: Ready to go API First with the Stoplight Enterprise Platform?
 meta:
-  description: Accelerate API development with realistic mock servers powered by API descriptions
+  description: Increase the consistency, visibility, and quality of your internal and external APIs with the Stoplight Enterprise Platform.
   favicon: /images/mark_light_bg.png
-  image: /images/prism_example.png
-  title: Enterprise - Open Source HTTP Mock Server | Stoplight
+  src: /images/studio/hero.png
+  title: Enterprise - API Design Management at Scale | Stoplight
   twitter:
-    description: Accelerate API development with realistic mock servers powered by API descriptions
-    image: /images/prism_example.png
-    title: Enterprise - Open Source HTTP Mock Server | Stoplight
+    description: Increase the consistency, visibility, and quality of your internal and external APIs with the Stoplight Enterprise Platform.
+    src: /images/studio/hero.png
+    title: Enterprise - API Design Management at Scale | Stoplight
     username: '@stoplightio'

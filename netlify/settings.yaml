@@ -25,11 +25,6 @@ header:
           subtitle: Learn how to use Stoplight
           title: Help Center
           titleColor: blue
-        - href: /blog
-          icon: ['fad', 'rss']
-          subtitle: Stay up to date on Stoplight
-          title: Blog
-          titleColor: green
         - href: 'https://community.stoplight.io/'
           icon: ['fad', 'users']
           subtitle: Join the Stoplight community
@@ -62,15 +57,18 @@ header:
           titleColor: purple
       title: Resources
       width: 300
+    - href: /blog
+      title: Blog
     - href: /enterprise
       title: Enterprise
-    - href: /start
-      isButton: true
-      title: Start
     - href: /demo
       isButton: true
       title: Book a Demo
       altBg: purple
+    - href: /start
+      isButton: true
+      title: Start
+      icon: ['fad', 'arrow-right']
 actionBar:
   ctas:
     - color: white
@@ -85,30 +83,48 @@ actionBar:
 footer:
   columns:
     - links:
-        - href: /design
-          title: Design
-        - href: /documentation
-          title: Documentation
-        - href: /testing
-          title: Testing
-        - href: /mocking
-          title: Mocking
+        - href: /studio
+          title: Design Studio
+        - href: /docs
+          title: Free Docs
+        - href: /hubs
+          title: Docs Hubs
+        - href: /enterprise
+          title: Docs Hubs
       title: Products
+    - links:
+        - href: /spectral
+          title: Spectral
+        - href: /prism
+          title: Prism
+      title: Open Source
+    - links:
+        - href: /design
+          title: API Design
+        - href: /documentation
+          title: API Documentation
+        - href: /mocking
+          title: API Mocking
+      title: Use Cases
     - links:
         - href: 'https://docs.stoplight.io'
           title: Help Center
-        - href: 'https://community.stoplight.io'
-          title: 'Forum '
         - href: /blog
           title: Blog
-        - href: 'https://press.stoplight.io'
-          title: Press
+        - href: 'https://community.stoplight.io'
+          title: 'Forum'
+        - href: /webinars
+          title: Webinars
+        - href: /case-studies
+          title: Case Studies
       title: Resources
     - links:
         - href: /about
           title: About Us
-        - href: /case-studies
-          title: Case Studies
+        - href: https://stoplight.io/p/roadmap
+          title: Roadmap
+        - href: 'https://press.stoplight.io'
+          title: Press
         - href: /contact-us
           title: Contact Us
         - href: 'https://app.stoplight.io/login'

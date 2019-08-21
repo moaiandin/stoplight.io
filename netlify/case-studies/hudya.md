@@ -29,7 +29,7 @@ sidebar:
         Stoplight special.
       role: Cloud Architect
 actionBar:
-  enabled: true
+  enabled: false
 meta:
   description: How Hudya centralized their API development with Stoplight
   title: Hudya | Stoplight

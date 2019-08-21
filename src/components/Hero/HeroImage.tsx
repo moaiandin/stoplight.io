@@ -18,8 +18,8 @@ export const HeroImage: React.FunctionComponent<IHeroImage> = ({ className, vide
   return (
     <Container className={className}>
       <div
-        className="relative text-center border-4 border-lighten-300 rounded-lg overflow-hidden"
-        style={{ height: 500, borderBottom: 'none' }}
+        className="relative text-center shadow-lg-intense -mb-1 rounded-t-lg overflow-hidden"
+        style={{ height: 430, borderBottom: 'none' }}
       >
         {video && (
           <VideoPlayerModal href={video}>

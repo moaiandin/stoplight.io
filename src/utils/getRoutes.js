@@ -81,6 +81,10 @@ export async function getRoutes() {
       template: 'src/templates/Enterprise',
       getData: () => enterprise,
     },
+    {
+      path: '/start',
+      template: 'src/templates/Start',
+    },
 
     ...createListRoutes('src/templates/Lists', lists, allPages),
     ...createListRoutes('src/templates/Lists', authors, allPages, authorProps),
@@ -122,6 +126,7 @@ function filterPages(allPages, filter) {
       subtitle: page.subtitle,
       listSubtitle: page.listSubtitle,
       image: page.image,
+      listImage: page.listImage,
       href: page.path,
       tags: page.tags, // used to show which tag matches the search
       author: page.author,
@@ -282,7 +287,6 @@ function caseStudyProps(props) {
     pageName: 'Case Study',
     sidebar,
     hero: {
-      skew: '3deg',
       aligned: 'left',
     },
     includeToc: false,

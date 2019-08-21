@@ -18,7 +18,7 @@ tabs:
   - title: Contract Testing
     href: https://docs.stoplight.io/testing/leveraging-openapi/contract-testing
 actionBar:
-  enabled: true
+  enabled: false
 meta:
   description: >-
     Build reliable web/REST APIs through our customizable testing tools. We

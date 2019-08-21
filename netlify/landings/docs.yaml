@@ -1,93 +1,80 @@
-path: /documentation
-title: OpenAPI Documentation
-color: green
+path: /docs
+title: Free Hosted Technical Docs
+color: indigo
 relatedTags:
   - blog-documentation
 hero:
-  bgColor: green
+  title: Free Hosted Technical Docs
+  particles: true
+  subtitle: >-
+    Generate beautiful technical documentation for your git projects
   image:
     alt: Documentation
-    src: /images/hubs/hero.png
-  subtitle: >-
-    Create beautiful, customizable, interactive API documentation generated from
-    your OpenAPI Specification
-  title: Hosted API Documentation
+    src: /images/docs/landing.png
+  ctas:
+    - color: green
+      href: /studio
+      title: Author in Studio
+      icon: ['fad', 'pencil-alt']
+      rightIcon: ['fad', 'arrow-right']
+    - title: Use Hubs for Company Docs
+      href: /hubs
+      color: orange
+      icon: ['fad', 'book-open']
+      rightIcon: ['fad', 'arrow-right']
+
 featureSection:
-  actionBar:
-    ctas:
-      - color: accent
-        href: 'https://next.stoplight.io/'
-        title: Get Started Now
-    enabled: true
-    text: 'Ready to Publish? '
+  title: Built for Personal and Open Source projects
   description: >-
-    Create API documentation in minutes. Combine OpenAPI Specifications
-    (formerly known as Swagger) with Markdown to create robust, searchable,
-    internal and external [API documentation](/api-documentation-guide/basics/)
-    for your organization. One-click cloud deployment with Stoplight or download
-    the static assets to host anywhere.
+    Stoplight Docs are free and easy to use. Connect your Github and automatically generate technical documentation in seconds for any of your projects. One-click publish from [Stoplight Studio](/studio) or add the Stopight CLI to your CI/CD workflow.
+
   features:
     - description: >-
-        Stoplight offers multiple ways for your API consumers to try out your
-        API. Test Requests within your documentation allows consumers to
-        understand how your API works. Code Examples generated from dozens of
-        languages such as JavaScript, Python, Ruby, Java, cURL, and more allow
-        consumers to copy and paste right into their own code.
-      image: /images/docs_feature_1.png
-      shortName: API Playground
-      title: Interactive API Documentation
-      titleURL: /documentation/beautiful/
+        Automatically generate documentation from your OpenAPI v2 and v3 documents. With a powerful request maker, your users will be able to try out your API directly from the docs. Our JSON Schema viewer allows them to easily navigate deeply nested request and response structures.
+      image: /images/docs/request-maker.png
+      shortName: OpenAPI v2/v3
+      title: Generate from OpenAPI v2/v3
+
     - description: >-
-        Customize your documentation with Themes, Custom CSS, Pages, Domains,
-        and Versioning. With fully customizable layouts, page design and our
-        Markdown-based Editor, you can document multiple APIs and add rich
-        content and resources alongside API reference documentation for a more
-        complete view of your platform.
-      image: /images/product/docs-theme.png
-      shortName: Theming
-      title: Fully Customizable
-      titleURL: /documentation/helper/
+        Stoplight Docs uses a powerful Markdown engine built on top of the CommonMark spec. Enhance your documentation with embedded models, code snippets, call outs and more to give your users the best experience.
+      image: /images/docs/jsv.png
+      shortName: Powerful Markdown
+      title: Powerful Markdown Rendering
+
     - description: >-
-        Never have out-of-date documentation. Reference your OpenAPI
-        Specification document to [automatically generate API reference
-        documentation](/documentation/generator/). Use the Stoplight API to
-        automate your documentation process by integrating it into your existing
-        CI/CD workflow.
-      image: /images/docs_feature_3.png
-      shortName: CI/CD Integration
-      title: Automated API Documentation
-      titleURL: /documentation/automation/
+        Write content using your favorite editor, such as [Stoplight Studio](/studio), then use git to push changes into a git repository on Github, Bitbucket, Gitlab, etc. Before publishing, you can check out a preview of the updated docs along with a breakdown of all the changes.
+      image: /images/docs/preview-changelog.png
+      shortName: Preview & Changelog
+      title: Preview & Changelog
+
     - description: >-
-        With flexible and secure deployment options, you can find a hosting
-        solution that works for you. Allow Stoplight to host your documentation
-        for you, so you never have to worry about managing servers for your
-        documentation ever again. Manage access control and measure analytics
-        with integrations. [Our enterprise ready documentation
-        tool](/documentation/enterprise/) allows you to download the static
-        assets or use our on-premise solutions behind your firewall to host your
-        documentation from anywhere.
-      image: /images/flexible_deployment.png
-      shortName: Integrations
-      title: 'Simple, Flexible Deployment'
-      titleURL: /documentation/hosted/
-  title: Our OpenAPI Documentation Tool
+        Connect your Github account to one-click publish from [Stoplight Studio](/studio) or use the Stoplight CLI to automate your documentation process by integrating it into your existing CI/CD workflow.
+      image: /images/docs/git.png
+      shortName: Git Integration
+      title: Publish from anywhere
+
+  actionBar:
+    enabled: true
+    text: 'Ready to Publish?'
+    ctas:
+      - color: accent
+        href: 'https://stoplight.io/studio'
+        title: Get started with Studio
+      - color: grey-dark
+        href: 'https://stoplight.io/p/login'
+        title: Login with Github
+        icon: ['fab', 'github']
+
 meta:
   description: >-
-    Create API documentation in minutes. Combine OpenAPI Specifications
-    (formerly known as Swagger) with Markdown to create robust, searchable,
-    internal and external API documentation for your organization. One-click
-    cloud deployment with Stoplight or download the static assets to host
-    anywhere.
+    Stoplight Docs are free and easy to use. Connect your Github and automatically generate technical documentation in seconds for any of your projects. One-click publish from [Stoplight Studio](/studio) or add the Stopight CLI to your CI/CD workflow.
   favicon: /images/mark_light_bg.png
-  image: /images/docs_header.png
-  title: REST API Documentation Generator | Hosted API Documentation
+  image: /images/docs/landing.png
+  title: Free Hosted Technical Docs | Stoplight
+  robots: 'noindex, nofollow'
   twitter:
     description: >-
-      Create API documentation in minutes. Combine OpenAPI Specifications
-      (formerly known as Swagger) with Markdown to create robust, searchable,
-      internal and external API documentation for your organization. One-click
-      cloud deployment with Stoplight or download the static assets to host
-      anywhere.
-    image: /images/docs_header.png
-    title: REST API Documentation Generator | Hosted API Documentation
+      Stoplight Docs are free and easy to use. Connect your Github and automatically generate technical documentation in seconds for any of your projects. One-click publish from [Stoplight Studio](/studio) or add the Stopight CLI to your CI/CD workflow.
+    image: /images/docs/landing.png
+    title: Free Hosted Technical Docs | Stoplight
     username: '@stoplightio'

@@ -1,15 +1,22 @@
 path: /mocking
 title: OpenAPI Mocking
-color: grey-darkest
+color: indigo
 relatedTags:
   - blog-mocking
 hero:
   subtitle: Build APIs and accelerate API development with instant mock servers
   title: Mock HTTP API Server
   ctas:
-    - color: green
-      href: '/studio'
+    - href: '/studio'
       title: Try Out Mocking in Stoplight Studio
+      icon: ['fad', 'paint-brush']
+      rightIcon: ['fad', 'arrow-right']
+      color: green
+    - href: '/open-source/prism'
+      title: Prism Open Source Mock Server
+      icon: ['fad', 'database']
+      rightIcon: ['fad', 'arrow-right']
+      color: orange
 featureSection:
   actionBar:
     text: 'Ready to mock your API?'

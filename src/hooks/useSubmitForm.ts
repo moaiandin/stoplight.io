@@ -28,8 +28,12 @@ export const useSubmitForm = (
         },
       })
         .then(res => {
-          setResponse({ success: res.data.inlineMessage, error: '' });
-          setLoading(false);
+          if (res && res.data && res.data.redirectUri) {
+            window.location.href = res.data.redirectUri;
+          } else {
+            setResponse({ success: res.data.inlineMessage, error: '' });
+            setLoading(false);
+          }
         })
         .catch(err => {
           setResponse({ success: '', error: err.response.data.errors[0].message });

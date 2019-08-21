@@ -38,7 +38,7 @@ export const CustomerSection: React.FunctionComponent<ICustomerSection> = ({
           Stoplight powers some of the worlds leading API first companies
         </div>
 
-        <div className="flex justify-between flex-wrap items-center mt-14">
+        <div className="flex justify-between flex-wrap items-center sm:justify-center mt-14">
           <CaseStudyCard
             href="/case-studies/arkea"
             company="Arkea"

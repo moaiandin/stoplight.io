@@ -40,9 +40,9 @@ export const Start: React.FunctionComponent = () => {
         <div className={cn(headerHeightClass, 'w-100')} />
 
         <Container className="pt-48 pb-96 sm:pt-24 sm:pb-64 text-white text-center">
-          <h1 className="text-5xl">Getting started with Stoplight.</h1>
+          <h1 className="text-5xl">Get Started with Stoplight</h1>
 
-          <div className="text-3xl sm:text-2xl mt-16">
+          <div className="text-3xl sm:text-2xl mt-20">
             <div className="inline sm:block">
               {'I am a '}
               <StartOptionDropdown

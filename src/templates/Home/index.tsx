@@ -39,7 +39,7 @@ const ProductCards = ({ className }: { className?: string }) => {
         tag="design"
         name="Stoplight Studio"
         title="Next gen editor for API design & technical docs"
-        description="Stoplight Studio turns you into an API Design superhero. Create OpenAPI 10x faster, with no prior knowledge, and no mistakes."
+        description="Stoplight Studio turns you into an API Design superhero. Create OpenAPI 10x faster, with no prior knowledge and fewer mistakes."
         color="blue"
         icon={['fad', 'paint-brush-alt']}
         className="bg-grey-lightest bg-white w-1/2 mx-3 sm:w-full sm:mb-6"

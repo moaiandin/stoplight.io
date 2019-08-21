@@ -1,6 +1,6 @@
 path: /hubs
 title: Stoplight Hubs
-color: green-dark
+color: orange-dark
 relatedTags:
   - blog-documentation
 hero:
@@ -13,13 +13,13 @@ hero:
     your OpenAPI document
   title: Stoplight Hubs
   ctas:
-    - color: purple-dark
+    - color: green
       href: 'https://next.stoplight.io'
       title: Get Started Now
     - type: video
       title: Quick Overview
       href: 'https://youtube.com/watch?v=iHzFoc4ls8E'
-      color: purple-dark
+      color: green
 featureSection:
   actionBar:
     ctas:

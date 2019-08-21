@@ -227,10 +227,9 @@ export const Hero: React.FunctionComponent<IHero> = ({
             className={cn('absolute z-0 overflow-hidden', {
               [`bg-${bgColor}`]: bgColor,
               'border-b-4 border-lighten-300': !skew && heroTabs && heroTabs.length,
+              'shadow-inner-intense': skew === 'rounded',
             })}
             style={{
-              // TODO: should depend on height of screen
-              // NOTE: using `bottom` instead of explicit height leads to blurry border rendering in chrome for whatever reason
               width: skew === 'rounded' ? '200%' : 'auto',
               top: -300,
               bottom: skew ? (skewOpts && skewOpts.bottom) || 50 : 0,
@@ -239,7 +238,6 @@ export const Hero: React.FunctionComponent<IHero> = ({
               borderRadius: skew === 'rounded' ? '50%' : '0',
               transform: skew && skew !== 'rounded' ? `skew(0, ${skew})` : undefined,
               background: bgColor ? undefined : 'radial-gradient(circle, #0f0c2f 0%, #080515 100%)',
-              borderBottom: skew ? '10px solid #e0eef9' : undefined,
             }}
             useDiv
           />

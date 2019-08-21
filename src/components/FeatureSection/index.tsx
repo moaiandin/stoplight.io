@@ -86,7 +86,7 @@ export interface IFeatureStrip {
 
 export const FeatureStrip = ({ features }: IFeatureStrip) => {
   return (
-    <div className="bg-blue-darkest shadow-md py-5 text-white whitespace-no-wrap overflow-auto">
+    <div className="bg-blue-darkest shadow py-4 text-white whitespace-no-wrap overflow-auto">
       <div className="container flex items-center justify-around flex-no-wrap sm:justify-start">
         {features.map((feature, key) => (
           <a

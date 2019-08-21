@@ -28,7 +28,7 @@ export const CustomerSection: React.FunctionComponent<ICustomerSection> = ({
   return (
     <Section {...sectionProps}>
       <div className="container">
-        <div className="uppercase text-grey-dark font-bold text-center text-lg">
+        <div className="uppercase text-grey-dark font-semibold text-center text-lg">
           Stoplight powers some of the worlds leading API first companies
         </div>
 
@@ -57,7 +57,7 @@ export const CustomerSection: React.FunctionComponent<ICustomerSection> = ({
             image="/images/logo_namely_transparent.png"
             summary="Namely’s chief objective was to adopt API Design First principles. As they applied their new principle, they realized the importance of reliable, up to date, documentation."
             tag="HR"
-            color="blue"
+            color="indigo"
             bg={cardBg}
           />
 

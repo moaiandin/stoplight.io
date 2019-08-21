@@ -1,11 +1,10 @@
 import cn from 'classnames';
 import * as React from 'react';
-import { withRouteData } from 'react-static';
+import { withRouteData, withSiteData } from 'react-static';
 
-import { Collage, ICollage } from '../../components/Collage';
-import { GartnerCoolVendor, IGartnerCoolVendor } from '../../components/GartnerCoolVendor';
+import { CustomerSection } from '../../components/CustomerSection';
 import { Hero, IHero } from '../../components/Hero';
-import { IImageCallout, ImageCallout } from '../../components/ImageCallout';
+import { IImage } from '../../components/Image';
 import { Layout } from '../../components/Layout';
 import { ProductCard } from '../../components/ProductCard';
 import { ITestimonials, Testimonials } from '../../components/Testimonials';
@@ -13,36 +12,25 @@ import { ITestimonials, Testimonials } from '../../components/Testimonials';
 export interface IHome {
   color: string;
   hero: IHero;
-  imageCallout: IImageCallout;
-  collage: ICollage;
   testimonials: ITestimonials;
-  gartnerCoolVendor: IGartnerCoolVendor;
+  customers?: {
+    images: IImage[];
+  };
 }
 
-export const Home: React.FunctionComponent<IHome> = ({
-  color,
-  hero,
-  imageCallout,
-  collage,
-  testimonials,
-  gartnerCoolVendor,
-}) => {
+export const Home: React.FunctionComponent<IHome> = ({ color, hero, customers, testimonials }) => {
   return (
     <Layout>
       <Hero bgColor={color} {...hero} bottomElem={<ProductCards className="pt-24 sm:pt-6" />} />
 
-      <ImageCallout {...imageCallout} />
-
-      <Collage id="customers" {...collage} />
-
-      <GartnerCoolVendor {...gartnerCoolVendor} />
+      {customers && <CustomerSection images={customers.images} />}
 
       <Testimonials {...testimonials} />
     </Layout>
   );
 };
 
-export default withRouteData(Home);
+export default withSiteData(withRouteData(Home));
 
 const ProductCards = ({ className }: { className?: string }) => {
   return (
@@ -64,7 +52,7 @@ const ProductCards = ({ className }: { className?: string }) => {
         name="Stoplight Enterprise"
         title="API design management at scale"
         description="The Stoplight Platform increases consistency, visibility, and quality across your internal and external APIs."
-        color="indigo"
+        color="orange"
         icon={['fad', 'chart-network']}
         className="bg-white w-1/2 mx-3 sm:w-full"
         href="/enterprise"

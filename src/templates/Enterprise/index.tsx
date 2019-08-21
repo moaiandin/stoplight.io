@@ -30,84 +30,6 @@ export const Enterprise: React.FunctionComponent<IEnterprise> = ({
   gartnerCoolVendor,
   actionBar,
 }) => {
-  const featureRowOne: IFeature[] = [
-    {
-      name: 'Explorer',
-      description: 'The single source of truth for all your API related assets.',
-      icon: ['fad', 'chart-network'],
-      iconStyle: {
-        '--fa-primary-color': 'dodgerblue',
-        '--fa-secondary-color': 'limegreen',
-      },
-    },
-    {
-      name: 'Design Libraries',
-      description: 'Define standard representations of your primary domain objects for easy re-use.',
-      icon: ['fad', 'layer-group'],
-      iconStyle: {
-        '--fa-primary-color': 'orange',
-        '--fa-secondary-color': 'red',
-      },
-    },
-    {
-      name: 'API Style Guides',
-      description: 'Style guides increase API quality and consistency.',
-      icon: ['fad', 'pencil-ruler'],
-      iconStyle: {
-        '--fa-primary-color': 'skyblue',
-        '--fa-secondary-color': 'steelblue',
-      },
-    },
-    {
-      name: 'Internal Docs',
-      description: 'Technical docs for the entire company.',
-      icon: ['fad', 'book'],
-      iconStyle: {
-        '--fa-primary-color': 'salmon',
-        '--fa-secondary-color': 'darksalmon',
-      },
-    },
-  ];
-
-  const featureRowTwo: IFeature[] = [
-    {
-      name: 'External Docs',
-      description: 'Publish docs for your customers and external stakeholders.',
-      icon: ['fad', 'book-open'],
-      iconStyle: {
-        '--fa-primary-color': 'indianred',
-        '--fa-secondary-color': 'indianred',
-      },
-    },
-    {
-      name: 'Git Integrations',
-      description: 'Seamlessly integrates with Github, Bitbucket, and Gitlab.',
-      icon: ['fad', 'code-branch'],
-      iconStyle: {
-        '--fa-primary-color': 'dodgerblue',
-        '--fa-secondary-color': 'limegreen',
-      },
-    },
-    {
-      name: 'SSO Integrations',
-      description: 'Connect your identity provider.',
-      icon: ['fad', 'shield'],
-      iconStyle: {
-        '--fa-primary-color': 'tomato',
-        '--fa-secondary-color': 'tomato',
-      },
-    },
-    {
-      name: 'On-Premise',
-      description: 'Runs where you want - hybrid cloud or in your data center.',
-      icon: ['fad', 'server'],
-      iconStyle: {
-        '--fa-primary-color': 'slategray',
-        '--fa-secondary-color': 'slategray',
-      },
-    },
-  ];
-
   return (
     <Layout>
       <Hero
@@ -116,11 +38,10 @@ export const Enterprise: React.FunctionComponent<IEnterprise> = ({
         aligned="left"
         wrapperClassName="border-b-8 border-blue-darkest"
         rightElem={
-          <div className="flex-2 relative sm:hidden w-3/5">
+          <div className="flex-2 relative sm:hidden w-3/5 pl-20">
             <Image
-              useDiv
               src="/images/enterprise/hero.png"
-              className="bg-contain bg-no-repeat absolute pin -mt-16 -mb-24 ml-20"
+              className="-mt-3 -mb-24 bg-darken-100 rounded-lg border border-darken-300"
             />
           </div>
         }
@@ -191,6 +112,8 @@ export const Enterprise: React.FunctionComponent<IEnterprise> = ({
     </Layout>
   );
 };
+
+export default withSiteData(withRouteData(Enterprise));
 
 interface IFeatures {
   features: IFeature[];
@@ -287,4 +210,80 @@ const PricingCard = ({ isDark, icon, title, featuresTitle, features, href, butto
   );
 };
 
-export default withSiteData(withRouteData(Enterprise));
+const featureRowOne: IFeature[] = [
+  {
+    name: 'Explorer',
+    description: 'The single source of truth for all your API related assets.',
+    icon: ['fad', 'chart-network'],
+    iconStyle: {
+      '--fa-primary-color': 'dodgerblue',
+      '--fa-secondary-color': 'limegreen',
+    },
+  },
+  {
+    name: 'Design Libraries',
+    description: 'Define standard representations of your primary domain objects for easy re-use.',
+    icon: ['fad', 'layer-group'],
+    iconStyle: {
+      '--fa-primary-color': 'orange',
+      '--fa-secondary-color': 'red',
+    },
+  },
+  {
+    name: 'API Style Guides',
+    description: 'Style guides increase API quality and consistency.',
+    icon: ['fad', 'pencil-ruler'],
+    iconStyle: {
+      '--fa-primary-color': 'skyblue',
+      '--fa-secondary-color': 'steelblue',
+    },
+  },
+  {
+    name: 'Internal Docs',
+    description: 'Technical docs for the entire company.',
+    icon: ['fad', 'book'],
+    iconStyle: {
+      '--fa-primary-color': 'salmon',
+      '--fa-secondary-color': 'darksalmon',
+    },
+  },
+];
+
+const featureRowTwo: IFeature[] = [
+  {
+    name: 'External Docs',
+    description: 'Publish docs for your customers and external stakeholders.',
+    icon: ['fad', 'book-open'],
+    iconStyle: {
+      '--fa-primary-color': 'indianred',
+      '--fa-secondary-color': 'indianred',
+    },
+  },
+  {
+    name: 'Git Integrations',
+    description: 'Seamlessly integrates with Github, Bitbucket, and Gitlab.',
+    icon: ['fad', 'code-branch'],
+    iconStyle: {
+      '--fa-primary-color': 'dodgerblue',
+      '--fa-secondary-color': 'limegreen',
+    },
+  },
+  {
+    name: 'SSO Integrations',
+    description: 'Connect your identity provider.',
+    icon: ['fad', 'shield'],
+    iconStyle: {
+      '--fa-primary-color': 'tomato',
+      '--fa-secondary-color': 'tomato',
+    },
+  },
+  {
+    name: 'On-Premise',
+    description: 'Runs where you want - hybrid cloud or in your data center.',
+    icon: ['fad', 'server'],
+    iconStyle: {
+      '--fa-primary-color': 'slategray',
+      '--fa-secondary-color': 'slategray',
+    },
+  },
+];

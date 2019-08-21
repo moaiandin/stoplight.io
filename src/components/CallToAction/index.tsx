@@ -16,7 +16,7 @@ export const CallToAction: React.FunctionComponent<ICallToAction> = ({ type, hre
     return null;
   }
 
-  const cta = <Button href={href} large {...rest} />;
+  const cta = <Button href={href} {...rest} />;
 
   let ctaComponent = cta;
   if (submit) {
@@ -24,7 +24,7 @@ export const CallToAction: React.FunctionComponent<ICallToAction> = ({ type, hre
   } else if (type === 'video') {
     ctaComponent = (
       <VideoPlayerModal href={href}>
-        {({ onClick }) => <Button onClick={onClick} icon="play" large {...rest} />}
+        {({ onClick }) => <Button onClick={onClick} icon="play" {...rest} />}
       </VideoPlayerModal>
     );
   } else if (type === 'link') {

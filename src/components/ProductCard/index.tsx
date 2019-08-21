@@ -29,7 +29,7 @@ export const ProductCard = ({
 }) => {
   return (
     <div
-      className={cn(className, `flex rounded-xl pt-10 pl-10 sm:px-5 sm:pt-5 shadow-lg overflow-hidden`)}
+      className={cn(className, `flex rounded-xl pt-10 pl-10 sm:px-5 sm:pt-5 shadow-md overflow-hidden`)}
       style={style}
     >
       <div className="flex flex-col flex-1 pb-10 sm:pb-5 h-96 sm:h-auto">

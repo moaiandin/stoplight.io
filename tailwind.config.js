@@ -846,12 +846,13 @@ module.exports = {
   */
 
   shadows: {
-    default: '0px 1px 2px rgba(0, 0, 0, 0.2)',
-    md: '0px 2px 6px rgba(0, 0, 0, .18)',
-    lg: '0px 4px 12px rgba(0, 0, 0, .12)',
-    'md-intense': '0px 4px 4px rgba(0, 0, 0, 0.5)',
-    'lg-intense': '0px 5px 5px rgba(0, 0, 0, 0.6)',
+    default: '0px 1px 2px rgba(0, 0, 0, 0.25)',
+    md: '0px 2px 6px rgba(0, 0, 0, .2)',
+    lg: '0px 4px 12px rgba(0, 0, 0, .14)',
+    'md-intense': '0px 2px 5px rgba(0, 0, 0, 0.4)',
+    'lg-intense': '0px 4px 8px rgba(0, 0, 0, 0.35)',
     inner: 'inset 0 2px 4px 0 rgba(0, 0, 0, 0.06)',
+    'inner-intense': 'inset 0 -10px 20px rgba(0, 0, 0, .95)',
     outline: '0 0 0 3px rgba(66, 153, 225, 0.5)',
     none: 'none',
   },

@@ -15,12 +15,12 @@ const DropdownItem = (item, index) => {
     <Link
       key={index}
       to={item.href}
-      className={cn('flex items-center pr-6 py-2 rounded-lg text-black hover:bg-darken-50', {
+      className={cn('flex items-center pr-6 pl-3 py-2 rounded-lg text-black hover:bg-white hover:shadow', {
         'pl-3': !item.icon,
       })}
     >
       {item.icon && (
-        <Icon className={cn('fa-fw mr-1', { [`text-${item.titleColor}`]: item.titleColor })} icon={item.icon} />
+        <Icon className={cn('fa-fw mr-3', { [`text-${item.titleColor}`]: item.titleColor })} icon={item.icon} />
       )}
 
       {item.title}
@@ -105,7 +105,7 @@ const ProductLink = ({
       to={href}
       className={cn(
         className,
-        `active-depress text-black border flex-1 rounded-lg p-6 bg-white hover:border-${color} cursor-pointer`,
+        `active-depress text-black border flex-1 rounded-lg p-6 bg-white hover:border-${color} hover:shadow-md cursor-pointer`,
       )}
       style={{ width: 275 }}
     >

@@ -24,10 +24,11 @@ export interface ITestimonials {
 export const Testimonial: React.FunctionComponent<ITestimonial> = ({ image, quote, author, company, role }) => {
   return (
     <div className="w-1/2 sm:w-full flex px-14 pb-20 sm:px-0 sm:px-10">
-      <div className="testimonial-card max-w-lg w-full lg:flex shadow-lg mx-auto items-stretch bg-white relative">
+      <div className="max-w-lg w-full lg:flex shadow-md mx-auto items-stretch bg-white relative rounded-lg">
         {!image && (
           <Icon className="absolute text-grey h-10" style={{ top: -15, left: -15, fontSize: 30 }} icon="quote-left" />
         )}
+
         {!image && (
           <Icon
             className="absolute text-grey h-10"
@@ -38,12 +39,7 @@ export const Testimonial: React.FunctionComponent<ITestimonial> = ({ image, quot
 
         {image && (
           <div className="flex flex-col justify-center sm:items-center sm:pt-8">
-            <Image
-              src={image}
-              className="-ml-14 sm:ml-0 rounded-full bg-cover shadow-sm border-grey border h-40 w-40"
-              size="sm"
-              useDiv
-            />
+            <Image src={image} className="-ml-12 sm:ml-0 rounded-full bg-cover shadow h-32 w-32" size="sm" useDiv />
           </div>
         )}
 
@@ -81,7 +77,7 @@ export const Testimonials: React.FunctionComponent<ITestimonials> = ({
         </div>
       </Container>
 
-      {actionBar && actionBar.enabled ? <ActionBar className="sm:mt-20 mt-32" {...actionBar} /> : null}
+      {actionBar && actionBar.enabled ? <ActionBar className="sm:mt-12 mt-16" {...actionBar} /> : null}
     </Section>
   );
 };

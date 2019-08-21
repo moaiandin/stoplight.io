@@ -1,5 +1,5 @@
 ---
-path: /blog/studio
+path: /blog/studio-press-release
 tags:
   - blog
   - blog-general

@@ -90,7 +90,7 @@ footer:
         - href: /hubs
           title: Docs Hubs
         - href: /enterprise
-          title: Docs Hubs
+          title: Enterprise
       title: Products
     - links:
         - href: /spectral
@@ -113,7 +113,7 @@ footer:
           title: Blog
         - href: 'https://community.stoplight.io'
           title: 'Forum'
-        - href: /webinars
+        - href: /video
           title: Webinars
         - href: /case-studies
           title: Case Studies

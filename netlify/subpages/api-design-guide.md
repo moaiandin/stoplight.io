@@ -53,7 +53,7 @@ OpenAPI v3.0 was released in July, 2017, by the OpenAPI Initiative, a consortium
 
 While OpenAPI v3 is the way forward, each of these alternative formats has tooling associated. You may find yourself converting between them, especially OpenAPI v2, until the tools catch up.
 
-Your API design requires a way to define how the API will be used. The future-thinking approach is to select [OpenAPI v3](/api-design-guide/OpenAPI-spec/) to describe your API.
+Your API design requires a way to define how the API will be used. The future-thinking approach is to select [OpenAPI v3](/api-design-guide/openapi/) to describe your API.
 
 ## Why API Design-First Matters
 

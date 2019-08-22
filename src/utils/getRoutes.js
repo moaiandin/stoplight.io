@@ -41,7 +41,7 @@ export async function getRoutes() {
 
   // add author to pages and remove pages without a path
   const allPages = [...landings, ...caseStudies, ...blogPosts, ...other].filter(page => {
-    if (page.path) {
+    if (page.path && !page.redirect) {
       const authorPage = authors.find(author => author.title === page.author);
 
       if (authorPage) {
@@ -116,7 +116,7 @@ function filterPages(allPages, filter) {
   const pages = []; // pages that pass the filter
 
   for (const page of allPages) {
-    if (!filter(page)) {
+    if (!filter(page) || page.redirect) {
       continue;
     }
 
@@ -165,7 +165,7 @@ function getRelatedPages(page, allPages) {
   return relatedPages;
 }
 
-function createRoutes(template, pages, allPages, propFactory, noindex) {
+function createRoutes(templatePath, pages, allPages, propFactory, noindex) {
   const routes = [];
 
   if (pages.length) {
@@ -174,9 +174,17 @@ function createRoutes(template, pages, allPages, propFactory, noindex) {
         continue;
       }
 
+      let template = templatePath;
+      if (page.redirect) {
+        // Built in react-static redirect does not work property so just use react-router-dom instead
+        template = 'src/templates/Redirect';
+      } else if (page.hasSandbox) {
+        template = 'src/templates/Spectral';
+      }
+
       routes.push({
         path: page.path,
-        template: page.hasSandbox ? 'src/templates/Spectral' : template,
+        template,
         noindex: noindex ? noindex : get(page, 'meta.robots', '').includes('noindex'),
         getData: () => {
           return {

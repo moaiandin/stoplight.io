@@ -79,19 +79,19 @@ pricingSection:
   title: Documentation Pricing
   cards:
     - icon: ['fad', 'user-check']
-      title: "Basic"
-      tag: "FREE"
-      buttonText: "Learn more about free docs"
-      href: "/docs"
+      title: "Standard"
+      tag: "$179 / month"
+      buttonText: "Start Free Trial"
+      href: "https://next.stoplight.io"
       features: ['OpenAPI v2 & v3', 'HTTP Request Maker', 'Unlimited Published Pages']
 
     - isDark: true
       icon: ['fad', 'user-friends']
       title: "Pro"
-      tag: "$179 / month"
+      tag: "$399 / month"
       href: "https://next.stoplight.io"
-      buttonText: "Get Started Now"
-      featuresTitle: "All Basic features plus:"
+      buttonText: "Start Free Trial"
+      featuresTitle: "All Standard features plus:"
       features: [
         'Custom Branding',
         'Custom Domains',

@@ -40,9 +40,9 @@ class Analytics extends React.Component {
     }
 
     if (window._hsq) {
-      const _hsq = (window._hsq = window._hsq || []);
-      _hsq.push(['setPath', location.pathname]);
-      _hsq.push(['trackPageView']);
+      const hsq = (window._hsq = window._hsq || []);
+      hsq.push(['setPath', location.pathname]);
+      hsq.push(['trackPageView']);
     }
 
     if (window.Intercom) {

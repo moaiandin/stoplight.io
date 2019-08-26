@@ -316,8 +316,16 @@ function blogPostProps(props) {
           '@context': 'https://schema.org',
           '@type': 'BreadcrumbList',
           itemListElement: [
-            { '@type': 'ListItem', position: 1, item: { '@id': 'https://stoplight.io/', name: 'Home' } },
-            { '@type': 'ListItem', position: 2, item: { '@id': 'https://stoplight.io/blog/', name: 'Blog' } },
+            {
+              '@type': 'ListItem',
+              position: 1,
+              item: { '@id': 'https://stoplight.io/', name: 'Home' },
+            },
+            {
+              '@type': 'ListItem',
+              position: 2,
+              item: { '@id': 'https://stoplight.io/blog/', name: 'Blog' },
+            },
             {
               '@type': 'ListItem',
               position: 3,

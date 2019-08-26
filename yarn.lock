@@ -1570,10 +1570,10 @@
     strict-event-emitter-types "^2.0.0"
     wolfy87-eventemitter "5.2.6"
 
-"@stoplight/monaco@^4.3.0":
-  version "4.3.0"
-  resolved "https://registry.npmjs.org/@stoplight/monaco/-/monaco-4.3.0.tgz#ab44a8cbee41ff51a1655593b88b356b181b1046"
-  integrity sha512-OtfaCZe5ID2o/5npQB5nRUip2tDYA4O1BwFEf4dS/NhuLk5nEI06DMV6g0nzcSLYksbkZ9pNehkpFROLvMSnZQ==
+"@stoplight/monaco@^4.3.2":
+  version "4.3.2"
+  resolved "https://registry.yarnpkg.com/@stoplight/monaco/-/monaco-4.3.2.tgz#9afa5e1a3d9cf02b20ce4d013c986bceeedbfa6b"
+  integrity sha512-hBmVR5J8rn1sHwbuxZgwuSRPC3r4Qu7ydoeBMfCVdUJ52+37QoNCL3fo8XHoYDk0V0fzsbW23Ts8Svaf1tIn0Q==
   dependencies:
     "@stoplight/lifecycle" "2.x.x"
     "@stoplight/yaml" "2.x.x"

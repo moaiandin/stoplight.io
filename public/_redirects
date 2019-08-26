@@ -14,7 +14,7 @@ https://stoplightio.netlify.com/* https://stoplight.io/:splat 301!
 /platform/docs /documentation/
 /platform/scenarios /testing/
 /api-designer /design/               
-/prism/errors/ /p/docs/gh/stoplightio/prism/docs/guides/errors.md
+/prism/errors /p/docs/gh/stoplightio/prism/docs/guides/errors.md
 /prism /open-source/prism
 /spectral /open-source/spectral
 

@@ -309,6 +309,29 @@ function blogPostProps(props) {
       aligned: 'left',
       contentBgImage: props.image,
     },
+    actionBar: {
+      enabled: true,
+      text: 'Get Your Copy of the Stoplight API Design Guide',
+      ctas: [
+        {
+          title: 'Download the API Design Guide',
+          type: 'submit',
+          submit: {
+            button: { color: 'purple', title: 'Download the Guide' },
+            input: {
+              type: 'email',
+              placeholder: 'Your work email...',
+              value: '',
+              // tslint:disable-next-line: no-empty
+              onChange: () => {},
+            },
+            formId: 'e6cb86b0-8b13-49b8-860a-0e717da5489d',
+            className: 'mt-4 p-4 bg-black',
+          },
+        },
+      ],
+      className: '',
+    },
     meta: {
       ...props.meta,
       jld: {

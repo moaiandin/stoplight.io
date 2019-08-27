@@ -18,7 +18,20 @@ tabs:
   - href: /api-design-guide/openapi
     title: Understanding OpenAPI
 actionBar:
-  enabled: false
+  enabled: true,
+  text: Get Your Copy of the Stoplight API Design Guide
+  ctas:
+    - title: Download the API Design Guide
+      type: submit
+      submit:
+        button:
+          color: purple
+          title: Download the Guide
+        input:
+          type: email
+          placeholder: 'Your work email...'
+        formId: 'e6cb86b0-8b13-49b8-860a-0e717da5489d'
+        className: 'mt-4 p-4 bg-black text-white'
 meta:
   description: >-
     Learn all there is to know about our API designs through our comprehensive

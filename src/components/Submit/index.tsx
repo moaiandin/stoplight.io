@@ -37,7 +37,7 @@ export const Submit: React.FunctionComponent<ISubmit> = ({ button, className, in
       className={cn(className, 'flex flex-col max-w-2xl sm:max-w-full sm:flex-col sm:justify-center sm:items-between')}
     >
       {response.success ? (
-        <div>{response.success}</div>
+        <div className="successMessage" dangerouslySetInnerHTML={{ __html: response.success }} />
       ) : (
         <div className="flex sm:flex-wrap sm:justify-center sm:py-4">
           <Input autoFocus {...input} value={value} onChange={setValue} onEnter={handleSubmit} />

@@ -17,14 +17,15 @@
     "build": "NODE_ENV=production react-static build",
     "analyze": "NODE_ENV=production react-static bundle --analyze",
     "serve": "serve dist -p 3000",
-    "format": "prettier --single-quote --trailing-comma es5 --print-width 100 --write \"src/**/*.js\""
+    "lint": "tslint -c tslint.json 'src/**/*.{ts,tsx,js,jsx}'",
+    "lint.fix": "yarn lint --fix"
   },
   "resolutions": {
     "ansi-styles": "4.x.x",
     "ajv": "^6.7"
   },
   "dependencies": {
-    "@stoplight/monaco": "^4.3.0",
+    "@stoplight/monaco": "^4.3.2",
     "@stoplight/spectral": "^4.0.0",
     "axios": "^0.19.0",
     "classnames": "2.2.x",

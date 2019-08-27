@@ -1,4 +1,3 @@
-import cn from 'classnames';
 import { DiscussionEmbed } from 'disqus-react';
 import * as React from 'react';
 import { withRouteData } from 'react-static';
@@ -13,17 +12,16 @@ import { IQuote, Quote } from 'src/components/Quote';
 import { IRelatedPage, RelatedPages } from 'src/components/RelatedPages';
 import { Section } from 'src/components/Section';
 import { ITab } from 'src/components/Tabs';
-import { convertMarkdownToHTML } from 'src/utils/markdown/index.js';
+import { Content } from '../../components/Content';
 import { Layout } from '../../components/Layout';
 
 export interface IPage {
   path: string;
   title: string;
   subtitle: string;
-  className?: string;
+  body: string;
   pageName?: string;
   breadCrumbs?: IHeroBreadCrumb[];
-  body: string;
   bodyImage?: string;
   author?: IHeroAuthor;
   publishedDate?: string;
@@ -37,6 +35,7 @@ export interface IPage {
   relatedPages?: IRelatedPage[];
   disqus?: { enabled: boolean };
   tabs?: ITab[];
+  className?: string;
   includeToc?: boolean;
 }
 
@@ -45,13 +44,11 @@ export interface IPage {
  */
 
 export const Subpage: React.FunctionComponent<IPage> = ({
-  className,
   path,
   title,
   subtitle,
   pageName,
   breadCrumbs,
-  body,
   bodyImage,
   author,
   publishedDate,
@@ -62,6 +59,8 @@ export const Subpage: React.FunctionComponent<IPage> = ({
   relatedPages,
   disqus,
   tabs,
+  className,
+  body,
   includeToc = true,
 }) => {
   const heroProps: IHero = {
@@ -83,8 +82,6 @@ export const Subpage: React.FunctionComponent<IPage> = ({
     url = window.location.origin + path;
     showDisqus = showDisqus && window.location.pathname !== '/admin';
   }
-
-  const html = convertMarkdownToHTML(body, { includeToc: !sidebar && includeToc });
 
   return (
     <Layout>
@@ -116,7 +113,7 @@ export const Subpage: React.FunctionComponent<IPage> = ({
               </div>
             )}
 
-            <div className={cn('markdown-body', className)} dangerouslySetInnerHTML={{ __html: html }} />
+            <Content body={body} sidebar={sidebar} includeToc={includeToc} className={className} />
           </div>
         </Container>
       </Section>

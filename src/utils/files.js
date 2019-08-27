@@ -35,6 +35,7 @@ export function getFile(srcPath, extension = '.yaml', options) {
     data = dataLoaders[extension](fs.readFileSync(srcPath, 'utf8'), options) || {};
   } catch (e) {
     data = {};
+    // tslint:disable-next-line: no-console
     console.error('Error getFile:', srcPath, e);
   }
 
@@ -68,6 +69,7 @@ export async function getFiles(srcPath, extensions = ['.md', '.yaml', '.yml'], o
         files.push(getFile(item.path, extension, options));
       })
       .on('error', e => {
+        // tslint:disable-next-line: no-console
         console.error('Error getFiles:', srcPath, e);
         reject(e);
       })

@@ -3,6 +3,7 @@ import * as React from 'react';
 import Headroom from 'react-headroom';
 import { Head, withRouteData, withSiteData } from 'react-static';
 
+import { useBanner } from '../../hooks/useBanner';
 import { Icon, IconProp } from '../Icon';
 import { Link } from '../Link';
 import { Desktop } from './Desktop';
@@ -49,7 +50,7 @@ export interface IHeader {
 
 export const Header: React.FunctionComponent<IHeader> = props => {
   const [unpinned, setUnpinned] = React.useState(false);
-  const [showBanner, setShowBanner] = React.useState(true);
+  const [showBanner, setShowBanner] = useBanner();
 
   const onUnpin = React.useCallback(() => setUnpinned(true), [setUnpinned]);
   const onUnfix = React.useCallback(() => setUnpinned(false), [setUnpinned]);

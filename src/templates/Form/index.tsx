@@ -53,7 +53,7 @@ export const Form: React.FunctionComponent<IForm> = ({
 
       <Container className="flex relative z-20 py-24 md:flex-wrap-reverse">
         {hasLeftContent && (
-          <div className="w-2/3 md:w-full pr-24 md:pr-0 flex-1">
+          <div className="w-2/3 pr-4 md:w-full md:pr-0 flex-1">
             {leftContent &&
               leftContent.title && <div className="text-3xl" dangerouslySetInnerHTML={{ __html: leftContent.title }} />}
 

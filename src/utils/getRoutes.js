@@ -321,9 +321,6 @@ function blogPostProps(props) {
             input: {
               type: 'email',
               placeholder: 'Your work email...',
-              value: '',
-              // tslint:disable-next-line: no-empty
-              onChange: () => {},
             },
             formId: 'e6cb86b0-8b13-49b8-860a-0e717da5489d',
             className: 'mt-4 p-4 bg-black text-white',

@@ -1254,3 +1254,13 @@ pre.line-numbers > code {
     transform: translate(0px, 0px);
   }
 }
+
+.successMessage {
+  white-space: normal;
+  padding-top: 6px;
+  font-size: 16px;
+}
+
+.successMessage a:link {
+  color: #1a4731;
+}

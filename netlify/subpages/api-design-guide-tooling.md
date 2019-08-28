@@ -19,14 +19,14 @@ tabs:
     title: Understanding OpenAPI
 actionBar:
   enabled: true,
-  text: Get Your Copy of the Stoplight API Design Guide
+  text: Read how world’s leading API first companies are solving API Design Management at Scale.
   ctas:
-    - title: Download the API Design Guide
+    - title: Get the API Design Guide
       type: submit
       submit:
         button:
           color: purple
-          title: Download the Guide
+          title: Get the API Design Guide
         input:
           type: email
           placeholder: 'Your work email...'

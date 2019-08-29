@@ -31,7 +31,7 @@ export const Content: React.FunctionComponent<IContent> = ({ sidebar, includeToc
             <p className="text-sm font-bold ml-6 sm:hidden">Design APIs 10x Faster</p>
             <CallToAction
               className="z-5 mt-4 sm:hidden bg-grey-lightest"
-              href="/studio"
+              href="https://stoplight.io/studio/?utm_campaign=studio_blog"
               title="Download Studio"
               color="green"
               icon="arrow-right"

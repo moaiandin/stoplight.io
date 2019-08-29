@@ -17,6 +17,8 @@ tabs:
     title: API Design Tooling
   - href: /api-design-guide/openapi
     title: Understanding OpenAPI
+  - href: /api-design-guide-download
+    title: Download the Guide
 actionBar:
   enabled: true,
   text: Read how world’s leading API first companies are solving API Design Management at Scale.

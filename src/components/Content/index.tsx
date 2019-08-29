@@ -42,7 +42,7 @@ export const Content: React.FunctionComponent<IContent> = ({ sidebar, includeToc
         </div>
       )}
 
-      <div className={cn('markdown-body pt-10', { 'has-banner': isBannerShowing })}>
+      <div className={cn('markdown-body pt-10 sm:mt-20', { 'has-banner': isBannerShowing })}>
         <div
           className={cn(className, { 'm-auto': !sidebar && !includeToc })}
           dangerouslySetInnerHTML={{ __html: html }}

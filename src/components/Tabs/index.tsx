@@ -41,7 +41,7 @@ export const Tabs: React.FunctionComponent<ITabs> = withRouteData(({ tabs, path,
 
   return (
     <div className={cn(className, 'relative z-5 border-b-4 border-lighten-300')}>
-      <div className="container flex flex-no-wrap w-full sm:overflow-auto scrolling-touch -mb-1 pb-1">
+      <div className="container flex flex-no-wrap w-full sm:flex-col sm:text-center -mb-1 pb-1 sm:-mb-2 sm:-mt-14">
         {tabs.map(tab => (
           <Tab key={tab.href} isActive={reg.test(tab.href)} {...tab} />
         ))}

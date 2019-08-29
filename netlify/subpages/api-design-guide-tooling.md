@@ -17,6 +17,8 @@ tabs:
     title: API Design Tooling
   - href: /api-design-guide/openapi
     title: Understanding OpenAPI
+  - href: /api-design-guide-download
+    title: Download the Guide
 actionBar:
   enabled: false
 meta:
@@ -29,13 +31,14 @@ meta:
     image: /images/mark_light_bg.png
     username: '@stoplightio'
 ---
+
 # API Design Brings Powerful Tooling
 
 When you use an OpenAPI spec to design your API, it becomes part of your workflow. That means as soon as you have even a single potential endpoint of your API described, you can begin to gather feedback and piece together how your API will be used. Rather than toiling away in an API silo, your spec allows for collaboration with colleagues and across departments. You can work the API description into your approval processes, so everyone is on the same page with its progress.
 
 Tooling built around the OpenAPI spec can help in the very early stages of design through a live API and even as you consider versioning and deprecation. We’ll cover some of the common tools you might use with your API descriptions.
 
-![API Documentation ](/images/documentation-design-guide.png "API Documentation")
+![API Documentation ](/images/documentation-design-guide.png 'API Documentation')
 
 ## Generate API Documentation
 
@@ -65,7 +68,7 @@ Your OpenAPI definition describes exactly how your API can be used and what resp
 
 Testing can be built into your CI/CD pipeline, so you always know that your tests are passing. Like other software testing, you can track coverage, ensuring that errors are unlikely to slip through. You can build fully customizable tests with built-in coverage reporting with [Stoplight OpenAPI testing](/testing/).
 
-![OAS Linting](/images/linting-design-guide.png "Linting")
+![OAS Linting](/images/linting-design-guide.png 'Linting')
 
 ## Use Linting to Spot Errors
 

@@ -15,6 +15,8 @@ tabs:
     href: /api-design-guide/tooling
   - title: Understanding OpenAPI
     href: /api-design-guide/openapi
+  - href: /api-design-guide-download
+    title: Download the Guide
 meta:
   robots: 'index, follow'
   title: API Design Guide | OpenAPI

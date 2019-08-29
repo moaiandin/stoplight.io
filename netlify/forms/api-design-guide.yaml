@@ -1,5 +1,5 @@
 path: /api-design-guide-download
-color: green
+color: indigo
 hero:
   title: Get Your Copy of the Stoplight API Design Guide
   subtitle: >-
@@ -9,12 +9,22 @@ hero:
       type: 'submit'
       submit:
         button:
-          color: purple
+          color: green
           title: Download Your Guide
         input:
           type: email
           placeholder: Your work email...
         formId: 'e6cb86b0-8b13-49b8-860a-0e717da5489d'
+  forceTabsAlign: true
+  tabs:
+    - title: API Design Basics
+      href: /api-design-guide/basics
+    - title: API Design Tooling
+      href: /api-design-guide/tooling
+    - title: Understanding OpenAPI
+      href: /api-design-guide/openapi
+    - title: Download the Guide
+      href: /api-design-guide-download
 centerContent:
   description: >-
     Large enterprises embarking on Digital API transformation initiatives 

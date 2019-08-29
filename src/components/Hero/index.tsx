@@ -73,6 +73,7 @@ export interface IHero {
   titleClassName?: string;
   rightElem?: React.ReactNode;
   bottomElem?: React.ReactNode;
+  forceTabsAlign?: boolean;
 }
 
 export const Hero: React.FunctionComponent<IHero> = ({
@@ -96,6 +97,7 @@ export const Hero: React.FunctionComponent<IHero> = ({
   tabs = [],
   titleImage,
   titleClassName,
+  forceTabsAlign,
 }) => {
   // Filter out any empty button objects
   const heroTabs = tabs.filter(tab => {
@@ -105,6 +107,11 @@ export const Hero: React.FunctionComponent<IHero> = ({
   // Force left alignment with hero tabs
   if (heroTabs.length) {
     aligned = 'left';
+  }
+
+  // Force center alignment only if both hero tabs and submit form are present
+  if (forceTabsAlign) {
+    aligned = 'center';
   }
 
   const hasBottomContent = bottomElem || (heroTabs && heroTabs.length) || image;

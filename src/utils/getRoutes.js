@@ -10,6 +10,7 @@ export async function getRoutes() {
     home,
     pricing,
     about,
+    enterprise,
     forms = [],
 
     lists = [],
@@ -23,6 +24,7 @@ export async function getRoutes() {
     getFile(`${NETLIFY_PATH}/pages/home.yaml`),
     getFile(`${NETLIFY_PATH}/pages/pricing.yaml`),
     getFile(`${NETLIFY_PATH}/pages/about.yaml`),
+    getFile(`${NETLIFY_PATH}/pages/enterprise.yaml`),
     getFiles(`${NETLIFY_PATH}/forms`),
 
     getFiles(`${NETLIFY_PATH}/lists`),
@@ -39,7 +41,7 @@ export async function getRoutes() {
 
   // add author to pages and remove pages without a path
   const allPages = [...landings, ...caseStudies, ...blogPosts, ...other].filter(page => {
-    if (page.path) {
+    if (page.path && !page.redirect) {
       const authorPage = authors.find(author => author.title === page.author);
 
       if (authorPage) {
@@ -74,6 +76,15 @@ export async function getRoutes() {
       template: 'src/templates/About',
       getData: () => about,
     },
+    {
+      path: '/enterprise',
+      template: 'src/templates/Enterprise',
+      getData: () => enterprise,
+    },
+    {
+      path: '/start',
+      template: 'src/templates/Start',
+    },
 
     ...createListRoutes('src/templates/Lists', lists, allPages),
     ...createListRoutes('src/templates/Lists', authors, allPages, authorProps),
@@ -105,7 +116,7 @@ function filterPages(allPages, filter) {
   const pages = []; // pages that pass the filter
 
   for (const page of allPages) {
-    if (!filter(page)) {
+    if (!filter(page) || page.redirect) {
       continue;
     }
 
@@ -115,6 +126,7 @@ function filterPages(allPages, filter) {
       subtitle: page.subtitle,
       listSubtitle: page.listSubtitle,
       image: page.image,
+      listImage: page.listImage,
       href: page.path,
       tags: page.tags, // used to show which tag matches the search
       author: page.author,
@@ -153,7 +165,7 @@ function getRelatedPages(page, allPages) {
   return relatedPages;
 }
 
-function createRoutes(template, pages, allPages, propFactory, noindex) {
+function createRoutes(templatePath, pages, allPages, propFactory, noindex) {
   const routes = [];
 
   if (pages.length) {
@@ -162,9 +174,17 @@ function createRoutes(template, pages, allPages, propFactory, noindex) {
         continue;
       }
 
+      let template = templatePath;
+      if (page.redirect) {
+        // Built in react-static redirect does not work property so just use react-router-dom instead
+        template = 'src/templates/Redirect';
+      } else if (page.hasSandbox) {
+        template = 'src/templates/Spectral';
+      }
+
       routes.push({
         path: page.path,
-        template: page.hasSandbox ? 'src/templates/Spectral' : template,
+        template,
         noindex: noindex ? noindex : get(page, 'meta.robots', '').includes('noindex'),
         getData: () => {
           return {
@@ -275,7 +295,6 @@ function caseStudyProps(props) {
     pageName: 'Case Study',
     sidebar,
     hero: {
-      skew: '3deg',
       aligned: 'left',
     },
     includeToc: false,
@@ -297,8 +316,16 @@ function blogPostProps(props) {
           '@context': 'https://schema.org',
           '@type': 'BreadcrumbList',
           itemListElement: [
-            { '@type': 'ListItem', position: 1, item: { '@id': 'https://stoplight.io/', name: 'Home' } },
-            { '@type': 'ListItem', position: 2, item: { '@id': 'https://stoplight.io/blog/', name: 'Blog' } },
+            {
+              '@type': 'ListItem',
+              position: 1,
+              item: { '@id': 'https://stoplight.io/', name: 'Home' },
+            },
+            {
+              '@type': 'ListItem',
+              position: 2,
+              item: { '@id': 'https://stoplight.io/blog/', name: 'Blog' },
+            },
             {
               '@type': 'ListItem',
               position: 3,

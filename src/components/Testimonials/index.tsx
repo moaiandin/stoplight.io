@@ -1,10 +1,9 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import * as React from 'react';
 
-import { ActionBar, IActionBar } from 'src/components/ActionBar';
-import { Container } from 'src/components/Container';
-import { Image } from 'src/components/Image';
-import { Section } from 'src/components/Section';
+import { Container } from '../Container';
+import { Icon } from '../Icon';
+import { Image } from '../Image';
+import { Section } from '../Section';
 
 export interface ITestimonial {
   image: string;
@@ -23,16 +22,13 @@ export interface ITestimonials {
 export const Testimonial: React.FunctionComponent<ITestimonial> = ({ image, quote, author, company, role }) => {
   return (
     <div className="w-1/2 sm:w-full flex px-14 pb-20 sm:px-0 sm:px-10">
-      <div className="testimonial-card max-w-lg w-full lg:flex shadow-lg mx-auto items-stretch bg-white relative">
+      <div className="max-w-lg w-full lg:flex shadow-md mx-auto items-stretch bg-white relative rounded-lg">
         {!image && (
-          <FontAwesomeIcon
-            className="absolute text-grey h-10"
-            style={{ top: -15, left: -15, fontSize: 30 }}
-            icon="quote-left"
-          />
+          <Icon className="absolute text-grey h-10" style={{ top: -15, left: -15, fontSize: 30 }} icon="quote-left" />
         )}
+
         {!image && (
-          <FontAwesomeIcon
+          <Icon
             className="absolute text-grey h-10"
             style={{ bottom: -15, right: -15, fontSize: 30 }}
             icon="quote-right"
@@ -41,12 +37,7 @@ export const Testimonial: React.FunctionComponent<ITestimonial> = ({ image, quot
 
         {image && (
           <div className="flex flex-col justify-center sm:items-center sm:pt-8">
-            <Image
-              src={image}
-              className="-ml-14 sm:ml-0 rounded-full bg-cover shadow-sm border-grey border h-40 w-40"
-              size="sm"
-              useDiv
-            />
+            <Image src={image} className="-ml-12 sm:ml-0 rounded-full bg-cover shadow h-32 w-32" size="sm" useDiv />
           </div>
         )}
 
@@ -70,8 +61,15 @@ export const Testimonials: React.FunctionComponent<ITestimonials> = ({ title, de
   }
 
   return (
-    <Section id="testimonials">
-      <Container title={title} description={description}>
+    <Section id="testimonials" noPadding className="pb-32">
+      <Container
+        title={title}
+        description={description}
+        chips={{
+          className: 'justify-center mb-32',
+          segments: [{ color: 'orange-light', length: 2 }, { color: 'orange-dark', length: 4 }, { color: 'orange' }],
+        }}
+      >
         <div className="flex flex-wrap -mx-14 sm:mx-0">
           {testimonials.map((testimonial, index) => {
             return <Testimonial key={index} {...testimonial} />;

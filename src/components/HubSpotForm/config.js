@@ -8,11 +8,13 @@ export default {
       name: 'formId',
       label: 'HubSpot Form ID',
       widget: 'string',
+      required: false,
     },
     {
       name: 'portalId',
       label: 'HubSpot ID',
       widget: 'string',
+      required: false,
     },
     {
       name: 'title',

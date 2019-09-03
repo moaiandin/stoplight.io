@@ -1,17 +1,25 @@
 import * as React from 'react';
 
 import Analytics from 'src/components/Analytics';
-import Footer from 'src/components/Footer';
-import Header from 'src/components/Header';
+import Footer, { IFooterProps } from 'src/components/Footer';
+import Header, { IHeader } from 'src/components/Header';
+import { BannerVisibilityProvider } from '../../hooks/useBanner';
 
-export const Layout: React.FunctionComponent = ({ children }) => {
+export interface ILayout {
+  header?: IHeader;
+  footer?: IFooterProps;
+}
+
+export const Layout: React.FunctionComponent<ILayout> = ({ children, header, footer }) => {
   return (
-    <Analytics>
-      <Header />
+    <BannerVisibilityProvider>
+      <Analytics>
+        <Header {...header} />
 
-      <div className="relative">{children}</div>
+        <div className="relative bg-grey-lightest">{children}</div>
 
-      <Footer />
-    </Analytics>
+        <Footer {...footer} />
+      </Analytics>
+    </BannerVisibilityProvider>
   );
 };

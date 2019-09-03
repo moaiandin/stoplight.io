@@ -1,13 +1,13 @@
 import cn from 'classnames';
 import * as React from 'react';
 
-import { Button, IButton } from 'src/components/Button';
-import { Container } from 'src/components/Container';
-import { Link } from 'src/components/Link';
-import { ISection, Section } from 'src/components/Section';
-
-import { Image } from 'src/components/Image';
-import { slugify } from 'src/utils/slugify';
+import { slugify } from '../../utils/slugify';
+import { Button, IButton } from '../Button';
+import { Container } from '../Container';
+import { Icon } from '../Icon';
+import { Image } from '../Image';
+import { Link } from '../Link';
+import { ISection, Section } from '../Section';
 
 export interface IFeature {
   title: string;
@@ -35,15 +35,15 @@ export const Feature: React.FunctionComponent<IFeature> = props => {
     <div
       id={slugify(title)}
       key="content"
-      className={cn('flex items-center py-12 md:pb-0', {
+      className={cn('flex items-center py-12 sm:pb-0', {
         'flex-row': !isReversed,
         'flex-row-reverse': isReversed,
       })}
     >
       <div
-        className={cn('flex flex-col flex-1 w-1/2 md:w-100', {
-          'pr-24 md:pr-0': !isReversed,
-          'pl-18 md:pl-0': isReversed,
+        className={cn('flex flex-col flex-1 w-1/2 sm:w-100 sm:items-center sm:text-center', {
+          'pr-24 sm:pr-0': !isReversed,
+          'pl-18 sm:pl-0': isReversed,
         })}
       >
         <h2 className={cn('max-w-sm mb-10 text-3xl', `text-${titleColor || 'grey-darkest'}`)}>
@@ -56,20 +56,46 @@ export const Feature: React.FunctionComponent<IFeature> = props => {
           )}
         </h2>
         <div
-          className={cn('mb-12 pb-12 md:pb-0 max-w-md leading-loose text-lg', {
-            'md:mb-0': isLast,
+          className={cn('mb-12 pb-12 sm:pb-0 max-w-md leading-loose text-lg', {
+            'sm:mb-0': isLast,
           })}
           dangerouslySetInnerHTML={{ __html: description }}
         />
       </div>
 
-      <div className="flex-1 w-1/2 md:hidden relative">
+      <div className="flex-1 w-1/2 sm:hidden relative">
         <Image
           src={image}
-          className="bg-center bg-cover bg-no-repeat h-128 w-128 rounded-full"
+          className={cn('bg-center bg-cover bg-no-repeat h-128 w-128 rounded-full', { 'ml-auto': !isReversed })}
           style={{ boxShadow: '0 0 4px rgba(0, 0, 0, 0.5)' }}
           useDiv
         />
+      </div>
+    </div>
+  );
+};
+
+export interface IFeatureStrip {
+  features: Array<{
+    shortName: string;
+    title?: string;
+  }>;
+}
+
+export const FeatureStrip = ({ features }: IFeatureStrip) => {
+  return (
+    <div className="bg-blue-darkest shadow py-4 text-white whitespace-no-wrap overflow-auto">
+      <div className="container flex items-center justify-around flex-no-wrap sm:justify-start">
+        {features.map((feature, key) => (
+          <a
+            key={key}
+            href={`#${slugify(feature.title)}`}
+            className="flex items-center justify-center py-2 px-4 hover:bg-lighten-50 rounded-lg text-white font-semibold"
+          >
+            <Icon className="text-lg" icon={['fad', 'check-circle']} />
+            <div className="ml-3">{feature.shortName}</div>
+          </a>
+        ))}
       </div>
     </div>
   );
@@ -88,9 +114,11 @@ export const FeatureSection: React.FunctionComponent<IFeatureSection> = ({
   }
 
   return (
-    <Section id="product" {...sectionProps}>
+    <Section id="product" {...sectionProps} className="pb-32" noPadding>
+      <FeatureStrip features={features} />
+
       {(title || description) && (
-        <Container title={title} className={cn(!buttons.length ? 'pb-32 border-b' : null)}>
+        <Container title={title} className={cn(!buttons || !buttons.length ? 'py-32 border-b' : null)}>
           {description && (
             <div
               className="flex leading-loose text-lg text-center max-w-lg mx-auto"
@@ -100,8 +128,8 @@ export const FeatureSection: React.FunctionComponent<IFeatureSection> = ({
         </Container>
       )}
 
-      {buttons.length ? (
-        <Container className="mt-20 pb-32 border-b">
+      {buttons && buttons.length ? (
+        <Container className="mt-20 border-b">
           <div className="flex-1 flex lg:justify-center lg:items-between lg:flex-wrap">
             {buttons.map((button, index) => (
               <Button key={index} className={index > 0 ? 'ml-4 sm:ml-0' : ''} {...button} />
@@ -110,7 +138,7 @@ export const FeatureSection: React.FunctionComponent<IFeatureSection> = ({
         </Container>
       ) : null}
 
-      <Container className="mx-auto py-16">
+      <Container className="mx-auto pt-16">
         {features.map((feature, index) => (
           <Feature
             key={index}

@@ -29,8 +29,8 @@ export interface IAbout {
 
 const Member: React.FunctionComponent<IMember> = ({ image, name, role, isLast }) => {
   return (
-    <div className={cn('mb-48 -mt-24 px-10 sm:px-0 sm:w-48', { 'sm:mb-24': isLast })}>
-      <div className="block text-center shadow bg-white py-10 sm:py-4 px-4 sm:px-0 h-64 w-64 sm:w-full rounded-lg">
+    <div className={cn('mb-48 -mt-20 px-10 sm:px-0 sm:w-48', { 'sm:mb-24': isLast })}>
+      <div className="block text-center shadow bg-white py-10 sm:py-4 px-4 sm:px-0 w-64 sm:w-full rounded-lg">
         <Image
           src={image}
           className="-mt-20 mx-auto rounded-full bg-center bg-contain shadow-sm border-grey border h-32 w-32 mb-10"
@@ -57,10 +57,10 @@ export const About: React.FunctionComponent<IAbout> = ({
 }) => {
   return (
     <Layout>
-      <Hero key="hero" bgColor={color} {...hero} containerClassName="pb-24" />
+      <Hero key="hero" bgColor={color} greyBg {...hero} />
 
       {team.length ? (
-        <div className="bg-grey-lightest relative z-5">
+        <div className="bg-grey-lightest relative z-5 pt-12">
           <div className="container flex flex-wrap justify-center md:justify-around text-center md:px-0">
             {team.map((member, index) => (
               <Member key={index} isLast={index === team.length - 1} {...member} />

@@ -7,7 +7,7 @@ hero:
   ctas:
     - color: blue
       href: 'https://next.stoplight.io/'
-      name: Try it out now
+      title: Try it out now
   image:
     alt: Testing
     src: /images/testing_header.png

@@ -13,7 +13,13 @@ https://stoplightio.netlify.com/* https://stoplight.io/:splat 301!
 /platform/design /design/
 /platform/docs /documentation/
 /platform/scenarios /testing/
-/api-designer /design/
+/api-designer /design/               
+/prism/errors /p/docs/gh/stoplightio/prism/docs/guides/errors.md
+/prism /open-source/prism
+/spectral /open-source/spectral
+
+# until we have an open-source landing page
+/open-source /
 
 # NextJS Assets
 /_next/* /p/_next/:splat
@@ -21,6 +27,7 @@ https://stoplightio.netlify.com/* https://stoplight.io/:splat 301!
 # Guide redirects
 /api-documentation-guide /api-documentation-guide/basics/
 /api-design-guide /api-design-guide/basics/
+/api-design-guide/oas-spec /api-design-guide/openapi/
 /mock-api-guide /mock-api-guide/basics/
 
 # Redirect images

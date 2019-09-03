@@ -1,0 +1,45 @@
+title: Stoplight Enterprise
+color: black
+path: /enterprise
+hero:
+  particles: true
+  title: API Design Management at Scale
+  subtitle: >-
+    The Stoplight Enterprise Platform increases the consistency, visibility, and quality of your internal and external APIs.
+  ctas:
+    - title: Book a Demo
+      type: 'submit'
+      submit:
+        button:
+          color: purple
+          title: Book a Demo
+          href: '/demo/'
+        input:
+          type: email
+          placeholder: Your work email...
+        formId: 'a5fb939e-7da2-4a9e-9784-338f92a71e41'
+gartnerCoolVendor:
+  cta:
+    href: '/gartner-cool-vendor/'
+    title: Learn More
+  title: Stoplight named a Gartner Cool Vendor
+  description: >-
+    Stoplight is cool because it enables enterprises to manage API Design as scale.
+    Learn more about collaborative API Design in this Gartner report.
+  image: /images/gartner_cv_2019_rgb.png
+actionBar:
+  ctas:
+    - href: /demo
+      title: Book a Demo
+  enabled: true
+  text: Ready to go API First with the Stoplight Enterprise Platform?
+meta:
+  description: Increase the consistency, visibility, and quality of your internal and external APIs with the Stoplight Enterprise Platform.
+  favicon: /images/mark_light_bg.png
+  src: /images/studio/hero.png
+  title: Enterprise - API Design Management at Scale | Stoplight
+  twitter:
+    description: Increase the consistency, visibility, and quality of your internal and external APIs with the Stoplight Enterprise Platform.
+    src: /images/studio/hero.png
+    title: Enterprise - API Design Management at Scale | Stoplight
+    username: '@stoplightio'

@@ -1,0 +1,136 @@
+path: /studio
+title: Stoplight Studio
+color: blue
+relatedTags:
+  - blog-design
+hero:
+  particles: true
+  image:
+    alt: Stoplight Studio
+    src: /images/studio/hero.png
+  subtitle: >-
+    Design APIs 10x faster with our free OpenAPI editor. Prototype and share your API within minutes.
+  title: 'Stoplight Studio'
+  ctas:
+    - title: On the Web
+      href: 'https://stoplight.io/p/studio'
+      icon: ['fad', 'browser']
+      color: purple
+    - title: Mac App
+      href: 'https://github.com/stoplightio/studio/releases/download/v1.0.1/Stoplight-Studio-1.0.1.dmg'
+      icon: ['fab', 'apple']
+      color: green
+      filename: studio-mac
+    - title: Windows App
+      href: 'https://github.com/stoplightio/studio/releases/download/v1.0.1/Stoplight-Studio-Setup-1.0.1.exe'
+      icon: ['fab', 'windows']
+      color: green
+      filename: studio-windows
+    - title: Linux App
+      href: 'https://github.com/stoplightio/studio/releases/download/v1.0.1/Stoplight-Studio-1.0.1.AppImage'
+      icon: ['fab', 'linux']
+      color: green
+      filename: studio-linux
+featureSection:
+  actionBar:
+    ctas:
+      - title: On the Web
+        href: 'https://stoplight.io/p/studio'
+        icon: ['fad', 'browser']
+        color: purple
+      - title: Mac App
+        href: 'https://github.com/stoplightio/studio/releases/download/v1.0.1/Stoplight-Studio-1.0.1.dmg'
+        icon: ['fab', 'apple']
+        color: green
+        filename: studio-mac
+      - title: Windows App
+        href: 'https://github.com/stoplightio/studio/releases/download/v1.0.1/Stoplight-Studio-Setup-1.0.1.exe'
+        icon: ['fab', 'windows']
+        color: green
+        filename: studio-windows
+      - title: Linux App
+        href: 'https://github.com/stoplightio/studio/releases/download/v1.0.1/Stoplight-Studio-1.0.1.AppImage'
+        icon: ['fab', 'linux']
+        color: green
+        filename: studio-linux
+    enabled: true
+    text: Ready to start designing APIs?
+  title: OpenAPI v2 & v3 API Designer
+  description: >-
+    Start designing your API in minutes. Use the [OpenAPI
+    Specification](/api-design-guide/openapi) (formerly known as Swagger) with
+    Stoplight Studio to design consistent and standardized HTTP APIs for your
+    organization. Without writing any code, model complex APIs faster than ever
+    while simultaneously getting feedback on your prototypes with our
+    [instant mock servers](/mocking/).
+  features:
+    - description: >-
+        Design an API with speed and efficiency from scratch. Stoplight Studio
+        decreases the learning curve so you don’t need to be an OpenAPI
+        expert to create first-class API designs. Describe endpoints, headers,
+        bodies, multiple responses, query string parameters, shared models, and
+        examples, and much more for complex APIs.
+      image: /images/studio_editor.png
+      shortName: OpenAPI Visual Editor
+      title: 'A Powerful OpenAPI v2 & v3 Visual Editor'
+
+    - description: >-
+        Use the Git integration with your organization's Git provider
+        (GitHub, GitLab, Bitbucket, etc.). Invite teammates, partners,
+        and API consumers to view and collaborate on your API designs privately
+        or publicly with the tooling you already know and use.
+        <br><br>
+        With Offline File Support, open an existing OpenAPI document on your local
+        machine or start from scratch with a new API, zero coding required. You can
+        also share your OpenAPI document where ever you want.
+      image: /images/studio_git_local_files.png
+      shortName: Git & Offline Support
+      title: Git Integration for Collaboration and Offline File Support
+
+    - description: >-
+        Instantly prototype and collaborate on your API design with our integrated,
+        instant Mock Servers, powered by [Prism](/prism). A mock API simulates the
+        behavior of a real API allowing collaboration and feedback on your API
+        design. Automatically update to match your API design. Mock a single API
+        or multiple APIs at once.
+        <br><br>
+        Increase efficiency by allowing your frontend teams to start
+        implementation while the backend team develops the API.
+      image: /images/studio-mocking.png
+      shortName: Mock Servers
+      title: 'Instant Mock Servers'
+
+    - description: >-
+        Create API documentation in minutes. Combine OpenAPI documents with
+        Markdown to create robust, searchable, internal and external
+        [API documentation](/api-documentation-guide/basics) for your organization.
+      image: /images/studio_docs.png
+      shortName: Markdown Documentation
+      title: Generate API Documentation with OpenAPI and Markdown
+
+    - description: >-
+        Ask 100 API designers what makes a good API design and you'll get 101
+        answers, but all most developers really want is consistency. Using an API
+        style guide, can reduce decision making and improve consistency for all your teams.
+        <br><br>
+        With built-in linting and API style guides, powered by [Spectral](/spectral), Stoplight
+        Studio can improve the quality of your API. You can use the default style guide, extend it, or write one to match your organization's style guide (coming soon in Studio).
+      image: /images/studio_linting.png
+      shortName: Linting
+      title: OpenAPI Linting and API Style Guides
+
+meta:
+  description: >-
+    Build first-class APIs with a collaborative, powerful, visual editor that
+    allows you to prototype and share your API within minutes
+  favicon: /images/mark_light_bg.png
+  image: /images/studio/hero.png
+  title: Stoplight Studio | OpenAPI Design, Planning & Modeling Tool
+  robots: 'noindex, follow'
+  twitter:
+    description: >-
+      Build first-class APIs with a collaborative, powerful, visual editor that
+      allows you to prototype and share your API within minutes
+    image: /images/studio/hero.png
+    title: Stoplight Studio | OpenAPI Design, Planning & Modeling Tool
+    username: '@stoplightio'

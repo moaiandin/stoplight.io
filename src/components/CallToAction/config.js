@@ -8,8 +8,8 @@ export default {
   required: false,
   fields: [
     {
-      name: 'name',
-      label: 'Name',
+      name: 'title',
+      label: 'Title',
       widget: 'string',
       hint: 'Leave blank to hide',
       required: false,
@@ -37,10 +37,17 @@ export default {
       required: false,
     },
     {
+      name: 'download',
+      label: 'Download File',
+      widget: 'string',
+      required: false,
+      hint: 'URL to file to download',
+    },
+    {
       name: 'type',
       label: 'Type',
       widget: 'select',
-      options: ['link', 'video', 'submit', 'download'],
+      options: ['link', 'video', 'submit'],
       default: 'link',
       required: false,
     },

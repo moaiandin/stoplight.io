@@ -11,7 +11,7 @@ export const Info: React.FunctionComponent<IInfo> = ({ title, image, description
   if (!image && !title && !description) return null;
 
   return (
-    <div className="p-8 rounded bg-white shadow">
+    <div className="p-8 rounded-lg bg-white shadow-md">
       {image && (
         <div className="text-center">
           <Image src={image} alt={title} size="sm" />

@@ -1,9 +1,9 @@
 banners:
-  - ends: '1564714800000'
+  - ends: 1567815331394
     markdown: >-
-      **Introducing <u>**[**Prism**](https://stoplight.io/prism/)**</u>,
-      test and prototype your APIs earlier and iterate faster!**
-    starts: 1558463654467
+      Announcing Stoplight Studio, our most powerful API Designer yet, now with OpenAPI v3 support! <u class='ml-1'>**[Learn More](https://stoplight.io/studio)**</u>
+    starts: 1565815331394
+    hideOnPath: ['/home.', '/studio']
 info:
   address:
     addressLocality: Austin
@@ -20,194 +20,130 @@ info:
 header:
   items:
     - links:
-        - href: /design/
-          icon:
-            - fas
-            - paint-brush
-          subtitle: Use our visual designer to manage OpenAPI (Swagger) 10x faster.
-          title: Design
-          titleColor: blue
-        - href: /documentation/
-          icon:
-            - fas
-            - book
-          subtitle: 'Increase customer adoption with beautiful, functional documentation.'
-          title: Documentation
-          titleColor: green
-        - href: /testing/
-          icon:
-            - fas
-            - flask
-          subtitle: 'Leverage OpenAPI to test, automate, and debug web APIs.'
-          title: Testing
-          titleColor: orange
-        - href: /mocking/
-          icon:
-            - fas
-            - server
-          subtitle: >-
-            Parallelize development with one click mock servers, powered by
-            OpenAPI.
-          title: Mocking
-          titleColor: grey-darkest
-        - href: /spectral
-          icon:
-            - fas
-            - terminal
-          subtitle: Open source API description linter
-          title: Spectral
-          titleColor: purple
-        - href: /prism
-          icon:
-            - fas
-            - server
-          subtitle: Open source HTTP Mock Server
-          title: Prism
-          titleColor: red
-      title: Products
-      width: 400
-    - links:
         - href: 'http://docs.stoplight.io/'
-          icon:
-            - fas
-            - book
+          icon: ['fad', 'book-open']
           subtitle: Learn how to use Stoplight
           title: Help Center
           titleColor: blue
         - href: 'https://community.stoplight.io/'
-          icon:
-            - fas
-            - users
+          icon: ['fad', 'users']
           subtitle: Join the Stoplight community
           title: Forum
-          titleColor: green
-        - href: /blog/
-          icon:
-            - fas
-            - rss
-          subtitle: Stay up to date on Stoplight
-          title: Blog
           titleColor: orange
+        - href: /case-studies
+          icon: ['fad', 'graduation-cap']
+          title: Case Studies
+          titleColor: indigo
         - href: /video
-          icon:
-            - fas
-            - video
+          icon: ['fad', 'video']
           subtitle: Learn how to design with Stoplight
           title: Webinars
-          titleColor: purple
-        - href: /api-design-guide/basics/
-          icon:
-            - fas
-            - book-open
+          titleColor: yellow
+        - divider: true
+        - href: /api-design-guide/basics
+          icon: ['fad', 'paint-brush']
           subtitle: Learn API Design Best Practices
           title: API Design Guide
-          titleColor: blue
-        - href: /api-documentation-guide/basics/
-          icon:
-            - fas
-            - bookmark
-          subtitle: Learn API Documentation Best Practices
-          title: API Documentation Guide
           titleColor: green
-        - href: /mock-api-guide/basics/
-          icon:
-            - fas
-            - bolt
+        - href: /mock-api-guide/basics
+          icon: ['fad', 'database']
           subtitle: Create mock API servers
           title: API Mocking Guide
-          titleColor: orange
+          titleColor: blue
+        - href: /api-documentation-guide/basics
+          icon: ['fad', 'bookmark']
+          subtitle: Learn API Documentation Best Practices
+          title: API Documentation Guide
+          titleColor: purple
       title: Resources
-      width: 400
-    - links:
-        - href: /about/
-          icon:
-            - fas
-            - users
-          title: About Us
-        - href: /case-studies/
-          icon:
-            - fas
-            - graduation-cap
-          title: Case Studies
-      title: Company
-      width: 250
-    - href: /pricing/
-      title: Pricing
-    - href: /demo/
+      width: 300
+    - href: /blog
+      title: Blog
+    - href: /enterprise
+      title: Enterprise
+    - href: /demo
       isButton: true
-      title: Request Demo
-    - altBg: green
-      altTitle: Sign Up FREE
-      hideMobile: true
-      href: 'https://next.stoplight.io'
-      icon:
-        - fas
-        - arrow-right
+      title: Book a Demo
+      altBg: purple
+    - href: /start
       isButton: true
-      title: Sign In
+      title: Start
+      icon: ['fad', 'arrow-right']
 actionBar:
   ctas:
-    - color: purple
+    - color: white
       href: /demo
-      name: Request a Demo
+      title: Book a Demo
       outlined: true
     - color: purple
-      href: 'https://next.stoplight.io'
-      name: Create a Free Account
+      href: 'https://stoplight.io/p/signup'
+      title: Create a Free Account
   enabled: false
   text: Getting started is easy. Be up and running in minutes.
 footer:
   columns:
     - links:
-        - href: /design/
-          title: Design
-        - href: /documentation/
-          title: Documentation
-        - href: /testing/
-          title: Testing
-        - href: /mocking/
-          title: Mocking
+        - href: /studio
+          title: Design Studio
+        - href: /docs
+          title: Free Docs
+        - href: /hubs
+          title: Docs Hubs
+        - href: /enterprise
+          title: Enterprise
       title: Products
+    - links:
+        - href: /spectral
+          title: Spectral
+        - href: /prism
+          title: Prism
+      title: Open Source
+    - links:
+        - href: /design
+          title: API Design
+        - href: /documentation
+          title: API Documentation
+        - href: /mocking
+          title: API Mocking
+      title: Use Cases
     - links:
         - href: 'https://docs.stoplight.io'
           title: Help Center
-        - href: 'https://community.stoplight.io'
-          title: 'Forum '
-        - href: /blog/
+        - href: /blog
           title: Blog
-        - href: 'https://press.stoplight.io'
-          title: Press
+        - href: 'https://community.stoplight.io'
+          title: 'Forum'
+        - href: /video
+          title: Webinars
+        - href: /case-studies
+          title: Case Studies
       title: Resources
     - links:
-        - href: /about/
+        - href: /about
           title: About Us
-        - href: /case-studies/
-          title: Case Studies
-        - href: /contact-us/
+        - href: https://stoplight.io/p/roadmap
+          title: Roadmap
+        - href: 'https://press.stoplight.io'
+          title: Press
+        - href: /contact-us
           title: Contact Us
         - href: 'https://app.stoplight.io/login'
           title: Classic Login
       title: Company
   legal:
-    - href: /privacy/
+    - href: /privacy
       title: Privacy
-    - href: /terms/
+    - href: /terms
       title: Terms of Use
-    - href: /policy/
+    - href: /policy
       title: Policy
   social:
     - href: 'https://twitter.com/stoplightio'
-      icon:
-        - fab
-        - twitter
+      icon: ['fab', 'twitter']
     - href: 'https://www.linkedin.com/company/stoplight'
-      icon:
-        - fab
-        - linkedin
+      icon: ['fab', 'linkedin']
     - href: 'https://www.github.com/stoplightio'
-      icon:
-        - fab
-        - github
+      icon: ['fab', 'github']
 meta:
   description: API Design Management for Teams and Enterprise | Stoplight
   favicon: /favicons/favicon.ico
@@ -220,6 +156,20 @@ meta:
     title: Stoplight
     username: '@stoplightio'
   url: 'https://stoplight.io'
+customers:
+  images:
+    - alt: EA
+      src: /images/ea.png
+    - alt: Deutsche Bank
+      src: /images/deutsche_bank.png
+    - alt: quicken
+      src: /images/customers/quicken.png
+    - alt: Sendgrid
+      src: /images/logo-sendgrid.png
+    - alt: TiVo
+      src: /images/tivo.png
+    - alt: Zendesk
+      src: /images/logo_zendesk.png
 integrations:
   googleTagManager: GTM-58LWL5P
   hubspot: 4892910

@@ -30,26 +30,27 @@ export const ArticleCard: React.FunctionComponent<IRelatedPage> = ({
   backgroundSize = 'cover',
 }) => {
   return (
-    <Link to={href}>
-      <article className="flex flex-col shadow bg-white rounded-lg w-full h-full text-grey-darkest overflow-hidden">
-        <Image
-          src={image || ''}
-          className={cn(`h-40 w-100 relative bg-center bg-no-repeat bg-${backgroundSize}`, { [`bg-${color}`]: !image })}
-          size="sm"
-          useDiv
-        />
-        <div className="flex flex-col flex-1 p-4 ">
-          <h3 className="mb-2">{title}</h3>
+    <Link
+      to={href}
+      className="hover-scale flex flex-col shadow bg-white rounded-lg w-full h-full text-grey-darkest overflow-hidden"
+    >
+      <Image
+        src={image || ''}
+        className={cn(`h-40 w-100 relative bg-center bg-no-repeat bg-${backgroundSize}`, { [`bg-${color}`]: !image })}
+        size="sm"
+        useDiv
+      />
+      <div className="flex flex-col flex-1 p-4 ">
+        <h3 className="mb-2">{title}</h3>
 
-          <p className="flex-1 mb-4">{listSubtitle || subtitle}</p>
+        <p className="flex-1 mb-4">{listSubtitle || subtitle}</p>
 
-          <div className="flex text-sm text-grey-darker">
-            {publishedDate && <p>{publishedDate}</p>}
+        <div className="flex text-sm text-grey-darker">
+          {publishedDate && <p>{publishedDate}</p>}
 
-            <div className="flex-1 text-right text-muted font-bold">{tag}</div>
-          </div>
+          <div className="flex-1 text-right text-muted font-bold">{tag}</div>
         </div>
-      </article>
+      </div>
     </Link>
   );
 };
@@ -58,8 +59,15 @@ export const RelatedPages: React.FunctionComponent<{ pages: IRelatedPage[]; titl
   if (!pages || !pages.length) return null;
 
   return (
-    <Section id="related-pages" className="bg-grey-lightest">
-      <Container title={title || 'Related Articles'} className="text-grey-darkest">
+    <Section id="related-pages" className="bg-grey-lightest" noPaddingT>
+      <Container
+        title={title || 'Related Articles'}
+        className="text-grey-darkest"
+        chips={{
+          className: 'justify-center mb-10',
+          segments: [{ color: 'green', length: 2 }, { color: 'green-lighter' }],
+        }}
+      >
         <div className="flex justify-center flex-wrap -mb-12">
           {pages.map((page, key) => {
             return (

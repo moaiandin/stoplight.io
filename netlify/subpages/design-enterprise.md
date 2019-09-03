@@ -21,7 +21,7 @@ tabs:
   - href: /design/web
     title: Web API Design Tool
 actionBar:
-  enabled: true
+  enabled: false
 meta:
   description: >-
     Build enterprise-ready APIs for your organization within minutes using our

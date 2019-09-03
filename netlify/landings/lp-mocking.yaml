@@ -6,7 +6,7 @@ hero:
   short: true
   ctas:
     - href: '#demo'
-      name: Get a free demo
+      title: Book a Demo
 color: grey-darkest
 featureSection:
   features:
@@ -47,7 +47,7 @@ featureSection:
         mocking behavior, custom validations, and much more.
 hubspot:
   title: Request a demo
-  description: Stoplight on average shows a 36% gain in engineering time and increases quality 30%.
+  description: On average, adopting Stoplight results in a 36% gain in API development efficiency, and increases API quality by 30%.
   formId: '7c71a3d0-fcd0-452f-981e-883c6cc86dd3'
   portalId: '4892910'
 collage:

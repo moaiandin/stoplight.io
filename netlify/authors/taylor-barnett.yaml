@@ -16,7 +16,6 @@ actionBar:
   enabled: false
 meta:
   favicon: /images/mark_light_bg.png
-  robots: 'index, follow'
   title: Taylor Barnett | Stoplight
   twitter:
     title: Taylor Barnett | Stoplight

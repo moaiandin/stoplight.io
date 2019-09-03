@@ -2,12 +2,11 @@ path: /about
 hero:
   particles: true
   subtitle: >-
-    Headquartered in Austin, Texas, our team hails from all over the United
-    States and Europe, united by their passion for APIs. From skeeball champions
-    to rock climbers, tough mudders to restaurateurs, each and every member
+    Headquartered in Austin, Texas, our team hails from across the US and Europe, and is united by our passion for APIs.
+    From skeeball champions to rock climbers, tough mudders to restaurateurs, each and every member
     brings their own unique perspectives and experiences to the table. Thinking
-    out of the box is our purpose, the weirder the better, and challenging the
-    status quo is our culture
+    out of the box is our purpose - the weirder the better - and challenging the
+    status quo is our culture.
   title: About Us
 team:
   - image: /images/andoni-alanis-cue.jpeg
@@ -16,9 +15,6 @@ team:
   - image: /images/bachi-collin-1-.jpg
     name: Collin Bachi
     role: Devops Engineer
-  - image: /images/barnett_headshot.png
-    name: Taylor Barnett
-    role: Community Engineer
   - image: /images/cassera_headshot.png
     name: Nicholas Cassera
     role: Software Engineer
@@ -27,7 +23,10 @@ team:
     role: Software Engineer
   - image: /images/faust_headshot.png
     name: Scott Faust
-    role: Growth & Ops
+    role: Growth
+  - image: /images/deborah-garnel-headshot.jpg
+    name: Deborah Garnel
+    role: SDET
   - image: /images/hilton_headshot.png
     name: William Hilton
     role: Software Engineer
@@ -82,6 +81,9 @@ team:
   - image: /images/mateusz_wit_headshot.png
     name: Mateusz Wit
     role: Software Engineer
+  - image: /images/harrison-yeager-headshot.jpg
+    name: Harrison Yeager
+    role: Ops
 businesses:
   quotes:
     - author: Evin Callahan
@@ -148,7 +150,7 @@ pressSection:
   cta:
     color: grey-darkest
     href: 'https://press.stoplight.io/company'
-    name: More Press & Assets
+    title: More Press & Assets
   title: In The Press
 collage:
   images:
@@ -168,7 +170,7 @@ actionBar:
   ctas:
     - color: accent
       href: 'https://angel.co/company/stoplight/jobs'
-      name: Learn More
+      title: Learn More
   enabled: true
   text: Want to join the team? We're hiring!
 meta:

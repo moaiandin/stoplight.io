@@ -3,15 +3,15 @@ import { withRouteData } from 'react-static';
 
 import { ActionBar, IActionBar } from 'src/components/ActionBar';
 import { Collage, ICollage } from '../../components/Collage';
+import { Container } from '../../components/Container';
 import { FeatureSection, IFeatureSection } from '../../components/FeatureSection';
 import { Hero, IHero } from '../../components/Hero';
-import { IHeroButton } from '../../components/Hero/HeroButton';
 import { HubSpotForm, IHubSpotForm } from '../../components/HubSpotForm';
 import { IImageCallout, ImageCallout } from '../../components/ImageCallout';
 import { Layout } from '../../components/Layout';
+import { PricingCard } from '../../components/PricingCard';
 import { IRelatedPage, RelatedPages } from '../../components/RelatedPages';
 import { Section } from '../../components/Section';
-import { slugify } from '../../utils/slugify';
 
 export interface ILanding {
   color: string;
@@ -22,6 +22,7 @@ export interface ILanding {
   actionBar: IActionBar;
   hubspot: IHubSpotForm & { title?: string; description?: string };
   relatedPages?: IRelatedPage[];
+  pricingSection?: any;
 }
 
 export const Landing: React.FunctionComponent<ILanding> = ({
@@ -33,19 +34,11 @@ export const Landing: React.FunctionComponent<ILanding> = ({
   actionBar,
   hubspot,
   relatedPages,
+  pricingSection,
 }) => {
-  let buttons: IHeroButton[] = [];
-  if (featureSection && featureSection.features && featureSection.features.length) {
-    buttons = featureSection.features.map(feature => ({
-      title: feature.shortName,
-      icon: 'check-circle',
-      href: `#${slugify(feature.title)}`,
-    }));
-  }
-
   return (
     <Layout>
-      <Hero bgColor={color} buttons={buttons} {...hero} />
+      <Hero bgColor={color} {...hero} />
 
       <ImageCallout {...imageCallout} />
 
@@ -73,6 +66,18 @@ export const Landing: React.FunctionComponent<ILanding> = ({
               <HubSpotForm className="p-16 md:p-4" portalId={hubspot.portalId} formId={hubspot.formId} />
             </div>
           </div>
+        </Section>
+      )}
+
+      {pricingSection && (
+        <Section id="pricing">
+          <Container title={pricingSection.title}>
+            <div className="flex justify-around flex-wrap mt-12">
+              {pricingSection.cards.map((card, index) => (
+                <PricingCard key={index} {...card} />
+              ))}
+            </div>
+          </Container>
         </Section>
       )}
 

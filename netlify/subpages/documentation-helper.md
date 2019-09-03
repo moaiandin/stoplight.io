@@ -18,7 +18,7 @@ tabs:
   - href: 'https://docs.stoplight.io/documentation/design/custom-js'
     title: Custom Javascript
 actionBar:
-  enabled: true
+  enabled: false
 meta:
   favicon: /images/mark_light_bg.png
   title: Customizable API Documentation Tool | Stoplight

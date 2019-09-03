@@ -20,7 +20,7 @@ tabs:
   - href: /blog
     title: Stoplight Blog
 actionBar:
-  enabled: true
+  enabled: false
 meta:
   description: >-
     Autogenerate your API documentation easily and within a matter of minutes

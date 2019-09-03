@@ -5,7 +5,7 @@ import { withRouteData } from 'react-static';
 import { ActionBar, IActionBar } from '../../components/ActionBar';
 import { Collage, ICollage } from '../../components/Collage';
 import { Container } from '../../components/Container';
-import { Hero } from '../../components/Hero';
+import { Hero, IHero } from '../../components/Hero';
 import { HubSpotForm, IHubSpotForm } from '../../components/HubSpotForm';
 import { Layout } from '../../components/Layout';
 import { IRelatedPage, RelatedPages } from '../../components/RelatedPages';
@@ -25,6 +25,11 @@ export interface IForm {
     title: string;
     description: string;
   };
+  centerContent?: {
+    title: string;
+    description: string;
+  };
+  hero?: IHero;
 }
 
 export const Form: React.FunctionComponent<IForm> = ({
@@ -38,8 +43,11 @@ export const Form: React.FunctionComponent<IForm> = ({
   testimonials,
   relatedPages,
   actionBar,
+  centerContent,
+  hero,
 }) => {
   const hasLeftContent = leftContent && leftContent.description ? true : false;
+  const hasCenterContent = centerContent && centerContent.description ? true : false;
 
   return (
     <Layout>
@@ -49,12 +57,12 @@ export const Form: React.FunctionComponent<IForm> = ({
         subtitle={subtitle}
         bgColor={color}
         aligned={hasLeftContent || titleImage ? 'left' : 'center'}
-        titleClassName={hasLeftContent ? '' : 'mb-40'}
+        {...hero}
       />
 
       <Container className="flex relative z-20 py-24 md:flex-wrap-reverse">
         {hasLeftContent && (
-          <div className="w-2/3 md:w-full pr-24 md:pr-0 flex-1">
+          <div className="w-2/3 pr-4 md:w-full md:pr-0 flex-1">
             {leftContent &&
               leftContent.title && <div className="text-3xl" dangerouslySetInnerHTML={{ __html: leftContent.title }} />}
 
@@ -68,16 +76,42 @@ export const Form: React.FunctionComponent<IForm> = ({
           </div>
         )}
 
-        {hubspot && (
-          <div className={hasLeftContent ? 'z-10 relative md:w-full' : 'flex-1 -mt-40'}>
-            <HubSpotForm
-              className={hasLeftContent ? 'p-8 w-128 sm:w-auto sticky' : 'p-8 sticky'}
-              portalId={hubspot.portalId}
-              formId={hubspot.formId}
-              style={{ top: 100 }}
-            />
+        {hasCenterContent && (
+          <div className="flex md:pr-0 md:w-full mx-auto">
+            {centerContent &&
+              centerContent.description && (
+                <div
+                  className={'markdown-body mt-10'}
+                  dangerouslySetInnerHTML={{ __html: centerContent.description }}
+                />
+              )}
           </div>
         )}
+
+        {hubspot &&
+          hasLeftContent && (
+            <div className={'z-10 relative md:w-full'}>
+              <HubSpotForm
+                className={'p-8 w-128 sm:w-auto sticky'}
+                portalId={hubspot.portalId}
+                formId={hubspot.formId}
+                style={{ top: 100 }}
+              />
+            </div>
+          )}
+
+        {hubspot &&
+          !hasLeftContent &&
+          !hasCenterContent && (
+            <div className={'flex-1 -mt-40'}>
+              <HubSpotForm
+                className={'p-8 sticky'}
+                portalId={hubspot.portalId}
+                formId={hubspot.formId}
+                style={{ top: 100 }}
+              />
+            </div>
+          )}
       </Container>
 
       <section />

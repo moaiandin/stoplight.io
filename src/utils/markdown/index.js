@@ -15,6 +15,7 @@ const BaseMarkdown = new MarkdownIt({
         lang !== undefined ? Highlight.languages[lang] || Highlight.languages.markup : Highlight.languages.markup;
       return Highlight.highlight(str, grammar, lang);
     } catch (e) {
+      // tslint:disable-next-line: no-console
       console.log('Error highlighting code:', str, lang, e);
       return str;
     }
@@ -41,6 +42,7 @@ function Renderer(src, { includeToc } = {}) {
 
     return BaseMarkdown.render(includeToc ? '${toc}\n' + src : src);
   } catch (e) {
+    // tslint:disable-next-line: no-console
     console.log('Error rendering markdown:', e.message, src);
   }
 

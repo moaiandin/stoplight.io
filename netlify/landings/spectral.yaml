@@ -1,30 +1,31 @@
-path: /spectral
+path: /open-source/spectral
 title: Spectral - Open Source API Description Linter | Stoplight
 color: purple-darker
 hasSandbox: true
 relatedTags:
   - blog-design
 hero:
-  subtitle: Improve the quality of your API by improving the quality of your API descriptions
+  subtitle: Improve the quality of your API by improving the quality of your API descriptions.
   title: Spectral, an Open Source API Description Linter
+  particles: true
   ctas:
+    - color: green
+      href: 'https://github.com/stoplightio/spectral'
+      title: GitHub
+      icon: ['fab', 'github']
     - color: indigo
       href: 'https://youtube.com/watch?v=IJtFI9mkZ8Y'
-      name: Watch the video
-      icon: ['fas', 'video']
+      title: Watch the Video
+      icon: ['fad', 'video']
       type: video
     - color: indigo
       href: 'https://stoplight.io/p/docs/gh/stoplightio/spectral'
-      name: Read the Documentation
-      icon: ['fas', 'book-open']
-    - color: indigo
-      href: 'https://github.com/stoplightio/spectral'
-      name: GitHub
-      icon: ['fab', 'github']
+      title: Read the Docs
+      icon: ['fad', 'book-open']
 actionBar:
   ctas:
     - href: 'https://stoplight.io/p/docs/gh/stoplightio/spectral/docs/getting-started/installation.md'
-      name: Get Started with Spectral
+      title: Get Started with Spectral
   enabled: true
   text: Do you want feedback on your API descriptions right now?
 featureSection:
@@ -67,13 +68,13 @@ featureSection:
       shortName: CLI & JavaScript
       title: Use CLI and JavaScript interfaces
 
-    # - description: >-
-    #     Want to create and edit API descriptions with a visual editor instead of
-    #     scratching YAML into a cave wall with a rock? Use Stoplight Studio, and
-    #     let Spectral give you feedback in real-time.
-    #   image: /images/mocking_request_validation.png
-    #   shortName: Stoplight Studio Integration
-    #   title: Stoplight Studio Integration
+    - description: >-
+        Want to create and edit API descriptions with a visual editor instead of
+        scratching YAML into a cave wall with a rock? Use Stoplight Studio, and
+        let Spectral give you feedback in real-time.
+      image: /images/studio_editor.png
+      shortName: Stoplight Studio Integration
+      title: Stoplight Studio Integration
 
 meta:
   description: >-

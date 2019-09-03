@@ -1,9 +1,8 @@
 import * as React from 'react';
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
-import { Button, IButton } from 'src/components/Button';
-import { Container } from 'src/components/Container';
+import { Button, IButton } from '../Button';
+import { Container } from '../Container';
+import { Icon } from '../Icon';
 
 export interface IPlanFeature {
   color: string;
@@ -28,8 +27,7 @@ export interface IPricingPlans {
 export const PlanFeature: React.FunctionComponent<IPlanFeature> = ({ color, name }) => {
   return (
     <div className="flex items-center py-2">
-      <FontAwesomeIcon key="1" icon={['fas', 'check-circle']} className={`mr-3 text-lg text-${color}`} />{' '}
-      <div>{name}</div>
+      <Icon icon={['fad', 'check-circle']} className={`mr-3 text-lg text-${color}`} /> <div>{name}</div>
     </div>
   );
 };
@@ -78,7 +76,7 @@ export const PricingPlans: React.FunctionComponent<IPricingPlans> = ({ color, pl
   }
 
   return (
-    <Container className="-mt-80 z-5 relative">
+    <Container className="-mt-40 z-5 relative">
       <div className="flex flex-wrap md:mx-0 -mx-6">
         {plans.map((pricingPlan, key) => (
           <PricingPlan key={key} titleColor={color} {...pricingPlan} />

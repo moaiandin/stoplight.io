@@ -13,28 +13,6 @@
 - [Netlify](https://www.netlify.com/) - Continuous deployment and hosting
 - [Netlify CMS](https://www.netlifycms.org/) - Open source content management for your Git workflow
 
-## Usage
-
-```bash
-# install dependencies
-yarn install
-
-# serve with hot reload at http://localhost:3000
-yarn start
-
-# build for staging
-yarn build
-
-# build for production
-yarn build.production
-
-# serve a build
-yarn serve
-
-# format using prettier
-yarn format
-```
-
 ## Project Structure
 
 - [netlify](./netlify): content files created in NetlifyCMS that power the [src/templates](./src/templates).
@@ -50,7 +28,7 @@ yarn format
 
 1. Run `yarn install`
 2. Run `yarn start`
-3. Go to http://localhost:3000/
+3. Go to http://localhost:3000
 
 ### Add a route
 
@@ -63,6 +41,22 @@ yarn format
 2. Add an `index.tsx` file that default exports a React component.
 3. Add a `config.js` that exports the [NetlifyCMS configuration](https://www.netlifycms.org/docs/configuration-options/#collections) for the page.
 
-## License
+### Other Commands
+
+```bash
+# build for staging
+yarn build
+
+# build for production
+yarn build.production
+
+# serve a build
+yarn serve
+
+# format using prettier
+yarn format
+```
+
+### License
 
 This project is licensed under the [MIT license](https://opensource.org/licenses/MIT).

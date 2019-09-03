@@ -1,10 +1,10 @@
-import { IconProp } from '@fortawesome/fontawesome-svg-core';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { MonacoCodeStore } from '@stoplight/monaco';
 import { DiagnosticSeverity, Dictionary } from '@stoplight/types';
 import cn from 'classnames';
 import * as React from 'react';
+
 import { useSpectral } from '../../hooks/useSpectral';
+import { Icon, IconProp } from '../Icon';
 
 const severityIcons: Dictionary<{ icon: IconProp; color: string }> = {
   Error: {
@@ -77,7 +77,7 @@ export const Diagnostics: React.FunctionComponent<{
                 }}
               >
                 <div className="w-10 text-center leading-loose text-base" title={DiagnosticSeverity[result.severity]}>
-                  <FontAwesomeIcon icon={icon} color={color} />
+                  <Icon icon={icon} style={{ color }} />
                 </div>
                 <div className="ml-4 w-10 text-center">{result.range.start.line}</div>
                 <div className="ml-4 flex-1" title={result.message}>

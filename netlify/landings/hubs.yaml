@@ -15,7 +15,7 @@ hero:
   ctas:
     - color: green
       href: 'https://next.stoplight.io'
-      title: Get Started Now
+      title: Free trial. No cc required.
     - type: video
       title: Quick Overview
       href: 'https://youtube.com/watch?v=iHzFoc4ls8E'
@@ -25,7 +25,7 @@ featureSection:
     ctas:
       - color: accent
         href: 'https://next.stoplight.io/'
-        title: Get Started Now
+        title: Free trial. No cc required.
     enabled: true
     text: 'Ready to Publish?'
   description: >-
@@ -81,7 +81,7 @@ pricingSection:
     - icon: ['fad', 'user-check']
       title: "Standard"
       tag: "$179 / month"
-      buttonText: "Start Free Trial"
+      buttonText: "Free trial. No cc required."
       href: "https://next.stoplight.io"
       features: ['OpenAPI v2 & v3', 'HTTP Request Maker', 'Unlimited Published Pages']
 
@@ -90,7 +90,7 @@ pricingSection:
       title: "Pro"
       tag: "$399 / month"
       href: "https://next.stoplight.io"
-      buttonText: "Start Free Trial"
+      buttonText: "Free trial. No cc required."
       featuresTitle: "All Standard features plus:"
       features: [
         'Custom Branding',

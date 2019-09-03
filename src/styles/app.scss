@@ -182,7 +182,7 @@ ul {
   max-width: 85%;
   position: relative;
 
-  @media only screen and (max-width: 800px) {
+  @media only screen and (max-width: 1249px) {
     max-width: 100%;
   }
 
@@ -203,7 +203,7 @@ ul {
     color: rgba(19, 15, 33, 0.4);
     border-left: 1px solid rgba(0, 0, 0, 0.1);
 
-    @media only screen and (max-width: 800px) {
+    @media only screen and (max-width: 1249px) {
       display: none;
     }
 

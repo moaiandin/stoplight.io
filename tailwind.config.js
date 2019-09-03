@@ -234,7 +234,7 @@ module.exports = {
   */
 
   screens: {
-    sm: { max: '800px' }, // mobile
+    sm: { max: '825px' }, // mobile
     md: { max: '1249px' }, // tablet
     lg: { min: '1250px' }, // desktop
     print: { raw: 'print' },

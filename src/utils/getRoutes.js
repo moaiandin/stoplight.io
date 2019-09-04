@@ -86,13 +86,13 @@ export async function getRoutes() {
       template: 'src/templates/Start',
     },
 
+    ...createRoutes('src/templates/Landing', landings, allPages, null),
     ...createListRoutes('src/templates/Lists', lists, allPages),
     ...createListRoutes('src/templates/Lists', authors, allPages, authorProps),
     ...createRoutes('src/templates/Subpage', blogPosts, allPages, blogPostProps),
     ...createRoutes('src/templates/Subpage', caseStudies, allPages, caseStudyProps),
     ...createRoutes('src/templates/Subpage', other, allPages),
     ...createRoutes('src/templates/Form', forms, allPages),
-    ...createRoutes('src/templates/Landing', landings, allPages, null, true),
   ];
 
   // Don't include admin route in production

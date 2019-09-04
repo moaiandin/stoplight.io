@@ -118,7 +118,11 @@ export const Subpage: React.FunctionComponent<IPage> = ({
         </Container>
       </Section>
 
-      {actionBar && <ActionBar className="my-24" {...actionBar} />}
+      {actionBar && (
+        <Section className="-mt-20">
+          <ActionBar className="my-24" {...actionBar} />
+        </Section>
+      )}
 
       {relatedPages && relatedPages.length ? <RelatedPages pages={relatedPages} /> : null}
 

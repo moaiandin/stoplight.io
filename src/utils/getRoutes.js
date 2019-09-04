@@ -309,6 +309,25 @@ function blogPostProps(props) {
       aligned: 'left',
       contentBgImage: props.image,
     },
+    actionBar: {
+      enabled: true,
+      text: 'Read how world’s leading API first companies are solving API Design Management at Scale.',
+      ctas: [
+        {
+          title: 'Get the API Design Guide',
+          type: 'submit',
+          submit: {
+            button: { color: 'purple', title: 'Get the API Design Guide' },
+            input: {
+              type: 'email',
+              placeholder: 'Your work email...',
+            },
+            formId: 'e6cb86b0-8b13-49b8-860a-0e717da5489d',
+            className: 'mt-4 p-4 bg-black text-white',
+          },
+        },
+      ],
+    },
     meta: {
       ...props.meta,
       jld: {

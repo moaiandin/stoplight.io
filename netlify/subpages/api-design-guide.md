@@ -17,8 +17,23 @@ tabs:
     title: API Design Tooling
   - href: /api-design-guide/openapi
     title: Understanding OpenAPI
+  - href: /api-design-guide-download
+    title: Download the Guide
 actionBar:
-  enabled: false
+  enabled: true,
+  text: Read how world’s leading API first companies are solving API Design Management at Scale.
+  ctas:
+    - title: Get the API Design Guide
+      type: submit
+      submit:
+        button:
+          color: purple
+          title: Get the API Design Guide
+        input:
+          type: email
+          placeholder: 'Your work email...'
+        formId: 'e6cb86b0-8b13-49b8-860a-0e717da5489d'
+        className: 'mt-4 p-4 bg-black text-white'
 meta:
   description: >-
     Learn all there is to know about our API designs through our comprehensive

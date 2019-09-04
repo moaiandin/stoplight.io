@@ -39,11 +39,11 @@ meta:
 
 _Photo by [Sharon McCutcheon](https://unsplash.com/photos/W7cPLHOa0eQ) on [Unsplash](https://unsplash.com)_
 
-Linters for your code like ESLint, pycodestyle, CSSLint, and others have grown increasingly popular as tools for maintaining a consistent code base and to prevent future errors before execution. A linter acts as a style guide, enforcing predetermined rules during the code creation process. This helps reduce the cognitive load while writing the code and saves time later in the code review. Linters also do the hard work of enforcing things like the contentious tabs vs. spaces debate. This is why we created [Spectral](https://stoplight.io/spectral/), a flexible JSON linter.
+Linters for your code like ESLint, pycodestyle, CSSLint, and others have grown increasingly popular as tools for maintaining a consistent code base and to prevent future errors before execution. A linter acts as a style guide, enforcing predetermined rules during the code creation process. This helps reduce the cognitive load while writing the code and saves time later in the code review. Linters also do the hard work of enforcing things like the contentious tabs vs. spaces debate. This is why we created [Spectral](https://stoplight.io/open-source/spectral/), a flexible JSON linter.
 
 ![Bugs Bunny and Daffy Duck arguing over tabs versus spaces](/images/tabsvsspaces.gif)
 
-At Stoplight, we want to promote consistent API design best practices. We believe that API descriptions should be treated the same way as code. APIs should have style guides with rules and be reviewed to ensure they are descriptive, readable, and concise for the developers who use them.
+At Stoplight, we want to promote consistent [API design best practices](https://stoplight.io/api-design-guide/basics/). We believe that API descriptions should be treated the same way as code. APIs should have style guides with rules and be reviewed to ensure they are descriptive, readable, and concise for the developers who use them.
 
 ## Spectral Promotes Consistency
 

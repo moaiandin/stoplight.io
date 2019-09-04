@@ -1,0 +1,104 @@
+path: /api-design-guide-download
+color: indigo
+hero:
+  title: Get Your Copy of the Stoplight API Design Guide
+  subtitle: >-
+    Get a copy of Stoplight's best practice guide for creating a design-first ethos within your organization.
+  ctas:
+    - title: Download Your Guide
+      type: 'submit'
+      submit:
+        button:
+          color: green
+          title: Download Your Guide
+        input:
+          type: email
+          placeholder: Your work email...
+        formId: 'e6cb86b0-8b13-49b8-860a-0e717da5489d'
+  forceTabsAlign: true
+  tabs:
+    - title: API Design Basics
+      href: /api-design-guide/basics
+    - title: API Design Tooling
+      href: /api-design-guide/tooling
+    - title: Understanding OpenAPI
+      href: /api-design-guide/openapi
+    - title: Download the Guide
+      href: /api-design-guide-download
+centerContent:
+  description: >-
+    Large enterprises embarking on Digital API transformation initiatives 
+    are increasingly relying on API Design Management platforms in addition 
+    to traditional API Management solutions to supercharge their business.
+
+
+    Poor API designs lead to poor service implementations and documentation 
+    which can slow down service delivery and negatively impact the ROI of 
+    the initiative.
+
+
+    Stoplight’s mission is to enable all stakeholders working with APIs to 
+    be more productive. Developing good design first practices will minimize 
+    future costs, speed up your time to market, and lead to more consistent, 
+    higher quality microservice and IoT applications.
+collage:
+  cta:
+    color: green
+    href: /case-studies
+    title: Read the Case Studies
+  images:
+    - alt: EA
+      src: /images/ea.png
+    - alt: Arkea
+      src: /images/logo_arkea_transparent.png
+    - alt: Chargify
+      src: /images/chargify-new-logo.png
+    - alt: Deutsche Bank
+      src: /images/deutsche_bank.png
+    - alt: quicken
+      src: /images/customers/quicken.png
+    - alt: Sendgrid
+      src: /images/logo-sendgrid.png
+    - alt: Shopgate
+      src: /images/shopgate.png
+    - alt: Spotify
+      src: /images/spotify.png
+    - alt: TiVo
+      src: /images/tivo.png
+    - alt: Zendesk
+      src: /images/logo_zendesk.png
+testimonials:
+  title: 'Here are what some enterprise architects are saying:'
+  testimonials:
+    - author: '- Software Architect'
+      quote: >-
+        We decided to go for Stoplight because we are convinced that the API
+        must be held by the business people (product owners). Before, they were
+        used to designing processes or UI screens. Now, the screens are made by
+        UX experts or by fintechs using our APIs. So, the product owners have to
+        design the API, it's an important change, not all of them are ready.
+        This is why a graphical tools is a good opportunity, perhaps the only
+        one, to involve them in the design of API.
+    - author: '- Enterprise Architect'
+      quote: >-
+        Stoplight addresses the needs of API Development holistically with a
+        strong emphasis on visual modelling and collaboration. It covers API
+        Prototyping, Mocking, Specification, Shared Schemas, Documentation,
+        Testing and Developer Portal generation - all customisable.
+actionBar:
+  enabled: false
+meta:
+  description: >-
+    Get a copy of Stoplight's best practice guide for creating a 
+    design-first ethos within your organization.
+  favicon: /images/mark_light_bg.png
+  image: /images/api-design-guide.png
+  robots: 'noindex, nofollow'
+  title: Get Your Copy of the Stoplight API Design Guide | Stoplight
+  twitter:
+    description: >-
+      Get a copy of Stoplight's best practice guide for creating a 
+      design-first ethos within your organization.
+    image: /images/api-design-guide.png
+    title: Get Your Copy of the Stoplight API Design Guide | Stoplight
+    username: '@stoplightio'

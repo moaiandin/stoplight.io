@@ -104,7 +104,7 @@ There are plenty of areas for improvement in the API we’ve designed. When you 
 
 ## Build the API and Documentation
 
-After some back and forth on API design, you’ll have a first version declared in your OpenAPI document. Now as you build your API, you’ll know exactly the endpoints to create. Better yet, you know the data that should be returned and you have an [API contract to test against](https://stoplight.io/blog/what-is-api-testing/). In other words, you’ll know whether your API works the way you intended.
+After some back and forth on [API design](https://stoplight.io/design/), you’ll have a first version declared in your OpenAPI document. Now as you build your API, you’ll know exactly the endpoints to create. Better yet, you know the data that should be returned and you have an [API contract to test against](https://stoplight.io/blog/what-is-api-testing/). In other words, you’ll know whether your API works the way you intended.
 
 ![Generate beautiful documentation from OpenAPI documents](/images/docs_header.png)
 

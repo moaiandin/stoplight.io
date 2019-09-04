@@ -36,7 +36,7 @@ Legendary Broadway director Gower Champion walked into a rehearsal to find the c
 
 > Instead, Champion turned to the choreographer and said, “do something, so we can change it.”
 
-There are many situations where you’ll find yourself paralyzed by indecision. In many cases, including API design, taking action is exactly the answer to unblock paralysis.
+There are many situations where you’ll find yourself paralyzed by indecision. In many cases, including [API design](https://stoplight.io/design/), taking action is exactly the answer to unblock paralysis.
 
 ## Design Something, So You Can Change It
 

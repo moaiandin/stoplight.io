@@ -31,7 +31,7 @@ meta:
     username: '@stoplightio'
 ---
 
-Developers building APIs have to consider a lot more than the technical needs of the project. Increasingly, they're working with a diverse section of people, both internally and externally. In addition to creating a useful product, they need API documentation to keep up. Lukas Rosenstock wrote about [collaboration in API design](https://stoplight.io/blog/openapi-and-design-first-principles-96e7c4b2aec1/):
+Developers building APIs have to consider a lot more than the technical needs of the project. Increasingly, they're working with a diverse section of people, both internally and externally. In addition to creating a useful product, they need [API documentation](https://stoplight.io/documentation/) to keep up. Lukas Rosenstock wrote about [collaboration in API design](https://stoplight.io/blog/openapi-and-design-first-principles-96e7c4b2aec1/):
 
 > “Dedicated API architects write a specification and all the stakeholders, from developers to product managers and external consumers, are involved in the process. APIs are products, so they need to consider not only the technical but also the business and legal concerns.“
 

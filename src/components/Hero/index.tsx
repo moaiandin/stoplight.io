@@ -73,6 +73,7 @@ export interface IHero {
   titleClassName?: string;
   rightElem?: React.ReactNode;
   bottomElem?: React.ReactNode;
+  forceTabsAlign?: boolean;
 }
 
 export const Hero: React.FunctionComponent<IHero> = ({
@@ -96,6 +97,7 @@ export const Hero: React.FunctionComponent<IHero> = ({
   tabs = [],
   titleImage,
   titleClassName,
+  forceTabsAlign,
 }) => {
   // Filter out any empty button objects
   const heroTabs = tabs.filter(tab => {
@@ -105,6 +107,11 @@ export const Hero: React.FunctionComponent<IHero> = ({
   // Force left alignment with hero tabs
   if (heroTabs.length) {
     aligned = 'left';
+  }
+
+  // Force center alignment only if both hero tabs and submit form are present
+  if (forceTabsAlign) {
+    aligned = 'center';
   }
 
   const hasBottomContent = bottomElem || (heroTabs && heroTabs.length) || image;
@@ -134,7 +141,7 @@ export const Hero: React.FunctionComponent<IHero> = ({
               className={cn('flex-1', titleClassName, {
                 'mx-auto': !aligned || aligned === 'center',
                 'ml-auto w-2/3 md:w-full': aligned === 'right',
-                'mr-auto w-2/3 md:w-full': aligned === 'left',
+                'mr-auto w-2/3 md:w-full sm:mx-auto': aligned === 'left',
               })}
             >
               {breadCrumbs && breadCrumbs.length ? (
@@ -161,7 +168,7 @@ export const Hero: React.FunctionComponent<IHero> = ({
                       className={cn('font-default opacity-75 max-w-xl mt-4 md:mt-4', {
                         'mx-auto': !aligned || aligned === 'center',
                         'ml-auto': aligned === 'right',
-                        'mr-auto': aligned === 'left',
+                        'mr-auto sm:mx-auto': aligned === 'left',
                       })}
                     >
                       {subtitle}
@@ -174,7 +181,7 @@ export const Hero: React.FunctionComponent<IHero> = ({
                         '-mx-40 sm:mx-0': ctas && ctas.length > 2,
                         'mx-auto justify-center': aligned === 'center',
                         'ml-auto': aligned === 'right',
-                        'mr-auto': aligned === 'left',
+                        'mr-auto sm:mx-auto': aligned === 'left',
                       })}
                     >
                       {ctas.map((action, i) => (

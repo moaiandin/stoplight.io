@@ -36,7 +36,7 @@ meta:
 
 The software your company creates is made up of many APIs and microservices. While each has its own purpose, it should not have its own style. Yet, with different teams working in tandem on many projects, divergence is natural. It's also confusing to developers using your APIs when endpoints are named differently and field names use different formats.
 
-Just as an OpenAPI document can be a source of truth, an API style guide can keep your organization producing APIs that feel like part of the same whole. You don't even need to slow your progress to get these details right. Instead, with a clear style guide and [open source tooling](https://stoplight.io/blog/introducing-spectral/), you'll be able to streamline your API design, documentation, and testing.
+Just as an OpenAPI document can be a source of truth, an API style guide can keep your organization producing APIs that feel like part of the same whole. You don't even need to slow your progress to get these details right. Instead, with a clear style guide and [open source tooling](https://stoplight.io/blog/introducing-spectral/), you'll be able to streamline your [API design](https://stoplight.io/design/), documentation, and testing.
 
 ## Why Have an API Style Guide?
 

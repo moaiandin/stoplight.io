@@ -43,7 +43,7 @@ Linters for your code like ESLint, pycodestyle, CSSLint, and others have grown i
 
 ![Bugs Bunny and Daffy Duck arguing over tabs versus spaces](/images/tabsvsspaces.gif)
 
-At Stoplight, we want to promote consistent API design best practices. We believe that API descriptions should be treated the same way as code. APIs should have style guides with rules and be reviewed to ensure they are descriptive, readable, and concise for the developers who use them.
+At Stoplight, we want to promote consistent [API design best practices](https://stoplight.io/api-design-guide/basics/). We believe that API descriptions should be treated the same way as code. APIs should have style guides with rules and be reviewed to ensure they are descriptive, readable, and concise for the developers who use them.
 
 ## Spectral Promotes Consistency
 

@@ -40,8 +40,8 @@ We’ll share a lot more about Stoplight Studio over the coming weeks, but here�
   - Open any github repository by visiting a URL like `https://stoplight.io/p/studio/gh/{yourGithubOrg}/{yourGithubProject}`
 - Studio Desktop for working offline, with files on your computer
 - Editors for OpenAPI v2 & v3, standalone JSON Schema models, and Markdown files.
-- [Prism](https://stoplight.io/prism/) integration in Studio Desktop, for automatic local mock servers
-- [Spectral](https://stoplight.io/spectral/) integration in Studio Web & Desktop, for API style guides and linting
+- [Prism](https://stoplight.io/open-source/prism/) integration in Studio Desktop, for automatic local mock servers
+- [Spectral](https://stoplight.io/open-source/spectral/) integration in Studio Web & Desktop, for API style guides and linting
 - Smooth design-to-docs experience - publish and share beautiful documentation from Studio Web with a single click
 
 Stoplight Studio is completely free for individuals - you don't even need an account to use it. We want everyone to have access to the best API design tooling, without compromises or vendor lock-in. For four years, that’s been our goal, and we believe Studio is a huge step towards delivering on that promise. Before going further, let's take a quick walk through Stoplight's evolution over the years.

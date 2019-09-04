@@ -20,7 +20,7 @@ disqus:
 actionBar:
   ctas:
     - color: purple
-      href: 'https://stoplight.io/spectral/'
+      href: 'https://stoplight.io/open-source/spectral/'
       title: Get Started with Spectral
   enabled: true
   text: Do you want feedback on your API descriptions right now?

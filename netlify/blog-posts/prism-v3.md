@@ -20,7 +20,7 @@ disqus:
 actionBar:
   ctas:
     - color: purple
-      href: 'https://stoplight.io/prism/'
+      href: 'https://stoplight.io/open-source/prism/'
       title: Get Started with Prism
   enabled: true
   text: Do you want a mock server on your API descriptions right now?

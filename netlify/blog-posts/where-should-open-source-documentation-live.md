@@ -29,7 +29,7 @@ meta:
     username: '@stoplightio'
   url: 'https://stoplight.io/blog/open-source-documentation'
 ---
-A few months ago we began work on releasing two open source projects, [Spectral](https://stoplight.io/spectral) and [Prism](https://stoplight.io/prism). There was a lot of internal debate on whether we should create separate static documentation sites for them or have more of the documentation live within the GitHub repo. With a team of our size, we have to balance resources and what is best for the end user. So, I [created a Twitter poll](https://twitter.com/taylor_atx/status/1092832408322359297)! Turns out people had a lot of opinions on it. _(Opinions on the internet??? Never!)_
+A few months ago we began work on releasing two open source projects, [Spectral](https://stoplight.io/open-source/spectral/) and [Prism](https://stoplight.io/open-source/prism/). There was a lot of internal debate on whether we should create separate static documentation sites for them or have more of the documentation live within the GitHub repo. With a team of our size, we have to balance resources and what is best for the end user. So, I [created a Twitter poll](https://twitter.com/taylor_atx/status/1092832408322359297)! Turns out people had a lot of opinions on it. _(Opinions on the internet??? Never!)_
 
 I asked: 
 > "If an open source project has documentation in the readme within the repo and similar content in a static site, which are you more likely to look at?"

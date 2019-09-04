@@ -34,7 +34,7 @@ meta:
     username: '@stoplightio'
   url: 'https://stoplight.io/blog/api-audience-experience'
 ---
-Every developer deserves a good experience working with any API. They expect an accurate reference and some sample code to get started. However, there isn’t a single checklist of what developers need. APIs won’t always have the same audience and your documentation should reflect the most common consumers.  Everything these days is tailor-made to resonate with a specific audience. Why should your API documentation be any different? 
+Every developer deserves a good experience working with any API. They expect an accurate reference and some sample code to get started. However, there isn’t a single checklist of what developers need. APIs won’t always have the same audience and your documentation should reflect the most common consumers.  Everything these days is tailor-made to resonate with a specific audience. Why should your [API documentation](https://stoplight.io/documentation/) be any different? 
 
 Let’s explore how documentation should change according to different developer audiences. Ultimately, whether you’re talking to your internal team, communicating with partners, or speaking to developers at large, your API needs clear documentation that speaks to their individual needs.
 ## Your Team Wants Context

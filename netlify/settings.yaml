@@ -1,9 +1,9 @@
 banners:
-  - ends: 1567815331394
+  - ends: 1567932664533
     markdown: >-
       Announcing Stoplight Studio, our most powerful API Designer yet, now with OpenAPI v3 support! <u class='ml-1'>**[Learn More](https://stoplight.io/studio)**</u>
     starts: 1565815331394
-    hideOnPath: ['/home.', '/studio']
+    hideOnPath: ['/home', '/studio']
 info:
   address:
     addressLocality: Austin

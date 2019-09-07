@@ -36,6 +36,7 @@ export interface IBanner {
   markdown: string;
   starts: string;
   ends: string;
+  hideOnPath: string[];
 }
 
 export interface IHeader {
@@ -45,25 +46,23 @@ export interface IHeader {
   meta: any;
   color?: string;
   banners: IBanner[];
-  path?: string;
+  path: string;
 }
 
 export const Header: React.FunctionComponent<IHeader> = props => {
   const [unpinned, setUnpinned] = React.useState(false);
-  const [showBanner, setShowBanner] = useBanner();
 
   const onUnpin = React.useCallback(() => setUnpinned(true), [setUnpinned]);
   const onUnfix = React.useCallback(() => setUnpinned(false), [setUnpinned]);
-  const onClickBanner = React.useCallback(() => setShowBanner(false), [setShowBanner]);
 
   const { header, meta, color, banners } = props;
   const headerItems = (header && header.items) || [];
 
   let banner;
-  if (showBanner && banners && banners.length) {
+  if (banners && banners.length) {
     const time = new Date().getTime();
     banner = banners.find(b => {
-      if (!b || !b.markdown) return;
+      if (!b || !b.markdown || (b.hideOnPath || []).includes(props.path)) return;
 
       return new Date(Number(b.starts)).getTime() <= time && new Date(Number(b.ends)).getTime() >= time;
     });
@@ -82,27 +81,10 @@ export const Header: React.FunctionComponent<IHeader> = props => {
             [`shadow-md bg-${color || 'black'}`]: unpinned,
           })}
         >
-          {banner &&
-            banner.markdown &&
-            !(banner.hideOnPath || []).includes(props.path) && (
-              <div className="relative z-50 border-b border-lighten-200 text-white Banner bg-lighten-50 sm:hidden">
-                <div className="container h-12 flex flex-no-wrap items-center">
-                  <Icon icon={['fad', 'rocket']} className="mr-3" />
+          <div className="relative">
+            <Banner banner={banner} />
 
-                  <div className="flex-1" dangerouslySetInnerHTML={{ __html: banner.markdown }} />
-
-                  <div
-                    className="cursor-pointer flex hover:bg-lighten-100 items-center justify-center justify-end p-2 rounded text-lighten-400 hover:text-white"
-                    onClick={onClickBanner}
-                  >
-                    <Icon icon="times" />
-                  </div>
-                </div>
-              </div>
-            )}
-
-          <div className="container relative">
-            <nav className={cn(headerHeightClass, 'flex items-center')}>
+            <nav className={cn(headerHeightClass, 'container relative flex items-center')}>
               <Link to="/" className="text-white hover:opacity-75 hover:text-white text-lg font-bold mr-8">
                 Stoplight
               </Link>
@@ -115,7 +97,7 @@ export const Header: React.FunctionComponent<IHeader> = props => {
 
           <Headroom
             downTolerance={0}
-            pinStart={40}
+            pinStart={banner ? 42 : 0}
             disableInlineStyles={true}
             onUnpin={onUnpin}
             onUnfix={onUnfix}
@@ -128,3 +110,27 @@ export const Header: React.FunctionComponent<IHeader> = props => {
 };
 
 export default withSiteData(withRouteData(Header));
+
+export const Banner = ({ banner }) => {
+  const [showBanner, setShowBanner] = useBanner();
+  const onClickBanner = React.useCallback(() => setShowBanner(false), [setShowBanner]);
+
+  if (!banner || !showBanner) return null;
+
+  return (
+    <div className="relative z-50 border-b border-lighten-200 text-white Banner bg-lighten-50 sm:hidden">
+      <div className="container h-12 flex flex-no-wrap items-center">
+        <Icon icon={['fad', 'rocket']} className="mr-3" />
+
+        <div className="flex-1" dangerouslySetInnerHTML={{ __html: banner && banner.markdown }} />
+
+        <div
+          className="cursor-pointer flex hover:bg-lighten-100 items-center justify-center justify-end p-2 rounded text-lighten-400 hover:text-white"
+          onClick={onClickBanner}
+        >
+          <Icon icon="times" />
+        </div>
+      </div>
+    </div>
+  );
+};

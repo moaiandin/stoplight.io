@@ -24,7 +24,7 @@ gartnerCoolVendor:
     title: Learn More
   title: Stoplight named a Gartner Cool Vendor
   description: >-
-    Stoplight is cool because it enables enterprises to manage API Design as scale.
+    Stoplight is cool because it enables enterprises to manage API Design at scale.
     Learn more about collaborative API Design in this Gartner report.
   image: /images/gartner_cv_2019_rgb.png
 actionBar:

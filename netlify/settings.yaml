@@ -93,9 +93,9 @@ footer:
           title: Enterprise
       title: Products
     - links:
-        - href: /spectral
+        - href: /open-source/spectral/
           title: Spectral
-        - href: /prism
+        - href: /open-source/prism/
           title: Prism
       title: Open Source
     - links:
